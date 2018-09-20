@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pv1_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00V"
+            android:textColor="#009DDF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_pv1_ele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00A"
+            android:textColor="#009DDF"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/taiyang" />
+
+            <TextView
+                android:id="@+id/tv_pv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="PV1"
+                android:textColor="#333333"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/ll_stytle_info"
+                android:gravity="center_vertical">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_string1"
+                    style="@style/flowlineview_pv_item"
+                    android:layout_marginRight="5dp"
+                    app:flow_dirction="toLeft"
+                    app:line_dirction="horizontal" />
+
+                <LinearLayout style="@style/ll_household_pv_item">
+
+                    <TextView
+                        android:id="@+id/tv_w_1"
+                        style="@style/optimist_text_item" />
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_pv1"
+                        style="@style/youhuaqi_iv" />
+
+                    <TextView
+                        android:id="@+id/tv_n_1"
+                        style="@style/optimist_text_item" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle_info"
+                android:gravity="center_vertical">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_string2"
+                    style="@style/flowlineview_pv_item"
+                    android:layout_marginRight="5dp"
+                    app:flow_dirction="toLeft"
+                    app:line_dirction="horizontal" />
+
+                <LinearLayout style="@style/ll_household_pv_item">
+
+                    <TextView
+                        android:id="@+id/tv_w_2"
+                        style="@style/optimist_text_item" />
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_pv2"
+                        style="@style/youhuaqi_iv" />
+
+                    <TextView
+                        android:id="@+id/tv_n_2"
+                        style="@style/optimist_text_item" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle_info"
+                android:gravity="center_vertical">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_string3"
+                    style="@style/flowlineview_pv_item"
+                    android:layout_marginRight="5dp"
+                    app:flow_dirction="toLeft"
+                    app:line_dirction="horizontal" />
+
+                <LinearLayout style="@style/ll_household_pv_item">
+
+                    <TextView
+                        android:id="@+id/tv_w_3"
+                        style="@style/optimist_text_item" />
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_pv3"
+                        style="@style/youhuaqi_iv" />
+
+                    <TextView
+                        android:id="@+id/tv_n_3"
+                        style="@style/optimist_text_item" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle_info"
+                android:gravity="center_vertical">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_string4"
+                    style="@style/flowlineview_pv_item"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_cascade_pv1"
+                    app:flow_dirction="toLeft"
+                    app:line_dirction="horizontal" />
+
+                <LinearLayout style="@style/ll_household_pv_item">
+
+                    <TextView
+                        android:id="@+id/tv_w_4"
+                        style="@style/optimist_text_item" />
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_pv4"
+                        style="@style/youhuaqi_iv" />
+
+                    <TextView
+                        android:id="@+id/tv_n_4"
+                        style="@style/optimist_text_item" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp">
+
+        <LinearLayout
+            android:id="@+id/ll_pv2_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <com.huawei.solarsafe.utils.customview.FlowLineView
+                android:id="@+id/view_flow_line_to_pv1"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                app:flow_dirction="up"
+                app:line_dirction="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ll_pv2_container"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_1"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    app:flow_dirction="up"
+                    app:line_dirction="vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pv_container_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string1_2"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_8"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv1_2"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_8"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string2_2"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_7"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv2_2"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_7"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string3_2"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_6"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv3_2"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_6"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string4_2"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_5"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv4_2"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_5"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_2"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        app:flow_dirction="up"
+                        app:line_dirction="vertical" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pv_container_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string1_3"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_9"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv1_3"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_9"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string2_3"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_10"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv2_3"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_10"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string3_3"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_11"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv3_3"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_11"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string4_3"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_12"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv4_3"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_12"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_3"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    app:flow_dirction="up"
+                    app:line_dirction="vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pv_container_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string1_4"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_16"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv1_4"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_16"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string2_4"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_15"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv2_4"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_15"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string3_4"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_14"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv3_4"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_14"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string4_4"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_13"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv4_4"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_13"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_4"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        app:flow_dirction="up"
+                        app:line_dirction="vertical" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pv_container_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string1_5"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_17"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv1_5"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_17"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string2_5"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_18"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv2_5"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_18"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string3_5"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_19"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv3_5"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_19"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string4_5"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_20"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv4_5"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_20"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_5"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    app:flow_dirction="up"
+                    app:line_dirction="vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pv_container_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string1_6"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_24"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv1_6"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_24"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string2_6"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_23"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv2_6"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_23"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string3_6"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_22"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv3_6"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_22"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string4_6"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_21"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv4_6"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_21"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_6"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        app:flow_dirction="up"
+                        app:line_dirction="vertical" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pv_container_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string1_7"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_25"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv1_7"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_25"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string2_7"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_26"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv2_7"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_26"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string3_7"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_27"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv3_7"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_27"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string4_7"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout style="@style/ll_household_pv_item">
+
+                        <TextView
+                            android:id="@+id/tv_w_28"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv4_7"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_28"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+                <com.huawei.solarsafe.utils.customview.FlowLineView
+                    android:id="@+id/view_flow_line_to_7"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    app:flow_dirction="up"
+                    app:line_dirction="vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pv_container_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string1_8"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toLeft"
+                        app:line_dirction="horizontal" />
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_pv1_8"
+                        style="@style/youhuaqi_iv"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string2_8"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_pv2_8"
+                        style="@style/youhuaqi_iv"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string3_8"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        android:visibility="invisible"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_w_30"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv3_8"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_30"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_stytle_info"
+                    android:gravity="center_vertical">
+
+                    <com.huawei.solarsafe.utils.customview.FlowLineView
+                        android:id="@+id/view_flow_line_to_string4_8"
+                        style="@style/flowlineview_pv_item"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@id/iv_cascade_pv1"
+                        app:flow_dirction="toRight"
+                        app:line_dirction="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_w_29"
+                            style="@style/optimist_text_item" />
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_pv4_8"
+                            style="@style/youhuaqi_iv" />
+
+                        <TextView
+                            android:id="@+id/tv_n_29"
+                            style="@style/optimist_text_item" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

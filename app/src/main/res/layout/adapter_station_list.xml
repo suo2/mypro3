@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_station_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invalid_value"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/icon_plant_item"
+            android:drawablePadding="5dp"
+            android:background="@drawable/device_list_top_bg2"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/device_list_middle_bg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/device_list_bottom_bg2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/my_image_view"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:backgroundImage="@color/common_white"
+                    fresco:fadeDuration="300"
+                    fresco:failureImage="@drawable/loadfailed"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:pressedStateOverlayImage="@color/common_white"
+                    fresco:progressBarAutoRotateInterval="1000"
+                    fresco:progressBarImage="@drawable/loading"
+                    fresco:progressBarImageScaleType="centerInside"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="false"
+                    fresco:roundBottomLeft="false"
+                    fresco:roundBottomRight="true"
+                    fresco:roundTopLeft="true"
+                    fresco:roundTopRight="false"
+                    fresco:roundedCornerRadius="1dp"
+                    fresco:roundingBorderWidth="2dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/my_image_view"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    <!--当前功率-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_power"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invalid_value"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <!--当日发电量-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="100dp"
+                            android:text="@string/today_generating_capacity"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_update_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invalid_value"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <!--装机容量-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/equipped_capacitor"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_install_capacity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invalid_value"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <!--电站地址-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/station_addr"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_station_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invalid_value"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

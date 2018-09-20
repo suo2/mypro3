@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fragment_report_indicators">
+        <item>completo</item>
+        <item>Capacità d’installazione</item>
+        <item>Irradiazione totale</item>
+        <item>Irradiazione totale in orizzonte</item>
+        <item>Durata delle ore di sole</item>
+        <item>Temperatura media</item>
+        <item>Produzione di energia teorica</item>
+        <item>Generazione di energia</item>
+        <item>Generazione di energia cumulativa</item>
+        <item>Produzione di energia pianificata</item>
+        <item>Elettricità in rete</item>
+        <item>Ore di utilizzo equivalente</item>
+        <item>Quantità di alimentazione rete</item>
+        <item>Perdita di elettricità a causa di limitazione di elettricità</item>
+        <item>Consumo di elettricità</item>
+        <item>Quantità energia autoconsumata</item>
+        <item>Tasso di generazione e autoconsumo</item>
+        <item>Consumo elettrico dell\&apos;impianto</item>
+        <item>Consumo energetico totale dell\&apos;impianto</item>
+        <item>Tasso di consumo totale dell\&apos;impianto</item>
+        <item>Valore picco di potenza</item>
+        <item>Efficienza del sistema</item>
+        <item>Riduzione delle emissioni di diossido di carbonio</item>
+        <item>Risparmio del volume di carbone standard</item>
+        <item>Quantità di alberi equivalente</item>
+        <item>guadagni</item>
+        <item>la percentuale di completamento pianificata</item>
+    </string-array>
+</resources>

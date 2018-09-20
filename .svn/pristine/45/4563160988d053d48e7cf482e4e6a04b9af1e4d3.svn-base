@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/gruop_string_str"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_pv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/tv_1"
+                android:text="N/A"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_open_or_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="18dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/domain_zd_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="18dp"
+           >
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_manufacturers"
+                    />
+
+                <TextView
+                    style="@style/dev_info_data"
+                    android:id="@+id/tv_component_manufacturers"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_type"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_component_type"
+                    style="@style/dev_info_data"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="7dp"
+            >
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_component_power_title"
+                    style="@style/dev_info_title"
+                    android:text="@string/pv_power_str"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_power"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/string_component_num"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_string_component_num"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="7dp"
+            >
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/string_cap"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_string_cap"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                ></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pv_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_manufacturers"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_manufacturers_de"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_type"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_type_de"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            style="@style/ll_dev_info_pvlist"
+            >
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/pv_power_str"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_power_de"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_types"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_types_de"
+                    style="@style/dev_info_data"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="17dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_temp_vol_coefficient"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_temp_vol_coefficient"
+                    style="@style/dev_info_data"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_cur_tem_coefficient"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_component_cur_tem_coefficient"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/peak_power_temp_coefficient"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_peak_power_temp_coefficient"
+                    style="@style/dev_info_data"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:maxWidth="150dp"
+                    android:text="@string/component_max_power_point_vol"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_component_max_power_point_vol"
+                    style="@style/dev_info_data"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="17dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_max_power_cur"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_max_power_cur"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/annual_decay_rate"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_annual_decay_rate"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="7dp"
+            >
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="17dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/yearly_attenuation_rate"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_yearly_attenuation_rate"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+               >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/num_of_components_bat_slices"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_num_of_components_bat_slices"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="17dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_open_circuit_vol"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_open_circuit_vol"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_short_circuit_current"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_short_circuit_current"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginTop="7dp">
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/nominal_component_conversion_efficiency"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_nominal_component_rate"
+                    style="@style/dev_info_data"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/fill_factor"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_fill_factor"
+                    style="@style/dev_info_data"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="7dp"
+           >
+
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    style="@style/dev_info_title"
+                    android:text="@string/component_launch_date"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_component_launch_date"
+                    style="@style/dev_info_data"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_dev_info_pvlist_item"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

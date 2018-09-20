@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/chamfering_button_shape">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/danzhan_color"
+        android:text="@string/register_success"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/danzhan_color"
+        android:layout_marginTop="25dp"
+        android:text="@string/go_to_emaile"/>
+    <TextView
+        android:id="@+id/activate_emaile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/danzhan_color"
+        android:text="@string/activate_login"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/activate_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/tv_protection_clause"
+        android:text="@string/sure"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

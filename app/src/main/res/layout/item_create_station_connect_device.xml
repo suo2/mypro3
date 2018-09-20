@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--设备ESN号-->
+        <LinearLayout
+            android:id="@+id/scan_s"
+            style="@style/new_station_item_llyt">
+
+            <TextView
+                style="@style/new_station_item_tv_name"
+                android:text="@string/dev_esn_num" />
+
+            <EditText
+                android:id="@+id/et_dev_esn"
+                style="@style/new_station_item_et_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/scanning_equipment_esn" />
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_scan_new_device" />
+
+            <Button
+                android:id="@+id/btn_query"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:text="@string/look_up"
+                android:textColor="#FF9933"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#eeeeee" />
+        <!--设备名称-->
+        <LinearLayout style="@style/new_station_item_llyt">
+
+            <TextView
+                style="@style/new_station_item_tv_name"
+                android:text="@string/dev_name" />
+
+            <EditText
+                android:id="@+id/et_dev_name"
+                style="@style/new_station_item_et_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#eeeeee" />
+        <!--设备版本号-->
+        <LinearLayout style="@style/new_station_item_llyt">
+
+            <TextView
+                style="@style/new_station_item_tv_name"
+                android:text="@string/device_version" />
+
+            <TextView
+                android:id="@+id/et_dev_ver"
+                style="@style/new_station_item_et_content" />
+
+            <Button
+                android:id="@+id/btn_xg_dev"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|right"
+                android:text="@string/xiagua_dev_str"
+                android:textColor="#FF9933"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            style="@style/new_station_item_llyt"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/delete_device"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_delete_new_device"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/delete_new_device"
+                android:textColor="#FF4D30"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ff9933"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_level"
+        style="@style/inverter_report_tv_white"
+        android:text="@string/level" />
+
+    <View
+        android:id="@+id/view_level"
+        style="@style/report_view_white" />
+
+
+    <TextView
+        android:id="@+id/tv_interval_type"
+        style="@style/inverter_report_tv_white"
+        android:text="@string/interval_type" />
+    <View
+        android:id="@+id/view_interval_type"
+        style="@style/report_view_white" />
+
+
+    <TextView
+        android:id="@+id/tv_interval_name"
+        style="@style/inverter_report_tv_white"
+        android:text="@string/interval_name" />
+    <View
+        android:id="@+id/interval_name_view"
+        style="@style/report_view_white" />
+
+
+    <TextView
+        android:id="@+id/tv_alarm_type"
+        style="@style/inverter_report_tv_white"
+        android:text="@string/alarm_type" />
+
+    <View
+        android:id="@+id/view_alarm_type"
+        style="@style/report_view_white" />
+
+    <TextView
+        android:id="@+id/tv_alarm_name"
+        style="@style/inverter_report_tv_white"
+        android:text="@string/alarm_names" />
+
+
+    <View
+        android:id="@+id/alarm_name_view"
+        style="@style/report_view_white" />
+
+
+
+    <TextView
+        android:id="@+id/tv_states"
+        style="@style/inverter_report_tv_white"
+        android:text="@string/stutas" />
+
+    <View
+        android:id="@+id/states_view"
+        style="@style/report_view_white" />
+
+
+
+    <TextView
+        android:id="@+id/tv_local_time"
+        style="@style/report_tv_white"
+        android:text="@string/local_time" />
+
+    <View
+        android:id="@+id/view_local_time"
+        style="@style/report_view_white" />
+
+
+
+    <TextView
+        android:id="@+id/tv_produce_time"
+        style="@style/report_tv_white"
+        android:text="@string/alarm_rasied_date" />
+
+    <View
+        android:id="@+id/view_produce_time"
+        style="@style/report_view_white" />
+
+    <TextView
+        android:id="@+id/tv_recovery_time"
+        style="@style/report_tv_white"
+        android:text="@string/recovery_time" />
+
+    <View
+        android:id="@+id/recovery_time_view"
+        style="@style/report_view_white" />
+
+    <TextView
+        android:id="@+id/tv_repair_advice"
+        style="@style/inverter_report_tv_white"
+        android:text="@string/repair_suggest" />
+
+    <View
+        android:id="@+id/repair_advice_view"
+        style="@style/report_view_white" />
+
+
+</LinearLayout>
+

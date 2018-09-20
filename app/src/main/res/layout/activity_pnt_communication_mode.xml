@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/pnt_devices_params_item_tv_small_tile_style"
+        android:text="@string/choice_of_communication" />
+
+    <LinearLayout
+        android:id="@+id/llyt_wired"
+        style="@style/pnt_devices_params_item_llyt_style">
+
+        <TextView
+            style="@style/pnt_devices_params_item_tv_name_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/have_line" />
+
+        <ImageView
+            android:id="@+id/iv_wired"
+            style="@style/pnt_devices_params_item_iv_right_arrows_style"
+            android:src="@drawable/icon_pnt_selected"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/llyt_wireless"
+        style="@style/pnt_devices_params_item_llyt_style">
+
+        <TextView
+            style="@style/pnt_devices_params_item_tv_name_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/no_line" />
+
+        <ImageView
+            android:id="@+id/iv_wireless"
+            style="@style/pnt_devices_params_item_iv_right_arrows_style"
+            android:src="@drawable/icon_pnt_selected"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>
+

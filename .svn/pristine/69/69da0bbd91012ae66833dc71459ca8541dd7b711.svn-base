@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout style="@style/pnt_devices_params_item_llyt_style">
+
+            <TextView
+                android:id="@+id/tv_dev_type"
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/pnt_devices_params_item_llyt_style">
+
+            <TextView
+                android:id="@+id/tv_vender"
+                style="@style/pnt_devices_params_item_tv_name_style" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/pnt_devices_params_item_tv_value_style"
+                android:digits="@null"
+                android:inputType="none" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.login.FindPwdActivity1">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#dcdcdc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_white">
+
+        <TextView
+            android:id="@+id/tv_enter_new_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:text="@string/input_new_pwd"
+            android:textSize="13sp"/>
+
+        <View
+            android:id="@+id/flag_line_2"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:background="#dcdcdc"
+            />
+        <ImageView
+            android:id="@+id/find_display_hide_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:src="@drawable/mmyc"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <com.huawei.solarsafe.view.login.MyEditText
+            android:id="@+id/pwd_keys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/find_display_hide_1"
+            android:layout_toRightOf="@id/flag_line_2"
+            android:background="@null"
+            android:longClickable="false"
+            android:maxLength="32"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:paddingRight="20dp"
+            android:textSize="12sp"
+            android:hint="@string/please_input_new_password"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_white">
+
+        <TextView
+            android:id="@+id/tv_enter_new_email_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:text="@string/again_input_new_pwd"
+            android:textSize="13sp"/>
+
+        <View
+            android:id="@+id/flag_line_3"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:background="#dcdcdc"
+            />
+
+        <ImageView
+            android:id="@+id/find_display_hide_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:src="@drawable/mmyc"/>
+
+        <com.huawei.solarsafe.view.login.MyEditText
+            android:id="@+id/pwdagain_keys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/find_display_hide_2"
+            android:layout_toRightOf="@id/flag_line_3"
+            android:background="@null"
+            android:maxLength="32"
+            android:longClickable="false"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:paddingRight="20dp"
+            android:hint="@string/please_input_new_password_again"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dcdcdc"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_person_page_selector"
+            android:text="@string/finish"
+            android:textColor="@color/common_white"
+            android:textSize="17sp"/>
+        />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/username_" />
+
+            <EditText
+                android:id="@+id/et_user_name_in"
+                android:hint="@string/input_user_name"
+                style="@style/installer_registration"
+                android:maxLength="40"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/password" />
+
+            <!--【安全特性问题单】DTS2017112905921 【修改人】zhaoyufeng-->
+            <EditText
+                android:id="@+id/et_password_in"
+                style="@style/installer_registration"
+                android:hint="@string/please_input_a_password"
+                android:maxLength="40"
+                android:inputType="textPassword"
+                android:longClickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/confirm_pwd" />
+
+            <TextView
+                android:id="@+id/tvSurePwdHint"
+                style="@style/installer_registration"
+                android:text="@string/please_input_new_password_again"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="#858585"
+                android:layout_marginLeft="132dp"/>
+
+            <EditText
+                android:id="@+id/et_sure_password_in"
+                style="@style/installer_registration"
+                android:maxLength="40"
+                android:inputType="textPassword"
+                android:longClickable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/email_in" />
+
+            <EditText
+                android:id="@+id/et_email_in"
+                android:maxLength="50"
+                style="@style/installer_registration"
+                android:hint="@string/input_email"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/company_name_in" />
+
+            <EditText
+                android:id="@+id/et_compalyname_in"
+                style="@style/installer_registration"
+                android:maxLength="200"
+                android:hint="@string/piease_company_name_in"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/dev_esn_title" />
+
+            <EditText
+                android:id="@+id/et_devsn_in"
+                style="@style/installer_registration"
+                android:hint="@string/inputdev_esn_title"
+                android:maxLength="200"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/register_code" />
+
+            <EditText
+                android:id="@+id/et_code_in"
+                style="@style/installer_registration"
+                android:hint="@string/input_register_code"
+                android:maxLength="200"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="*"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/tv_installer_registration"
+                android:text="@string/identify_code" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvCodeHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="@string/input_code"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"/>
+
+                    <EditText
+                        android:id="@+id/et_register_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="14sp" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/et_register_code_img"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_installer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvClause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/danzhan_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_instraller_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/anqx"
+                android:paddingBottom="4dp"
+                android:text="@string/cancel"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bt_instraller_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/ankszd"
+                android:paddingBottom="4dp"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

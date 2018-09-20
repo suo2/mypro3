@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--数采登录-->
+    <string name="esn_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string-array name="pnt_conn_port">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+<!-- 我把资源放到了string-zh下面，方便统一进行国际化处理 -->
+    <array name="pnt_endian">
+        <item>Big Endian</item>
+        <item>Small Endian</item>
+    </array>
+    <integer-array name="pnt_baud_rate">
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>115200</item>
+    </integer-array>
+</resources>

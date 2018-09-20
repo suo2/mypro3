@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--//头部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <include layout="@layout/common_head_shucai" />
+
+        <ImageView
+            android:id="@+id/iv_unconnected_num"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/message" />
+
+        <RelativeLayout
+            android:id="@+id/rl_unconnected_num"
+            android:layout_width="wrap_content"
+            android:background="@drawable/circle_station_shape"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_unconnected_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--//一键开站部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_yjkz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/yjkz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/key_to_open_station"
+                android:textColor="@color/black"
+                android:textSize="@dimen/build_station_text_size" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_buildstation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_below="@id/ll_yjkz"
+            android:src="@drawable/sjcjq" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/djkz"
+                android:text="@string/click_to_start" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    //divider
+    <View
+        style="@style/horizontal_divider"
+        android:layout_marginTop="30dp" />
+
+    //已安装数采数
+    <LinearLayout
+        android:id="@+id/ll_buildstation_num"
+        style="@style/ll_horizontal"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/yazsc" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/installed_for"
+            android:textColor="@color/black"
+            android:textSize="@dimen/build_station_text_size" />
+
+        <TextView
+            android:id="@+id/tv_buildstation_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/build_station_text_size" />
+
+        <ImageView
+            style="@style/right_arrow"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    //divider
+
+    <View style="@style/horizontal_divider" />
+
+
+    //开始帮助
+
+    <LinearLayout
+        android:id="@+id/ll_buildstation_guide"
+        style="@style/ll_horizontal"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/guide_check"
+            android:textColor="@color/black"
+            android:textSize="@dimen/build_station_text_size" />
+
+        <ImageView
+            style="@style/right_arrow"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+
+</LinearLayout>

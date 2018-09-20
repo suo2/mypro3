@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/content_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_inverter_item_eq_name"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_inverter_item_eq_name"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+
+
+        <TextView
+            android:id="@+id/tv_installed_capacity_report"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/v_installed_capacity_report"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_theory_power_report"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_theory_power_report"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_inverter_item_day_power"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_inverter_item_day_power"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+
+        <TextView
+            android:id="@+id/tv_inverter_total_count_power"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/v_inverter_total_count_power"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_inverter_conversion_efficiency"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_inverter_conversion_efficiency"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_inverter_item_equivalent_hours"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_inverter_item_equivalent_hours"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_peak_ac_power"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_peak_ac_power"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_peak_dc_power"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_peak_dc_power"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_electric_power_loss"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_electric_power_loss"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_inverter_item_production_deviation"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_inverter_item_production_deviation"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_grid_connection_time"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_grid_connection_time"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_inverter_item_production_reliability"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_inverter_item_production_reliability"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_inverter_item_communication_reliability"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        <View
+            android:id="@+id/v_inverter_item_communication_reliability"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ccc" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc"/>
+</LinearLayout>

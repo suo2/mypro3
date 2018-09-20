@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="60dp"
+    android:layout_marginTop="85dp"
+    android:orientation="vertical">
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_inv_last_1"
+        android:layout_width="20dp"
+        android:layout_height="88dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_inv_last_2"
+        android:layout_width="20dp"
+        android:layout_height="88dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_inv_last_3"
+        android:layout_width="20dp"
+        android:layout_height="88dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_inv_last_4"
+        android:layout_width="20dp"
+        android:layout_height="86dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_inv_last_5"
+        android:layout_width="20dp"
+        android:layout_height="88dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_inv_last_6"
+        android:layout_width="20dp"
+        android:layout_height="88dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_inv_last_7"
+        android:layout_width="20dp"
+        android:layout_height="88dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+
+</LinearLayout>

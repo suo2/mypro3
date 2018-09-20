@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fragment_report_indicators">
+        <item>Alle</item>
+        <item>Geïnstalleerde capaciteit</item>
+        <item>Totale bestraling</item>
+        <item>Totale bestraling op horizontaal oppervlak</item>
+        <item>Duur van zonneschijn</item>
+        <item>Gemiddelde temperatuur</item>
+        <item>Theoretische elektriciteitopwekking</item>
+        <item>Elektriciteitopwekking</item>
+        <item>Cumulatieve elektriciteitopwekking</item>
+        <item>Geplande elektriciteitsopwekking</item>
+        <item>Elektriciteit op elektriciteitsnet</item>
+        <item>Equivalente gebruiksuren</item>
+        <item>Elektriciteitsnet terugkoppeling elektriciteit</item>
+        <item>Vermogensverlies door vermogensbeperking</item>
+        <item>Elektriciteitsverbruik</item>
+        <item>Elektriciteit zelfopwekking en zelfgebruik</item>
+        <item>Zelfopwekking voor zelfgebruik rato</item>
+        <item>Fabriekselektriciteitsverbruik</item>
+        <item>Gecombineerde fabriekselektriciteit</item>
+        <item>Gecombineerde fabriekselektriciteitsverbruik rato</item>
+        <item>Piekvermogen</item>
+        <item>Systeemefficiëntie</item>
+        <item>Vermindering van de CO2-uitstoot</item>
+        <item>Standaard kolenbesparing</item>
+        <item>Equivalente bomen planten</item>
+        <item>Inkomsten</item>
+        <item>Voltooiingspercentage van het plan</item>
+    </string-array>
+</resources>

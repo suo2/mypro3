@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_spotlight_arrows_top"
+            android:layout_gravity="right"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"/>
+
+        <com.huawei.solarsafe.view.CustomViews.SpotLightTextView
+            android:id="@+id/tvHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/multi_station_home_page_spotlight_hint"
+            android:textSize="24sp"
+            android:textColor="@color/color_theme"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tvNewPowerStation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_new_power_station"
+                android:drawablePadding="11dp"
+                android:drawableRight="@drawable/icon_homa_page_entrance_add_more"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/create_station_string"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <android.support.v4.widget.Space
+                android:id="@+id/space1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                android:id="@+id/tvNewOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_new_owner"
+                android:drawablePadding="11dp"
+                android:drawableRight="@drawable/icon_homa_page_entrance_add_more"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/new_owners_account"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <android.support.v4.widget.Space
+                android:id="@+id/space3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:id="@+id/tvNewEquipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_new_equipment"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/icon_homa_page_entrance_add_more"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/new_equipment"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.huawei.solarsafe.view.CustomViews.SpotLightTextView
+            android:id="@+id/tvIKnow"
+            android:layout_width="172dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_spot_light_btn_bg"
+            android:text="@string/spotlight_btn_i_know"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="100dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/station_more_popwindow_bg">
+    
+    <TextView
+        android:id="@+id/tvDeviceManager"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/device_management"
+        android:textColor="@color/text_one"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/icon_popup_window_device_manager"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:layout_marginTop="8dp"/>
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/tvBindDevice_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvBindDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="@string/new_equipment_select_equipment"
+            android:textColor="@color/text_one"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/icon_popup_window_bind_device"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tvBindDevice_num"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="0"
+            android:visibility="invisible"
+            android:background="@drawable/shape_circle_red_bg"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tvNewEquipment"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/new_equipment"
+        android:textColor="@color/text_one"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/icon_popup_window_new_equipment"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"/>
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tvCreateStation"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/create_station_string"
+        android:textColor="@color/text_one"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/icon_popup_window_create_station"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"/>
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tvNewOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/new_owners_account"
+        android:textColor="@color/text_one"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/icon_popup_window_new_owner"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"/>
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tvShare"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/share"
+        android:textColor="@color/text_one"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/icon_popup_window_share"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"/>
+
+</LinearLayout>

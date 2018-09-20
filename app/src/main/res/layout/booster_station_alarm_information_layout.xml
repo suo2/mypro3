@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_horizontal_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff9933"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/alarm_information_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/size_5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/iv_custom_column_white"/>
+                <LinearLayout
+                    android:id="@+id/station_name_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:text="@string/power_station_name"
+                        android:id="@+id/textView24" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/report_view_white" />
+
+            <com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView
+                android:id="@+id/title_horizontal_scrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.huawei.solarsafe.view.devicemanagement.AlarmInformationItemView
+                        android:id="@+id/alarm_information_item_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+            </com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView>
+
+        </LinearLayout>
+
+        <!-- 此部分是内容部分 用ScrollView实现上下滚动效果 -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/inverter_report__refresh_scrollview"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/alarm_information_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <!-- 左侧内容的父容器 -->
+                <LinearLayout
+                    android:id="@+id/left_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/left_container_listview"
+                        android:layout_width="120.5dp"
+                        android:divider="@color/transparent"
+                        android:dividerHeight="0dp"
+                        android:scrollbars="none"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <!-- 右侧内容的父容器 实现水平滚动 -->
+
+                <com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView
+                    android:id="@+id/iv_content_horizontal_scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/right_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/right_container_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="@color/transparent"
+                            android:dividerHeight="0dp"
+                            android:scrollbars="none"/>
+
+                    </LinearLayout>
+                </com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

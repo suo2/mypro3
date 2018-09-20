@@ -1,0 +1,263 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.huawei.solarsafe.view.report.ReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_head" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/common_light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/one_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rectangle_yellow"
+                android:drawablePadding="8dp"
+                android:text="电站一" />
+
+            <TextView
+                android:id="@+id/two_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:drawableLeft="@drawable/rectangle_green"
+                android:drawablePadding="8dp"
+                android:text="电站二" />
+
+            <TextView
+                android:id="@+id/thrid_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:drawableLeft="@drawable/rectangle_blue"
+                android:drawablePadding="8dp"
+                android:text="电站三"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/comparison_of_power_per_mw"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="2012-12-12"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_datapiker_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zidingyishijian" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_white"
+                android:padding="5dp"></com.github.mikephil.charting.charts.LineChart>
+
+            <TextView
+                android:id="@+id/pk_unit_kwh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/power_unit_kw"
+                android:textColor="@color/danzhan_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_white"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="@string/equivalent_utilization_hours_compare"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pk_time_show"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/report_time_show"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/rili" />
+                <TextView
+                    android:id="@+id/tv_pk_show_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:textSize="11sp"
+                    android:textColor="@color/danzhan_color"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/switch_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/radio_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_left_corner_fill"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/day"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/radio_weekend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_non_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/week"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/radio_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_left_corner_fill"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/month"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_non_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/year"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_right_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/life_cycle"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_white"
+                android:padding="5dp"></com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:id="@+id/pk_unit_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/unit_h"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

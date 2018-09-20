@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_color">#4e4e4e</color>
+    <color name="common_white">#ffffff</color>
+    <!-- Common Color -->
+    <color name="common_light_gray">#989898</color>
+    <color name="title_bg">#FFAD00</color>
+    <color name="divider_color">#ABABAB</color>
+    <color name="btn_bg_color">#FFAD00</color>
+    <color name="et_corners_color">#FFAD00</color>
+    <color name="et_corners_disabled_color">#ABABAB</color>
+    <color name="common_nocolor">#00000000</color>
+
+    <!--Tzy-->
+    <color name="container_bg_gray">#EFEFF4</color>
+    <color name="container_bg_dark_gray">#EEEEEE</color>
+    <color name="color_theme">#ff9933</color>
+    <color name="btn_bg_positive">@color/color_theme</color>
+    <color name="btn_bg_negative">#fbfafc</color>
+    <color name="text_one">#333333</color>
+    <color name="text_two">#666666</color>
+    <color name="text_three">#999999</color>
+    <color name="text_for">#cccccc</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_theme">@color/color_theme</color>
+
+    <!--二维码扫描界面-->
+    <color name="scan_help_bg">#FFCC66</color>
+    <color name="scan_help_explain_text">#333333</color>
+    <!-- Inverter Upgrade -->
+    <color name="inverter_upgrade_btn_bg">#FFAD00</color>
+    <color name="inverter_upgrade_txt_color">#3B3B3B</color>
+    <!-- Warn -->
+    <color name="warn_radiobutton_normal">#ccc</color>
+    <color name="line">#eeeeee</color>
+    <color name="white">#FFFFFF</color>
+    <!--白色 -->
+    <color name="orange">#FFA500</color>
+    <!--橙色 -->
+    <color name="lightsalmon">#FFA07A</color>
+    <!--亮肉色 -->
+    <color name="darkorange">#FF8C00</color>
+    <!--暗桔黄色 -->
+    <color name="coral">#FF7F50</color>
+    <!--珊瑚色 -->
+    <color name="orangered">#FF4500</color>
+    <!--红橙色 -->
+    <color name="red">#FF0000</color>
+    <!--红色 -->
+    <color name="gainsboro">#DCDCDC</color>
+    <!--淡灰色 -->
+    <color name="lightblue">#ADD8E6</color>
+    <!--亮蓝色 -->
+    <color name="darkgrey">#A9A9A9</color>
+    <!--暗灰色 -->
+    <color name="lightgreen">#90EE90</color>
+    <!--亮绿色 -->
+    <color name="lightskyblue">#87CEFA</color>
+    <!--亮天蓝色 -->
+    <color name="gray">#808080</color>
+    <!--灰色 -->
+    <color name="grey">#808080</color>
+    <!--灰色 -->
+    <color name="forestgreen">#228B22</color>
+    <!--森林绿 -->
+    <color name="springgreen">#00FF7F</color>
+    <!--春绿色 -->
+    <color name="green">#008000</color>
+    <!--绿色 -->
+    <color name="darkgreen">#006400</color>
+    <!--暗绿色 -->
+    <color name="blue">#0000FF</color>
+    <!--蓝色 -->
+    <color name="mediumblue">#0000CD</color>
+    <!--中兰色 -->
+    <color name="darkblue">#00008B</color>
+    <!--暗蓝色 -->
+    <color name="navy">#000080</color>
+    <!--海军色 -->
+    <color name="black">#000000</color>
+    <!--黑色 -->
+
+    <color name="alertdialog_line">#edecec</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="transparent">#00000000</color>
+    <color name="filter_color">#fc9e35</color>
+    <!-- 地图 -->
+    <color name="tv_text_marker_distributed_number">#1d76d3</color>
+
+    <color name="single_item">#FFB240</color>
+    <color name="commom_text_default">#666666</color>
+    <color name="important_town_color">#D49ADC</color>
+    <color name="poor_town">#F6A19A</color>
+    <color name="poor_users">#9ECCF8</color>
+
+
+    <color name="trans_orange">#00988570</color>
+
+    <color name="textview_text_group_homepage_item_tvcolor">#878787</color>
+    <color name="COLOR_737373">#737373</color>
+    <color name="top_arc_view">#FF9B2B</color>
+    <color name="tv_text_amapmarker">#1d76d3</color>
+    <color name="tv_caozuo_textcolor">#007aff</color>
+
+    <color name="bar">#6CB0DF</color>
+    <color name="bar1">#B5C2CA</color>
+    <color name="bar2">#F5E6BF</color>
+    <color name="bar3">#81D8C8</color>
+
+    <color name="description">#686868</color>
+
+    <color name="linefill">#DEEFE4</color>
+    <color name="line1">#E9C517</color>
+    <color name="line1fill">#ECEAD0</color>
+    <color name="line2">#9F8FBA</color>
+    <color name="line2fill">#EBE4F8</color>
+    <color name="text_yellow">#FECB67</color>
+    <color name="shucai_color_on">#fc9f36</color>
+    <color name="shucai_color">#999999</color>
+    <color name="danzhan_color">#333333</color>
+    <color name="lines_color">#FFFF00</color>
+    <color name="lines_color1">#000000</color>
+    <color name="jindu_line_status_1">#fc9f36</color>
+    <color name="jindu_line_status_2">#cccccc</color>
+    <color name="tv_text_alarm_name">#2c2c2c</color>
+    <color name="textview_text_ticketmgr_item_label_text_color">#808080</color>
+    <color name="tv_alarm_item_content">#878787</color>
+    <color name="power_txt">#FFF</color>
+    <color name="coninverter_text_orange">#F7820D</color>
+    <color name="coninverter_text_green">#26AE02</color>
+    <color name="coninverter_text_red">#FC5043</color>
+    <color name="coninverter_text_blue">#0B6DC0</color>
+    <color name="coninverter_text_light_gray">#666</color>
+    <color name="device_alarm_item_major_my">#F32236</color>
+    <color name="device_alarm_item_major_im">#ffa415</color>
+    <color name="device_alarm_item_major_sub">#44DAAA</color>
+    <color name="device_alarm_item_major_sug">#74BCF2</color>
+    <color name="spinner_choice">#009DDF</color>
+    <color name="green_web">#34CC99</color>
+    <color name="impotant_color">#f17007</color>
+    <color name="subordinate_color">#f9e404</color>
+    <color name="alarm_sug_color">#ffcb81</color>
+    <color name="color_result_green">#0fb468</color>
+    <color name="mejar_cocor">#FC9F36</color>
+    <color name="light_gray">#F1F1F1</color>
+    <color name="tv_protection_clause">#ffb03e</color>
+    <color name="common_gray">#F4F4F4</color>
+    <color name="bar_blue">#9AD6FF</color>
+    <color name="ll_back">#CBF5D5</color>
+    <color name="sure_report">#ff9933</color>
+    <color name="restore_report">#dfdfdf</color>
+    <color name="restore_report_text">#ff9933</color>
+
+    <color name="hui_white">#F9F9F9</color>
+
+    <!--自定义时间选择器-->
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+
+    <!--对话框扩展工具-->
+    <color name="dialogplus_card_shadow">#D4D4D4</color>
+    <color name="dialogplus_black_overlay">#60000000</color>
+    
+    <color name="activity_dev_alarm_fillter_et_bg_gray">#F3F3F3</color>
+
+    <color name="circle_orangered">#F89714</color>
+    <!--升压站设备电路图-->
+    <color name="kv_220">#81007f</color>
+    <color name="kv_110">#ff0000</color>
+    <color name="kv_35">#ffcc00</color>
+    <color name="kv_10">#810040</color>
+    <color name="v_0">#808080</color>
+    <!--聚光灯背景图-->
+    <color name="spotlight_background">#E6000000</color>
+    <color name="my_imformation_view_color">#e5e5e5</color>
+    <color name="custom_tel_bg">#eeeeee</color>
+
+
+    <!--730页面修改-->
+    <color name="self_use_power">#19CE88</color>
+    <color name="internet_power">#3399ff</color>
+    <color name="buy_power">#ff9933</color>
+    <color name="energy_charge">#cd99fc</color>
+    <color name="energy_discharge">#ff6668</color>
+    <color name="color_theme_transparent50">#50ff9933</color>
+
+</resources>

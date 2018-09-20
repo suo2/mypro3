@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_personal_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#dcdcdc" />
+
+    <LinearLayout
+        android:id="@+id/llHeadPortraits"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/head_portrait_"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/ll_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/my_image_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:backgroundImage="@color/common_white"
+                fresco:fadeDuration="300"
+                fresco:failureImage="@drawable/person_my_page"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImageScaleType="fitCenter"
+
+                fresco:progressBarAutoRotateInterval="1000"
+                fresco:progressBarImage="@drawable/loading"
+                fresco:progressBarImageScaleType="centerInside"
+                fresco:retryImageScaleType="centerCrop"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="true"
+                fresco:roundTopLeft="true"
+                fresco:roundTopRight="false"
+                fresco:roundedCornerRadius="1dp"
+                fresco:roundingBorderWidth="2dp"/>
+
+            <ImageView
+                android:id="@+id/change_view_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/icon_info_more"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
+
+    <LinearLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/username"
+            android:textSize="15sp"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLength="32"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/danzhan_color"
+            android:inputType="textEmailAddress"
+            android:hint="@string/input_user_name"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/iv_edit_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_remark"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
+
+    <LinearLayout
+        android:id="@+id/rl_item0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/_name"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@null"
+            android:maxLength="32"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/danzhan_color"
+            android:inputType="textEmailAddress"
+            android:hint="@string/please_input_name"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/iv_edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_remark"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
+
+    <LinearLayout
+        android:id="@+id/rl_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/email_in"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:maxLength="50"
+            android:id="@+id/et_mail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@null"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:textColor="@color/danzhan_color"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/iv_edit_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_remark"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
+
+    <LinearLayout
+        android:id="@+id/rl_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/tel"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:maxLength="30"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/danzhan_color"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/input_phone"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:id="@+id/iv_edit_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_remark"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dcdcdc"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username_can_modify_once"
+            android:textSize="13sp"
+            android:textColor="@color/red"
+            android:layout_margin="5dp"
+            android:gravity="center"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_person_page_selector"
+            android:text="@string/commit_upgrade"
+            android:textColor="@color/common_white"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+        />
+    </LinearLayout>
+</LinearLayout>

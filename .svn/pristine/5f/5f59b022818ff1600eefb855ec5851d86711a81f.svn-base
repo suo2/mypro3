@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+        <LinearLayout
+            android:id="@+id/popwindow_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="16sp"
+                android:textColor="@color/commom_text_default"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:text="@string/device_filter"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/device_type_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:textColor="@color/commom_text_default"
+                    android:text="@string/dev_type_str"/>
+
+                <TextView
+                    android:id="@+id/select_device_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/all_of"
+                    android:textColorHint="#cccccc"
+                    android:textColor="#666666"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:background="@drawable/device_filter_pop_edittext_border_color"/>
+
+
+                <ImageView
+                    android:id="@+id/display_device_type_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:paddingLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/down_arrow" />
+
+
+            </LinearLayout>
+            <com.huawei.solarsafe.view.devicemanagement.DeviceTypeItemView
+                android:id="@+id/device_type_item_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+            </com.huawei.solarsafe.view.devicemanagement.DeviceTypeItemView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/commom_text_default"
+                android:visibility="gone"
+                android:text="@string/device_find_style"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/station_name_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#ff9933"
+                    android:background="@drawable/device_filter_pop_device_select_type_bg"
+                    android:text="@string/station_name_style"
+                    android:gravity="center"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/station_tree_style"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:text="@string/station_tree_style"
+                    android:gravity="center"
+                    android:background="@drawable/device_filter_pop_no_device_select_type_bg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_station_name_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/commom_text_default"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/station_name_str"/>
+
+                <EditText
+                    android:id="@+id/select_station_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:ellipsize="end"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/input_station_name"
+                    android:textColorHint="#cccccc"
+                    android:textColor="#666666"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    android:background="@drawable/device_filter_pop_edittext_border_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_device_station_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/commom_text_default"
+                    android:text="@string/plant_selection"/>
+
+                <TextView
+                    android:id="@+id/select_device_station"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:ellipsize="end"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="#cccccc"
+                    android:textColor="#666666"
+                    android:hint="@string/click_station_choice"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:background="@drawable/device_filter_pop_edittext_border_color"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/select_device_sn_number_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/commom_text_default"
+                    android:text="@string/dev_esn_num"/>
+
+                <EditText
+                    android:id="@+id/select_device_sn_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/input_device_esn"
+                    android:textColorHint="#cccccc"
+                    android:maxLength="30"
+                    android:textColor="#666666"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:background="@drawable/device_filter_pop_edittext_border_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_device_position_result_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/commom_text_default"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/location_choice_notice"/>
+
+                <TextView
+                    android:id="@+id/select_device_position_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/select_station_after_selection"
+                    android:textColorHint="#cccccc"
+                    android:textColor="#666666"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:background="@drawable/device_filter_pop_edittext_border_color"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#ff9933"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:background="#dfdfdf" />
+
+        <TextView
+            android:id="@+id/ensure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="@string/make_sure"
+            android:background="#ff9933"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

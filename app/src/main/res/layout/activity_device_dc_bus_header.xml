@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context="com.huawei.solarsafe.view.devicemanagement.CasInvDataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_cascade_string"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cascade_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/cascade_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_cascade_icon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="35dp"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:maxWidth="40dp"
+                            android:text="@string/zuchuan"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/rl_dc_bus"
+                        android:layout_toRightOf="@id/rl_cascade_string"
+                        android:background="#009DDF" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_dc_bus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/iv_dc_bus_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dc_bus_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/rl_center_inv"
+                        android:layout_toRightOf="@id/rl_dc_bus">
+
+                        <View
+                            android:id="@+id/view_line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"
+                            android:background="#009DDF" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/rl_center_inv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/iv_center_inv_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/center_inv_icon" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bus_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/dc_junction_box"
+                        android:textColor="#333333"
+                        android:maxWidth="125dp"
+                        android:gravity="center|top"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dc_combiner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/click_dev_to_check_info"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_centralized_inverter_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/centralized_inverter_"
+                    android:gravity="center|top"
+                    android:maxWidth="100dp"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dc_output_jurisdiction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/direct_current_output"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#DDDDDD" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_30dp"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="@string/light_vol"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_output_vol"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_marginLeft="@dimen/size_30dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="11"
+                        android:gravity="right"
+                        android:text="@string/light_ele"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_ele"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="8"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dc_jurisdiction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_01"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_01"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_02"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_02"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_03"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_03"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_04"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_04"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_05"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_06"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_06"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_07"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_07"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_08"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_08"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="@string/line_power_09"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_09"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/line_power_10"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/line_power_11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/line_power_12"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/line_power_13"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/line_power_14"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/line_power_15"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/line_power_16"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_line_power_16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/temperature_inside_the_box"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_temperature"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:gravity="right"
+                            android:text="@string/thunder_count"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_dc_line_frequency"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="11"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dc_alarm_jurisdiction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/equipment_alarm_list"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(" />
+
+                        <TextView
+                            android:id="@+id/tv_alarm_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=")" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_alarm_expand_or_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_expand_less_black_36dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#DDDDDD" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

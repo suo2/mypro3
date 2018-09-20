@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pnt_endian">
+        <item>ビッグエンディアン</item>
+        <item>リトルエンディアン</item>
+    </array>
+    <string-array name="fragment_report_indicators">
+        <item>すべて</item>
+        <item>設備容量</item>
+        <item>総照射量</item>
+        <item>水平面の総照射量</item>
+        <item>日照時間の長さ</item>
+        <item>平均温度</item>
+        <item>理論的な発電量</item>
+        <item>発電量</item>
+        <item>累計発電量</item>
+        <item>計画発電量</item>
+        <item>オングリッド発電量</item>
+        <item>等価利用時間数</item>
+        <item>ネット給電電気量</item>
+        <item>電力制限の損失電気量</item>
+        <item>消費電力量</item>
+        <item>自发自用量</item>
+        <item>自発電・自用率</item>
+        <item>所内消費電気量</item>
+        <item>総所内消費電気量</item>
+        <item>総所内消費率</item>
+        <item>ピーク電力</item>
+        <item>システム効率</item>
+        <item>二酸化炭素の排出削減量</item>
+        <item>標準炭節約量</item>
+        <item>当量植樹量</item>
+        <item>収益</item>
+        <item>計画完成率</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_white"
+        android:minHeight="48dp">
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_pnt_clear" />
+
+        <EditText
+            android:id="@+id/et_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_clear"
+            android:background="@null"
+            android:maxLength="200"
+            android:gravity="center_vertical"
+            android:hint="@string/ip_or_realm_name"
+            android:padding="5dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_white"
+        android:minHeight="48dp">
+
+        <ImageView
+            android:id="@+id/iv_clear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_pnt_clear" />
+
+        <EditText
+            android:id="@+id/et__text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_clear2"
+            android:background="@null"
+            android:maxLength="200"
+            android:gravity="center_vertical"
+            android:hint="@string/port"
+            android:inputType="numberSigned"
+            android:padding="5dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

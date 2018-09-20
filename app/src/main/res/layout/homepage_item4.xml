@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_5dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ammeter_negative" />
+
+        <TextView
+            android:id="@+id/power_and_rank_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/power_and_rank_tj"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/switch_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <RadioButton
+            android:id="@+id/radio_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/date_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="10dp"
+            android:text="@string/day"
+            android:textColor="@drawable/group_textcolor_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="10dp"
+            android:text="@string/month"
+            android:textColor="@drawable/group_textcolor_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="10dp"
+            android:text="@string/year"
+            android:textColor="@drawable/group_textcolor_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="10dp"
+            android:text="@string/life_cycle"
+            android:textColor="@drawable/group_textcolor_selector"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl_time_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_time_show_home4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/restore_report_text"
+            android:textSize="17dp"/>
+        <ImageView
+            android:id="@+id/imgRetreat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/last_bt"
+            android:layout_toLeftOf="@+id/tv_time_show_home4"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:id="@+id/imgAdvance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_bt"
+            android:layout_toRightOf="@+id/tv_time_show_home4"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/iv_zidingyi"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/select_time_im" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/chart_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_white"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/item4_tv_notion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_data_tation"
+            android:textColor="@color/actionsheet_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/home_power_unit_kwh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/power_unit_kwh"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/home_report_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/power_unit_yuan"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/energy_yiled_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_chart_label_generating_capacity"
+            android:drawablePadding="5dp"
+            android:maxWidth="110dp"
+            android:text="@string/generating_capacity"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item4_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:maxWidth="110dp"
+            android:drawableLeft="@drawable/icon_chart_label_earnings"
+            android:drawablePadding="5dp"
+            android:text="@string/use_power_consumption_no"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rank_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="110dp"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/icon_chart_label_electricity_consumption"
+            android:drawablePadding="5dp"
+            android:text="@string/profit"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

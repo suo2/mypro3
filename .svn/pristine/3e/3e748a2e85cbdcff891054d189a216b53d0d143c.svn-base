@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_device_update_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        tools:context="com.huawei.solarsafe.view.personal.DeviceUpdateDetailActivity">
+
+        <!--第一行 设备类型-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_type"
+                android:textColor="#666" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rectangle_gray1"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_device_detail_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#666" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--第二行 适用版本-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/target_version"
+                android:textColor="#666" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rectangle_gray1"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_device_detail_targetVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#666" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--第三行 版本名称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_name"
+                android:textColor="#666" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rectangle_gray1"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_device_detail_versionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#666" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--第四行 版本描述-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_desc"
+                android:textColor="#666" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rectangle_gray1"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_device_detail_versionDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#666" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_device_detail_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#990f88f9"
+                android:clickable="true"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:text="@string/download_up_package"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_device_detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/make_to_sure_download" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_device_detail_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_white_cancle"
+                android:text="@string/cancle" />
+
+            <Button
+                android:id="@+id/btn_device_detail_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#f0f58d3e"
+                android:text="@string/downlown_sure"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

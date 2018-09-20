@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="17dp"
+    android:orientation="horizontal">
+
+    //选择数采
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_shucai"
+            android:src="@drawable/shucai"
+            style="@style/iv_layout_station_selected" />
+
+
+        <TextView
+            android:id="@+id/tv_shucai"
+            android:text="@string/choice_data_logger"
+            style="@style/tv_layout_station_selected" />
+
+    </LinearLayout>
+
+    //箭头
+    <ImageView
+        android:id="@+id/iv_arrow1"
+        android:src="@drawable/arrow"
+        style="@style/iv_station_arrow" />
+
+
+    //选择电站
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_xzdz"
+            style="@style/iv_layout_station_selected"
+            android:src="@drawable/xzdz2"/>
+
+
+        <TextView
+            android:id="@+id/tv_xzdz"
+            style="@style/tv_layout_station_selected"
+            android:text="@string/station_choice_notice"/>
+
+    </LinearLayout>
+
+    //箭头
+    <ImageView
+        android:id="@+id/iv_arrow2"
+        android:src="@drawable/arrow"
+        style="@style/iv_station_arrow" />
+
+
+    //完成接入
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="19dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            style="@style/iv_layout_station_selected"
+            android:src="@drawable/wancheng1"/>
+
+
+        <TextView
+            android:id="@+id/tv_finish"
+            style="@style/tv_layout_station_selected"
+            android:text="@string/insert_completed"/>
+    </LinearLayout>
+
+</LinearLayout>

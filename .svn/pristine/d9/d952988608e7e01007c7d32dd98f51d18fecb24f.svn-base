@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/device_list_top_bg2">
+
+                <ImageView
+                    android:id="@+id/tv_stationname_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/station_name_img"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_stationname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/power_station_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="100dp"
+                    android:textColor="#333333"
+                    android:layout_toRightOf="@+id/tv_stationname_img"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/disconnected"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp"
+                    android:background="@drawable/device_disconnect_bg"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@drawable/device_list_middle_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="13dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:background="@drawable/device_list_bottom_bg2">
+
+                <ImageView
+                    android:id="@+id/device_can_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@drawable/icon_more"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_devname_string"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:singleLine="true"
+                        android:text="@string/dev_name_title"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_devname_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_devname_string"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_dev_capacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_dev_capacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/dev_capacity"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_capacity_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_dev_capacity"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_dev_current_power"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_dev_current_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/the_current_power"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_current_power_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_dev_current_power"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_dev_day_cap"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_dev_day_cap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/generating_capacity_of_the_same_day"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_day_cap_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_dev_day_cap"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_dev_efficiency"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_dev_efficiency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/efficiency"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_efficiency_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_dev_efficiency"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_dev_total_cap"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_dev_total_cap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/total_generating_electricity"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_total_cap_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_dev_total_cap"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_dev_photc_u"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_dev_photc_u"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/out_voltage_dev"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_photc_u_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_dev_photc_u"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_dev_photc_i"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_dev_photc_i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/output_electric_dev"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dev_photc_i_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_dev_photc_i"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_devleixing_string"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/dev_type_title"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_devleixing_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_devleixing_string"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tv_devno_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_devno_string"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/software_version_dev"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_devno_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_devno_string"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_sim_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvSIMDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/sim_card_num_dev"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvSIM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tvSIMDescription"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/more_device_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#ff9933"
+                        android:text="@string/more_parameters"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/more_device_value"
+                        android:layout_marginLeft="@dimen/size_5dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_devesn_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_devesn_string"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/dev_esn_num"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_devesn_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_devesn_string"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/tv_devjw_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_devjw_string"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/longitude_latitude"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_devjw_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv_devjw_string"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_10dp"/>
+</LinearLayout>

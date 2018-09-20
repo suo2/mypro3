@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/device_list_top_bg2">
+
+                <ImageView
+                    android:id="@+id/tv_stationname_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/station_name_img"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_stationname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/power_station_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="100dp"
+                    android:textColor="#333333"
+                    android:layout_toRightOf="@+id/tv_stationname_img"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@drawable/device_list_middle_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="13dp"
+                android:background="@drawable/device_list_bottom_bg2">
+
+                <ImageView
+                    android:id="@+id/device_can_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@drawable/icon_more"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_devname_string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:singleLine="true"
+                            android:text="@string/dev_name_title"
+                            android:textColor="#999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_devname_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_devname_string"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_devleixing_string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="@string/dev_type_title"
+                            android:textColor="#999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_devleixing_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/tv_devleixing_string"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/more_device_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#ff9933"
+                            android:text="@string/more_parameters"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/more_device_value"
+                            android:layout_marginLeft="@dimen/size_5dp"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tv_a_phase_current_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_a_phase_current_string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="@string/a_phase_current_unit"
+                            android:textColor="#999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_a_phase_current_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/tv_a_phase_current_string"
+                            android:singleLine="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:gravity="end"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/tv_active_power_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_active_power_string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="@string/active_power_unit"
+                            android:textColor="#999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_active_power_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/tv_active_power_string"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tv_reactive_power_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_reactive_power_string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="@string/reactive_power_unit"
+                            android:textColor="#999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_reactive_power_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/tv_reactive_power_string"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tv_power_factor_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_power_factor_string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="@string/power_factor_unit"
+                            android:textColor="#999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_power_factor_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/tv_power_factor_string"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_10dp"/>
+</LinearLayout>

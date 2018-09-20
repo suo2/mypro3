@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <TextView
+        android:id="@+id/tv_code_left"
+        android:layout_height="match_parent"
+        android:layout_width="70dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/mejar_cocor"
+        android:text="@string/scan" />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/exception_type"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+         />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/inverter_name"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="80dp"
+       />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/zuchuan_contentlist"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="60dp"
+        />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/optimizer_code"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="80dp"
+        android:visibility="gone"
+         />
+
+    <View style="@style/ivcurve_content_line"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/voc"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+       />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/isc"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+        />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/ff"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+       />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/p_max"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+         />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/vm"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+        />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/im"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+       />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/vm_voc"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+        />
+
+    <View style="@style/ivcurve_content_line" />
+
+    <TextView
+        android:id="@+id/im_isc"
+        style="@style/ivcurve_content_tv"
+        android:layout_width="70dp"
+       />
+</LinearLayout>

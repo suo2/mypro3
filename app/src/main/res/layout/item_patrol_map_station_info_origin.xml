@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+   >
+    <LinearLayout
+        android:id="@+id/item_patel_map_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:text="5"
+            android:textColor="@color/danzhan_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:textColor="@color/danzhan_color"
+            android:text="5646"
+            android:textSize="12sp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_below="@+id/item_patel_map_ll"/>
+
+</RelativeLayout>

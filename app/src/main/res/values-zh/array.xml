@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--数采登录-->
+    <array name="pnt_endian">
+        <item>大端</item>
+        <item>小端</item>
+    </array>
+    <string-array name="fragment_report_indicators">
+        <item>全部</item>
+        <item>装机容量</item>
+        <item>总辐照量</item>
+        <item>水平面总辐照量</item>
+        <item>日照时长</item>
+        <item>平均温度</item>
+        <item>理论发电量</item>
+        <item>发电量</item>
+        <item>累计发电量</item>
+        <item>计划发电量</item>
+        <item>上网电量</item>
+        <item>等效利用小时数</item>
+        <item>网馈电量</item>
+        <item>限电损失电量</item>
+        <item>用电量</item>
+        <item>自发自用量</item>
+        <item>自发自用率</item>
+        <item>厂用电量</item>
+        <item>综合厂用电量</item>
+        <item>综合厂用电率</item>
+        <item>峰值功率</item>
+        <item>系统效率</item>
+        <item>二氧化碳减排量</item>
+        <item>节约标准煤量</item>
+        <item>等效植树量</item>
+        <item>收益</item>
+        <item>计划完成率</item>
+    </string-array>
+</resources>

@@ -1,0 +1,636 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:id="@+id/fragment_report"
+    tools:context="com.huawei.solarsafe.view.report.ReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#EEEEEE">
+        <include layout="@layout/common_head" />
+        <RadioGroup
+            android:id="@+id/switch_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/radio_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_left_corner_fill"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/day"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_non_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/month"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_non_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/year"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_right_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/life_cycle"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rl_report_time_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/report_time_show">
+
+            <TextView
+                android:id="@+id/report_time_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"/>
+            <ImageView
+                android:id="@+id/imgRetreat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_retreat"
+                android:layout_toLeftOf="@+id/report_time_show"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+            <ImageView
+                android:id="@+id/imgAdvance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_advance"
+                android:layout_toRightOf="@+id/report_time_show"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <ImageView
+                android:id="@+id/iv_zidingyi"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/select_time_im" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="6"
+            android:background="@drawable/report_time_show">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/power_generation_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="108dp"
+                    android:drawableLeft="@drawable/icon_chart_label_generating_capacity"
+                    android:drawablePadding="5dp"
+                    android:text="@string/generating_capacity"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/use_power_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="108dp"
+                    android:layout_marginLeft="8dp"
+                    android:drawableLeft="@drawable/icon_chart_label_earnings"
+                    android:drawablePadding="5dp"
+                    android:text="@string/use_power_consumption_no"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/rank_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="108dp"
+                    android:layout_marginLeft="8dp"
+                    android:drawableLeft="@drawable/icon_chart_label_electricity_consumption"
+                    android:drawablePadding="5dp"
+                    android:text="@string/profit"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <com.github.mikephil.charting.charts.CombinedChart
+                    android:id="@+id/chart_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_white"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:id="@+id/report_tv_white_notion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/no_data_tation"
+                    android:textColor="@color/actionsheet_gray"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/report_yuan_xiangqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/power_unit_yuan"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/report_power_unit_kwh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/power_unit_kwh"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/report_list_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_report_title_list_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@color/single_item"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/ll_report_set"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/iv_custom_column_white"/>
+                    <TextView
+                        android:id="@+id/tv_state_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/statistical_time"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    style="@style/report_view_white" />
+                <com.huawei.solarsafe.view.CustomViews.MyHorizontalScrollView
+                    android:id="@+id/horizontalscrollview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/report_right_list_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/single_item"
+                        android:orientation="horizontal">
+                        <!--装机容量-->
+                        <LinearLayout
+                            android:id="@+id/ll_installed_capacity_report"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_installed_capacity_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/installed_capacity_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--总辐照量-->
+                        <LinearLayout
+                            android:id="@+id/ll_radiation_report"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_radiation_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/radiation_report" />
+
+                            <View style="@style/report_view_white" />
+
+                        </LinearLayout>
+                        <!--水平总辐照量-->
+                        <LinearLayout
+                            android:id="@+id/ll_horizontal_radiation"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_horizontal_radiation"
+                                style="@style/report_tv_white"
+                                android:text="@string/horizontal_radiation" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--日照时长-->
+                        <LinearLayout
+                            android:id="@+id/ll_sunshine_hours"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_sunshine_hours"
+                                style="@style/report_tv_white"
+                                android:text="@string/sunshine_hours" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--平均温度-->
+                        <LinearLayout
+                            android:id="@+id/ll_temperature"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_temperature"
+                                style="@style/report_tv_white"
+                                android:text="@string/report_temperature" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--理论发电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_theory_Power_report"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_theory_Power_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/theory_Power_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--发电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_user_power"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_power"
+                                style="@style/report_tv_white"
+                                android:text="@string/power" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--累计发电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_totle_power"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_totle_power"
+                                style="@style/report_tv_white"
+                                android:text="@string/total_generating_electricity_" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--计划发电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_plan_power"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_plan_power"
+                                style="@style/report_tv_white"
+                                android:text="@string/plan_power" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--上网电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_ongrid_power"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_ongrid_power"
+                                style="@style/report_tv_white"
+                                android:text="@string/ongrid_power" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--等效利用小时-->
+                        <LinearLayout
+                            android:id="@+id/ll_perpower_ratio"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_perpower_ratio_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/perpower_ratio_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--网馈电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_buypower"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_buypower_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/buypower_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--限电损失电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_powercuts"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_powercuts_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/powercuts_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--用电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_user_power_hu"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/user_power_tv"
+                                style="@style/report_tv_white"
+                                android:text="@string/use_power_hu" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--自发自用量-->
+                        <LinearLayout
+                            android:id="@+id/ll_powerseandproduchouse"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_powerseandproduchouse_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/powerseandproduchouse_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--自发自用率-->
+                        <LinearLayout
+                            android:id="@+id/ll_pselfusepowerratio"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_selfusepowerratio_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/selfusepowerratio_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--厂用电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_poweruseandproducfactory"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_poweruseandproducfactory_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/poweruseandproducfactory_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--综合厂用电量-->
+                        <LinearLayout
+                            android:id="@+id/ll_syfactoryuserd"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_syfactoryuserd_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/syfactoryuserd_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--综合厂用电率-->
+                        <LinearLayout
+                            android:id="@+id/ll_synstatusepowerratio"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_synstatusepowerratio_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/synstatusepowerratio_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--峰值功率-->
+                        <LinearLayout
+                            android:id="@+id/ll_acpeakpower"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_acpeakpower_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/acpeakpower_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--系统效率（PR）-->
+                        <LinearLayout
+                            android:id="@+id/ll_performanceratio"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_performanceratio_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/performanceratio_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--二氧化碳减排量-->
+                        <LinearLayout
+                            android:id="@+id/ll_re_total_CO2_report"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_re_total_CO2_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/re_total_CO2_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--节约标准煤量-->
+                        <LinearLayout
+                            android:id="@+id/ll_re_total_coal"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_re_total_coal_report"
+                                style="@style/report_tv_white"
+                                android:text="@string/re_total_coal_report" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--等效植树量-->
+                        <LinearLayout
+                            android:id="@+id/ll_reduction_total_tree"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_reduction_total_tree"
+                                style="@style/report_tv_white"
+                                android:text="@string/reduction_total_tree" />
+
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--收益-->
+                        <LinearLayout
+                            android:id="@+id/ll_rank_unit"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/rank_unit_2"
+                                style="@style/report_tv_white"
+                                android:text="@string/profit_with_unit" />
+                            <View style="@style/report_view_white" />
+                        </LinearLayout>
+                        <!--计划完成率-->
+                        <LinearLayout
+                            android:id="@+id/ll_fulfilment_ratio"
+                            style="@style/ll_report">
+
+                            <TextView
+                                android:id="@+id/tv_fulfilment_ratio"
+                                style="@style/report_tv_white"
+                                android:text="@string/fulfilment_ratio" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.huawei.solarsafe.view.CustomViews.MyHorizontalScrollView>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/bottom_scrollView"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/left_container"
+                        android:layout_width="80.5dp"
+                        android:layout_height="wrap_content">
+
+                        <ListView
+                            android:id="@+id/lift_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"></ListView>
+                    </LinearLayout>
+
+                    <com.huawei.solarsafe.view.CustomViews.MyHorizontalScrollView
+                        android:id="@+id/content_horsv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/right_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ListView
+                                android:id="@+id/right_container_listview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none"></ListView>
+                        </LinearLayout>
+                    </com.huawei.solarsafe.view.CustomViews.MyHorizontalScrollView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

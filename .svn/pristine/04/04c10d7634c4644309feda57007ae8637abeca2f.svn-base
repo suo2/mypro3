@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <!--电站归属-->
+            <LinearLayout
+                android:id="@+id/llyt_station_domain"
+                style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/station_domain" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_station_domain"
+                    style="@style/new_station_item_rlyt_content">
+
+                    <ImageView
+                        android:id="@+id/iv_station_domain"
+                        style="@style/new_station_item_contain_iv_drop" />
+
+                    <TextView
+                        android:id="@+id/tv_station_domain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/iv_station_domain"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/station_belong_string"
+                        android:paddingLeft="8dp"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--电站名称-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/station_name" />
+
+                <RelativeLayout style="@style/new_station_item_rlyt_content">
+
+                    <EditText
+                        android:id="@+id/et_station_name"
+                        style="@style/new_station_item_contain_et_content"
+                        android:layout_alignParentTop="true"
+                        android:ellipsize="end"
+                        android:hint="@string/add_station_hint"
+                        android:paddingLeft="8dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--规划容量-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/Dc_capacity_of_power_station" />
+
+                <RelativeLayout style="@style/new_station_item_rlyt_content">
+
+                    <TextView
+                        android:id="@+id/unit"
+                        style="@style/new_station_item_contain_tv_unit"
+                        android:text="(kWp)" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/unit">
+
+                        <TextView
+                            android:id="@+id/tvPlanCapacityHint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:paddingLeft="8dp"
+                            android:singleLine="true"
+                            android:text="@string/Dc_capacity_of_power_station_hint"
+                            android:textColor="@color/text_two"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_plan_capacity"
+                            style="@style/new_station_item_contain_et_content"
+                            android:layout_alignParentTop="true"
+                            android:imeOptions="actionDone"
+                            android:paddingLeft="8dp" />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--并网时间-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/grid_time" />
+
+                <TextView
+                    android:id="@+id/tv_grid_time"
+                    style="@style/new_station_item_et_content"
+                    android:paddingLeft="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--并网类型-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/grid_type" />
+
+                <RelativeLayout style="@style/new_station_item_rlyt_content">
+                    <Spinner
+                        android:id="@+id/sp_grid_type"
+                        style="@style/new_station_item_contain_sp_content" />
+
+                    <ImageView style="@style/new_station_item_contain_iv_drop" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--电站状态-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/station_status" />
+
+                <RelativeLayout style="@style/new_station_item_rlyt_content">
+
+                    <Spinner
+                        android:id="@+id/sp_station_status"
+                        style="@style/new_station_item_contain_sp_content" />
+
+                    <ImageView style="@style/new_station_item_contain_iv_drop" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--扶贫电站-->
+            <LinearLayout
+                android:id="@+id/llyt_poverty_station"
+                style="@style/new_station_item_llyt"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/poverty_station" />
+
+                <RelativeLayout style="@style/new_station_item_rlyt_content">
+
+                    <Spinner
+                        android:id="@+id/sp_poverty_station"
+                        style="@style/new_station_item_contain_sp_content" />
+
+                    <ImageView style="@style/new_station_item_contain_iv_drop" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--调度编号-仅用于910开站-->
+            <LinearLayout
+                android:id="@+id/llyt_dispatch_num"
+                style="@style/new_station_item_llyt"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/upervisory_number" />
+
+                <EditText
+                    android:id="@+id/et_dispatch_num"
+                    style="@style/new_station_item_et_content"
+                    android:paddingLeft="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--联系人-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/contact_person" />
+
+                <EditText
+                    android:id="@+id/et_contract_person"
+                    style="@style/new_station_item_et_content"
+                    android:paddingLeft="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--联系电话-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/tel" />
+
+                <EditText
+                    android:id="@+id/et_tel"
+                    style="@style/new_station_item_et_content"
+                    android:inputType="phone"
+                    android:paddingLeft="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+
+            <!--电站地址和经纬度-->
+            <LinearLayout
+                android:id="@+id/llStationPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--电站地址-->
+                <LinearLayout style="@style/new_station_item_llyt">
+
+                    <TextView
+                        style="@style/new_station_item_tv_name"
+                        android:text="@string/station_location" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_station_address"
+                            style="@style/station_item_et_content"
+                            android:layout_width="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:hint="@string/enter_station_address_hint"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_station_address"
+                            style="@style/new_station_item_contain_iv_drop"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/location_img" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                </LinearLayout>
+
+                <include layout="@layout/create_station_div" />
+                <!--经度-->
+                <LinearLayout
+                    style="@style/new_station_item_llyt"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/new_station_item_tv_name"
+                        android:text="@string/lng" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_lng"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="-.0123456789"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="numberSigned"
+                            android:maxLength="12"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:id="@+id/lng_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_lng_degree_value"
+                                style="@style/station_item_et_background"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:digits="-0123456789"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="numberSigned"
+                                android:maxLength="4" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:gravity="top|center_horizontal"
+                                android:text="°"
+                                android:textColor="#333"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/et_lng_branch_value"
+                                style="@style/station_item_et_background"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:digits="0123456789"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="number"
+                                android:maxLength="2" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:gravity="top|center_horizontal"
+                                android:text="&apos;"
+                                android:textColor="#333"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/et_lng_second_value"
+                                style="@style/station_item_et_background"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:digits="0123456789"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="number"
+                                android:maxLength="2" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:gravity="top|center_horizontal"
+                                android:text="&quot;"
+                                android:textColor="#333"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_switch_location_style"
+                            style="@style/new_station_item_contain_iv_drop"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/switch_location_style" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <include layout="@layout/create_station_div" />
+                <!--纬度-->
+                <LinearLayout
+                    style="@style/new_station_item_llyt"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/new_station_item_tv_name"
+                        android:text="@string/lat" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_lat"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="-.0123456789"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="numberSigned"
+                            android:maxLength="11"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/lat_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_lat_degree_value"
+                                style="@style/station_item_et_background"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:digits="-0123456789"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="numberSigned"
+                                android:maxLength="3" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:gravity="top|center_horizontal"
+                                android:text="°"
+                                android:textColor="#333"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/et_lat_branch_value"
+                                style="@style/station_item_et_background"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:digits="0123456789"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="number"
+                                android:maxLength="2" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:gravity="top|center_horizontal"
+                                android:text="&apos;"
+                                android:textColor="#333"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/et_lat_second_value"
+                                style="@style/station_item_et_background"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:digits="0123456789"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="number"
+                                android:maxLength="2" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:gravity="top|center_horizontal"
+                                android:text="&quot;"
+                                android:textColor="#333"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <include layout="@layout/create_station_div" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/input_longitude_and_latitude_hints"
+                    android:textColor="#ff0000"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

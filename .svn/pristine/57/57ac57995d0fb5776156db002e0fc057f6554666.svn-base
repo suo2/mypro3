@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F1F1F1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_currency_data"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/real_time_information" />
+
+        <ImageView
+            android:id="@+id/iv_currency_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_expand_less_black_36dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3999" />
+
+    <LinearLayout
+        android:id="@+id/ll_currency_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F1F1F1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_currency_dev_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/dev_info" />
+
+        <ImageView
+            android:id="@+id/iv_currency_dev_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_expand_less_black_36dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3999" />
+
+    <LinearLayout
+        android:id="@+id/ll_currency_dev_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--设备名称，厂商名称-->
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/device_name_" />
+
+            <TextView
+                android:id="@+id/tv_currency_dev_name"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/pnuc_manufacturer_name" />
+
+            <TextView
+                android:id="@+id/tv_currency_manufacturer_name"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <!--IP地址，版本号-->
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/pnuc_ip_address" />
+
+            <TextView
+                android:id="@+id/tv_currency_ip_address"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/version_name_another_name" />
+
+            <TextView
+                android:id="@+id/tv_currency_version_name"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <!--经度，纬度-->
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/pnuc_lng" />
+
+            <TextView
+                android:id="@+id/tv_currency_lng"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/pnuc_lat" />
+
+            <TextView
+                android:id="@+id/tv_currency_lat"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <!-- 设备类型，sn号-->
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/equipment_type_" />
+
+            <TextView
+                android:id="@+id/tv_currency_type"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/esn_colon" />
+
+            <TextView
+                android:id="@+id/tv_currency_esn"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <!-- 换机历史，分组信息-->
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/pnuc_dev_change_history" />
+
+            <TextView
+                android:id="@+id/tv_currency_change_history"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/class_info" />
+
+            <TextView
+                android:id="@+id/tv_class_info"
+                style="@style/dev_info_currency" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/pnuc_dev_address" />
+
+            <TextView
+                android:id="@+id/tv_currency_dev_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_currency_style"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/station_code_str" />
+
+            <TextView
+                android:id="@+id/tv_currency_station_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F1F1F1" />
+
+    <include layout="@layout/layout_header_alarm_name" />
+
+</LinearLayout>

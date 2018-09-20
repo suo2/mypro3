@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_white"
+              android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/switch_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rbt_station_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_single_item_left_corner_fill"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/station_list"
+            android:textColor="@drawable/fillter_textcolor_selector"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rbt_task_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_single_item_right_corner"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/task_list"
+            android:textColor="@drawable/fillter_textcolor_selector"
+            android:textSize="12sp"/>
+    </RadioGroup>
+
+
+    <!--    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>-->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

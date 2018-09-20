@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.jakewharton.butterknife'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        applicationId "com.huawei.solarsafe"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 200
+        versionName "2.0.0"
+
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","arm64-v8a","x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue("string","amap_key","${AMAP_KEY}")
+            resValue("string","google_map_key","${GOOGLE_MAP_KEY}")
+        }
+        debug{
+            resValue("string","amap_key","${AMAP_KEY}")
+            resValue("string","google_map_key","${GOOGLE_MAP_KEY}")
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs(['libs'])
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/energy',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "2g"
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'//只打包armeabi平台的，就算有其他文件夹也不管
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(name: 'floatingactionmenu', ext: 'aar')
+    compile(name: 'MPChartLib', ext: 'aar')
+    compile(name: 'okhttputils', ext: 'aar')
+    compile(name: 'PullToRefresh-library', ext: 'aar')
+    compile(name: 'recyclerview-swipe', ext: 'aar')
+    compile(name: 'UpdateSdk_release_V2.0.2.301', ext: 'aar')
+    compile(name: 'fusionhome_v1', ext: 'aar')
+    compile(name: 'banners', ext: 'aar')
+
+    //侧拉删除
+
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.facebook.fresco:fresco:1.4.0'
+    compile 'com.journeyapps:zxing-android-embedded:3.4.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.maps.android:android-maps-utils:0.5'
+    compile 'com.google.android.gms:play-services-location:9.8.0'
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
+    compile 'com.google.android.gms:play-services-places:9.8.0'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile 'com.amap.api:3dmap:5.2.1'
+    compile 'com.amap.api:location:3.4.1'
+    compile 'com.amap.api:search:5.2.1'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    //RxJava2 支持
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.7'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    //Retrofit支持
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+
+    //leakcanary
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+}
+repositories { flatDir { dirs '../aars' } }
+

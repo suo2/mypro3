@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/container_bg_dark_gray">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_no_data"/>
+    <TextView
+        android:id="@+id/tvPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/this_account_without_permission"
+        android:textSize="15sp"
+        android:textColor="@color/text_three"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_configure_the_permissions_on_the_Web_page"
+        android:textSize="15sp"
+        android:textColor="@color/text_three"/>
+
+</LinearLayout>

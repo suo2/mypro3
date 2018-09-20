@@ -1,0 +1,335 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    tools:context="com.huawei.solarsafe.view.maintaince.main.StationFilterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/llCotent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#EEEEEE"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plant_selection"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/key_words"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:textColor="#D3D3D3"
+                    android:background="#F3F3F3"
+                    android:padding="5dp"
+                    android:layout_weight="3.5"
+                    android:textSize="12sp"
+                    android:text="@string/please_station_choice"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_name"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/device_name_keys"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:hint="@string/input_device_name"
+                    android:textColorHint="#D3D3D3"
+                    android:textSize="12sp"
+                    android:maxLength="100"
+                    android:textColor="#8C8C8C"
+                    android:background="@drawable/selector_activity_dev_alarm_fillter_et_bg"
+                    android:padding="5dp"
+                    android:layout_weight="3.5"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_type"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+                <com.huawei.solarsafe.utils.MySpinner
+                    android:id="@+id/spinner_search_option_devtype"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="#F3F3F3"
+                    android:layout_weight="3.5"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_names"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/alarm_name_keys"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:hint="@string/please_input_alarm_name"
+                    android:textColorHint="#D3D3D3"
+                    android:maxLength="100"
+                    android:textSize="12sp"
+                    android:textColor="#8C8C8C"
+                    android:background="@drawable/selector_activity_dev_alarm_fillter_et_bg"
+                    android:padding="5dp"
+                    android:layout_weight="3.5"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_tree_level"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+                <com.huawei.solarsafe.utils.MySpinner
+                    android:id="@+id/spinner_search_option_alarmlevel"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="#F3F3F3"
+                    android:layout_weight="3.5"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_stutas"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+                <com.huawei.solarsafe.utils.MySpinner
+                    android:id="@+id/spinner_search_option_alarmstatus"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="#F3F3F3"
+                    android:layout_weight="3.5"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_types"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+                <com.huawei.solarsafe.utils.MySpinner
+                    android:id="@+id/spinner_search_option_alarmstype"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="#F3F3F3"
+                    android:layout_weight="3.5"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_start_time"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/tv_date1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="@string/select_start_time"
+                    android:textColor="#D3D3D3"
+                    android:background="#F3F3F3"
+                    android:padding="5dp"
+                    android:layout_weight="3.5"
+                    android:textSize="12sp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/activity_dev_alarm_fillter_ll">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_end_time"
+                    android:textColor="#454545"
+                    android:layout_weight="2"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/tv_date2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="@string/select_end_time"
+                    android:textColor="#D3D3D3"
+                    android:background="#F3F3F3"
+                    android:padding="5dp"
+                    android:layout_weight="3.5"
+                    android:textSize="12sp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_person_more"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/toreset"
+            android:textColor="#5a5a5a"
+            android:textSize="14sp"
+            android:background="#EEEEEE" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/to_save"
+            android:textColor="#FFFFFE"
+            android:textSize="14sp"
+            android:background="#FFCC66"/>
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/make_sure"
+            android:textColor="#FFFFFE"
+            android:textSize="14sp"
+            android:background="#FF9933"/>
+
+    </LinearLayout>
+
+</LinearLayout>

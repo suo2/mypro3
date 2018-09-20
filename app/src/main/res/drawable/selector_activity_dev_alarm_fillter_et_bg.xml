@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:drawable="@color/activity_dev_alarm_fillter_et_bg_gray"/>
+    <item android:state_focused="true" android:drawable="@drawable/shape_activity_dev_alarm_fillter_et_bg_focu"/>
+
+</selector>

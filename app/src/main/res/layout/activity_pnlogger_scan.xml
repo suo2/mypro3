@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pnloger_qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:scaleType="center"
+        android:src="@drawable/erweima" />
+
+    <TextView
+        android:id="@+id/tv_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_background"
+        android:gravity="center"
+        android:text="@string/pnloger_scan_esn"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/pnloger_text_style"
+                android:text="@string/pnloger_esn" />
+
+            <View style="@style/pnloger_view_style" />
+
+            <EditText
+                android:id="@+id/et_pnloger_esn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:digits="@string/esn_digits"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/input_sn"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:text="*"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/pnloger_text_style"
+                android:text="@string/pnloger_equipment_name" />
+
+            <View style="@style/pnloger_view_style" />
+
+            <EditText
+                android:id="@+id/et_pnloger_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxLength="50"
+                android:gravity="center_vertical"
+                android:hint="@string/pnloger_equipment_name_difinite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:text="*"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/pnloger_text_style"
+                android:text="@string/pnloger_equipment_site" />
+
+            <View style="@style/pnloger_view_style" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3">
+
+                <EditText
+                    android:id="@+id/et_pnloger_site"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:maxLength="100"
+                    android:gravity="center_vertical"
+                    android:hint="@string/pnloger_equipment_site_difinite"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+
+            <ImageView
+                android:id="@+id/pnloger_iv"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/dizhi" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:background="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey" />
+
+
+    <LinearLayout
+        android:id="@+id/next_step_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_top_text"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

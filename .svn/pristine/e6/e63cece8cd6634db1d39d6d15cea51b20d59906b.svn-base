@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:layout_margin="8dp">
+        <SearchView
+            android:queryHint="@string/city_name"
+            android:id="@+id/city_seleter_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_city_bg" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/city_head_abc"
+        android:layout_below="@id/rl_search_head"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:layout_margin="8dp"
+            android:text="@string/now_at_city"
+            />
+        <TextView
+            android:id="@+id/tv_now_at_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:layout_margin="8dp"
+             />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@id/city_head_abc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:background="@color/common_white"
+            android:layout_margin="8dp"
+            android:id="@+id/cityname_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- 这个是浮动的提示 ，配合字母栏实现放大浮动提示滑动到哪个字母-->
+        <!--下面的自定义属性都是默认的,可以不写-->
+        <com.huawei.solarsafe.utils.customview.QuickSideBarTipsView
+            android:id="@+id/select_quickSideBarTipsView"
+            android:layout_width="@dimen/height_quicksidebartips"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/select_quickSideBarView"
+            app:sidebarBackgroundColor="@color/bar_blue"
+            app:sidebarTextColor="@android:color/white"
+            app:sidebarTextSize="@dimen/textSize_quicksidebartips" />
+        <!-- 这个是字母栏的提示 -->
+        <!--下面的自定义属性都是默认的,可以不写-->
+            <com.huawei.solarsafe.utils.customview.QuickSideBarView
+            android:id="@+id/select_quickSideBarView"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            app:sidebarItemHeight="@dimen/height_quicksidebaritem"
+            app:sidebarTextColor="@android:color/black"
+            app:sidebarTextColorChoose="@color/bar_blue"
+            app:sidebarTextSize="@dimen/textSize_quicksidebar"
+            app:sidebarTextSizeChoose="@dimen/textSize_quicksidebar_choose" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f1f1f1"
+    android:id="@+id/interval_report_view"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/time_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/switch_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_left_corner_fill"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/day"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_non_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/month"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_single_item_right_corner"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/year"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="12sp" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_inverter_report_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/report_time_show">
+
+        <TextView
+            android:id="@+id/tv_inverter_report_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:hint="@string/please_select_time_str"/>
+        <ImageView
+            android:id="@+id/imgRetreat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_retreat"
+            android:layout_toLeftOf="@+id/tv_inverter_report_time"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:id="@+id/imgAdvance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_advance"
+            android:layout_toRightOf="@+id/tv_inverter_report_time"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/iv_inverter_report_time"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select_time_im" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/inverter_report_list_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_horizontal_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff9933"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/left_title_container_linear"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/inverter_report_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/size_5dp"
+                    android:src="@drawable/iv_custom_column_white"/>
+                <LinearLayout
+                    android:id="@+id/station_name_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:text="@string/power_station_name"
+                        android:id="@+id/textView24"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/station_name_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_sort_im"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/vertical_line"
+                style="@style/report_view_white" />
+
+            <com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView
+                android:id="@+id/title_horizontal_scrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.huawei.solarsafe.view.report.InverterReportSortItemView
+                        android:id="@+id/inverter_report_sort_item_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </com.huawei.solarsafe.view.report.InverterReportSortItemView>
+
+                </LinearLayout>
+
+
+
+            </com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView>
+
+        </LinearLayout>
+
+        <!-- 此部分是内容部分 用ScrollView实现上下滚动效果 -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/inverter_report__refresh_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/inverter_report_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <!-- 左侧内容的父容器 -->
+                <LinearLayout
+                    android:id="@+id/left_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.huawei.solarsafe.view.CustomViews.MyBandListView
+                        android:id="@+id/left_container_listview"
+                        android:layout_width="120.5dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <!-- 右侧内容的父容器 实现水平滚动 -->
+
+                <com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView
+                    android:id="@+id/iv_content_horizontal_scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/right_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.huawei.solarsafe.view.CustomViews.MyBandListView
+                            android:id="@+id/right_container_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                </com.huawei.solarsafe.view.maintaince.ivcurve.MyHorizontalScrollView>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_10dp"
+    android:orientation="vertical">
+
+   <!-- 35/10KV母线间隔电路图 -->
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/booster_wide_line"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/kv_35"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="@dimen/booster_narrow_line"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/kv_35"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hand_car_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/two_hand_car_divide"/>
+
+        <ImageView
+            android:id="@+id/circuit_breaker_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/circuit_breaker_open"/>
+
+        <TextView
+            android:id="@+id/tx_15900"
+            style="@style/tx_booster_details"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/circuit_breaker_state"
+            android:layout_marginRight="5dp"
+            android:text="15900"
+            />
+        <TextView
+            android:id="@+id/tx_hand_car"
+            style="@style/tx_booster_details"
+            android:layout_toRightOf="@+id/circuit_breaker_state"
+            android:layout_marginLeft="5dp"
+            android:text="15900"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="@dimen/booster_narrow_line"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/kv_35"/>
+
+        <LinearLayout
+            android:id="@+id/switch_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line3"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="30dp"
+                android:background="@color/kv_35"
+                android:layout_height="@dimen/booster_narrow_line"/>
+
+
+            <ImageView
+                android:id="@+id/switch_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:src="@drawable/horizontal_switch_on"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/horizontal_ground"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_15905"
+            style="@style/tx_booster_details"
+            android:layout_below="@+id/switch_linear"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/line3"
+            android:text="15905"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/arrow_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/arrow_35kv"/>
+
+
+
+
+</LinearLayout>

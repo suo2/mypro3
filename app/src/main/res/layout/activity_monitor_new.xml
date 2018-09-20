@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/monitor_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/station_statues"
+                android:textColor="@drawable/yunwei_textcolor_selector"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/rb1_line"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/equipment_alarm"
+                android:textColor="@drawable/yunwei_textcolor_selector"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/rb2_line"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/online_diagnosis"
+                android:textColor="@drawable/yunwei_textcolor_selector"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/rb3_line"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/intelligent_early_warning"
+                android:textColor="@drawable/yunwei_textcolor_selector"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/rb4_line"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <RadioButton
+                android:id="@+id/rb0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/iv"
+                android:textColor="@drawable/yunwei_textcolor_selector"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/rb0_line"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/mobile_operation_and_maintenance"
+                android:textColor="@drawable/yunwei_textcolor_selector"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/action_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:visibility="gone"
+                app:fab_colorNormal="@color/coral"
+                app:fab_colorPressed="@color/darkorange"
+                app:fab_icon="@drawable/yunwei_back"
+                app:fab_size="mini" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

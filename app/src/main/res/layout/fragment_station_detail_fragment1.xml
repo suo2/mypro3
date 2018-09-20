@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+
+        <FrameLayout
+            android:id="@+id/station_img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:backgroundImage="@color/common_white"
+                    fresco:fadeDuration="300"
+                    fresco:failureImage="@drawable/loadfailed"
+                    fresco:failureImageScaleType="fitCenter"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:pressedStateOverlayImage="@color/common_white"
+                    fresco:progressBarAutoRotateInterval="1000"
+                    fresco:progressBarImage="@drawable/loading"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:retryImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false"
+                    fresco:roundBottomLeft="false"
+                    fresco:roundBottomRight="true"
+                    fresco:roundTopLeft="true"
+                    fresco:roundTopRight="false"
+                    fresco:roundedCornerRadius="1dp"
+                    fresco:roundingBorderWidth="2dp" />
+            <com.huawei.solarsafe.view.homepage.station.WeatherDisplayView
+                android:id="@+id/weather_display_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </com.huawei.solarsafe.view.homepage.station.WeatherDisplayView>
+
+            <RelativeLayout
+                    android:id="@+id/real_time_weather_information"
+                    android:layout_width="match_parent"
+                    android:background="#40000000"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:id="@+id/real_time_weather_information_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_15dp"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/real_time_"/>
+
+                    <TextView
+                        android:id="@+id/real_time_weather_information_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/real_time_weather_information_tx"
+                        android:text="--"/>
+
+                    <ImageView
+                        android:id="@+id/more_data_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/size_15dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/more_data_img"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/more_data_img"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:text="@string/more"/>
+
+                </RelativeLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/station_detail_top_shape"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_current_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.000"
+                    android:textColor="#ff4d30"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_current_power_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MW"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/current_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/the_current_power"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_zfzyl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_zfzyl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="—"
+                    android:textColor="#ff4d30"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/zfzyl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/zfzyl_str"
+                    android:textColor="@color/danzhan_color"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_day_power"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_day_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.000"
+                    android:textColor="#ff4d30"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/day_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/generating_capacity_of_the_same_day"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.000"
+                    android:textColor="#ff4d30"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/income_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/day_income"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/fdlysy" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/generating_capacity"
+                    android:textColor="#4d4d4d"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_mothe_station_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#ff4d30"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"
+                        android:text="@string/monthly_capacity"
+                        android:id="@+id/textView15" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_year_station_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#ff4d30"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"
+                        android:text="@string/yearly_capacity"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_all_station_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#ff4d30"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"
+                        android:text="@string/cumulative_capacity"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:background="@color/common_white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/dzgh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_station_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:textColor="#505050"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tv_station_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:textSize="12sp"
+                        android:textColor="#fc9f36"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/station_addr"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_station_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/station_statues_mh"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_station_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guihuarongliang"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_install_capacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grid_connected_time"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_connect_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/running_days"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N/A天"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/linkman"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_person_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_light_gray"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/power_img"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/daily_product_power_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="0"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/daily_product_power_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/shucai_color"
+                        android:text="@string/daily_power"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/new_use_power_img"
+                    android:id="@+id/imageView3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/day_use_power_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/day_use_power_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/shucai_color"
+                        android:textSize="12sp"
+                        android:text="@string/daily_use_power"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/new_slef_use_power_img"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/self_power_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/self_power_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/shucai_color"
+                        android:textSize="12sp"
+                        android:text="@string/slef_use_power"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/accumulative_img"
+                    android:id="@+id/imageView4" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total_generating_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/total_generating_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/shucai_color"
+                        android:textSize="12sp"
+                        android:text="@string/total_generating_electricity"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:visibility="gone"
+        android:background="@drawable/save_electricity_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/day_save_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/day_save_power"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/day_save_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff6600"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:text="0"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#FAFAFA"/>
+
+</LinearLayout>

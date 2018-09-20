@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_arc"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/scan_help_explain_text"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal">
+
+        <!--线条部分-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="30dp"
+                android:background="#CBCBCB" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/time_cycle" />
+
+            <View
+                android:id="@+id/bottom_view"
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                android:background="#CBCBCB" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bubble"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/left_bubble">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/phone_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/scan_help_explain_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone_type"
+                    android:textColor="@color/scan_help_explain_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/icon_right"
+                android:paddingRight="10dp"
+                android:textColor="@color/scan_help_explain_text" />
+
+            <ImageView
+                android:id="@+id/icon_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/icon_account_right" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvNewPowerStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_new_power_station"
+        android:drawablePadding="11dp"
+        android:drawableRight="@drawable/icon_homa_page_entrance_add_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/create_station_string"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:id="@+id/tvNewOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_new_owner"
+        android:drawablePadding="11dp"
+        android:drawableRight="@drawable/icon_homa_page_entrance_add_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/new_owners_account"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    
+    <LinearLayout
+        android:id="@+id/llNewDeviceAccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_new_device_access"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/new_equipment_select_equipment"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvNewDeviceCount"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/shape_circle_red_bg"
+            android:text=""
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="2dp"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_homa_page_entrance_add_more"/>
+        
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/tvNewEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_new_equipment"
+        android:drawablePadding="12dp"
+        android:drawableRight="@drawable/icon_homa_page_entrance_add_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/new_equipment"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+</LinearLayout>

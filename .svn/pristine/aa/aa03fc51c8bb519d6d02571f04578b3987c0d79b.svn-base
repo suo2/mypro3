@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--升压站实时信息信号量列表分图 -->
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp">
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:textSize="15sp"
+           android:textColor="@color/danzhan_color"
+           android:text="@string/signal_list_image"/>
+
+       <ImageView
+           android:id="@+id/more_data"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:scaleType="fitCenter"
+           android:layout_centerVertical="true"
+           android:paddingRight="15dp"
+           android:paddingLeft="15dp"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/up_arrow" />
+
+
+   </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/signal_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

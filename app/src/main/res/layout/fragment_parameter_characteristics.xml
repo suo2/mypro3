@@ -1,0 +1,1721 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    tools:context="com.huawei.solarsafe.view.devicemanagement.ParameterCharacteristicsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_mttp_dfsm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:minHeight="50dp">
+
+                <TextView
+                    android:id="@+id/tv_name1_6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/mttp_dfsm_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:minHeight="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name_mttp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/mttp_min"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_mttp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name_mttp"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rcd_zq"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name1_5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/rcd_zq_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_yj_wg"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name1_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/yj_wg_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1_4"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_power_yh_mode"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name1_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/power_yh_mode_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1_3"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_dc_mode"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name1_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/dc_mode_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1_2"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_jgdcbbc_mode"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_name1_2_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/jgdcbbc_mode_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1_2_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1_2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pv_conect_mode"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name1_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/pv_conect_mode_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_communication_switch"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/communication_switch"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_automatic_recovery"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/automatic_recovery"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name2"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tongxin_zd_min"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name3_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/tongxin_zd_min_str"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name3_1"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_boot_soft_start_time"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/boot_soft_start_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_afci_sp"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name_afci"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="AFCI"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name_afci"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_afci"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_afci"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_name_afci_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/afci_check_mode"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name_afci_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_afci_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ovgr_glgj"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name4_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/ovgr_glgj_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name4_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_gjdgl"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name4_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/gjdgl_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name4_2"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_3_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_jdycgj"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_jdycgj"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/jdycgj_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_jdycgj"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_jdycgj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_yejian_xx"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name4_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/yejian_xx_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name4_3"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_3_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_plc_tx"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name4_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/plc_tx_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name4_4"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_3_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ycsj"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name4_5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/ycsj_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name4_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_3_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pv_zn_jk"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name4_6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/pv_zn_jk"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name4_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_3_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_zcjcckbdcxs"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_name4_6_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/zcjcckbdcxs"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_name4_6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name4_6_1"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_zcjccqbfb"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_name4_6_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/zcjcqdglbfb_str"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_name4_6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name4_6_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_name4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/power_limit"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name4"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lvrt"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="LVRT"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lvrt_1"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_lvrt_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/trigger_threshold"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_lvrt_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_lvrt_1"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lvrt_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_lvrt_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/protection_shield"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_lvrt_2"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_lvrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lvrt_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_lvrt_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/reactive_compensation_factor"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_lvrt_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_lvrt_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hvrt"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name5_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="HVRT"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name5_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_gdbh"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/gdbh_str"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name6"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_passive_island"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name7"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/passive_island"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name7"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_voltage_rise_suppression"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name8"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/voltage_rise_suppression"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name8"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_dyssyz_1"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_dyssyz_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/rise_suppression_reactive_power"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_dyssyz_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_dyssyz_1"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_dyssyz_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_dyssyz_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/rise_suppression_reactive"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_dyssyz_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_dyssyz_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_change_rate_protection"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name9"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/change_rate_protection"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name9"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_plbhl_1"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_plbhl_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/change_rate_protection_not"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_plbhl_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_plbhl_1"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_plbhl_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_plbhl_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/change_rate_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_plbhl_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_plbhl_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_dw_soft_start_time"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name10"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/soft_start_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name10"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

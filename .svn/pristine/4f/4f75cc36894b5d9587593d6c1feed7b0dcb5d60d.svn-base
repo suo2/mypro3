@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_work_orde"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888"/>
+
+    <TextView
+        android:id="@+id/inspect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/routing_inspection"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888"/>
+
+    <TextView
+        android:id="@+id/defect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/missing_sheet"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        />
+
+
+
+</LinearLayout>

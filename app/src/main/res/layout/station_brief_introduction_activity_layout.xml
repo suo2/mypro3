@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/station_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/station_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:backgroundImage="@color/common_white"
+                    fresco:fadeDuration="300"
+                    fresco:failureImage="@drawable/loadfailed"
+                    fresco:failureImageScaleType="fitCenter"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:pressedStateOverlayImage="@color/common_white"
+                    fresco:progressBarAutoRotateInterval="1000"
+                    fresco:progressBarImage="@drawable/loading"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:retryImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false"
+                    fresco:roundBottomLeft="false"
+                    fresco:roundBottomRight="true"
+                    fresco:roundTopLeft="true"
+                    fresco:roundTopRight="false"
+                    fresco:roundedCornerRadius="1dp"
+                    fresco:roundingBorderWidth="2dp" />
+
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_15dp"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_back_img"/>
+
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp">
+
+                <TextView
+                    android:id="@+id/station_name_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_three"
+                    android:textSize="14sp"
+                    android:text="@string/station_name_str"/>
+
+                <TextView
+                    android:id="@+id/station_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_one"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/station_name_tx"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:layout_alignParentRight="true"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:gravity="right" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#f5f5f5"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_three"
+                    android:textSize="14sp"
+                    android:text="@string/capatity_no_colon"/>
+
+                <TextView
+                    android:id="@+id/capacity_installed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_one"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#f5f5f5"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#f5f5f5"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_three"
+                    android:textSize="14sp"
+                    android:text="@string/grid_time"/>
+
+                <TextView
+                    android:id="@+id/grid_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_one"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#f5f5f5"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_three"
+                    android:textSize="14sp"
+                    android:text="@string/running_days_"/>
+
+                <TextView
+                    android:id="@+id/running_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_one"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp">
+
+
+                <TextView
+                    android:id="@+id/station_address_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_three"
+                    android:textSize="14sp"
+                    android:text="@string/station_location"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/station_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp"
+                android:paddingLeft="@dimen/size_5dp"
+                android:paddingRight="@dimen/size_5dp"
+                android:textSize="12sp"
+                android:background="@drawable/circle_shape_hui_bg"
+                android:textColor="#666666"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_three"
+                    android:textSize="14sp"
+                    android:text="@string/pnloger_powertation_introduce_"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/brief_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp"
+                android:paddingLeft="@dimen/size_5dp"
+                android:paddingRight="@dimen/size_5dp"
+                android:textSize="12sp"
+                android:background="@drawable/circle_shape_hui_bg"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

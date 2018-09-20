@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_white">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/icon_back"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/back"
+            android:textColor="#fc9f36"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_alarm_type_more"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/title_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_alarm_type_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_title"
+                android:src="@drawable/ic_expand_more_black_36dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/icon_back"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/back"
+            android:textColor="#fc9f36"
+            android:textSize="17sp"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="@string/key_to_read"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="#fc9f36"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title_bar"
+        android:background="@color/common_light_gray" />
+
+    <LinearLayout
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/tab_to_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/operations_map"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+            <View
+                android:id="@+id/tab_to_map_choose"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/darkorange" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_insept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/tab_to_patrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/patrolling_management"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+            <View
+                android:id="@+id/tab_to_patrol_choose"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/darkorange"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_defect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/tab_to_defect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/management_for_getting_rid"
+                android:textSize="14sp"
+                android:textAllCaps="false" />
+
+            <View
+                android:id="@+id/tab_to_defect_choose"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/darkorange"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_tab"></FrameLayout>
+
+    <toan.android.floatingactionmenu.FloatingActionButton
+        android:id="@+id/fab_moblie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:fab_colorNormal="@color/coral"
+        app:fab_colorPressed="@color/darkorange"
+        app:fab_icon="@drawable/ic_add_white_24dp"
+        app:fab_size="mini"
+        app:fab_title="@string/new_task_" />
+
+    <toan.android.floatingactionmenu.FloatingActionsMenu
+        android:id="@+id/fam_moblie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        app:fab_addButtonColorNormal="@color/coral"
+        app:fab_addButtonColorPressed="@color/darkorange"
+        app:fab_addButtonPlusIconColor="@color/black"
+        app:fab_addButtonSize="mini"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:fab_menuIcon="@drawable/ic_add_white_24dp">
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:fab_colorNormal="@color/coral"
+            app:fab_colorPressed="@color/darkorange"
+            app:fab_icon="@drawable/sousuo"
+            app:fab_size="mini"
+            app:fab_title="@string/query_task" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_newtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/coral"
+            app:fab_colorPressed="@color/darkorange"
+            app:fab_icon="@drawable/ic_menu_new_ticket"
+            app:fab_size="mini"
+            app:fab_title="@string/new_task_" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/coral"
+            app:fab_colorPressed="@color/darkorange"
+            app:fab_icon="@drawable/ic_menu_open_ticket"
+            app:fab_size="mini"
+            app:fab_title="@string/to_do_task" />
+    </toan.android.floatingactionmenu.FloatingActionsMenu>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle_white_round_10dp"
+        android:orientation="vertical">
+
+        <!--第一行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/iv_station_name" />
+
+            <TextView
+                android:id="@+id/tv_trouble_station_name"
+                style="@style/tv_iv_title" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tv_iv_title"
+                        android:text="@string/iv_station_num" />
+
+                    <TextView
+                        android:id="@+id/tv_trouble_station_num"
+                        style="@style/tv_iv_title"
+                        android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--第二行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/iv_inverter_name" />
+
+            <TextView
+                android:id="@+id/tv_trouble_inverter_name"
+                style="@style/tv_iv_value" />
+        </LinearLayout>
+
+        <!--第三行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/inverter_sn" />
+
+            <TextView
+                android:id="@+id/tv_trouble_inverter_sn"
+                style="@style/tv_iv_value" />
+        </LinearLayout>
+
+        <!--第四行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/string" />
+
+            <TextView
+                android:id="@+id/tv_trouble_string"
+                style="@style/tv_iv_value" />
+        </LinearLayout>
+
+        <!--第五行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/tv_iv_title"
+                android:text="@string/optimizer_num" />
+
+            <TextView
+                android:id="@+id/tv_trouble_optimizer_num"
+                style="@style/tv_iv_value" />
+        </LinearLayout>
+
+        <!--第六行-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/bt_trouble_suggest"
+                android:orientation="horizontal">
+                <!--style="@style/tv_iv_title"-->
+                <!--android:layout_weight="1"/>-->
+                <!--style="@style/tv_iv_title" />-->
+                <TextView
+                    android:id="@+id/tv_trouble_desc"
+                    style="@style/tv_iv_title"/>
+
+            </LinearLayout>
+
+
+
+
+            <Button
+
+                android:id="@+id/bt_trouble_suggest"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="2dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/iv_curve_bt_drawable"
+                android:text="@string/deal_suggest"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

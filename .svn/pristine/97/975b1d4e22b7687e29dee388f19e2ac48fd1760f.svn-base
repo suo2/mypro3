@@ -1,0 +1,69 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="map_padding_markershow">60dp</dimen>
+    <dimen name="tv_marker_distributed_number_pdtop">22dp</dimen>
+    <dimen name="tv_marker_distributed_number_textsize">14dp</dimen>
+    <dimen name="amap_marker_layout_paddingtop">44dp</dimen>
+    <dimen name="amap_marker_textsize">12dp</dimen>
+    <dimen name="radio_change_text_size">16sp</dimen>
+    <dimen name="circle_size">2dp</dimen>
+    <dimen name="filter_text_size">14sp</dimen>
+    <dimen name="filter_text_padding">8dp</dimen>
+    //test
+    <dimen name="horizontal_progress_text_margin_left">5dp</dimen>
+
+    //buildstation
+    <dimen name="horizontal_divider_height">1dp</dimen>
+    <dimen name="build_station_text_size">17sp</dimen>
+    <dimen name="textSize_quicksidebartips">20sp</dimen>
+    <!--cityList-->
+    <dimen name="textSize_quicksidebar">10sp</dimen>
+    <dimen name="textSize_quicksidebar_choose">15sp</dimen>
+    <dimen name="height_quicksidebartips">45dp</dimen>
+    <dimen name="height_quicksidebaritem">15dp</dimen>
+
+    <dimen name="size_1dp">1dp</dimen>
+    <dimen name="size_5dp">5dp</dimen>
+    <dimen name="size_10dp">10dp</dimen>
+    <dimen name="size_12dp">12dp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="size_120dp">120dp</dimen>
+    <dimen name="size_140dp">140dp</dimen>
+    <dimen name="size_160dp">160dp</dimen>
+    <dimen name="size_170dp">170dp</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+
+    <dimen name="pickerview_topbar_padding">20dp</dimen>
+
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">17sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <!-- 选项文字大小 -->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+    <integer name="AccountSafeDegrees">135</integer>
+    <!--对话框扩展工具-->
+    <dimen name="dialogplus_default_center_margin">16dp</dimen>
+
+    <dimen name="booster_wide_line">5dp</dimen>
+    <dimen name="booster_narrow_line">2dp</dimen>
+
+    <dimen name="size_15dp">15dp</dimen>
+    <dimen name="gateway_meter_content_high">40dp</dimen>
+    <dimen name="alarm_list_content_high">45.5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="size_200dp">200dp</dimen>
+    <dimen name="size_80dp">80dp</dimen>
+    <dimen name="size_40dp">40dp</dimen>
+    <dimen name="size_20dp">20dp</dimen>
+    <dimen name="size_100dp">100dp</dimen>
+    <dimen name="size_30dp">30dp</dimen>
+    <dimen name="size_50dp">50dp</dimen>
+    <dimen name="size_60dp">60dp</dimen>
+    <dimen name="size_70dp">70dp</dimen>
+    <dimen name="size_75dp">75dp</dimen>
+</resources>

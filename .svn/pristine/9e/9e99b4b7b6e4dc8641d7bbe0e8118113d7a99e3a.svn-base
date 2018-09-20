@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.login.FindPwdActivity1">
+
+    <EditText
+        android:id="@+id/ip_keys"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:maxLength="32"
+        android:background="@drawable/shape_single_item_four_corner"
+        android:hint="@string/enter_the_server_IP"
+        android:padding="8dp"
+        android:textColor="@color/common_white"
+        android:textColorHint="@color/common_white"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/name_keys"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:maxLength="32"
+        android:background="@drawable/shape_single_item_four_corner"
+        android:hint="@string/input_username"
+        android:padding="8dp"
+        android:textColor="@color/common_white"
+        android:textColorHint="@color/common_white"
+        android:textSize="11sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/find_pwd1_code_edit"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:maxLength="6"
+            android:layout_height="match_parent"
+            android:textSize="11sp"
+            android:hint="@string/input_code"
+            android:gravity="center"
+            android:textColorHint="@color/green"
+            android:background="@drawable/shape_single_item_four_corner_empty"
+            />
+
+        <ImageView
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:id="@+id/find_pwd1_code_view"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/yz_keys"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_weight="6"
+            android:maxLength="200"
+            android:background="@drawable/shape_single_item_four_corner"
+            android:hint="@string/input_email_code"
+            android:padding="8dp"
+            android:textColor="@color/common_white"
+            android:textColorHint="@color/common_white"
+            android:textSize="11sp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/code_image_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            fresco:actualImageScaleType="fitCenter"
+            fresco:backgroundImage="@color/common_white"
+            fresco:fadeDuration="300"
+            fresco:failureImage="@drawable/loadfailed"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:pressedStateOverlayImage="@color/common_white"
+            fresco:progressBarAutoRotateInterval="1000"
+            fresco:progressBarImage="@drawable/loading"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:retryImageScaleType="centerInside"
+            fresco:roundAsCircle="false"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="false"
+            fresco:roundedCornerRadius="1dp"
+            fresco:roundingBorderWidth="2dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_pressed_selector_pwdback"
+        android:text="@string/next_step"
+        android:textColor="@color/green"
+        android:textSize="11sp" />
+    <ImageView
+        android:id="@+id/code_view_one"
+        android:layout_width="70dp"
+        android:scaleType="fitXY"
+        android:layout_height="30dp"
+        />
+    <ImageView
+        android:id="@+id/code_view_two"
+        android:layout_width="70dp"
+        android:scaleType="fitXY"
+        android:layout_height="30dp"
+        />
+</LinearLayout>

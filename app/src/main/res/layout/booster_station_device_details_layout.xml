@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/booster_station_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/real_time_information_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/real_time_information_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#ff9933"
+                android:layout_centerInParent="true"
+                android:text="@string/real_time_information"/>
+
+            <View
+                android:id="@+id/real_time_information_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ff9933"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/device_information_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/device_information_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_centerInParent="true"
+                android:text="@string/dev_info"/>
+
+            <View
+                android:id="@+id/device_information_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ff9933"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_information_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/alarm_information_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_centerInParent="true"
+                android:text="@string/alarm_info"/>
+
+            <View
+                android:id="@+id/alarm_information_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ff9933"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/history_information_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/history_information_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_centerInParent="true"
+                android:text="@string/history_imformation"/>
+
+            <View
+                android:id="@+id/history_information_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ff9933"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/empty_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_10dp"
+        android:layout_below="@+id/booster_station_details_title"
+        android:background="#eeeeee"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/empty_line">
+
+    </FrameLayout>
+</RelativeLayout>

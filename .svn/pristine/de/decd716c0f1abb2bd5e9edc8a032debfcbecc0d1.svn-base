@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient android:angle="@integer/AccountSafeDegrees"
+        android:startColor="@color/scan_help_bg"
+        android:endColor="@color/sure_report"></gradient>
+
+</shape>

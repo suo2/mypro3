@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/phone_registration_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/installer_registration_et_bg">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/company_name_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/phone_company_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:textColorHint="@color/text_three"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:hint="@string/piease_company_name_in"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@drawable/installer_registration_et_bg">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/phone_email_img"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/phone_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:textColorHint="@color/text_three"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:maxLength="15"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:hint="@string/input_email"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/installer_registration_et_bg">
+
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/code_icon"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/phone_code_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:textColorHint="@color/text_three"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:digits="@string/esn_digits"
+                    android:maxLength="8"
+                    android:hint="@string/please_input_code"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/get_phone_code_rl"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@drawable/installer_registration_code_bg">
+
+                <TextView
+                    android:id="@+id/phone_code_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/color_theme"
+                    android:gravity="center"
+                    android:text="@string/get_code"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@drawable/installer_registration_et_bg">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/password_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:textColorHint="@color/text_three"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_weight="1"
+                android:maxLength="64"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:hint="@string/please_input_pwd"/>
+
+            <ImageView
+                android:id="@+id/phone_password_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/password_close"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@drawable/installer_registration_et_bg">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/password_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ensure_password_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:textColorHint="@color/text_three"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_weight="1"
+                android:maxLength="64"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:hint="@string/please_input_pwd_again"/>
+
+            <ImageView
+                android:id="@+id/ensure_phone_password_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/password_close"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/text_for"
+        android:visibility="gone"
+        android:text="@string/password_len_8_to_16"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_installer"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:button="@drawable/checkbox_selector_bg"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_installer_agree"
+            android:textColor="@color/danzhan_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_use_clause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_use_clause"
+            android:textColor="@color/tv_protection_clause"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/he"
+            android:textColor="@color/danzhan_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_protection_clause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_protection_clause"
+            android:textColor="@color/tv_protection_clause"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_tx"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/size_15dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/registration_button_bg"
+        android:gravity="center"
+        android:text="@string/register_"/>
+
+
+</LinearLayout>

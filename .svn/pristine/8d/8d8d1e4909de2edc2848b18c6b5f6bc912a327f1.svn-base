@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/TVHintDefectDetail"
+            android:text="@string/power_station_name" />
+
+        <TextView
+            android:id="@+id/tv_station_name"
+            style="@style/TVContentDefectDetail"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="@string/unknown" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_station_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            style="@style/TVHintDefectDetail"
+            android:layout_below="@+id/divider1"
+            android:text="@string/dev_name" />
+
+        <TextView
+            android:id="@+id/tv_dev_name"
+            style="@style/TVContentDefectDetail"
+            android:layout_below="@+id/divider1"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="@string/unknown" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_dev_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            style="@style/TVHintDefectDetail"
+            android:layout_below="@+id/divider2"
+            android:text="@string/equipment_type" />
+
+        <TextView
+            android:id="@+id/tv_dev_type"
+            style="@style/TVContentDefectDetail"
+            android:layout_below="@+id/divider2"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="@string/unknown" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_dev_type"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            style="@style/TVHintDefectDetail"
+            android:layout_below="@+id/divider3"
+            android:text="@string/equipment_model" />
+
+        <TextView
+            android:id="@+id/tv_dev_model"
+            style="@style/TVContentDefectDetail"
+            android:layout_below="@+id/divider3"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="@string/unknown" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvHandlerHint"
+            style="@style/TVHintDefectDetail"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:text="@string/current_processor"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_handler"
+            style="@style/TVContentDefectDetail"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="0dp"
+            android:text="@string/unknown"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_handler"
+            android:layout_marginTop="0dp"
+            android:text="@string/discover_on_colon"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_handler"
+            android:layout_marginTop="0dp"
+            android:text="@string/unknown"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_start_time"
+            android:layout_marginTop="10dp"
+            android:text="@string/processing_time_colon"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_start_time"
+            android:layout_marginTop="10dp"
+            android:text="@string/unknown"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_desc_hint"
+            style="@style/TVHintDefectDetail"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_mark"
+            android:text="@string/flaw_description" />
+
+        <TextView
+            android:id="@+id/iv_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/textview_border"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:text="消缺中"
+            android:textColor="@color/orange"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc_hint"
+            android:layout_marginTop="10dp"
+            android:gravity="left|top"
+            android:text="@string/flaw_description"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/llDispose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvDisposeHint"
+            style="@style/TVHintDefectDetail"
+            android:text="@string/processing_opinion" />
+
+        <TextView
+            android:id="@+id/tvDisposeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|top"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EEEEEE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_add_notice"
+            style="@style/TVHintDefectDetail"
+            android:layout_marginLeft="0dp"
+            android:text="@string/long_click_delete" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#e5e5e5" />
+
+        <FrameLayout
+            android:id="@+id/fl_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_flaw_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:longClickable="true" />
+
+            <TextView
+                android:id="@+id/tv_attach_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:longClickable="true"
+                android:textColor="#27a9ff"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_show_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:placeholderImage="@drawable/bg_no_pic"
+            app:placeholderImageScaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/rl_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_attachment" />
+
+            <TextView
+                android:id="@+id/tv_attach_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#888" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_deal_content_contains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/TVHintDefectDetail"
+            android:layout_marginLeft="0dp"
+            android:text="@string/processing_result" />
+
+        <TextView
+            android:id="@+id/tv_deal_content"
+            style="@style/TVContentDefectDetail"
+            android:layout_width="match_parent"
+            android:layout_marginRight="0dp"
+            android:gravity="right"
+            android:hint="@string/no_processing_content" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_deal_content_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#888" />
+    </LinearLayout>
+
+</LinearLayout>

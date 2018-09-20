@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_10dp"
+    android:orientation="vertical">
+
+    <!-- 220/110母线间隔电路图 -->
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/booster_wide_line"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/kv_110"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="@dimen/booster_narrow_line"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/kv_110"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="@dimen/booster_narrow_line"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/kv_110"/>
+
+        <LinearLayout
+            android:id="@+id/switch_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line3"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="30dp"
+                android:background="@color/kv_110"
+                android:layout_height="@dimen/booster_narrow_line"/>
+
+
+            <ImageView
+                android:id="@+id/switch_15903"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:src="@drawable/horizontal_switch_on"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/horizontal_ground"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_15903"
+            style="@style/tx_booster_details"
+            android:layout_below="@+id/switch_linear"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/line3"
+            android:text="15903"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/switch_15900"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/vertical_switch_off"/>
+
+        <TextView
+            android:id="@+id/tx_15900"
+            style="@style/tx_booster_details"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/switch_15900"
+            android:layout_marginRight="5dp"
+            android:text="15900"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="@dimen/booster_narrow_line"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/kv_110"/>
+
+        <LinearLayout
+            android:id="@+id/switch_15905_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line5"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="30dp"
+                android:background="@color/kv_110"
+                android:layout_height="@dimen/booster_narrow_line"/>
+
+
+            <ImageView
+                android:id="@+id/switch_15905"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:src="@drawable/horizontal_switch_on"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/horizontal_ground"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_15905"
+            style="@style/tx_booster_details"
+            android:layout_below="@+id/switch_15905_ll"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/line5"
+            android:text="15905"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pt4_g3d_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pt4_gd110kv"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="30dp"
+            android:src="@drawable/horizontal_ground"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_15902"
+        style="@style/tx_booster_details"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:text="15902"
+        />
+
+
+</LinearLayout>

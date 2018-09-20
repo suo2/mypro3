@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.stationmanagement.changestationinfo.ChangeStationInfoActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/basic_information_"
+            android:textColor="@color/change_station_progress_txt_color_selector"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/access_device"
+            android:textColor="@color/change_station_progress_txt_color_selector"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/zc_detail_setting_str"
+            android:textColor="@color/change_station_progress_txt_color_selector"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/electricity_price_setting"
+            android:textColor="@color/change_station_progress_txt_color_selector"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/other_information"
+            android:textColor="@color/change_station_progress_txt_color_selector"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/camera_information"
+            android:textColor="@color/change_station_progress_txt_color_selector"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#eeeeee" />
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/new_station_operation_whilte_btn_style"
+            android:text="@string/cancel_" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/new_station_operation_yellow_btn_style"
+            android:text="@string/save" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#e2e2e2"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/defect_homepage_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_contains"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_defect_sendback"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/common_white">
+
+                    <ImageView
+                        android:id="@+id/iv_wait_fenfa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_wait_fenfa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/iv_wait_fenfa"
+                        android:text="@string/to_be_assigned"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"/>
+
+                    <ImageView
+                        android:id="@+id/iv_comein2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/tapp_change" />
+
+                    <TextView
+                        android:id="@+id/tv_defect_sendback_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@id/iv_comein2"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_delete_doing"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/rl_defect_sendback"
+                    android:background="@color/common_white">
+
+                    <ImageView
+                        android:id="@+id/iv_delete_doing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_delete_doing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/iv_delete_doing"
+                        android:text="@string/defect_eliminating"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"/>
+
+                    <ImageView
+                        android:id="@+id/iv_comein3"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/tapp_change" />
+
+                    <TextView
+                        android:id="@+id/tv_delete_doing_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@id/iv_comein3"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_wait_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/rl_delete_doing"
+                    android:background="@color/common_white">
+
+                    <ImageView
+                        android:id="@+id/iv_wait_sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_wait_sure" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/iv_wait_sure"
+                        android:text="@string/to_be_determined"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"/>
+
+                    <ImageView
+                        android:id="@+id/iv_comein4"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/tapp_change" />
+
+                    <TextView
+                        android:id="@+id/tv_wait_sure_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@id/iv_comein4"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_today_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/rl_wait_sure"
+                    android:background="@color/common_white">
+
+                    <ImageView
+                        android:id="@+id/iv_today_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_today_delete" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/iv_today_delete"
+                        android:text="@string/defect_eliminating_completed_today"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"/>
+
+                    <ImageView
+                        android:id="@+id/iv_comein5"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/tapp_change" />
+
+                    <TextView
+                        android:id="@+id/tv_today_delete_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@id/iv_comein5"
+                        android:textSize="12sp"
+                        android:textColor="@color/danzhan_color"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_all_defect"
+                    android:layout_below="@+id/rl_today_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/common_white">
+
+                    <ImageView
+                        android:id="@+id/iv_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_all_quexiandan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/iv_all"
+                        android:text="@string/list_of_all_defects"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_comein7"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/tapp_change" />
+
+                    <TextView
+                        android:text=""
+                        android:id="@+id/tv_all_defect_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@id/iv_comein7"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llyt_defect_empty"-->
+                <!--android:background="@color/common_white"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical" >-->
+                <!--<LinearLayout-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_tip"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:src="@drawable/ic_lv_empty_tips" />-->
+                    <!--&lt;!&ndash; android:src="@drawable/ic_lv_empty_tips"&ndash;&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_defect_empty"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@android:color/darker_gray"-->
+                        <!--android:textSize="@dimen/ticketmgr_electricity_2_type_tsize" />-->
+                <!--</LinearLayout>-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_request"-->
+                    <!--android:text="点击重新加载"-->
+                    <!--android:background="@drawable/defect_reset_button_shape"-->
+                    <!--android:textColor="@color/common_white"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

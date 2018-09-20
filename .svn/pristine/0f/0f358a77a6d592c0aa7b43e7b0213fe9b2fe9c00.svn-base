@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llRoot"
+    android:paddingTop="5dp">
+
+    <RadioGroup
+        android:id="@+id/rgSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbStatistics"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:button="@null"
+            android:text="按日统计"
+            android:textColor="@color/text_one"
+            android:textSize="12sp"
+            android:drawableRight="@drawable/selector_plant_view_arrow_state"
+            android:drawablePadding="5dp"
+            android:paddingRight="40dp"
+            android:checked="false"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/rbView"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:button="@null"
+            android:text="@string/physical_view"
+            android:textColor="@color/text_one"
+            android:textSize="12sp"
+            android:drawableRight="@drawable/selector_plant_view_arrow_state"
+            android:drawablePadding="5dp"
+            android:paddingRight="40dp"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/llEmpty"
+        layout="@layout/empty_view"
+        android:visibility="gone"/>
+
+</LinearLayout>

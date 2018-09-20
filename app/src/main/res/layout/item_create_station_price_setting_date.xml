@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@color/common_white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <!--设置日期-->
+        <LinearLayout
+            android:id="@+id/llyt_date"
+            style="@style/new_station_item_llyt">
+
+            <TextView
+                style="@style/new_station_item_tv_name"
+                android:text="@string/set_date" />
+
+            <LinearLayout
+                style="@style/new_station_item_rlyt_content"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    style="@style/new_station_item_et_content"
+                    android:textColorHint="#333"
+                    android:hint="@string/select_start_date"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    style="@style/new_station_item_et_content"
+                    android:textColorHint="#333"
+                    android:hint="@string/select_end_date"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_date_sub"
+                    style="@style/new_station_item_contain_iv_drop"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/new_station_subtract" />
+
+                <ImageView
+                    android:id="@+id/iv_date_add"
+                    style="@style/new_station_item_contain_iv_drop"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/new_station_add" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/create_station_div" />
+
+        <LinearLayout
+            android:id="@+id/llyt_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#0b000000"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/bt_pop_camera"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/photographing"
+            android:textColor="#179ef8"
+            android:textSize="18sp"
+            android:background="@drawable/chamfering_button_shape"
+            />
+
+        <Button
+            android:id="@+id/bt_pop_album"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chamfering_button_shape"
+            android:text="@string/select_from_album"
+            android:textColor="#179ef8"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/bt_pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/chamfering_button_shape"
+            android:text="@string/cancel_defect"
+            android:textColor="#179ef8"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>  

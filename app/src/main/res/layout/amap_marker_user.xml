@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2.2dp"
+        android:src="@drawable/im_patrol_worker" />
+
+    <com.huawei.solarsafe.utils.customview.CircleImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icon_mine"
+        android:visibility="visible" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/my_image_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/person_my_page"
+        android:visibility="gone"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImage="@drawable/person_my_page"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:progressBarAutoRotateInterval="1000"
+        fresco:progressBarImage="@drawable/loading"
+        fresco:progressBarImageScaleType="centerInside"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundAsCircle="true" />
+
+
+</RelativeLayout>

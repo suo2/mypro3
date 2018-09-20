@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/danzhan_color"
+        android:textSize="15sp"
+        android:text="@string/inverter_ivcurve_compared"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart_ivcurev_compared"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/common_white"
+        android:layout_below="@+id/tv_iv_title"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/tv_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/danzhan_color"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dianliu_with_unit"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/danzhan_color"
+        android:text="@string/dianya_with_unit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/chart_ivcurev_compared"/>
+
+</RelativeLayout>

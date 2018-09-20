@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.openstation.OpenStationActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/alertdialog_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/icon_gonggao"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_info_new"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_gonggao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_gonggao"
+            android:text="@string/product_for_access"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_dayu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_info_more" />
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/iv_dayu"
+            android:src="@drawable/system2"
+            android:text="@string/invalid_value"
+            android:textColor="@color/common_light_gray"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hw_nbq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon_daiban"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_wait"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_daiban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_daiban"
+            android:text="@string/huawei_in_inverter_access"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_dayu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_info_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/iv_dayu2"
+            android:textColor="@color/common_light_gray"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_waiting_info"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/iv_dayu2"
+            android:src="@drawable/system2"
+            android:text="@string/invalid_value"
+            android:textColor="@color/common_light_gray"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/alertdialog_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_stationmanagement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/icon_help"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/icon_help"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_help"
+            android:text="@string/station_mamagement_str"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_dayu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_info_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/iv_dayu3"
+            android:text="20"
+            android:textColor="@color/common_light_gray"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_personmanagement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/icon_changepersoninfo"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/icon_info_pwd"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_changepersoninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_changepersoninfo"
+            android:text="@string/yezhu_manager"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_gochangepersoninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_info_more" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alertdialog_line" />
+</LinearLayout>

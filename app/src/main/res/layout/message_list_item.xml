@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:textSize="16dp"
+            android:text="@string/has_readed"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/ll_wait_read"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/titleImage"
+                android:src="@drawable/ic_wait_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_has_read"
+                android:textSize="16dp"
+                android:text="@string/not_read"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:src="@drawable/icon_household_go"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_toLeftOf="@id/iv_arrow"
+            android:layout_marginRight="5dp"
+            android:textSize="16dp"
+            android:text="1990/00/00"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/describe"
+        android:text="这里是描述"
+        android:textSize="16dp"
+        android:textColor="@color/commom_text_default"
+        android:lines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

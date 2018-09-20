@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_input_device_sn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/container_bg_gray"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.pnlogger.InputDeviceSNActivity">
+
+    <EditText
+        android:id="@+id/etSN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:cursorVisible="true"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#000000"
+        android:textCursorDrawable="@drawable/shape_cursor_theme"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/confirm_correct_SN"
+        android:textColor="@color/text_two"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/BtnPositive"
+        android:text="@string/confirm_blank" />
+
+</LinearLayout>

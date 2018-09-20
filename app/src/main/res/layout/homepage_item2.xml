@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:MyView="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ammeter_negative" />
+
+        <com.huawei.solarsafe.view.CustomViews.autofittextview.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/poverty_alleviation"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/common_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white">
+
+        <!--<com.pinnet.icleanpower.view.homepage.station.CustomProgressBar-->
+            <!--android:id="@+id/custom_progress_bar"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--MyView:circleWidth="20dp"-->
+            <!--MyView:defaultBg="@color/common_white"-->
+            <!--MyView:firstColor="#ff9b2b"-->
+            <!--MyView:secondColor="#959595" />-->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/custom_progress_bar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_all_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/text_one"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/text_three"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tip_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/completion_situation"
+                android:textColor="#50B8E4"
+                android:maxWidth="100dp"
+                android:gravity="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+            <ImageView
+                android:id="@+id/iv_fupingzhen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/zhen"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/poverty_alleviation_town"
+                android:textColor="@color/danzhan_color"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                 />
+
+            <TextView
+                android:id="@+id/tv_poor_town_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="0户"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/common_light_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_fupingcun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/cun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/poverty_alleviation_village"
+                android:textColor="@color/danzhan_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_poor_village_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="0户"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/common_light_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_fupinghu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/hu"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/poor_households"
+                android:textColor="@color/danzhan_color"
+                android:textSize="12sp"
+                android:id="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/tv_poor_household_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="0户"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/common_light_gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_have_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/wancheng"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/has_completed"
+                android:textColor="@color/danzhan_color"
+                android:textSize="12sp"
+                android:id="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/tv_poor_have_finish_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="0户"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/common_light_gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_not_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/weiwancheng" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/not_completed"
+                android:textColor="@color/danzhan_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_poor_not_finish_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="0户"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:background="@color/white">
+        <Button
+            android:id="@+id/tv_poverty_details"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@drawable/button_my"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="@string/know_more_info"
+            />
+    </LinearLayout>
+</LinearLayout>

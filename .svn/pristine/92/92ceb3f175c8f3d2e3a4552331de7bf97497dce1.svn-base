@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.huawei.solarsafe.utils.customview.FlowLineView
+        android:id="@+id/view_flow_line_to_pv1"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        app:flow_dirction="up"
+        app:line_dirction="vertical" />
+    <RelativeLayout
+        android:id="@+id/rl_household_device_pv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_flow_line_to_pv1"
+        android:layout_toRightOf="@id/ll_pv2_container">
+
+        <ImageView
+            android:id="@+id/household_device_pv2_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taiyang" />
+
+        <ImageView
+            android:id="@+id/iv_cascade_pv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/guangfu" />
+
+        <com.huawei.solarsafe.utils.customview.FlowLineView
+            android:id="@+id/view_flow_line_to_string2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_cascade_pv2"
+            android:layout_toRightOf="@+id/household_device_pv2_iv"
+            app:flow_dirction="toLeft"
+            app:line_dirction="horizontal" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/household_pv_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pv2"
+                android:textColor="#333333"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_pv2_vol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#333333"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_pv2_ele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#333333"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_opt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_household_device_pv2"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/danzhan_color"
+            android:textSize="12sp"
+            android:text="@string/tv_opt_num"
+            />
+        <TextView
+            android:id="@+id/tv_opt_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/danzhan_color"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

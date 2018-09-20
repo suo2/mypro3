@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/rgStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按日统计"
+            android:textColor="@color/text_theme"
+            android:textSize="12sp"
+            android:padding="16dp"
+            android:button="@null"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/rbMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按月统计"
+            android:textColor="@color/text_one"
+            android:textSize="12sp"
+            android:padding="16dp"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/rbYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按年统计"
+            android:textColor="@color/text_one"
+            android:textSize="12sp"
+            android:padding="16dp"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbPhysics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/physical_view"
+            android:textColor="@color/text_theme"
+            android:textSize="12sp"
+            android:padding="16dp"
+            android:button="@null"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbLogic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logic_view"
+            android:textColor="@color/text_one"
+            android:textSize="12sp"
+            android:padding="16dp"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+</LinearLayout>

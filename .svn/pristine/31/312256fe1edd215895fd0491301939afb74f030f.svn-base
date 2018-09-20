@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/punc_grid_ab_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_grid_ab_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/punc_grid_bc_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+        
+
+        <TextView
+            android:id="@+id/tv_grid_bc_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/punc_grid_ca_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_grid_ca_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_a_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_a_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_b_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_b_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_c_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_c_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:text="@string/pnuc_total_apparent_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_total_apparent_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:text="@string/power_factor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_power_factor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_grid_a_ele_ia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_grid_a_ele_ia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_grid_b_ele_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_grid_a_ele_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_grid_c_ele_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_grid_a_ele_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:text="@string/active_power__"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_active_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:text="@string/pnuc_active_power_pa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_active_power_pa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:text="@string/pnuc_active_power_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_active_power_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_active_power_pc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_active_power_pc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/line_frequency_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_line_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/active_power_electric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:text="@string/positive_active_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_active_power_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_reverse_active_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_reverse_active_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/reactive_power__"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_reactive_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_reactive_power_qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_reactive_power_qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_reactive_power_qb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_reactive_power_qb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="@string/pnuc_reactive_power_qc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_reactive_power_qc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_forward_reactive_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_forward_reactive_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gateway_meter_content_high"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="@string/pnuc_reverse_reactive_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_reverse_reactive_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size_1dp"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

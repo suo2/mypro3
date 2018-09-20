@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.solarsafe"
+    android:versionCode="200"
+    android:versionName="2.0.0"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <permission
+        android:name="com.huawei.solarsafe.permission.BROADCAST"
+        android:protectionLevel="signatureOrSystem" />
+    <permission
+        android:name="com.huawei.solarsafe.permission.SERVICE"
+        android:protectionLevel="signatureOrSystem" />
+
+    <uses-permission android:name="com.huawei.solarsafe.permission.SERVICE" />
+    <uses-permission android:name="com.huawei.solarsafe.permission.BROADCAST" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 地图SDK（包含其搜索功能）需要的基础权限 -->
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 通过GPS芯片接收卫星的定位信息，定位精度达10米以内 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许访问摄像头进行拍照 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 【安全问题编号】DTS2017122703377 allowBackup的值设置为TRUE，在非ROOT的情况下，可通过ADB命令对软件进行备份和还原。 【修改人】zhaoyufeng -->
+    <!-- 程序调试检测 -->
+    <!-- [ Problem Description ] 程序设置为允许调试。 -->
+    <!-- [ Solve ] 发行版本中，请关闭允许调试选项，在AndroidManifest中设置application的属性android:debuggable为false。 -->
+    <!-- android:debuggable="false" -->
+    <application
+        android:name="com.huawei.solarsafe.MyApplication"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@mipmap/fusionhome_fillet"
+        android:label="@string/fusion_solar"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name,allowBackup,debuggable,android:icon,android:label,android:theme,android:supportsRtl">
+        <meta-data
+            android:name="max_aspect"
+            android:value="2.1"/>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/amap_key" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <provider
+            android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+            android:authorities="com.huawei.solarsafe.updateSdk.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:name="com.huawei.solarsafe.view.login.LoginActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/LaunchTheme"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.patrol.PatrolTaskCreateActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.NewDefectActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.StationPKActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.CustomFillterActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.MainActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.MultipleStationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:theme="@style/StationTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationSearchActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.report.ReportActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.extra.PovertyActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationDetailActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationListActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.DeviceManagementActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.DevSwitchActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <service
+            android:name="com.huawei.solarsafe.service.PushService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.huawei.solarsafe.service.LocationService"
+            android:exported="false" />
+        <service
+            android:name="com.huawei.solarsafe.service.CheckLoginStatusService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.picker.station.StationPickerActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.MoblieActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.picker.device.DevicePickerActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.DefectCommitActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.DefectListActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.todotasks.TodoTaskActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.DefectDetailActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.picker.worker.ImageBrowseActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.RealTimeAlarmFillterActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.InforMationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.MyInfoActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.GroupPVActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.patrol.PlantPatrolHistroryActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.patrol.PatrolTaskDetailActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.patrol.PatrolTaskFlowActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.DevAlarmFillterActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.NoticeDetailActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BuildStationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.GuideActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.ScanActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service
+            android:name="com.amap.api.location.APSService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.patrol.PatrolStationGis"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.CasInvDataActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.SelectPntActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.ShowSecondActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.StationListActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.PntDeviceTypeSelectActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.DeviceSingleDataHistoryActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.NewChangePersonInfoActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.NewChangePswActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 删除多余的类申明   修改人：zhaoyufeng -->
+        <activity
+            android:name="com.huawei.solarsafe.view.login.FindPwdActivity1"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.FindPwdActivity2"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.FindPwdActivity3"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.DevAlarmDetailsActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.ZxingActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.LocalPvActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.ConnectStationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.defects.CorrelateAlarmActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personmanagement.PersonManagementActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.openstation.OpenStationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personmanagement.CreatePersonActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.DeviceUpdateListActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.DeviceUpdateDetailActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_device_update_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.CompanyImformationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.CenterInvDataActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.DcBusDataActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.BoxTransformerDataActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.huawei.solarsafe.service.UnlockReceiver"
+            android:exported="false"
+            android:permission="com.huawei.solarsafe.permission.BROADCAST">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.huawei.solarsafe.view.personmanagement.DomainSelectActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personmanagement.PersonDetailActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.HouseholdDataSettingActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.CreateStationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.ResDomainSelectActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.SecondDeviceActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.report.AllReportListActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.report.InverterReportActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BSecondActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BPntDevicesParamsActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BInputTextActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BSettingEndianActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BSrvIpConfigActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BPntCommunicationModeActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.BPVSettingActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_second_device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.PinnetDcActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.EnvironmentalEetectorActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.GatewayMeterActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.DevInfoActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.StationManagementListActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.GroupStringConfigActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.changestationinfo.ChangeStationInfoActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.base.MyWebViewActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.changestationinfo.GroupStringConfigActivityChange"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.HelpDocumentActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.DCGroupPVActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.operation.MaintenanceActivityNew"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.main.RealTimeAlarmDetailsActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.base.MyStationPickerActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personmanagement.MyStationPickerActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.report.MyStationPickerActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.ivcurve.CreatIVNewTeskActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <receiver
+            android:name="com.huawei.solarsafe.service.LOCALEReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="com.huawei.solarsafe.permission.BROADCAST">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.ivcurve.IVScanDetailActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.ivcurve.IVTroubleListActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.ivcurve.IvcurveInverterInfoActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.ivcurve.IVErrorStatisticalActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.maintaince.ivcurve.IvCurveComparedActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationMapActivityNew"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.HouseholdInvDataActivityNew"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.OptimizerHistoryDataActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.DeviceInfoActivityNew"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_device_info_new"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.InstallerRegistrationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.AboutActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.ProtectionClauseActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.UseClauseActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.MyLocationPickerActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.CurrencyDevrActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.PrivateSupportActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/title_activity_private_support"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.AccountSafeActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.LatestLoginActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.RecordDetailsActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationHeadPhotoActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.devicemanagement.BoosterStationDeviceDetailsActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.NewDeviceAccessActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.SingerSelectPowerStationActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.AddDeviceFeedbackActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.AMapActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.SelectCityActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.GMapPlacePickerActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.EmptyActivity"
+            android:configChanges="fontScale|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.NewInstallerRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.login.NewFindPwdActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.huawei.solarsafe.view.CustomViews.ProximalBroadcastReceiver"
+            android:exported="false"
+            android:permission="com.huawei.solarsafe.permission.BROADCAST">
+            <intent-filter>
+                <action android:name="proximal_BroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.MyMessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.MyInfoSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.ToolBoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.pnlogger.InputDeviceSNActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.huawei.solarsafe.view.stationmanagement.NewEquipmentActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 友盟分享 -->
+        <!-- 新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信 -->
+        <activity
+            android:name="com.huawei.solarsafe.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="4gsdDKsn8whd4Bqz" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.PowerCurveChartFullScreenActivity" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationResourceDomainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.CommonProblemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.homepage.station.StationBriefIntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huawei.solarsafe.view.personal.InstallAndOperateVideoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.personal.HelpActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

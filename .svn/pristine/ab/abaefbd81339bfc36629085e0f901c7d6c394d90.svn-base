@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/station_head_view"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_white">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/icon_back"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="#fc9f36"
+            android:textSize="17sp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_5dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:textColor="#fc9f36"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/station_photo_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/station_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:backgroundImage="@color/common_white"
+            fresco:fadeDuration="300"
+            fresco:failureImage="@drawable/loadfailed"
+            fresco:failureImageScaleType="fitCenter"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:pressedStateOverlayImage="@color/common_white"
+            fresco:progressBarAutoRotateInterval="1000"
+            fresco:progressBarImage="@drawable/loading"
+            fresco:progressBarImageScaleType="fitCenter"
+            fresco:retryImageScaleType="centerCrop"
+            fresco:roundAsCircle="false"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="false"
+            fresco:roundedCornerRadius="1dp"
+            fresco:roundingBorderWidth="2dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

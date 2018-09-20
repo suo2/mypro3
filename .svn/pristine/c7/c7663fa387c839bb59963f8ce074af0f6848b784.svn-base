@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp">
+
+
+        <ImageView
+            android:id="@+id/energy_manage_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ammeter_negative"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/energy_manage_img"
+            android:textSize="14sp"
+            android:textColor="@color/danzhan_color"
+            android:layout_marginLeft="5dp"
+            android:text="@string/energy_manage"/>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/switch_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/radio_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_single_item_circle"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/day"
+            android:textColor="@drawable/group_textcolor_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/month"
+            android:textColor="@drawable/group_textcolor_selector"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/year"
+            android:textColor="@drawable/group_textcolor_selector"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl_time_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_time_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/restore_report_text"
+            android:textSize="17sp"/>
+        <ImageView
+            android:id="@+id/imgRetreat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/last_bt"
+            android:layout_toLeftOf="@+id/tv_time_show"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:id="@+id/imgAdvance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_bt"
+            android:layout_toRightOf="@+id/tv_time_show"
+            android:layout_centerVertical="true"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="20dp"/>
+
+
+    </RelativeLayout>
+
+    <com.huawei.solarsafe.view.homepage.station.DoubleProgressBar
+        android:id="@+id/generating_capacity_double_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    </com.huawei.solarsafe.view.homepage.station.DoubleProgressBar>
+
+    <com.huawei.solarsafe.view.homepage.station.DoubleProgressBar
+        android:id="@+id/power_user_double_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    </com.huawei.solarsafe.view.homepage.station.DoubleProgressBar>
+
+
+    <RelativeLayout
+        android:id="@+id/combined_chart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/power_curve_chart_line"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/common_white"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:clickable="false" />
+        <TextView
+            android:id="@+id/fragment3_tv_notion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_tation"
+            android:textSize="15sp"
+            android:textColor="@color/actionsheet_gray"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/power_unit_kwh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/power_unit_kwh"
+            android:textSize="12sp"
+            android:textColor="@color/danzhan_color"/>
+
+        <RelativeLayout
+            android:id="@+id/choice_device_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_device_img"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/choice_index"
+                    android:textColor="@color/restore_report_text"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.huawei.solarsafe.view.homepage.station.LabelLayout
+        android:id="@+id/power_curve_label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+    </com.huawei.solarsafe.view.homepage.station.LabelLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#FAFAFA"/>
+
+</LinearLayout>

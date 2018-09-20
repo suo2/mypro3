@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.stationmanagement.GroupStringSettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/cb_check_all"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox_selector"
+            android:padding="4dp"
+            android:text="@string/check_all_str"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cb_check_all"
+            android:layout_marginRight="@dimen/size_5dp"
+            android:background="@drawable/edtv_no_ed_bg">
+
+            <com.huawei.solarsafe.utils.MySpinner
+                android:id="@+id/spinner_search_option_sblx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="@dimen/size_15dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/img_search_option_sblx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/xiala_icon" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_capacity_setting"
+            android:background="@drawable/btn_pressed_selector_full_yellow"
+            android:text="@string/group_string_detail_setting_str"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+        <Button
+            android:id="@+id/btn_capacity_setting"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_pressed_selector_full_yellow"
+            android:text="@string/peizhi_capacity_setting"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/dev_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

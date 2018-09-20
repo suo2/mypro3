@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/common_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/view_amap"
+        class="com.amap.api.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragmentGMap"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <CheckBox
+        android:id="@+id/cbSwitchMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_switch_map"
+        android:checked="false"
+        android:button="@null"
+        android:gravity="center_horizontal"
+        android:text="@string/google_map"
+        android:textColor="#de4a37"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:paddingTop="52dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/iv_localtion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_ll"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:src="@drawable/map_point"
+        android:visibility="gone"/>
+
+</FrameLayout>

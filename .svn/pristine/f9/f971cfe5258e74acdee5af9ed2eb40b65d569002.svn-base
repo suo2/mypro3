@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/optimizer_history_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RadioButton
+                android:id="@+id/optimizer_compered"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/optimizer_compered"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/optimizer_compered"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/signal_point_compered"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/signal_point_compered"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/signal_point_compered"
+                android:textColor="@drawable/fillter_textcolor_selector"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/optimity_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

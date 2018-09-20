@@ -1,0 +1,394 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_contanier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_fragment1_station"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/img_home_page_fragment_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tvData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/tvWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="19sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tvData"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlEntranceAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_home_page_entrance_add"
+                        android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:id="@+id/tvNewDeviceCount"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/shape_circle_red_bg"
+                        android:text=""
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.huawei.solarsafe.utils.customview.ArcProgressView
+                android:id="@+id/arcprogressview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myScrollView_item1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/ll_huizong_todayPower"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/iv_huizong_todayPower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:src="@drawable/index_huizong_todaypower"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/huizong_todayPower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/iv_huizong_todayPower"
+                                android:text="0.000"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_huizong_todayPower"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:id="@+id/huizong_todayPower_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableLeft="@drawable/icon_today_generated_energy"
+                                android:drawablePadding="5dp"
+                                android:maxWidth="110dp"
+                                android:text="@string/day_power_"
+                                android:textColor="@color/common_light_gray"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/huizong_todayPower_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(kWh)"
+                                android:textColor="@color/common_light_gray"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/common_light_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/ll_huizong_todayMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_huizong_todayMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:src="@drawable/all_money_home"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/huizong_todayMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/iv_huizong_todayPower"
+                                android:padding="10dp"
+                                android:text="0.000"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_huizong_todayMoney"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:id="@+id/huizong_todayMoney_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableLeft="@drawable/icon_today_earnings"
+                                android:drawablePadding="5dp"
+                                android:singleLine="true"
+                                android:text="@string/day_income_"
+                                android:textColor="@color/common_light_gray"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/huizong_todayMoney_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/yuan"
+                                android:textColor="@color/common_light_gray"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@color/common_light_gray" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/common_light_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/ll_huizong_power"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_huizong_power"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:src="@drawable/index_huizong_power"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/huizong_power"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/iv_huizong_todayPower"
+                                android:padding="10dp"
+                                android:text="0.000"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_huizong_power"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:id="@+id/huizong_power_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:drawableLeft="@drawable/icon_grand_total_generated_energy"
+                                android:drawablePadding="5dp"
+                                android:singleLine="true"
+                                android:text="@string/total_generating_electricity"
+                                android:textColor="@color/common_light_gray"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/huizong_power_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(kWh)"
+                                android:textColor="@color/common_light_gray"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/common_light_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/ll_huizong_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_huizong_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:src="@drawable/index_huizong_money" />
+
+                            <TextView
+                                android:id="@+id/huizong_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/iv_huizong_todayPower"
+                                android:text="0.000"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_huizong_money"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:id="@+id/huizong_money_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:singleLine="true"
+                                android:text="@string/gross_income"
+                                android:textColor="@color/common_light_gray"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/huizong_money_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/yuan"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

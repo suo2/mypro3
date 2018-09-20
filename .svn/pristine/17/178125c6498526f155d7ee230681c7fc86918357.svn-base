@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/amap_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/gMapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/cbSwitchMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_switch_map"
+            android:checked="false"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="@string/google_map"
+            android:textColor="#de4a37"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:paddingTop="52dp"
+            android:layout_marginTop="30dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:padding="3dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/inspection_name" />
+
+            <EditText
+                android:ellipsize="end"
+                android:id="@+id/tv_task_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="3"
+                android:background="@color/common_white"
+                android:gravity="center_vertical"
+                android:maxLength="100"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gainsboro" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/inspection_desc" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gainsboro" />
+
+            <EditText
+                android:ellipsize="end"
+                android:id="@+id/tv_task_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="3"
+                android:maxLength="1000"
+                android:background="@color/common_white"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selected" />
+
+            <TextView
+                android:id="@+id/tv_selected_num"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/station_num" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/defect_cancel"
+                android:textColor="#f18549"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bt_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/defect_ticket_submit"
+                android:textColor="#1667ae"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

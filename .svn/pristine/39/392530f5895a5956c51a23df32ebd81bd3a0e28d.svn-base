@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <!--装机容量-->
+        <LinearLayout
+            android:id="@+id/ll_installed_capacity_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_installed_capacity_item"
+                style="@style/report_tv" />
+            <View
+                style="@style/report_view"/>
+        </LinearLayout>
+        <!--总辐照量-->
+        <LinearLayout
+            android:id="@+id/ll_radiation_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_radiation_report_item"
+                style="@style/report_tv" />
+            <View
+                style="@style/report_view"/>
+        </LinearLayout>
+        <!--水平总辐照量-->
+        <LinearLayout
+            android:id="@+id/ll_horizontal_radiation_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_horizontal_radiation_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view"
+                />
+        </LinearLayout>
+        <!--日照时长-->
+        <LinearLayout
+            android:id="@+id/ll_sunshine_hours_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_sunshine_hours_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view"
+                />
+        </LinearLayout>
+        <!--平均温度-->
+        <LinearLayout
+            android:id="@+id/ll_temperature_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_temperature_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view"
+                />
+        </LinearLayout>
+        <!--理论发电量-->
+        <LinearLayout
+            android:id="@+id/ll_theory_power_report_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_theory_power_report_item"
+                style="@style/report_tv" />
+            <View
+                style="@style/report_view"/>
+        </LinearLayout>
+        <!--发电量-->
+        <LinearLayout
+            android:id="@+id/ll_user_power_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_power_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--累计发电量-->
+        <LinearLayout
+            android:id="@+id/ll_totle_power_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_totle_power_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--计划发电量-->
+        <LinearLayout
+            android:id="@+id/ll_plan_power_item"
+            style="@style/ll_report">
+
+            <TextView
+                android:id="@+id/tv_plan_power_item"
+                style="@style/report_tv"
+               />
+
+            <View style="@style/report_view" />
+        </LinearLayout>
+        <!--上网电量-->
+        <LinearLayout
+            android:id="@+id/ll_ongrid_power_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_ongrid_power_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--等效利用小时-->
+        <LinearLayout
+            android:id="@+id/ll_perpower_ratio_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_perpower_ratio_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--网馈电量-->
+        <LinearLayout
+            android:id="@+id/ll_buypower_report_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_buypower_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--限电损失电量-->
+        <LinearLayout
+            android:id="@+id/ll_powercuts_report_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_powercuts_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--用电量-->
+        <LinearLayout
+            android:id="@+id/ll_user_power_hu_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/user_power_tv_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--自发自用量-->
+        <LinearLayout
+            android:id="@+id/ll_powerseandproduchouse_report_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_powerseandproduchouse_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--自发自用率-->
+        <LinearLayout
+            android:id="@+id/ll_pselfusepowerratio_report_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_selfusepowerratio_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--厂用电量-->
+        <LinearLayout
+            android:id="@+id/ll_poweruseandproducfactory_report_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_poweruseandproducfactory_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--综合厂用电量-->
+        <LinearLayout
+            android:id="@+id/ll_syfactoryuserd_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_syfactoryuserd_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--综合厂用电率-->
+        <LinearLayout
+            android:id="@+id/ll_synstatusepowerratio_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_synstatusepowerratio_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--峰值功率-->
+        <LinearLayout
+            android:id="@+id/ll_acpeakpower_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_acpeakpower_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--系统效率（PR）-->
+        <LinearLayout
+            android:id="@+id/ll_performanceratio_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_performanceratio_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--二氧化碳减排量-->
+        <LinearLayout
+            android:id="@+id/ll_re_total_CO2_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_re_total_CO2_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--节约标准煤量-->
+        <LinearLayout
+            android:id="@+id/ll_re_total_coal_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/tv_re_total_coal_report_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--等效植树量-->
+        <LinearLayout
+            android:id="@+id/ll_reduction_total_tree_item"
+            style="@style/ll_report">
+
+            <TextView
+                android:id="@+id/tv_reduction_total_tree_item"
+                style="@style/report_tv"
+                />
+
+            <View style="@style/report_view" />
+        </LinearLayout>
+        <!--收益-->
+        <LinearLayout
+            android:id="@+id/ll_rank_unit_2_item"
+            style="@style/ll_report">
+            <TextView
+                android:id="@+id/rank_unit_2_item"
+                style="@style/report_tv"
+                />
+            <View
+                style="@style/report_view" />
+        </LinearLayout>
+        <!--计划完成率-->
+        <LinearLayout
+            android:id="@+id/ll_fulfilment_ratio_item"
+            style="@style/ll_report">
+
+            <TextView
+                android:id="@+id/tv_fulfilment_ratio_item"
+                style="@style/report_tv"
+               />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

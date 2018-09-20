@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/iv_marker"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/tv_text_marker_distributed_number"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_marker_distributed_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/tv_marker_distributed_number_pdtop"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/tv_text_marker_distributed_number"
+        android:textSize="@dimen/tv_marker_distributed_number_textsize" 
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tv_marker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/amap_marker_layout_paddingtop"
+        android:textColor="@color/tv_text_marker_distributed_number"
+        android:textSize="@dimen/amap_marker_textsize" />
+
+</RelativeLayout>

@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/new_station_item_tv_name"
+            android:layout_width="match_parent"
+            android:background="@color/common_white"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/plant_pictures" />
+        <!--照片-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white">
+
+            <FrameLayout
+                android:id="@+id/flyt_photo"
+                android:layout_width="325dp"
+                android:layout_height="187dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/new_station_photo_bg">
+
+                <TextView
+                    android:id="@+id/add_img_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="@string/click_select_photo"
+                    android:textColor="#999"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:backgroundImage="@color/common_white"
+                    fresco:fadeDuration="300"
+                    fresco:failureImage="@drawable/person_my_page"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:pressedStateOverlayImage="@color/common_white"
+                    fresco:progressBarAutoRotateInterval="1000"
+                    fresco:progressBarImage="@drawable/loading"
+                    fresco:progressBarImageScaleType="centerInside"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundBottomLeft="false"
+                    fresco:roundBottomRight="true"
+                    fresco:roundTopLeft="true"
+                    fresco:roundTopRight="false"
+                    fresco:roundedCornerRadius="1dp"
+                    fresco:roundingBorderWidth="2dp" />
+                <TextView
+                    android:id="@+id/iv_photo_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"/>
+            </FrameLayout>
+            <ImageView
+                android:id="@+id/iv_delete_photo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@id/flyt_photo"
+                android:src="@drawable/new_station_delete"
+                android:translationX="-12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_upload_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_station_upload_success"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_upload_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="#0bbf71"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/new_station_blue_uploadimg_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/upload"
+                android:textColor="@color/common_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_white"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <!--电站地址-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/station_location" />
+
+                <LinearLayout
+                    style="@style/new_station_item_rlyt_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/et_station_address"
+                        style="@style/station_item_et_content"
+                        android:layout_width="match_parent"
+                        android:maxLength="200"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_station_address"
+                        style="@style/new_station_item_contain_iv_drop"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/location_img" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--经度-->
+            <LinearLayout
+                style="@style/new_station_item_llyt"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#333"
+                        android:gravity="left"
+                        android:text="@string/lng" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="*"
+                        android:visibility="gone"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                     style="@style/new_station_item_contain_parent"
+                     android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_lng"
+                        style="@style/station_item_et_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="-.0123456789"
+                        android:visibility="gone"
+                        android:maxLength="12"
+                        android:inputType="numberSigned" />
+
+                    <LinearLayout
+                        android:id="@+id/lng_ll"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_lng_degree_value"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="-0123456789"
+                            android:maxLength="4"
+                            android:inputType="numberSigned" />
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:textColor="#333"
+                            android:gravity="top|center_horizontal"
+                            android:text="°" />
+
+                        <EditText
+                            android:id="@+id/et_lng_branch_value"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:inputType="number" />
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:textColor="#333"
+                            android:gravity="top|center_horizontal"
+                            android:text="&apos;" />
+
+                        <EditText
+                            android:id="@+id/et_lng_second_value"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:textColor="#333"
+                            android:gravity="top|center_horizontal"
+                            android:text="&quot;" />
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/iv_switch_location_style"
+                        style="@style/new_station_item_contain_iv_drop"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/switch_location_style" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--纬度-->
+            <LinearLayout
+                style="@style/new_station_item_llyt"
+                android:visibility="visible">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#333"
+                        android:gravity="left"
+                        android:text="@string/lat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="*"
+                        android:visibility="gone"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/new_station_item_contain_parent"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/et_lat"
+                        style="@style/station_item_et_background"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="-.0123456789"
+                        android:visibility="gone"
+                        android:maxLength="11"
+                        android:inputType="numberSigned" />
+
+                    <LinearLayout
+                        android:id="@+id/lat_ll"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_lat_degree_value"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="-0123456789"
+                            android:maxLength="3"
+                            android:inputType="numberSigned" />
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:textColor="#333"
+                            android:gravity="top|center_horizontal"
+                            android:text="°" />
+
+                        <EditText
+                            android:id="@+id/et_lat_branch_value"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:inputType="number" />
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:textColor="#333"
+                            android:gravity="top|center_horizontal"
+                            android:text="&apos;" />
+
+                        <EditText
+                            android:id="@+id/et_lat_second_value"
+                            style="@style/station_item_et_background"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:textColor="#333"
+                            android:gravity="top|center_horizontal"
+                            android:text="&quot;" />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <include layout="@layout/create_station_div" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#ff0000"
+                android:text="@string/input_longitude_and_latitude_hints"/>
+
+
+            <include layout="@layout/create_station_div" />
+
+            <!--开始时间-->
+
+
+            <include layout="@layout/create_station_div" />
+            <!--电站简介-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/safe_run_start_time_str" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    style="@style/station_item_et_content"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/new_station_item_llyt"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/new_station_item_tv_name"
+                    android:layout_height="match_parent"
+                    android:text="@string/pnloger_powertation_introduce" />
+
+                <EditText
+                    android:id="@+id/et_profile"
+                    style="@style/station_item_et_content"
+                    android:gravity="top|left"
+                    android:lines="3"
+                    android:maxLength="280"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+            <include
+                android:id="@+id/view_network_element"
+                layout="@layout/create_station_div"
+                android:visibility="gone"/>
+            <!--下层网元地址-->
+            <LinearLayout
+                android:id="@+id/ll_network_element"
+                style="@style/new_station_item_llyt"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/tv_network_element" />
+
+                <EditText
+                    android:id="@+id/tv_network_element"
+                    style="@style/new_station_item_et_content"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+            <!--电站时区-->
+            <LinearLayout style="@style/new_station_item_llyt">
+
+                <TextView
+                    style="@style/new_station_item_tv_name"
+                    android:text="@string/station_timezone" />
+
+                <RelativeLayout style="@style/new_station_item_rlyt_content"
+                                android:background="@drawable/new_station_photo_bg">
+
+                    <Spinner
+                        android:id="@+id/sp_timezone"
+                        style="@style/new_station_item_contain_sp_content" />
+
+                    <ImageView style="@style/new_station_item_contain_iv_drop" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/create_station_div" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

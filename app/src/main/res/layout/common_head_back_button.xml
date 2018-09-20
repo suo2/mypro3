@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/common_white">
+
+    <Button
+        android:id="@+id/bt_left"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="10dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLength="20"
+        android:text=""
+        android:textColor="@color/title_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/title_color"
+        android:textSize="16sp"
+        android:background="@null"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

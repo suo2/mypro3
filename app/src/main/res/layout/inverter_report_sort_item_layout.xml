@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ff9933"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        style="@style/report_tv_white"
+        android:text="@string/report_dev_name" />
+
+
+    <View
+        android:id="@+id/view_device_name"
+        style="@style/report_view_white" />
+
+
+    <LinearLayout
+        android:id="@+id/installed_capacity_report_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_installed_capacity_report"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/installed_capacity_report" />
+
+        <ImageView
+            android:id="@+id/im_installed_capacity_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view_installed_capacity_report"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/theory_Power_report_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_theory_Power_report"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/theory_Power_report" />
+
+        <ImageView
+            android:id="@+id/im_theory_Power_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/theory_Power_report_view"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/power_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_power"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/power" />
+
+        <ImageView
+            android:id="@+id/im_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_power"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/total_generating_electricity__ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_total_generating_electricity_"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/total_generating_electricity_" />
+
+        <ImageView
+            android:id="@+id/im_total_generating_electricity_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/total_generating_electricity__view"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/inverter_conversion_efficiency_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_inverter_conversion_efficiency"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/inverter_conversion_efficiency" />
+
+        <ImageView
+            android:id="@+id/im_inverter_conversion_efficiency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/inverter_conversion_efficiency"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/inverter_item_equivalent_hours_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_inverter_item_equivalent_hours"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/perpower_ratio_report" />
+
+        <ImageView
+            android:id="@+id/im_inverter_item_equivalent_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_inverter_item_equivalent_hours"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/peak_ac_power_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_peak_ac_power"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/peak_ac_power" />
+
+        <ImageView
+            android:id="@+id/im_peak_ac_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_peak_ac_power"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/peak_dc_power_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_peak_dc_power"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/peak_dc_power" />
+
+        <ImageView
+            android:id="@+id/im_peak_dc_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/peak_dc_power_view"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/electric_power_loss__ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_electric_power_loss"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/electric_power_loss" />
+
+        <ImageView
+            android:id="@+id/im_electric_power_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/electric_power_loss__view"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/production_deviation_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_production_deviation"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/production_deviation" />
+
+        <ImageView
+            android:id="@+id/im_production_deviation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/production_deviation_view"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/grid_connection_time_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_grid_connection_time"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/grid_connection_time" />
+
+        <ImageView
+            android:id="@+id/im_grid_connection_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grid_connection_time_view"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/production_reliability_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_production_reliability"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/production_reliability" />
+
+        <ImageView
+            android:id="@+id/im_production_reliability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/production_reliability_view"
+        style="@style/report_view_white" />
+
+    <LinearLayout
+        android:id="@+id/communication_reliability_ll"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_communication_reliability"
+            style="@style/inverter_report_tv_white"
+            android:text="@string/communication_reliability" />
+
+        <ImageView
+            android:id="@+id/im_communication_reliability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_sort_im"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/communication_reliability_view"
+        style="@style/report_view_white" />
+
+
+
+
+</LinearLayout>

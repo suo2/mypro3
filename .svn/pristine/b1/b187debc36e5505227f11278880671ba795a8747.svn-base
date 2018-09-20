@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llSearchAddress"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dp"
+            android:drawableRight="@drawable/icon_amap_view_down_arrow"
+            android:hint="@string/choice_city"
+            android:singleLine="true"
+            android:textColor="#ff9933"
+            android:textColorHint="#ff9933"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/city_search"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_height="28dp"
+            android:background="@drawable/search_city_bg"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/disadrass" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llInputLonlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lng"
+                android:textSize="14sp"
+                android:textColor="@color/text_one"/>
+            <EditText
+                android:id="@+id/etLon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_one"
+                android:hint="@string/please_input"
+                android:digits="-.1234567890"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/text_for"
+                android:background="@null"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lat"
+                android:textSize="14sp"
+                android:textColor="@color/text_one"/>
+            <EditText
+                android:id="@+id/etLat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_one"
+                android:hint="@string/please_input"
+                android:digits="-.1234567890"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/text_for"
+                android:background="@null"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvSwitchMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_google_map"
+            android:gravity="center_horizontal"
+            android:paddingTop="52dp"
+            android:text="@string/google_map"
+            android:textColor="#de4a37"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llLocationSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvStationAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/station_location"
+                android:textSize="14sp"
+                android:textColor="@color/text_theme"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/icon_amap_view_address"
+                android:drawablePadding="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/near_colon"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_three"/>
+                <TextView
+                    android:id="@+id/tvNear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/near_colon_"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_one"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pnuc_lng"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_three"/>
+                    <TextView
+                        android:id="@+id/pnuc_lng_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@color/text_one"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pnuc_lat"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_three"/>
+                    <TextView
+                        android:id="@+id/pnuc_lat_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@color/text_one"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/shape_ankszd"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sure"
+                android:textSize="16sp"
+                android:textColor="@color/text_white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLocationFailed"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:background="@color/white"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="@string/not_toget_nol"
+            android:textSize="14sp"
+            android:textColor="@color/text_three"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/address_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/common_white"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

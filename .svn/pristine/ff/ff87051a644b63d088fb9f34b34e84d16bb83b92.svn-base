@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 连框颜色值 --><item>
+    <shape android:shape="rectangle">
+        <solid android:color="#44DAAA" />
+        <!-- android:radius 弧形的半径 -->
+        <corners android:radius="3dip" />
+        <size android:height="12dp" android:width="20dp"/>
+
+    </shape>
+</item>
+</layer-list>

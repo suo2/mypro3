@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp"
+        android:paddingTop="@dimen/size_5dp"
+        android:paddingBottom="@dimen/size_5dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/first_image_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/green_circle"/>
+            <TextView
+                android:id="@+id/first_tx_value"
+                style="@style/tx_booster_details_real_time"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_data_linear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/second_image_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/green_circle"/>
+
+            <TextView
+                android:id="@+id/second_tx_value"
+                style="@style/tx_booster_details_real_time"
+                android:gravity="right"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

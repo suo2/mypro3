@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_station_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="@color/danzhan_color"/>
+
+        <TextView
+            android:gravity="end"
+            android:id="@+id/tv_dev_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="@color/danzhan_color"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title_ll"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:textColor="@color/shucai_color"
+            android:textSize="11sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_time_line" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="11sp"
+            android:textColor="@color/shucai_color"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/llaaa"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/danzhan_color"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/im_mark"
+        android:layout_below="@id/llaaa"
+        android:text="消缺中"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/orange"
+        android:background="@drawable/textview_border"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+         />
+
+    <LinearLayout
+        android:id="@+id/llDefect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnOperation"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#cccccc"
+            android:text="@string/operation"
+            android:textColor="#ff9900"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnExecution"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ff9900"
+            android:text="@string/execute"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#888"
+        android:paddingTop="10dp" />
+
+</LinearLayout>

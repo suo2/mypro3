@@ -1,0 +1,4758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--荷兰语-->
+    <string name="_0_0">0/0</string>
+
+    <string name="_name">volledige naam</string>
+
+    <string name="_name_">Naam</string>
+
+    <string name="_power">Vermogen</string>
+
+    <string name="a_map_uninstalled">Gaode-kaart is niet geïnstalleerd</string>
+
+    <string name="a_mutually">Fase A</string>
+
+    <string name="a_phase_current">Fase A-stroom:</string>
+
+    <string name="a_phase_current_unit">Ia(A):</string>
+
+    <string name="a_phase_voltage">Fase A-spanning:</string>
+
+    <string name="a_xiang">Fase A</string>
+
+    <string name="ab_line_voltage">Lijn AB-spanning:</string>
+
+    <string name="abnormal_alarm">Abnormaal alarm</string>
+
+    <string name="abort_sys_remote_oper">Verlaten externe upgradebewerking</string>
+
+    <string name="aborted">Verlaten</string>
+
+    <string name="about">Op</string>
+
+    <string name="ac_output_msg_box">AC-uitgang</string>
+
+    <string name="access_device">Toegang tot Apparaat</string>
+
+    <string name="access_wireless_routing">Toegang krijgen tot de draadloze routering</string>
+
+    <string name="account_locked">Account is uitgeschakeld</string>
+
+    <string name="account_safe">Accountbeveiliging</string>
+
+    <string name="accurate_scan">Precisiescannen (128 scanpunten)</string>
+
+    <string name="acjs_dev_type">AC-combinatievak</string>
+
+    <string name="acpeakpower_report">Piekvermogen\n (kW)</string>
+
+    <string name="activate_login">Activeer uw account om in te loggen.</string>
+
+    <string name="activation">Activeren</string>
+
+    <string name="active_power">Actieve vermogen:</string>
+
+    <string name="active_power_">Actieve vermogen:</string>
+
+    <string name="active_power__">Actief vermogen</string>
+
+    <string name="active_power_derating">Percentage reductie actief vermogen (%)</string>
+
+    <string name="active_power_electric">Actief kracht</string>
+
+    <string name="active_power_unit">P(kWh):</string>
+
+    <string name="add_camera">Voeg camera toe</string>
+
+    <string name="add_information">Voeg een set informatie toe</string>
+
+    <string name="add_station_hint">Voeg een krachtcentrale toe (vereist item)</string>
+
+    <string name="add_to_existing_power_station">Toevoegen aan bestaande krachtcentrale</string>
+
+    <string name="add_to_existing_power_station_failure_msg">Toevoegen aan bestaande krachtcentrale mislukt</string>
+
+    <string name="add_to_new_power_station">Toevoegen aan een nieuwe krachtcentrale</string>
+
+    <string name="add_user_success">Gebruiker toevoegen lukt</string>
+
+    <string name="add_user_title">Voeg gebruiker toe</string>
+
+    <string name="advanced_cfg">Geavanceerde instellingen</string>
+
+    <string name="afci_check_mode">AFCI detectie-aanpassingsmodus</string>
+
+    <string name="afci_jcsy_mdoe_str">AFCI detectie-aanpassingsmodus</string>
+
+    <string name="affirm_warn">Bevestig herinnering</string>
+
+    <string name="again_input_new_pwd">Voer nieuwe wachtwoord opnieuw in</string>
+
+    <string name="alarm_cause_code">Redencode</string>
+
+    <string name="alarm_cause_code_">Redencode:</string>
+
+    <string name="alarm_check_status_">Bevestigingsstatus:</string>
+
+    <string name="alarm_details">Alarm details</string>
+
+    <string name="alarm_end_time">Eindtijd van alarm</string>
+
+    <string name="alarm_happened_time">Alarm voorval tijd</string>
+
+    <string name="alarm_info">Alarm informatie</string>
+
+    <string name="alarm_level">Alarm niveau</string>
+
+    <string name="alarm_level_">Alarm niveau:</string>
+
+    <string name="alarm_levid_status_">Alarm niveau:</string>
+
+    <string name="alarm_list_">Alarmlijst</string>
+
+    <string name="alarm_name">Alarmnaam</string>
+
+    <string name="alarm_names">Alarmnaam</string>
+
+    <string name="alarm_rasied_date">Generatie tijd</string>
+
+    <string name="alarm_rasied_date_colon">Productie tijd:</string>
+
+    <string name="alarm_reason_">Alarm reden:</string>
+
+    <string name="alarm_reverse">Alarm</string>
+
+    <string name="alarm_serial_number">Alarm serienummer</string>
+
+    <string name="alarm_start_time">Starttijd van alarm</string>
+
+    <string name="alarm_state">Status</string>
+
+    <string name="alarm_state_">Alarm status</string>
+
+    <string name="alarm_status_">Alarm status:</string>
+
+    <string name="alarm_stutas">Alarm status</string>
+
+    <string name="alarm_total_num">%1$d stuk</string>
+
+    <string name="alarm_total_num_title">Totaal aantal alarmen</string>
+
+    <string name="alarm_tree_level">Alarm niveau</string>
+
+    <string name="alarm_type">Alarm type</string>
+
+    <string name="alarm_types">Alarm type</string>
+
+    <string name="all">Overzicht</string>
+
+    <string name="all_info">Alle berichten</string>
+
+    <string name="all_msg">Alle berichten</string>
+
+    <string name="all_of">Alle</string>
+
+    <string name="all_parallel">Volledig parallel</string>
+
+    <string name="all_pv_set_notice_str">Sommige parameters zijn niet ingesteld, het opslaan mislukt, controleer of de parameterinformatie van elke String volledig is ingesteld!</string>
+
+    <string name="already_add_to_power_station">%1$s is toegevoegd aan de %2$s centrale</string>
+
+    <string name="alternate_esn_server">Alternatieve DNS-server</string>
+
+    <string name="ammeter">Elektrische meter</string>
+
+    <string name="analogue_scale_list">Analoge hoeveelheid lijst</string>
+
+    <string name="announcement">Aankondiging </string>
+
+    <string name="annual_decay_rate">Het verzwakkingspercentage van het onderdeel in het eerste jaar (%/j)</string>
+
+    <string name="app_name_safe">FusionHome Cloud</string>
+
+    <string name="ask_add_device_to_station">Bevestigen dat u Apparaat wilt toevoegen aan de huidige krachtcentrale?</string>
+
+    <string name="at_least_three_column_selected_to_display">Selecteer minimaal drie items</string>
+
+    <string name="attachment_delete_faild_retry">Bijlage verwijderen mislukt. Probeer het opnieuw</string>
+
+    <string name="attachment_has_deleted">Bijlage verwijderd</string>
+
+    <string name="attachment_images_load_failed">Bijlageafbeelding uploaden mislukt</string>
+
+    <string name="attachment_images_uploaded">Bijlageafbeelding geüpload</string>
+
+    <string name="attachment_images_uploaded_failed">Bijlageafbeelding uploaden mislukt</string>
+
+    <string name="attachment_upload_failed">De inhoud van het rapport is verzonden, bijlage uploaden mislukt en het foutbericht:</string>
+
+    <string name="auto_">Automatisch </string>
+
+    <string name="auto_combine">(automatisch geassocieerd door apparaat)</string>
+
+    <string name="auto_login">Automatische inloggen</string>
+
+    <string name="auto_login_msg">Dit systeem onthoudt het inloggen-wachtwoord en is een beveiligingsrisico. Doorgaan?</string>
+
+    <string name="automatic_boot">Automatisch opstarten na herstel van de elektriciteitsnetfout</string>
+
+    <string name="automatic_detection">Automatische detectie</string>
+
+    <string name="automatic_recovery">Automatisch opstarten nadat de communicatie is hervat</string>
+
+    <string name="autonomous_charge_and_discharge">Onafhankelijke lading en ontlading</string>
+
+    <string name="average_voltage_a">String gemiddelde stroom (A)</string>
+
+    <string name="average_voltage_v_a">String gemiddelde spanning (V)/stroom (A)</string>
+
+    <string name="b_mutually">Fase B</string>
+
+    <string name="b_phase_current">Fase B-stroom:</string>
+
+    <string name="b_phase_voltage">Fase B-spanning:</string>
+
+    <string name="b_xiang">Fase B</string>
+
+    <string name="back">Terug naar</string>
+
+    <string name="back_">Vorige</string>
+
+    <string name="base_info">Basis informatie</string>
+
+    <string name="basic_information_">Basis informatie</string>
+
+    <string name="batch">Serie</string>
+
+    <string name="batch_">Serie</string>
+
+    <string name="battery_hearthy">Batterij gezondheid niveau:</string>
+
+    <string name="battery_running_status">Batterij werkstatus:</string>
+
+    <string name="baud_rate">Baudrato</string>
+
+    <string name="baud_rate_">Grote en kleine baudrato van het aangesloten apparaat</string>
+
+    <string name="bazc_detailck">String details</string>
+
+    <string name="bc_line_voltage">Lijn BC-spanning:</string>
+
+    <string name="bdgd_str">Passief eiland</string>
+
+    <string name="be_sure_esn_is_right">Controleer of de gegevensverzameling SN is correct ingevoerd</string>
+
+    <string name="biaoqing_notice_str">Het maken van de inspectietaak mislukt. Controleer of de verplichte parameters bij het maken van de taak speciale tekens bevatten, zoals emoticons.</string>
+
+    <string name="big_endian">Groot einde</string>
+
+    <string name="big_little_endian">Groot en klein einde</string>
+
+    <string name="billion">Honderd miljard</string>
+
+    <string name="billion_kw_unit">Biljoen kWh</string>
+
+    <string name="billion_unit">Biljoen</string>
+
+    <string name="billion_wan">Honderd miljard</string>
+
+    <string name="bind_device_reset_pv_msg">De berekening van de Stringcapaciteit mislukt. Configureer de Stringcapaciteit opnieuw.</string>
+
+    <string name="bind_new_join_device">Bind een nieuw toegangsapparaat</string>
+
+    <string name="black_monocrystal">Zwart Monokristal</string>
+
+    <string name="black_polycrystal">Zwart polykristal</string>
+
+    <string name="bomo_str">Film</string>
+
+    <string name="booster_station">Versterkt spanning krachtcentrale</string>
+
+    <string name="boot_soft_start_time">Zachte starttijd bij opstarten (s)</string>
+
+    <string name="boot_time">Opstarttijd:</string>
+
+    <string name="bottom_allied_equipment">Het aangesloten apparaat</string>
+
+    <string name="branch_range_is">Het score bereik is [0,60]</string>
+
+    <string name="breakdown">Fout</string>
+
+    <string name="breaker_colsing">Stroomonderbrekersluiting</string>
+
+    <string name="brief_introduction">Introductie </string>
+
+    <string name="bulding">Krachtcentrale in aanbouw</string>
+
+    <string name="busbar_interval">Busafstand</string>
+
+    <string name="buypower_report">Elektriciteitsnet terugkoppeling elektriciteit\n (kWh)</string>
+
+    <string name="c_mutually">Fase B</string>
+
+    <string name="c_phase_current">Fase B-stroom:</string>
+
+    <string name="c_phase_voltage">Fase B-spanning:</string>
+
+    <string name="c_xiang">Fase B</string>
+
+    <string name="ca_line_voltage">Lijn CA-spanning:</string>
+
+    <string name="call">Bel</string>
+
+    <string name="camera_information">Camera-informatie</string>
+
+    <string name="camera_ip_port_notice">IP-adres</string>
+
+    <string name="camera_name_str">Cameranaam</string>
+
+    <string name="CameraMsg">Cameratoestemmingen </string>
+
+    <string name="can_not_launch_task">De taak die door de gebruiker is uitgevoerd, is nog niet voltooid en de nieuwe taak kan niet opnieuw worden gestart.</string>
+
+    <string name="can_patrol_staion">Inspectieplaats</string>
+
+    <string name="can_shu_faw_error_notice_str">Sommige van de ingestelde parameters liggen buiten het maximale bereik van de controlewaarde. Controleer de ingestelde waarde opnieuw</string>
+
+    <string name="cancel">Annuleren</string>
+
+    <string name="cancel_">Annuleren</string>
+
+    <string name="cancel_account">Uitloggen</string>
+
+    <string name="cancel_compared">Vergelijking annuleren</string>
+
+    <string name="cancel_defect">Annuleren</string>
+
+    <string name="cancel_patrol_task_create">Bevestigen om af te zien van het maken van de inspectietaak?</string>
+
+    <string name="cancel_save_str">Wilt u het opslaan annuleren?</string>
+
+    <string name="cancle">Verlaten</string>
+
+    <string name="cannot_all_modification_notice">Er zijn niet-ingestelde parameters of parameterfouten in String 1 en u kunt ze niet in groepen in andere String instellen!</string>
+
+    <string name="cap_hint">Een geheel getal van 0 tot 150000</string>
+
+    <string name="cap_w">W</string>
+
+    <string name="capacity_notice">Planningcapaciteit kan slechts een aantal (0,100000000] zijn, drie decimalen bevatten</string>
+
+    <string name="capacity_report">Elektriciteitopwekking en inkomsten rapport</string>
+
+    <string name="capatity_no_colon">Geïnstalleerde capaciteit</string>
+
+    <string name="capity_yuexian_str">Capaciteit overschrijdt de bovengrens</string>
+
+    <string name="captcha">Verificatie code</string>
+
+    <string name="captcha_error">Verificatie code fout</string>
+
+    <string name="center_inv">Gecentraliseerde omvormer</string>
+
+    <string name="centralized_inverter">Gecentraliseerde omvormer</string>
+
+    <string name="centralized_inverter_">Gecentraliseerde omvormer</string>
+
+    <string name="centure_value">Gemiddelde waarde</string>
+
+    <string name="cfg_success">Configuratie lukt</string>
+
+    <string name="ch_battery_mode">Opladen en ontladen modus:</string>
+
+    <string name="change_photo">Foto wijzigen</string>
+
+    <string name="change_rate_protection">Frequentie verandering snelheid bescherming</string>
+
+    <string name="change_rate_protection_not">Frequentie verandering snelheid bescherming punt (Hz/s)</string>
+
+    <string name="change_rate_protection_time">Frequentie verandering snelheid beschermingstijd (s)</string>
+
+    <string name="change_station_str">Informatie over krachtcentrales</string>
+
+    <string name="change_system_setting">Systeeminstellingen wijzigen, log opnieuw in</string>
+
+    <string name="charge_dis_wunit">Laadvermogen en ontlaadvermogen</string>
+
+    <string name="check_all_str">Selecteer alle</string>
+
+    <string name="check_device_connected_properly">Controleer of het fysieke apparaat correct is aangesloten.</string>
+
+    <string name="check_failed">Apparaat detecteren mislukt!</string>
+
+    <string name="check_indicator_light">Controleer de indicator</string>
+
+    <string name="check_inspect_report">Bekijk rapport</string>
+
+    <string name="Check_light_is_normal">Controleer of de indicator normaal is</string>
+
+    <string name="check_opinion">Acceptatie advies</string>
+
+    <string name="check_physical_equipment">Controleer het fysieke apparaat</string>
+
+    <string name="check_pv_cap">Bekijk de PV-capaciteit</string>
+
+    <string name="check_time_range">Controleer: \n1.of de tijd is vol met 24 uur\n2.of er is een tijdsoverschrijding.</string>
+
+    <string name="child_dev_info">Informatie over onderapparaten</string>
+
+    <string name="choice_city">Selecteer stad</string>
+
+    <string name="choice_data_logger">Selecteer gegevensverzameling</string>
+
+    <string name="choice_of_communication">Selecteer communicatiemethode</string>
+
+    <string name="choice_time">Selecteer tijd</string>
+
+    <string name="choose_device_location">Selecteer apparaatlocatie</string>
+
+    <string name="choose_inverter">Selecteer omvormer</string>
+
+    <string name="choose_work_orde">Selecteer het type werkorder dat moet worden gemaakt</string>
+
+    <string name="circulation_opinions">Circulatie advies:</string>
+
+    <string name="city">Stad</string>
+
+    <string name="city_name">Chinese naam of pinyin van de stad</string>
+
+    <string name="class_info">Groepsinformatie:</string>
+
+    <string name="clear">Verwijderen</string>
+
+    <string name="clear_alarm">Alarm wissen</string>
+
+    <string name="cleared">Ontruimde</string>
+
+    <string name="click_dev_notice_1">(Klik op de huishoudlijke omvormer om de apparaatinformatie te bekijken)</string>
+
+    <string name="click_dev_notice_2">(Klik op de huishoudlijke omvormer, energieopslag, elektriciteitsmeter om de apparaatinformatie te bekijken)</string>
+
+    <string name="click_dev_to_check_info">(Bekijk details)</string>
+
+    <string name="click_dev_to_detail">(Klik op de omvormer, energieopslag, elektriciteitsmeter om de apparaatinformatie te bekijken)</string>
+
+    <string name="click_select_photo">Klik om foto\&apos;s te selecteren</string>
+
+    <string name="click_station_choice">Klik om krachtcentrale te selecteren</string>
+
+    <string name="click_to_select_res">Klik om een bron te selecteren</string>
+
+    <string name="click_to_select_time">Klik om tijd te selecteren</string>
+
+    <string name="click_to_set_time">Klik om de tijd in te stellen</string>
+
+    <string name="click_to_start">Klik om te starten</string>
+
+    <string name="close">Gesloten</string>
+
+    <string name="close_light">Zaklamp </string>
+
+    <string name="close_str">Sluiten</string>
+
+    <string name="co2_emission_reduction">Vermindering van de CO2-uitstoot</string>
+
+    <string name="code">Nummer</string>
+
+    <string name="code_">Nummer</string>
+
+    <string name="code_dev_not_maching">Registratiecode en apparaat komen niet overeen</string>
+
+    <string name="code_have_used">De registratiecode is gebruikt</string>
+
+    <string name="code_not_edit">Apparaatregistratiecode bestaat niet</string>
+
+    <string name="code_sele">Selecteer een signaalpunt</string>
+
+    <string name="collecter_dev">Verwerving apparaat</string>
+
+    <string name="commit_defect_detail_delete">Het huidige knooppunt kan niet worden ingediend op het bovenste niveau. De gebruiker van het knooppunt op het bovenste niveau is verwijderd. Selecteer een ander verwerkingsresultaat.</string>
+
+    <string name="commit_upgrade">Wijzigingen indienen</string>
+
+    <string name="common_addr_repeat">Dubbel openbaar adres</string>
+
+    <string name="common_addr_title">Openbaar adres</string>
+
+    <string name="common_op">Gemeenschappelijke bediening</string>
+
+    <string name="communication_mode">Communicatiemethode</string>
+
+    <string name="communication_mode_">Communicatiemethode</string>
+
+    <string name="communication_reliability">Communicatiebetrouwbaarheid (%)</string>
+
+    <string name="communication_reliability_no_unit">Communicatie betrouwbaarheid</string>
+
+    <string name="communication_state">Communicatiestatus</string>
+
+    <string name="communication_switch">Automatische uitschakeling na communicatie verbreken</string>
+
+    <string name="communications_parameters">Communicatie parameter</string>
+
+    <string name="company_address">Bedrijfsadres</string>
+
+    <string name="company_filingno">Neerleggingsnummer</string>
+
+    <string name="company_name">Bedrijfsnaam</string>
+
+    <string name="company_name_in">Bedrijfsnaam</string>
+
+    <string name="company_name_used">Bedrijfsnaam al gebruikt</string>
+
+    <string name="company_strength">Officiële website van bedrijf</string>
+
+    <string name="comparison_of_power_per_mw">Enkele MW vermogenvergelijking</string>
+
+    <string name="complete_connect">Volledige toegang</string>
+
+    <string name="complete_connect_back_home">Keer terug naar de startpagina na het voltooien van de toegang</string>
+
+    <string name="completed">Het is afgelopen</string>
+
+    <string name="completion_confirmed">Bevestigen voltooien</string>
+
+    <string name="completion_situation">Voltooiingsstatus</string>
+
+    <string name="component_cleaning">Onderdelen reinigen</string>
+
+    <string name="component_cur_tem_coefficient">Temperatuurcoëfficiënt van kortsluitstroom (Isc) (%/° C)</string>
+
+    <string name="component_launch_date">Netaansluitdatum van de onderdelen</string>
+
+    <string name="component_manufacturers">Fabrikant van onderdelen</string>
+
+    <string name="component_max_power_cur">Optimale bedrijfsstroom van de onderdelen (Imp) (A)</string>
+
+    <string name="component_max_power_point_vol">Optimale bedrijfsspanning van het onderdeel (Vmp) (V)</string>
+
+    <string name="component_open_circuit_vol">Onderdeel nullastspanning (Voc) (V)</string>
+
+    <string name="component_short_circuit_current">Onderdeel kortsluitstroom (Isc) (A)</string>
+
+    <string name="component_temp_vol_coefficient">Temperatuurcoëfficiënt van nullastspanning (Voc) (%/° C)</string>
+
+    <string name="component_type">Onderdeelmodel</string>
+
+    <string name="component_types">Onderdeel type</string>
+
+    <string name="config">Configuratie </string>
+
+    <string name="confirm">Bevestigen</string>
+
+    <string name="confirm_alarm">Bevestigingsalarm</string>
+
+    <string name="confirm_and_submit">Bevestig en indien</string>
+
+    <string name="confirm_pwd">Bevestig wachtwoord</string>
+
+    <string name="confirm_quit_inspect">Weet u zeker dat u de inspectiehandeling wilt beëindigen?</string>
+
+    <string name="congruent_point">Geaggregeerd punt</string>
+
+    <string name="connect_failed">Verbindingsfout</string>
+
+    <string name="connect_person_str">Contact:</string>
+
+    <string name="connect_port">Verbindingspoort</string>
+
+    <string name="connect_station">Krachtcentrale associëren</string>
+
+    <string name="connect_success">Associëren lukt</string>
+
+    <string name="connected">Aangesloten</string>
+
+    <string name="connection_segment_interval">Rail verbinding/segmentatie-interval</string>
+
+    <string name="connectted">verbonden</string>
+
+    <string name="contact_information">Contact informatie</string>
+
+    <string name="contact_person">Contactpersoon</string>
+
+    <string name="content">Inhoud</string>
+
+    <string name="continue_">Voortzetten</string>
+
+    <string name="continue_to_submit">Configureren</string>
+
+    <string name="copy">Kopieer</string>
+
+    <string name="correct_set_data_range">Stel de datumbereik juist in</string>
+
+    <string name="county_seat">Het gelegen graafschap</string>
+
+    <string name="creat_task_success">Taak toegevoegen lukt</string>
+
+    <string name="create_defect_list">Defectenlijst toevoegen</string>
+
+    <string name="create_new_one">Creëren</string>
+
+    <string name="create_person">+ Toevoegen </string>
+
+    <string name="create_station_compute_pv_defeate_msg">De berekening van de Stringcapaciteit mislukt. Zorg ervoor dat de &quot;DC-capaciteit van de krachtcentrale&quot; en de &quot;Aantal apparaten&quot; waartoe toegang is verkregen correct zijn ingevoerd, of voer de configuratie van de String details uit?</string>
+
+    <string name="create_station_fail">Het maken van een krachtcentrale mislukt</string>
+
+    <string name="create_station_reset_pv_msg">Maken lukt, de Stringcapaciteit opnieuw configureren met [Beheer van krachtcentrales] -&gt; [Wijziging van krachtcentrales].</string>
+
+    <string name="create_station_string">Nieuwe krachtcentrale</string>
+
+    <string name="create_station_success">Het maken van een krachtcentrale lukt</string>
+
+    <string name="create_station_title">Voeg krachtcentrale toe</string>
+
+    <string name="create_time">Creatie tijd</string>
+
+    <string name="crystalline_silicon">Kristallijn silicium</string>
+
+    <string name="cumulative_capacity">Cumulatief (kWh)</string>
+
+    <string name="cur_ver">Huidige versie:</string>
+
+    <string name="currency_dev_type">Universeel apparaat</string>
+
+    <string name="current">Stroom (A)</string>
+
+    <string name="current_alarm_state">Alarmstatus: hersteld!</string>
+
+    <string name="current_dev_not_string_inv">Huidige apparaat is niet String omvormer</string>
+
+    <string name="current_device">Huidig apparaat</string>
+
+    <string name="current_generation_capacity">Huidig totaal vermogen</string>
+
+    <string name="current_number">Bel het huidige nummer:</string>
+
+    <string name="current_position">Huidige locatie</string>
+
+    <string name="current_power">Huidige kracht:</string>
+
+    <string name="current_processor">Huidige handelaar</string>
+
+    <string name="current_version">Huidige versie</string>
+
+    <string name="current_version_colon">Huidige versie:</string>
+
+    <string name="current_yield_pieces">Elektriciteitopwekking van de dag  (kWh)</string>
+
+    <string name="custom_report">Aangepast rapport</string>
+
+    <string name="custom_report_three">(Selecteer minimaal drie items)</string>
+
+    <string name="daily_capacity">Dagelijkse (kWh)</string>
+
+    <string name="data_logger">Gegevensverzameling</string>
+
+    <string name="data_logger_name_repeat">Dubbel gegevensverzameling naam</string>
+
+    <string name="data_setting_notall_notice">Er zijn parameters niet geconfigureerd, bevestig of u instellingen wilt opslaan</string>
+
+    <string name="data_setting_str">Parameterinstellingen</string>
+
+    <string name="data_sync_complete">Gegevenssynchronisatie voltooid</string>
+
+    <string name="date_jx_notice">De datuminstelling heeft een kruising met de bestaande elektriciteitsprijs, gelieve deze te resetten!</string>
+
+    <string name="day">Dag</string>
+
+    <string name="day_income">Dagelijkse inkomsten</string>
+
+    <string name="day_income_">Dagelijkse inkomsten</string>
+
+    <string name="day_power_">Dagelijkse elektriciteitsopwekking</string>
+
+    <string name="day_time">Dag</string>
+
+    <string name="day_xy">Dag:</string>
+
+    <string name="dc_bus">DC-combinatiedoos</string>
+
+    <string name="dc_bus_dispersion_ratio">Discrete snelheid van de String van de DC-combinatiedoos</string>
+
+    <string name="Dc_capacity_of_power_station">DC-capaciteit van de krachtcentrale</string>
+
+    <string name="Dc_capacity_of_power_station_hint">DC-capaciteit van de krachtcentrale (vereist item)</string>
+
+    <string name="dc_input_msg_box">DC-ingang</string>
+
+    <string name="dc_junction_box">DC-combinatiedoos</string>
+
+    <string name="dc_mode_str">Batterijpaneeltype</string>
+
+    <string name="dcblx_str">Batterijpaneeltype</string>
+
+    <string name="dcjs_str">DC-combinatiedoos</string>
+
+    <string name="ddzlwcsj_str">Onderhoudstijd geplande instructie</string>
+
+    <string name="deadline">Termijn</string>
+
+    <string name="deal_suggest">Suggesties voor behandeling</string>
+
+    <string name="defect">Defect </string>
+
+    <string name="defect_assign">Toewijzing</string>
+
+    <string name="defect_assign_confirmed">Toewijzing bevestigen</string>
+
+    <string name="defect_back">De bewerker voert een retourbewerking uit en kan de verzending niet uitvoeren.</string>
+
+    <string name="defect_cancel">Verlaten</string>
+
+    <string name="defect_detail_delete">Het huidige knooppunt kan niet worden geretourneerd. De gebruiker van het vorige knooppunt is verwijderd. Ga naar de volgende stap.</string>
+
+    <string name="defect_detail_error">Defect verwijderen lijst details uploaden mislukt</string>
+
+    <string name="defect_details">Defectlijst details</string>
+
+    <string name="defect_eliminating">Defecten verwijderen</string>
+
+    <string name="defect_eliminating_completed_today">Defecten verwijderen vandaag voltooid</string>
+
+    <string name="defect_level_selection">Defectniveau</string>
+
+    <string name="defect_notallsame">De mening van de bewerker is inconsistent en de inzending kan niet worden uitgevoerd.</string>
+
+    <string name="defect_notdeal">De bewerker heeft nog niet verwerkt en de inzending kan niet worden uitgevoerd.</string>
+
+    <string name="defect_notsameop">Inconsistent met de exploitant</string>
+
+    <string name="defect_other_name">Defectlijst</string>
+
+    <string name="defect_return">Terugkeer</string>
+
+    <string name="defect_task">Taak om defect te verwijderen</string>
+
+    <string name="defect_ticket_submit">Voorleggen</string>
+
+    <string name="degree">Graad</string>
+
+    <string name="delete">Verwijderen</string>
+
+    <string name="delete_attachment_confirmed">Bevestigen om deze bijlage te verwijderen?</string>
+
+    <string name="delete_new_device">Verwijder het apparaat</string>
+
+    <string name="delete_pic_or_not">Wil je de afbeelding verwijderen?</string>
+
+    <string name="delete_picture">Bevestigen om de huidige foto te verwijderen?</string>
+
+    <string name="deletion_failed">Verwijderen mislukt</string>
+
+    <string name="desc">Beschrijving</string>
+
+    <string name="description_cannot_be_blank">Defectbeschrijving mag niet leeg zijn</string>
+
+    <string name="deselect_extra_data">Ondersteunt nu slechts één gegevensbewerking, deselecteer de extra gegevens!</string>
+
+    <string name="design_dian_price">Stel de elektriciteitsprijs in</string>
+
+    <string name="detail_information">Detail informatie</string>
+
+    <string name="detail_str">Details:</string>
+
+    <string name="details_of_anno_title">Aankondigingsdetails</string>
+
+    <string name="determine">Bevestigen</string>
+
+    <string name="dev_alone_bd_str">Het apparaat is ingebonden</string>
+
+    <string name="dev_boosttransformer">Versterkt spanning onderstation</string>
+
+    <string name="dev_capacity">Capaciteit:</string>
+
+    <string name="dev_colstameter">Verzamelstation lijnmeter</string>
+
+    <string name="dev_esn_not_null">Apparaat-SN kan niet leeg zijn</string>
+
+    <string name="dev_esn_num">Apparat SN-nummer</string>
+
+    <string name="dev_esn_num_">Apparaat-SN nummer:</string>
+
+    <string name="dev_esn_num_no_hao">Apparaat-SN</string>
+
+    <string name="dev_esn_repeat">Apparaat-SN wordt herhaald</string>
+
+    <string name="dev_esn_title">Apparaat-SN</string>
+
+    <string name="dev_gatewaymeter">Poort elektriciteitmeter</string>
+
+    <string name="dev_info">Apparaat informatie</string>
+
+    <string name="dev_ip_title">Apparaat IP</string>
+
+    <string name="dev_jieru_failed">Apparaattoegang mislukt</string>
+
+    <string name="dev_model_title">Apparaat model</string>
+
+    <string name="dev_modleversion_str">Apparaatversienummer:</string>
+
+    <string name="dev_multipurpose">Communicatiebeheermachine</string>
+
+    <string name="dev_name">Apparaatnaam</string>
+
+    <string name="dev_name_not_null">Apparaatnaam mag niet leeg zijn</string>
+
+    <string name="dev_name_repeat">Dubbele apparaatnaam</string>
+
+    <string name="dev_name_str">Apparaatnaam:</string>
+
+    <string name="dev_name_str_more">Apparaatnaam:</string>
+
+    <string name="dev_name_title">Apparaatnaam</string>
+
+    <string name="dev_north">Noordwaartse</string>
+
+    <string name="dev_not_existence">Apparaat bestaat niet</string>
+
+    <string name="dev_not_have_station_str">Het apparaat heeft geen overeenkomstige krachtcentrale</string>
+
+    <string name="dev_not_have_subdev">Het apparaat heeft geen aangesloten apparaat</string>
+
+    <string name="dev_number_yuexian">Het aantal apparaten overschrijdt de limiet</string>
+
+    <string name="dev_phocabinet">Fotovoltaïsche netaansluitkast</string>
+
+    <string name="dev_phoscreen">Fotovoltaïsch netaansluit scherm</string>
+
+    <string name="dev_pid">PID</string>
+
+    <string name="dev_powerquality">Macht kwaliteitsapparaat</string>
+
+    <string name="dev_run_normally_please_quit">Het apparaat werkt normaal. Sluit de leidende controle</string>
+
+    <string name="dev_sn_str">Apparaat-SN nummer:</string>
+
+    <string name="dev_type_not_null">Apparaattype mag niet leeg zijn</string>
+
+    <string name="dev_type_str">Apparaat type</string>
+
+    <string name="dev_type_title">Apparaat type</string>
+
+    <string name="dev_update">Upgrade van het apparaat</string>
+
+    <string name="dev_update_detail">Apparaat upgrade kennisgeving details</string>
+
+    <string name="dev_update_list">Apparaat upgrade kennisgeving lijst</string>
+
+    <string name="dev_version_code">Apparaatversienummer</string>
+
+    <string name="dev_version_code_">Apparaatversienummer:</string>
+
+    <string name="dev_version_not_null">Apparaatmodel kan niet leeg zijn</string>
+
+    <string name="device">Apparaat</string>
+
+    <string name="device_alarm_important">(Belangrijk)</string>
+
+    <string name="device_alarm_serious">(Ernstige)</string>
+
+    <string name="device_alarm_subordinate">(Secundair)</string>
+
+    <string name="device_alarm_sug">(Prompt)</string>
+
+    <string name="device_blind_notice">Het apparaat is ingebonden. Vervang het </string>
+
+    <string name="device_details">Apparaat details</string>
+
+    <string name="device_find_style">Apparaatzoekmodus</string>
+
+    <string name="device_is_bind">Het apparaat is door een andere krachtcentrale gebonden. Vervang het</string>
+
+    <string name="device_isnot_pnlogger">Het gescande apparaat is geen apparaat voor productgerelateerde gegevensverzameling</string>
+
+    <string name="device_management">Apparaat beheer</string>
+
+    <string name="device_name">Apparaatnaam</string>
+
+    <string name="device_name_">Apparaatnaam:</string>
+
+    <string name="device_name_optional">Apparaatnaam (optioneel)</string>
+
+    <string name="device_params">Apparaatparameter</string>
+
+    <string name="device_posion_result">Apparaatlocatieresultaat</string>
+
+    <string name="device_replace">Apparaat vervangen</string>
+
+    <string name="device_replace_failed">Apparaat vervangen mislukt</string>
+
+    <string name="device_replace_success">Apparaat vervangen lukt</string>
+
+    <string name="device_revese_alarm">String 8 achteruit</string>
+
+    <string name="device_station_result">Selectie van krachtcentrale voor apparaat</string>
+
+    <string name="device_type">Apparaat type</string>
+
+    <string name="device_type_">Apparaat type</string>
+
+    <string name="device_version">Apparaatversienummer</string>
+
+    <string name="dian_price">Elektriciteitsprijs:</string>
+
+    <string name="dianbiao_status">Meter status:</string>
+
+    <string name="dianliu_with_unit">Stroom (A)</string>
+
+    <string name="dianwang_dianliu">Stroom elektriciteitsnet</string>
+
+    <string name="dianwang_dianya">Spanning elektriciteitsnet</string>
+
+    <string name="dianya_v">(V)</string>
+
+    <string name="dianya_with_unit">Spanning (V)</string>
+
+    <string name="dianya_with_unit_v">Gemiddelde spanning (V):</string>
+
+    <string name="different_parent">Kan apparaten alleen onder dezelfde gegevensverzameling vervangen</string>
+
+    <string name="direct_current">DC-stroom:</string>
+
+    <string name="direct_current_output">DC-uitgang</string>
+
+    <string name="direct_voltage">DC-spanning:</string>
+
+    <string name="disabled">Uitgeschakeld</string>
+
+    <string name="disadrass">Vul alstublieft het volledige adres in</string>
+
+    <string name="disallow_repeat">Het alarm is gewist. Herhaal het niet!</string>
+
+    <string name="discarded">Verlaten</string>
+
+    <string name="disconnect">Losgekoppeld</string>
+
+    <string name="disconnect_station">Ontkoppelde krachtcentrale</string>
+
+    <string name="disconnected">Losgekoppeld</string>
+
+    <string name="discover_on_colon">Starttijd:</string>
+
+    <string name="disenable">Uitschakelen</string>
+
+    <string name="dispersion_ratio">Discrete snelheid van de String (%)</string>
+
+    <string name="dispersion_ratio_tx">Discrete snelheid van de String</string>
+
+    <string name="dispersion_ratio_tx_">Discrete snelheid van de String:</string>
+
+    <string name="displacement_signal">Verplaatsingssignaal</string>
+
+    <string name="distributed">Distributietype</string>
+
+    <string name="dnzlyh_mdoe_str">Optimalisatiemodus voor elektriciteit kwaliteit</string>
+
+    <string name="do_not_support_open_station">Het apparaattype is een communicatiebeheermachine en ondersteunt geen opening.</string>
+
+    <string name="dollar_name">US dollar</string>
+
+    <string name="dollar_unit">$</string>
+
+    <string name="double_fire_line">Dubbele vuurlijn</string>
+
+    <string name="double_glass_monocrystal">Dubbelglas Monokristal</string>
+
+    <string name="double_glass_polycrystal">Dubbelglas polykristal</string>
+
+    <string name="double_polycrystal">Polykristal dubbelglas</string>
+
+    <string name="doule_galss_1500_module">Dubbelglas 1500 onderdelen</string>
+
+    <string name="doule_galss_1501_module">Dubbelglas 1501 onderdelen</string>
+
+    <string name="doule_galss_1502_module">Dubbelglas 1502 onderdelen</string>
+
+    <string name="doule_galss_1503_module">Dubbelglas 1503 onderdelen</string>
+
+    <string name="doule_galss_1504_module">Dubbelglas 1504 onderdelen</string>
+
+    <string name="doule_galss_1505_module">Dubbelglas 1505 onderdelen</string>
+
+    <string name="doule_galss_1506_module">Dubbelglas 1506 onderdelen</string>
+
+    <string name="doule_galss_1507_module">Dubbelglas 1507 onderdelen</string>
+
+    <string name="doule_galss_1508_module">Dubbelglas 1508 onderdelen</string>
+
+    <string name="doule_galss_1509_module">Dubbelglas 1509 onderdelen</string>
+
+    <string name="doule_glass_module">Dubbelglas onderdelen</string>
+
+    <string name="down_on_frequency">Overfrequentie reductie uitgangsfrequentie (Hz)</string>
+
+    <string name="down_trigger_frequency">Overfrequentie reductietrekkerfrequentie (Hz)</string>
+
+    <string name="download_up_package">Download het upgradepakket naar uw telefoon</string>
+
+    <string name="downlown_sure">Bevestigen</string>
+
+    <string name="dwcldysx_str">Elektriciteitsnet heraansluiting spanning bovengrens</string>
+
+    <string name="dwcldyxx">Elektriciteitsnet heraansluiting spanning ondergrens</string>
+
+    <string name="dwclplsx">Elektriciteitsnet heraansluiting frequentie bovengrens</string>
+
+    <string name="dwclplxx">Elektriciteitsnet heraansluiting frequentie ondergrens</string>
+
+    <string name="dwdtbphbhd_str">Elektriciteitsnet spanning onbalance beschermingspunt</string>
+
+    <string name="dwgzhfbwsj">Tijd netaansluit na herstel van de elektriciteitsnetfout</string>
+
+    <string name="dwgzhfzdkj_str">Automatisch opstarten na herstel van de elektriciteitsnetfout</string>
+
+    <string name="dwgzkfrqdsj_str">Korte starttijd bij opstarten na stroomstoring </string>
+
+    <string name="dyssyz_not_dy_dyssyz_str">Het spanningsverhogingsonderdrukking reactief vermogen regulatiepunt kan niet groter zijn dan het spanningsverhogingsonderdrukking actief vermogen reductiepunt</string>
+
+    <string name="dyssyz_str">Spanningsverhogingsonderdrukking</string>
+
+    <string name="dyssyzwgtjd_str">Spanningsverhogingsonderdrukking reactief vermogen regulatiepunt</string>
+
+    <string name="dyssyzygjed_str">Spanningsverhogingsonderdrukking actief vermogen reductiepunt </string>
+
+    <string name="e_1">Oost 1e tijdzone</string>
+
+    <string name="e_10">Oost 10e tijdzone</string>
+
+    <string name="e_11">Oost 11e tijdzone</string>
+
+    <string name="e_12">Oost 12e tijdzone</string>
+
+    <string name="e_2">Oost 2e tijdzone</string>
+
+    <string name="e_3">Oost 3e tijdzone</string>
+
+    <string name="e_4">Oost 4e tijdzone</string>
+
+    <string name="e_5">Oost 5e tijdzone</string>
+
+    <string name="e_6">Oost 6e tijdzone</string>
+
+    <string name="e_7">Oost 7e tijdzone</string>
+
+    <string name="e_8">Oost 8e tijdzone</string>
+
+    <string name="e_9">Oost 9e tijdzone</string>
+
+    <string name="e_mail">E-mail</string>
+
+    <string name="edit">Uitgeven</string>
+
+    <string name="EEPROMFault">Apparaatuitzondering: EEPROM-fout</string>
+
+    <string name="efficiency">Conversie-efficiëntie:</string>
+
+    <string name="efficient_moudle">Efficiënt onderdeel</string>
+
+    <string name="ejgpbhd_str">Tweede-fase overfrequentie beschermingspunt</string>
+
+    <string name="ejgpbhsj_str">Tweede-fase overfrequentie beschermingstijd</string>
+
+    <string name="ejgybhd_str">Tweede-fase overspanning beschermingspunt</string>
+
+    <string name="ejgybhsj_str">Tweede-fase overspanning beschermingstijd</string>
+
+    <string name="ejqpbhd_str">Tweede-fase onderfrequentie beschermingspunt</string>
+
+    <string name="ejqpbhsj_str">Tweede-fase onderfrequentie beschermingstijd</string>
+
+    <string name="ejqybhd_str">Tweede-fase onderspanning beschermingspunt</string>
+
+    <string name="ejqybhsj_str">Tweede-fase onderspanning beschermingstijd</string>
+
+    <string name="ele_type_station_name">Naam van de krachtcentrale</string>
+
+    <string name="electric_power_loss">Vermogensverlies door vermogensbeperking (kWh)</string>
+
+    <string name="electric_power_loss_no_unit">Vermogensverlies door vermogensbeperking</string>
+
+    <string name="electrical_parameter">Elektriciteitsnet parameter</string>
+
+    <string name="electricity">Stroom (A)</string>
+
+    <string name="electricity_a">(A)</string>
+
+    <string name="electricity_price_setting">Instelling van elektriciteitsprijs</string>
+
+    <string name="elementary">Primair </string>
+
+    <string name="email">E-mail</string>
+
+    <string name="email_">E-mail:</string>
+
+    <string name="email_colon">E-mail:</string>
+
+    <string name="email_in">E-mail</string>
+
+    <string name="email_or_password">Onjuiste e-mail of wachtwoord</string>
+
+    <string name="email_send_fail">E-mail verzonden mislukt!</string>
+
+    <string name="email_send_ok">E-mail verzonden lukt!</string>
+
+    <string name="email_used">Deze e-mail is gebruikt, vervang deze</string>
+
+    <string name="en_detector">Milieumonitor</string>
+
+    <string name="en_param">Omgevingsparameter</string>
+
+    <string name="enable">Inschakelen</string>
+
+    <string name="enabled">In staat stellen</string>
+
+    <string name="end_time">Eindtijd</string>
+
+    <string name="endian_baudrate_title">Grote en kleine baudrato</string>
+
+    <string name="english_unit">￡</string>
+
+    <string name="ensure_to_submit">Bevestigen om in te dienen?</string>
+
+    <string name="enter_installation_address">Voer het installatie-adres van de gegevensverzamelaar in</string>
+
+    <string name="enter_one_user_name">Voer uw gebruikersnaam/e-mailadres/telefoonnummer in</string>
+
+    <string name="enter_station_name_or_key_words">Voer de naam of het adres van de krachtcentrale in</string>
+
+    <string name="enter_tesk_name">Voer de taaknaam in</string>
+
+    <string name="enter_the_server_IP">Voer het IP-adres van de server in</string>
+
+    <string name="equipment_alarm">Apparaat alarm</string>
+
+    <string name="equipment_alarm_list">Alarmlijst voor apparaten</string>
+
+    <string name="equipment_cannot_be_blank">Het apparaat kan niet leeg zijn</string>
+
+    <string name="equipment_model">Apparaat model</string>
+
+    <string name="equipment_model_vision">Apparaatmodel versienummer</string>
+
+    <string name="equipment_name">Apparaatnaam:</string>
+
+    <string name="equipment_type">Apparaat type</string>
+
+    <string name="equipment_type_">Apparaat type:</string>
+
+    <string name="equipped_capacitor">Geïnstalleerde capaciteit:</string>
+
+    <string name="equivalent_utilization_hours">Equivalente gebruiksuren</string>
+
+    <string name="equivalent_utilization_hours_compare">Equivalente benuttingsurenvergelijking</string>
+
+    <string name="error_close">Abnormale afgesloten</string>
+
+    <string name="error_code">Uitzonderingstype:</string>
+
+    <string name="error_deal_sugg">Suggesties voor afhandeling:</string>
+
+    <string name="error_deal_sugge">Suggesties voor behandeling</string>
+
+    <string name="error_desc">Foutbeschrijving:</string>
+
+    <string name="error_info">Abnormale statistieken</string>
+
+    <string name="error_info_web">Serverfout</string>
+
+    <string name="error_name">Uitzondering naam:</string>
+
+    <string name="error_name_">Foutnaam:</string>
+
+    <string name="error_num">Het aantal uitzonderingen:</string>
+
+    <string name="error_statistical">Abnormaal overzicht</string>
+
+    <string name="escs_dev">Monitoringsysteem virtuele Apparaat</string>
+
+    <string name="esn_safe">SN</string>
+
+    <string name="esn_change_dev">Vervang Apparaat-SN (%1$s)</string>
+
+    <string name="esn_colon">SN nummer:</string>
+
+    <string name="esn_num_is">SN nummer is:</string>
+
+    <string name="esn_space">SN-nummer</string>
+
+    <string name="eupor_unit">€</string>
+
+    <string name="euqipment_alarm_pieces">Apparaat alarm (stuk)</string>
+
+    <string name="euro_name">Euro </string>
+
+    <string name="even_check">Even verificatie</string>
+
+    <string name="exception">Abnormaal</string>
+
+    <string name="exception_num_colon">Het aantal uitzonderingen:</string>
+
+    <string name="exception_type">Uitzonderingstype</string>
+
+    <string name="execute">Uitvoeren</string>
+
+    <string name="exit_notice">Druk opnieuw op om het programma af te sluiten</string>
+
+    <string name="expired">Verlopen </string>
+
+    <string name="faature_developing">Deze functie is nog in ontwikkeling ...</string>
+
+    <string name="fail">Mislukt</string>
+
+    <string name="failed">Mislukt</string>
+
+    <string name="failed_order">Defectlijst</string>
+
+    <string name="failed_reason">Reden voor verzuim:</string>
+
+    <string name="fast_scan">Snelle scan (64 scanpunten)</string>
+
+    <string name="fault_recovery_time">Tijd netaansluit na herstel van de elektriciteitsnetfout (s)</string>
+
+    <string name="fault_state">Fout status:</string>
+
+    <string name="female">Vrouwelijk</string>
+
+    <string name="ff">FF</string>
+
+    <string name="fill_circulation_opinions">Vul alstublieft de circulatie advies in</string>
+
+    <string name="fill_factor">Vulfactor (%)</string>
+
+    <string name="fill_in_the_report">Vul het rapport in</string>
+
+    <string name="fill_opinion">Vul de circulatie advies in</string>
+
+    <string name="fill_return_opinion">Vul de retour advies in</string>
+
+    <string name="filter_conditions">Mijn filtratie voorwaarden</string>
+
+    <string name="filtrate">Filtratie </string>
+
+    <string name="find_problem">Een uitzondering gevonden:</string>
+
+    <string name="finish">Voltooien</string>
+
+    <string name="finish_config">Volledige configuratie</string>
+
+    <string name="finished">Voltooien</string>
+
+    <string name="first_order_time">Eerste-fase onderfrequentie beschermingstijd (ms)</string>
+
+    <string name="first_order_under_frequency_protection_point">Eerste-fase onderfrequentie beschermingspunt (Hz)</string>
+
+    <string name="first_order_undervoltage_protection">Eerste-fase onderspanning beschermingspunt (V)</string>
+
+    <string name="first_order_undervoltage_protection_time">Eerste-fase onderspanning beschermingstijd (ms)</string>
+
+    <string name="five">5</string>
+
+    <string name="fixed_charge_discharge">Vaste lading en ontlading</string>
+
+    <string name="flaw_description">Defect beschrijving</string>
+
+    <string name="fliter_condition">Filtratie voorwaarden</string>
+
+    <string name="flow_opinion">Circulatie advies</string>
+
+    <string name="flow_state">Status</string>
+
+    <string name="forced_discharge">Geforceerd lading en ontlading</string>
+
+    <string name="forget_password">Wachtwoord vergeten</string>
+
+    <string name="found_time">Ontdekkingstijd</string>
+
+    <string name="four">4</string>
+
+    <string name="four_level_over_frequency_protection_point">Vierde-fase overfrequentie beschermingpunt (Hz)</string>
+
+    <string name="four_level_over_frequency_protection_time">Vierde-fase overfrequentie beschermingstijd (ms)</string>
+
+    <string name="four_level_under_frequency_protection_point">Vierde-fase onderfrequentie beschermingpunt (Hz)</string>
+
+    <string name="four_level_undervoltage_protection">Vierde-fase onderspanning beschermingspunt (V)</string>
+
+    <string name="four_overvoltage_protection_point">Vierde-fase overspanning beschermingspunt (V)</string>
+
+    <string name="four_overvoltage_protection_time">Vierde-fase overspanning beschermingstijd (ms)</string>
+
+    <string name="four_stage_under_frequency_protection_time">Vierde-fase onderfrequentie beschermingstijd (ms)</string>
+
+    <string name="four_undervoltage_protection_time">Vierde-fase onderspanning beschermingstijd (ms)</string>
+
+    <string name="four_wire_monocrystal">Monokristal vier-poorts</string>
+
+    <string name="fp_xinxi_str">Informatie over armoedebestrijding</string>
+
+    <string name="fulfilment_ratio">Voltooiingspercentage van het plan\n(%)</string>
+
+    <string name="fully_eliminated">Volledig geëlimineerd</string>
+
+    <string name="fully_independent">Volledig onafhankelijk</string>
+
+    <string name="fusion_solar">FusionSolar</string>
+
+    <string name="gdbh_str">Eiland bescherming</string>
+
+    <string name="generating_capacity">Elektriciteitsopwekking</string>
+
+    <string name="generating_capacity_of_the_same_day">Dagelijkse elektriciteitsopwekking</string>
+
+    <string name="generation_time_">Productie tijd:</string>
+
+    <string name="generatrix">Buslijn</string>
+
+    <string name="get_alarm_cause_repaired_sug_failed">Alarmreden en reparatiesuggesties ophalen mislukt!</string>
+
+    <string name="get_current_device_info_failed">Huidige apparaatgegevens ophalen mislukt</string>
+
+    <string name="get_dev_bind_status_exception">Apparaatbindingsstatus ophalen abnormaal. Ga je terug naar de startpagina om het opnieuw te ophalen? Klik op OK om terug te keren naar de startpagina</string>
+
+    <string name="get_dev_type_failed">Apparaattype ophalen mislukt</string>
+
+    <string name="get_device_info_failed">apparaatgegevens ophalen mislukt</string>
+
+    <string name="get_device_status_error">apparaatstatus ophalen abnormaal</string>
+
+    <string name="get_geo_position_failed">Locatie van de krachtcentrale ophalen mislukt, kan de navigatie niet starten!</string>
+
+    <string name="get_logo_title_failed">Logo en title ophalen mislukt</string>
+
+    <string name="get_one_new_message">Nieuw bericht!</string>
+
+    <string name="get_station_list_failed">Lijst met krachtcentrales ophalen mislukt!</string>
+
+    <string name="get_status_error">Bindingstatus van de gegevensverzameling ophalen abnormaal</string>
+
+    <string name="give_up_confirmed">Bevestigen om te verlaten</string>
+
+    <string name="gjd_gn_str">Droge knoopfunctie</string>
+
+    <string name="gjdgl_str">Droge knoopfunctie</string>
+
+    <string name="gl_set_str">Isolatie instellingen</string>
+
+    <string name="go_to_emaile">Ga alstublieft naar de e-mail</string>
+
+    <string name="gonglv_with_unit">Vermogen (W)</string>
+
+    <string name="google_map_uninstalled">Google Maps is niet geïnstalleerd</string>
+
+    <string name="goto_station">Ga naar</string>
+
+    <string name="gpje_ext_str">Overfrequentie reductie uitgangsfrequentie</string>
+
+    <string name="gpje_hftd_str">Overfrequentie reductie herstellingsgradiënt</string>
+
+    <string name="gpjecfpl_str">Overfrequentie reductie trekkerfrequentie</string>
+
+    <string name="grid">Netverbinde krachtcentrale</string>
+
+    <string name="grid_code">Elektriciteitsnet standaardcode</string>
+
+    <string name="grid_code_str">Elektriciteitsnet standaardcode</string>
+
+    <string name="grid_connected_power_station">Netverbinde krachtcentrale</string>
+
+    <string name="grid_connected_time">Verbindingstijd:</string>
+
+    <string name="grid_connection_time">Netaansluit uren (u)</string>
+
+    <string name="grid_connection_time_no_unit">Netaansluit uren</string>
+
+    <string name="grid_phase_a">Fase A-stroom in het elektriciteitsnet (IA) (A)</string>
+
+    <string name="grid_phase_b">Fase B-stroom in het elektriciteitsnet (IB) (A)</string>
+
+    <string name="grid_phase_c">Fase C-stroom in het elektriciteitsnet (IC) (A)</string>
+
+    <string name="grid_time">Verbindingstijd</string>
+
+    <string name="grid_type">Type netaansluit</string>
+
+    <string name="grid_v_bph_protect_point_str">Elektriciteitsnet spanning onbalance beschermingspunt (%)</string>
+
+    <string name="ground">Grondkrachtcentrale</string>
+
+    <string name="group_string_detail_setting_str">Configuratie van de String details</string>
+
+    <string name="group_string_install_notice_str">Het aantal Stringen van dit type apparaat wordt alleen eerder ondersteund</string>
+
+    <string name="group_string_size_str">Aantal Stringen</string>
+
+    <string name="gruop_string_str">String:</string>
+
+    <string name="guide_check">Leidende controle</string>
+
+    <string name="guide_hint_1">Inkomsten uit de elektriciteitsopwekking, zie op elk moment</string>
+
+    <string name="guide_hint_2">Er is een ongeluk gebeurd, weet op tijd</string>
+
+    <string name="guihuarongliang">Geïnstalleerde capaciteit:</string>
+
+    <string name="hand_over">Overhandiging</string>
+
+    <string name="hand_over_confirmed">Bevestig om te overhandigen</string>
+
+    <string name="handled">Verwerkt</string>
+
+    <string name="handled_ff">Gerestaureerd</string>
+
+    <string name="happen_time">Tijd van optreden:</string>
+
+    <string name="happened_time">Voorvaltijd</string>
+
+    <string name="hardwareFault">Apparaatuitzondering: interne hardwarefout</string>
+
+    <string name="has_completed">Zijn voltooid</string>
+
+    <string name="has_end">Beëindigd</string>
+
+    <string name="has_given_up">Verlaten</string>
+
+    <string name="has_no_scarce_pic">Geen afbeelding over defect te verwijderen</string>
+
+    <string name="has_not_time">Geen voltooiingstijd</string>
+
+    <string name="has_readed">Gelezen</string>
+
+    <string name="have_choice_num">%1$d/8 geselecteerd</string>
+
+    <string name="have_clean">Schoongemaakt </string>
+
+    <string name="have_com_phone">Inloggen telefoonnummer is gedupliceerd, log in met gebruikersnaam</string>
+
+    <string name="have_line">Vast</string>
+
+    <string name="have_net_setpv_dev_notice_str">Er zijn apparaten zonder geconfigureerde grepstekenreeksen!</string>
+
+    <string name="he">En</string>
+
+    <string name="head_portrait">Avatar</string>
+
+    <string name="head_portrait_">Avatar</string>
+
+    <string name="head_upload_fail">Avatar uploaden mislukt</string>
+
+    <string name="head_upload_success">Avatar uploaden lukt</string>
+
+    <string name="health">Gezondheid</string>
+
+    <string name="healthy_station">Gezonde krachtcentrale</string>
+
+    <string name="heartbeatShutdown">Communicatie-afwijking: hartslag sluiten</string>
+
+    <string name="help">Help</string>
+
+    <string name="high_ranking">Gevorderd </string>
+
+    <string name="hight">Hoog</string>
+
+    <string name="hint">Prompt</string>
+
+    <string name="hint_alarm">Snel alarm</string>
+
+    <string name="history_imformation">Historische informatie</string>
+
+    <string name="horizontal_radiation">Totale bestraling op horizontaal oppervlak (kWh/m2)</string>
+
+    <string name="hour_time">Uur</string>
+
+    <string name="hour_unit">(u)</string>
+
+    <string name="hour_xy">Uur:</string>
+
+    <string name="hour24_full_str">De instellingen zijn al 24 uur vol en je kunt niet doorgaan met het toevoegen van instellingen!</string>
+
+    <string name="household_inverter">Huishoudelijke  omvormer</string>
+
+    <string name="household_inverter_str">Huishoudelijke  omvormer</string>
+
+    <string name="household_lisence_notice_str">De huishoudelijke Lisence scène is verbonden met andere niet-huishoudelijke apparaten.</string>
+
+    <string name="household_meter">Huishoudelijke  elektriciteitsmeter</string>
+
+    <string name="household_set_result">Parameterinstellingsresultaat</string>
+
+    <string name="household_string">Voor huishoudelijke gebruik</string>
+
+    <string name="households_with_inverter">Huishoudelijke  omvormer</string>
+
+    <string name="huawei_in_inverter_access">Huawei huishoudelijke  omvormer toegang</string>
+
+    <string name="hydropower_station">Ongebouwde krachtcentrale</string>
+
+    <string name="hzUnit">Frequentie (Hz)</string>
+
+    <string name="icon_maintenance">Werkings- en onderhoud</string>
+
+    <string name="icon_station">Startpagina</string>
+
+    <string name="identify_code">Verificatie code</string>
+
+    <string name="identify_code_error">Verificatie code fout</string>
+
+    <string name="im">Im(A)</string>
+
+    <string name="im_isc">Im/Isc</string>
+
+    <string name="image_compression_succeeded">Afbeelding comprimeren lukt</string>
+
+    <string name="image_upload_fail">Afbeelding uploaden mislukt</string>
+
+    <string name="image_upload_success">Afbeelding uploaden lukt</string>
+
+    <string name="imformation_qiye">Bedrijfsinformatie</string>
+
+    <string name="import_table_failed">Formulier exporteren mislukt</string>
+
+    <string name="import_table_success">Formulier importeren voltooid</string>
+
+    <string name="importance_alarm">Belangrijk alarm</string>
+
+    <string name="important">Belangrijk</string>
+
+    <string name="importing_table">Formulier importeren</string>
+
+    <string name="in_elimination">Verwijderen</string>
+
+    <string name="in_hand">Wordt verwerkt</string>
+
+    <string name="in_patrol">Inspectie bezig</string>
+
+    <string name="in_patrol_inspection">Inspectie</string>
+
+    <string name="in_town">Het gelegen kleinstad</string>
+
+    <string name="in_voltage">Ingangsspanning:</string>
+
+    <string name="industry_and_commerce">Industriële en commerciële daken</string>
+
+    <string name="infomation_changed">Accountinformatie is gewijzigd en moet opnieuw worden ingelogd</string>
+
+    <string name="information_reporting">Informatie rapportage</string>
+
+    <string name="informing_information">Informatie informeren</string>
+
+    <string name="input_addr">Voer het adres in</string>
+
+    <string name="input_alarm_name">Voer de alarmnaam in</string>
+
+    <string name="input_code">Voer verificatiecode in</string>
+
+    <string name="input_corret_lat">Voer de breedtegraad correct in</string>
+
+    <string name="input_corret_lng">Voer de lengtegraad correct in</string>
+
+    <string name="input_corret_price">Vul de juiste prijs in! (Aantal tussen 0 en 10, maximaal twee decimalen)</string>
+
+    <string name="input_dev_name">Voer de apparaatnaam in</string>
+
+    <string name="input_device_esn">Voer het SN-nummer van het apparaat in</string>
+
+    <string name="input_device_name">Voer een apparaatnaam in</string>
+
+    <string name="input_e_mail">Voer uw e-mail in</string>
+
+    <string name="input_ele">Ingangsstroom</string>
+
+    <string name="input_electric">Ingangsstroom:</string>
+
+    <string name="input_electricity">Ingangsstroom (A)</string>
+
+    <string name="input_email">Voer uw e-mail in</string>
+
+    <string name="input_email_code">Voer de e-mailverificatiecode in</string>
+
+    <string name="input_email_format_error_">Het ingevoerde e-mailformaat is onjuist!</string>
+
+    <string name="input_esn">Voer SN in</string>
+
+    <string name="input_esn_and_search">Voer eerst het SN-nummer in en vraag het apparaat aan.</string>
+
+    <string name="input_fw_0_0_2">Invoerbereik [0~0,2]</string>
+
+    <string name="input_fw_0_1">Invoerbereik [65~85]</string>
+
+    <string name="input_fw_0_100">Invoerbereik [0~100]</string>
+
+    <string name="input_fw_0_20">Invoerbereik [0~20]</string>
+
+    <string name="input_fw_0_200">Invoerbereik [0~200]</string>
+
+    <string name="input_fw_1">Invoerbereik [-1~0]</string>
+
+    <string name="input_fw_1000_1000">Invoerbereik [-1000~1000]</string>
+
+    <string name="input_fw_gl">Invoerbereik [0~500]</string>
+
+    <string name="input_household">Voer in</string>
+
+    <string name="input_moubus_addr">Voer het adres van Moubus in</string>
+
+    <string name="input_name">Voer een naam in</string>
+
+    <string name="input_new_pwd">Voer een nieuw wachtwoord in</string>
+
+    <string name="input_old_pwd">Voer het originele wachtwoord in</string>
+
+    <string name="input_password">Voer uw wachtwoord in</string>
+
+    <string name="input_people_name">Voer een naam in</string>
+
+    <string name="input_phone">Voer het contactnummer in</string>
+
+    <string name="input_phone_number">Voer het contactnummer in</string>
+
+    <string name="input_port">Voer het poortnummer in</string>
+
+    <string name="input_price">Voer de elektriciteitsprijs in</string>
+
+    <string name="input_psw_fail_more">Voer herhaaldelijk het verkeerde wachtwoord in, log opnieuw in</string>
+
+    <string name="input_pv_count">Voer het aantal String in</string>
+
+    <string name="input_pwd">Voer uw wachtwoord in</string>
+
+    <string name="input_register_code">Voer de registratiecode in</string>
+
+    <string name="input_sn">Voer het SN-nummer in</string>
+
+    <string name="input_station_name">Voer de naam van de krachtcentrale in</string>
+
+    <string name="input_station_timezone">Selecteer de tijdzone van de krachtcentrale</string>
+
+    <string name="input_target_esn">Voer het doel SN in</string>
+
+    <string name="input_user">Voer de gebruiker in</string>
+
+    <string name="input_user_name">Voer de gebruikersnaam in</string>
+
+    <string name="input_user_name_">Vul uw gebruikersnaam in!</string>
+
+    <string name="input_username">Voer de gebruikersnaam in</string>
+
+    <string name="input_voltage">Ingangsspanning (V)</string>
+
+    <string name="inputdev_esn_title">Voer het SN-nummer in</string>
+
+    <string name="inputOverVol">Onderdeel abnormaliteit: ingangsoverspanning</string>
+
+    <string name="insert_completed">Volledige toegang</string>
+
+    <string name="insert_description">Toegangsinstructies</string>
+
+    <string name="inspect_report">Vul het inspectierapport in</string>
+
+    <string name="inspection_desc">Inspectie beschrijving</string>
+
+    <string name="inspection_name">Inspectie naam</string>
+
+    <string name="inspection_results">Inspectieresultaat:</string>
+
+    <string name="installation_location">Installatie ocatie van gegevensverzameling</string>
+
+    <string name="installed_capacity_report">Geïnstalleerde capaciteit\n(kW)</string>
+
+    <string name="installed_for">Gegevensverzameling is geïnstalleerd</string>
+
+    <string name="installer_registration">Installateur registratie</string>
+
+    <string name="insulation_resistance">Isolatieweerstandsbeschermingspunt (MΩ)</string>
+
+    <string name="intelligent_diagnosis">Intelligente diagnose</string>
+
+    <string name="intelligent_early_warning">Online diagnose</string>
+
+    <string name="intermediate">Gemiddeld</string>
+
+    <string name="interval_address">Interval adres</string>
+
+    <string name="interval_name">Interval naam</string>
+
+    <string name="interval_signal_">Interval-signaalpunt</string>
+
+    <string name="interval_title">Interval:</string>
+
+    <string name="interval_type">Interval type</string>
+
+    <string name="intervar">Interval</string>
+
+    <string name="intput_fw_0_50">0~200</string>
+
+    <string name="intput_fw_0_80">Invoerbereik [0~80]</string>
+
+    <string name="invalid_agreement_type">Ongeldig protocoltype</string>
+
+    <string name="invalid_value">N/A</string>
+
+    <string name="inverter">Omvormer</string>
+
+    <string name="inverter_ap_mode_gateway">Gateway IP in omvormer AP-modus</string>
+
+    <string name="inverter_ap_mode_password">Inlogwachtwoord voor draadloos netwerk in omvormer AP-modus</string>
+
+    <string name="inverter_ap_mode_subnet_mask">Ondernetmasker in omvormer AP-modus</string>
+
+    <string name="inverter_conversion_efficiency">Omvormerconversie-efficiëntie (%)</string>
+
+    <string name="inverter_conversion_efficiency_no_unit">Conversie-efficiëntie van omvormer</string>
+
+    <string name="inverter_efficiency">Efficiëntie van de omvormer:</string>
+
+    <string name="inverter_ivcurve">IV-kromme vergelijking</string>
+
+    <string name="inverter_ivcurve_compared">Vergelijkende analyse van String IV-kromme</string>
+
+    <string name="inverter_model">Omvormermodel</string>
+
+    <string name="inverter_model_">Omvormermodel:</string>
+
+    <string name="inverter_name">Omvormernaam</string>
+
+    <string name="inverter_report">Verslag omvormer</string>
+
+    <string name="inverter_sn">Omvormer-SN:</string>
+
+    <string name="ip">IP</string>
+
+    <string name="ip_address_str">IP-adres</string>
+
+    <string name="ip_error">Het formaat van het adres dat u hebt ingevoerd, is onjuist</string>
+
+    <string name="ip_illegal">Het ingevoerde IP-adres is niet legaal</string>
+
+    <string name="ip_or_realm_name">IP/domeinnaam</string>
+
+    <string name="irradiance">Bestralingsintensiteit(W/m²)</string>
+
+    <string name="irradiation_strength">Bestralingsintensiteit</string>
+
+    <string name="irradiation_strength_back_data">De oppervlaktetemperatuur van de achterkant van het onderdeel moet liggen tussen 0,0000 en 100,0000.</string>
+
+    <string name="irradiation_strength_data">De bestralingsintensiteit van de vlak van het onderdeel moet liggen tussen 0,0000-1500,0000</string>
+
+    <string name="is_to_option">Wil je dit doen?</string>
+
+    <string name="isc">Isc(A)</string>
+
+    <string name="isForceLogin">Het huidige account is aangemeld op een ander apparaat. Wilt u doorgaan?</string>
+
+    <string name="isolation">Isolatieweerstand (MΩ)</string>
+
+    <string name="isolation_settings_str">Isolatie instellingen</string>
+
+    <string name="isolayion_setting_1">Ingang is geaard, met transformator</string>
+
+    <string name="isolayion_setting_2">Ingang is niet geaard, geen transformator</string>
+
+    <string name="isolayion_setting_3">Ingang is niet geaard, met transformator</string>
+
+    <string name="items">(Stuk)</string>
+
+    <string name="iv">IV-kromme</string>
+
+    <string name="iv_add">Toevoegen</string>
+
+    <string name="iv_cancel_scan">Scan annuleren</string>
+
+    <string name="iv_canceld">Geannuleerd</string>
+
+    <string name="iv_check_time">Controletijd:</string>
+
+    <string name="iv_diagnosis_ideal1">1. Het aantal omvormers voor een enkele diagnose is niet groter dan 25 (naar verwachting ongeveer 10 minuten);</string>
+
+    <string name="iv_diagnosis_ideal2">2. Het wordt aanbevolen om de String te reinigen vóór een intelligente diagnose om ervoor te zorgen dat de testgegevens de werkelijke status van de onderdeel weergeven;</string>
+
+    <string name="iv_diagnosis_ideal3">3. De aanbevolen tijd voor de diagnose is tussen 11:00 en 13:00 uur. Zorg ervoor dat er geen afgrendelingen zijn aan de voor- en achterkant van de String.</string>
+
+    <string name="iv_diagnosis_ideals">Suggestie voor IV-kromme diagnostische toestand:&quot;</string>
+
+    <string name="iv_diagnosis_requirement">Vereisten voor IV-kromme diagnostische toestand:</string>
+
+    <string name="iv_diagnosis_requirement1">1. De opschoningsstatus van Stringen moet consistent zijn in één diagnostische taak;</string>
+
+    <string name="iv_diagnosis_requirement2">2. De bestralingsintensiteit tijdens de diagnose moet groter zijn dan de minimale vereiste stralingsintensiteit (600 W/m2);</string>
+
+    <string name="iv_diagnosis_requirement3">3. De informatie over de Stringconfiguratie moet correct zijn.</string>
+
+    <string name="iv_error_unit">Fouteenheid:</string>
+
+    <string name="iv_fill_factor_">Vulfactor (FF)%:</string>
+
+    <string name="iv_info">IV</string>
+
+    <string name="iv_inverter_name">Omvormernaam:</string>
+
+    <string name="iv_inverter_power">Nominaal vermogen van de omvormer (kW):</string>
+
+    <string name="iv_inverter_total_count_power">Cumulatieve elektriciteitopwekking (kWh):</string>
+
+    <string name="iv_irradiation_strength">Bestralingsintensiteit van het onderdeelvlak (W/m2)</string>
+
+    <string name="iv_scan">IV-scan</string>
+
+    <string name="iv_scan_detail">Scan details</string>
+
+    <string name="iv_scan_progress">Scan voortgang:</string>
+
+    <string name="iv_select">Ondervragen</string>
+
+    <string name="iv_show_report">Bekijk rapport</string>
+
+    <string name="iv_station_name">Krachtcentrale naam:</string>
+
+    <string name="iv_station_num">Nummer:</string>
+
+    <string name="iv_task_name">Taak naam:</string>
+
+    <string name="iv_unit_count">Totaal aantal eenheden:</string>
+
+    <string name="iv_zuchuan_decay_rate">String verzwakkingssnelheid:</string>
+
+    <string name="iv_zuchuan_im">String Im(A):</string>
+
+    <string name="iv_zuchuan_im_or_isc">String Im/Isc:</string>
+
+    <string name="iv_zuchuan_isc">String Isc(A):</string>
+
+    <string name="iv_zuchuan_pm">String Pm(W):</string>
+
+    <string name="iv_zuchuan_vm">String Vm(V):</string>
+
+    <string name="iv_zuchuan_vm_or_voc">String Vm/Voc:</string>
+
+    <string name="iv_zuchuan_voc">String Voc(V):</string>
+
+    <string name="jap_ver_monocrystal">Japans Monokristal</string>
+
+    <string name="jdycgj_str">Uitschakelen wanneer de aarding abnormaal is</string>
+
+    <string name="jgdcbbc_mode_str">Kristallijn silicium batterijpaneelcompensatiemodus</string>
+
+    <string name="jiguang_1_str">Condenserende 1</string>
+
+    <string name="jixin_str">Model</string>
+
+    <string name="juguang_2">Condenserende 2</string>
+
+    <string name="jump_page_error">Pagina springen mislukt</string>
+
+    <string name="jyzkbhd_str">Isolatieweerstandsbeschermingspunt</string>
+
+    <string name="Keep_adding">Doorgaan met toevoegen</string>
+
+    <string name="key_set">Instelling met één klik</string>
+
+    <string name="key_to_open_station">Starten met één klik</string>
+
+    <string name="key_to_read">Lezen met één klik</string>
+
+    <string name="keyId">key-ID</string>
+
+    <string name="kjrqdsj_str">Zachte starttijd bij opstarten</string>
+
+    <string name="know_more_info">Meer informatie</string>
+
+    <string name="kouling_now_tips">Het wachtwoord is verlopen. Wijzig het wachtwoord.</string>
+
+    <string name="kouling_tips">Het wachtwoord verloopt binnenkort. Wordt het herzien?</string>
+
+    <string name="kva_szgl_max_str">Maximaal schijnbaar vermogen (kVA)</string>
+
+    <string name="kVarUnit">Reactieve vermogen(kVar)</string>
+
+    <string name="kw_max_power">Maximaal actief vermogen(kW)</string>
+
+    <string name="kWhUnit">Elektriciteitopwekking (kWh)</string>
+
+    <string name="kWUnit">vermogen(kW)</string>
+
+    <string name="lastMsg">Zorgt ervoor dat sommige functies niet beschikbaar zijn, open op de instellingenpagina</string>
+
+    <string name="lat">Breedtegraad</string>
+
+    <string name="lat_range_is">Het breedtegraad bereik is [-90,90]</string>
+
+    <string name="latest_login_failure">Inloggen mislukt</string>
+
+    <string name="latest_login_sucess">Inloggen lukt</string>
+
+    <string name="launch_patrol_fail">Inspectie taak openen mislukt</string>
+
+    <string name="less_than_2_reselect">Het aantal geselecteerde krachtcentrales is minder dan 2 en kan geen PK zijn. Selecteer opnieuw</string>
+
+    <string name="level">Niveau</string>
+
+    <string name="lie_xiang">Gesplitste fase</string>
+
+    <string name="life_cycle">Levenscyclus</string>
+
+    <string name="light_ele">Fotovoltaïsche stroom:</string>
+
+    <string name="light_vol">Fotovoltaïsche spanning:</string>
+
+    <string name="limit_in_65535">Poortnummerbereik is 0 tot 65535.</string>
+
+    <string name="limit_of_reconnection_voltage">Elektriciteitsnet heraansluiting spanning bovengrens (V)</string>
+
+    <string name="line_frequency">Frequentie elektriciteitsnet:</string>
+
+    <string name="line_frequency_">Frequentie elektriciteitsnet</string>
+
+    <string name="line_interval">Interval ussen lijnen</string>
+
+    <string name="line_power_01">Stroom van het 01e lijn:</string>
+
+    <string name="line_power_02">Stroom van het 02e lijn:</string>
+
+    <string name="line_power_03">Stroom van het 03e lijn:</string>
+
+    <string name="line_power_04">Stroom van het 04e lijn:</string>
+
+    <string name="line_power_05">Stroom van het 05e lijn:</string>
+
+    <string name="line_power_06">Stroom van het 06e lijn:</string>
+
+    <string name="line_power_07">Stroom van het 07e lijn:</string>
+
+    <string name="line_power_08">Stroom van het 08e lijn:</string>
+
+    <string name="line_power_09">Stroom van het 09e lijn:</string>
+
+    <string name="line_power_10">Stroom van het 10e lijn:</string>
+
+    <string name="line_power_11">Stroom van het 11e lijn:</string>
+
+    <string name="line_power_12">Stroom van het 12e lijn:</string>
+
+    <string name="line_power_13">Stroom van het 13e lijn:</string>
+
+    <string name="line_power_14">Stroom van het 14e lijn:</string>
+
+    <string name="line_power_15">Stroom van het 15e lijn:</string>
+
+    <string name="line_power_16">Stroom van het 16e lijn:</string>
+
+    <string name="line_vol">Rail spanning:</string>
+
+    <string name="linkman">Contact:</string>
+
+    <string name="liscese_out_time">Lincese verloopt of heeft onvoldoende capaciteit</string>
+
+    <string name="list_item_nbutton">Annuleren</string>
+
+    <string name="list_item_rbutton">Bevestigen(%1$d)</string>
+
+    <string name="list_of_all_defects">Alle defectlijst</string>
+
+    <string name="lng">Lengtegraad</string>
+
+    <string name="lng_range_is">Het lengtegraad bereik is [-180.180]</string>
+
+    <string name="load_more">Laad meer</string>
+
+    <string name="loading_">Laad in ...</string>
+
+    <string name="loading_long_wait">Even geduld, het is een onderzoek, het duurt lang, wees geduldig</string>
+
+    <string name="local_time">Lokale tijd</string>
+
+    <string name="locate_failed">De positionering van de huidige locatie is mislukt en de navigatiefunctie kan niet worden gestart!</string>
+
+    <string name="location_again">Herpositionering </string>
+
+    <string name="location_choice_notice">Regionale selectie</string>
+
+    <string name="location_fail_again">Positionering mislukt, herpositionering</string>
+
+    <string name="location_ing">Positioneren ...</string>
+
+    <string name="location_no_fill_in_toast">Heb je de lengte- en breedtegraadinformatie nog niet ingevuld, moet je doorgaan naar de volgende stap?</string>
+
+    <string name="location_success">Positionering opdracht uitgevoeren lukt!</string>
+
+    <string name="location_time">Lokale tijd:</string>
+
+    <string name="LocationMsg">Locatie toestemming,</string>
+
+    <string name="login">Inloggen</string>
+
+    <string name="login_ip">Inlogging IP</string>
+
+    <string name="login_notice">Als deze inlog niet uw eigen bewerking is, wijzigt u uw wachtwoord zo snel mogelijk.</string>
+
+    <string name="login_record">Onlangs inloggen record</string>
+
+    <string name="login_service_ip">Server</string>
+
+    <string name="login_setting">Inloggen instellingen</string>
+
+    <string name="login_success_failure">Inloggen lukt/mislukt</string>
+
+    <string name="login_time">Tijd inloggen</string>
+
+    <string name="login_trytime">Aantal inlogpogingen</string>
+
+    <string name="login_type_error">Inlogtype fout</string>
+
+    <string name="logout_login">U bent niet akkoord gegaan met de verklaring, dus u wordt uitgelogd. Wilt u doorgaan?</string>
+
+    <string name="long_click_delete">Bijlage toevoegen (lang drukken op verwijderen)</string>
+
+    <string name="long_click_delete_th">Bijlage vervangen</string>
+
+    <string name="long_time_no_login">Niet binnen 30 minuten bediend, log opnieuw in!</string>
+
+    <string name="longitude_latitude">Lengte- en breedtegraad</string>
+
+    <string name="longitude_latitude_">Lengtegraad en breedtegraad:</string>
+
+    <string name="look_up">Ondervragen</string>
+
+    <string name="low">Laag</string>
+
+    <string name="lower_limit_of_reconnection">Elektriciteitsnet heraansluiting frequentie ondergrens (Hz)</string>
+
+    <string name="lower_limit_of_reconnection_voltage">Elektriciteitsnet heraansluiting spanning ondergrens (V)</string>
+
+    <string name="lvrt_cffz_str">LVRT-activeringsdrempel</string>
+
+    <string name="lvrt_wgbcyz_str">LVRT reactieve compensatiefactor</string>
+
+    <string name="lvrtqcybhpb_str">Onderspanningsbeveiligingsafscherming voor LVRT</string>
+
+    <string name="main_grid_frequency">Frequentie elektriciteitsnet</string>
+
+    <string name="main_high_interval">Hoogspanningsinterval van hoofdtransformator</string>
+
+    <string name="main_interval">Hoofdtransformator</string>
+
+    <string name="main_low_interval">Laagspanningsinterval van hoofdtransformator</string>
+
+    <string name="main_low_side">Laagspanningszijde van hoofdtransformator</string>
+
+    <string name="main_responsibility_man">Hoofdverantwoordelijke persoon:</string>
+
+    <string name="make_sure">Bevestigen</string>
+
+    <string name="make_to_sure_download">Controleer of de externe upgrade via het systeem wordt uitgevoerd.</string>
+
+    <string name="male">Mannelijk</string>
+
+    <string name="management_for_getting_rid">Defect te verwijderen beheer</string>
+
+    <string name="management_of_defect_removal">Defect te verwijderen beheer</string>
+
+    <string name="management_sys">Beheer systeem</string>
+
+    <string name="manufacturer_name">Fabrikantnaam</string>
+
+    <string name="massage_modify_success">Informatie wijzigen  lukt, log opnieuw in!</string>
+
+    <string name="master_mode">Hostcomputer-modus</string>
+
+    <string name="max_compared">(Ondersteunt vergelijkingen van maximaal 8 String)</string>
+
+    <string name="maximum_voluntary_use">Maximale zelfopwekking en zelfgebruik</string>
+
+    <string name="mbdev_not_other_station_str">Doelsystemen kunnen niet andere Apparaat van een krachtcentrale zijn</string>
+
+    <string name="message">Bericht</string>
+
+    <string name="meter_stations">Krachtcentrale</string>
+
+    <string name="middle">Gemiddeld</string>
+
+    <string name="middle_0">Gemiddelde tijdzone</string>
+
+    <string name="million">Miljoen</string>
+
+    <string name="million_kw_unit">Miljoen kWh</string>
+
+    <string name="million_unit">Miljoen</string>
+
+    <string name="million_wan">Tienduizend </string>
+
+    <string name="minor_alarm">Klein alarm</string>
+
+    <string name="minute_time">Minuut</string>
+
+    <string name="missing_sheet">Defect verwijderen lijst</string>
+
+    <string name="mission_detail">Beschrijving</string>
+
+    <string name="mission_name">Taaknaam</string>
+
+    <string name="mobile_operation_and_maintenance">Mobiele werkings- en onderhoud</string>
+
+    <string name="mobile_patrol">Mobiele inspectie</string>
+
+    <string name="mobile_patrol_inspection">Mobiele inspectie</string>
+
+    <string name="modbus_addr">Modbus-adres</string>
+
+    <string name="modification">Wijzigen</string>
+
+    <string name="modification_all_str">Serie instellingen</string>
+
+    <string name="modify_defect_list">Defectlijst wijzigen</string>
+
+    <string name="modify_filed">Operatie mislukt!</string>
+
+    <string name="modify_password">Wachtwoord wijzigen</string>
+
+    <string name="modify_person_info">Persoonlijke informatie wijzigen</string>
+
+    <string name="monocrystal">Monokristal</string>
+
+    <string name="monocrystal_four_grid_60">Monokristal vier-poorts 60 stuks</string>
+
+    <string name="monocrystal_four_grid_72">Monokristal vier-poorts 72 stuks</string>
+
+    <string name="month">Maand</string>
+
+    <string name="month_time">Maand</string>
+
+    <string name="monthly_capacity">In de huidige maand(kWh)</string>
+
+    <string name="more_dev">Selecteer maximaal 25 apparaten</string>
+
+    <string name="more_parameters">Meer parameters</string>
+
+    <string name="moubus_addr">Modbus-adres</string>
+
+    <string name="mouth_xy">Maand:</string>
+
+    <string name="mppt_dfsm_str">MPPT multi piek scannen</string>
+
+    <string name="mppt_smjssj_str">MPPT scanintervaltijd </string>
+
+    <string name="mttp_dfsm_str">MTTP multi piek scannen</string>
+
+    <string name="mttp_min">MPPT scanintervaltijd (min)</string>
+
+    <string name="my">Me</string>
+
+    <string name="n">n</string>
+
+    <string name="n_monocrystal">Monokristal van het N-type</string>
+
+    <string name="n_output">N-type uitvoer</string>
+
+    <string name="name">volledige naam</string>
+
+    <string name="name_and_email">Gebruikersnaam is niet consistent met e-mail</string>
+
+    <string name="name_colon">Naam:</string>
+
+    <string name="name_for_condition">Geef de voorwaarde een naam</string>
+
+    <string name="name_for_condition_other_way">Geef de voorwaarde een naam</string>
+
+    <string name="name_no_colon">volledige naam</string>
+
+    <string name="name_not_exit_or_ip_error">Het account bestaat niet of het IP-adres is onjuist.</string>
+
+    <string name="name_nots_empty">Naam mag niet leeg zijn</string>
+
+    <string name="navi_confirm">Bevestigen</string>
+
+    <string name="navigation_open_failed">Positionering mislukt en de navigatiefunctie kan niet worden gestart!</string>
+
+    <string name="need_to_send_email">Of u e-mail wilt verzenden</string>
+
+    <string name="net_check_choice_tips">Opmerking: nadat u \&apos;Nee\&apos;\hebt geselecteerd, worden de netwerkgegevens niet verkregen tijdens deze inloggen.</string>
+
+    <string name="net_err_push_tips">Er is gedetecteerd dat het duw-servercertificaat niet beveiligd is. Negeer je dit risico?</string>
+
+    <string name="net_err_tips">Er is gedetecteerd dat het servercertificaat niet beveiligd is. Negeer je dit risico?</string>
+
+    <string name="net_error">Netwerk abnormaal</string>
+
+    <string name="net_error_2">Netwerk fout</string>
+
+    <string name="net_error_need_check">Netwerk abnormaal, controleer: \n1. Of de mobiele telefoon is verbonden met het mobiele netwerk \ n 2. of het toegangsadres correct is ingevoerd</string>
+
+    <string name="neterror_setting_failed">Het netwerk is abnormaal of de huishoudelijke omvormer reageert niet. De instelling is verlopen!</string>
+
+    <string name="new_device">Voeg een apparaat toe</string>
+
+    <string name="new_device_access">Nieuwe toegang tot een apparaat</string>
+
+    <string name="new_device_access_message_alert">U hebt X nieuwe apparaten die wachten om te verbonden</string>
+
+    <string name="new_iv_scan_tesk">Nieuwe IV-kromme scantaak</string>
+
+    <string name="new_owner_account">Nieuw eigenaarsaccount</string>
+
+    <string name="new_task">Werkorder toevoegen</string>
+
+    <string name="new_task_">Nieuwe taak</string>
+
+    <string name="newUser">Het huidige account is een nieuw account, wijzig het wachtwoord.</string>
+
+    <string name="next">Volgende</string>
+
+    <string name="next_step">Volgende</string>
+
+    <string name="next_top_text">Volgende</string>
+
+    <string name="nibianqi_1">1# omvormer</string>
+
+    <string name="no">Nee</string>
+
+    <string name="no_aply_this_device">Dit apparaattype ondersteunt de weergave van apparaatdetails niet</string>
+
+    <string name="no_bz_data">Geen aantekeningen.</string>
+
+    <string name="no_check">Geen verificatie</string>
+
+    <string name="no_contured">Geen limiet</string>
+
+    <string name="no_data">Nog geen gegevens!</string>
+
+    <string name="no_data_for_location">Het ingevoerde adres is niet gevonden</string>
+
+    <string name="no_data_tation">Nog geen gegevens</string>
+
+    <string name="no_dev_can_setting_groupstring_str">Er zijn geen apparaten om de String details te configureren!</string>
+
+    <string name="no_device_data">Geen gerelateerde apparaatgegevens</string>
+
+    <string name="no_filter_conditions">Geen filtratie voorwaarde</string>
+
+    <string name="no_find_contact">Geen contact gevonden</string>
+
+    <string name="no_fj_data">Geen informatie over bijlagen.</string>
+
+    <string name="no_line">Draadloze </string>
+
+    <string name="no_location_to">Niet gelegen op de locatie van de stad</string>
+
+    <string name="no_more_data">Geen gegevens meer</string>
+
+    <string name="no_need_dispose">Niet nodig om mee om te gaan</string>
+
+    <string name="no_opration_jurisdiction">U hebt geen toestemming om dit te doen!</string>
+
+    <string name="no_processing_content">Geen verwerkingsinhoud</string>
+
+    <string name="no_pv_data">Geen PV String</string>
+
+    <string name="no_repeat_reselected">Er is een gewist alarm in de geselecteerde gegevens. U kunt de handeling niet herhalen. Selecteer opnieuw!</string>
+
+    <string name="no_set_module">De parameterinformatie van het gescande object is onvolledig. Stel alstublieft eerst de informatie over &quot;Gedetailleerde instellingen van de String &quot; in.</string>
+
+    <string name="no_show_str">Verbergen </string>
+
+    <string name="no_station_to_choice">Geen krachtcentrale beschikbaar!</string>
+
+    <string name="no_tips">Geen herinneringen meer</string>
+
+    <string name="no_to_set_pvinfo_dev">Geen apparaat dat de pv-capaciteit moet instellen</string>
+
+    <string name="nominal_component_conversion_efficiency">Nominale onderdeel conversie-efficiëntie (%)</string>
+
+    <string name="nonpoverty_station">Geen zwakkebestrijdingsinstallatie</string>
+
+    <string name="nonproduc_dev">Fabriek elektriciteit niet-productiegebied elektriciteitmeter</string>
+
+    <string name="normal">Normal</string>
+
+    <string name="normal_">Normal</string>
+
+    <string name="nos">Bomen</string>
+
+    <string name="not_60min">Minder dan een minuut sinds de laatste e-mail, probeer het later opnieuw</string>
+
+    <string name="not_analyzed">Niet geanalyseerd</string>
+
+    <string name="not_check">Niet gecontroleerd</string>
+
+    <string name="not_clean">Niet schoongemaakt</string>
+
+    <string name="not_completed">Onafgewerkt</string>
+
+    <string name="not_delete">Niet verwijderen</string>
+
+    <string name="not_dispose">Niet behandelen</string>
+
+    <string name="not_fully_eliminated">Niet volledig geëlimineerd</string>
+
+    <string name="not_get_domain_info">Geen domeininformatie ophalen, even geduld</string>
+
+    <string name="not_have_get_person_select">Geen ontvangers kunnen kiezen</string>
+
+    <string name="not_have_group_string_str">Stringen kunnen niet in series worden gebruikt</string>
+
+    <string name="not_have_permission">U hebt geen toegang</string>
+
+    <string name="not_have_this_station_right_str">Geen toestemming voor de krachtcentrale</string>
+
+    <string name="not_have_user">De gebruiker bestaat niet of het wachtwoord fout</string>
+
+    <string name="not_huyong">De huidige gebruiker is geen huishoudelijke gebruiker en kan niet worden gebruikt.</string>
+
+    <string name="not_input_emoji">Invoeruitdrukkingen worden niet ondersteund</string>
+
+    <string name="not_more_than_500">De geüploade bijlage kan niet groter zijn dan 500K en wordt opnieuw gecomprimeerd ...</string>
+
+    <string name="not_output">Verbied de uitvoer</string>
+
+    <string name="not_read">Ongelezen</string>
+
+    <string name="not_save">Niet opgeslagen</string>
+
+    <string name="not_send">Niet verzenden</string>
+
+    <string name="not_start">Niet open</string>
+
+    <string name="not_start_0">String capaciteit kan niet met 0 beginnen</string>
+
+    <string name="not_started">Niet gestart</string>
+
+    <string name="not_support_">Niet mee eens</string>
+
+    <string name="not_support_modify">Ondersteunt geen wijzigingen</string>
+
+    <string name="not_to_check">De bestralingsintensiteit voldoet mogelijk niet aan de diagnostische minimumvereisten. Of u IV-scan wilt starten</string>
+
+    <string name="not_use_this_email">Er zijn dubbele postvakken, u kunt niet inloggen met dit e-mail</string>
+
+    <string name="nothing">Geen</string>
+
+    <string name="notice">Aankondiging</string>
+
+    <string name="notice_expired">De kennisgeving is verlopen</string>
+
+    <string name="notice_str">Kennisgeving </string>
+
+    <string name="notifyTitle">Prompt</string>
+
+    <string name="now_at_city">Huidige stad:</string>
+
+    <string name="num_dev_iv">Apparaten</string>
+
+    <string name="num_of_components_bat_slices">Aantal onderdeelcellen (stuks/onderdeel)</string>
+
+    <string name="num_piece">Aantal (stuk)</string>
+
+    <string name="number_of_abnormal">Het aantal uitzonderingen:</string>
+
+    <string name="number_of_times">Aantal keren (keer)</string>
+
+    <string name="nverter_ap_mode_name">Daadloze netwerknaam in omvormer AP-modus</string>
+
+    <string name="objects_for_poverty_reduction">Zwakebestrijdingsobject</string>
+
+    <string name="odd_check">Oneven verificatie</string>
+
+    <string name="off_time">Uitschakeltijd:</string>
+
+    <string name="on_the_day_of_electricity">Dagelijkse elektriciteitsopwekking:</string>
+
+    <string name="one">1</string>
+
+    <string name="one_key_setting_confirm">Met één klik handeling stelt het de standaard parameter waardes in. Bevestigen om te werken?</string>
+
+    <string name="ongrid_power">Elektriciteit op elektriciteitsnet\n(kWh)</string>
+
+    <string name="onLine">Normal</string>
+
+    <string name="online_diagnosis">Diagnostische waarschuwing</string>
+
+    <string name="online_diagnosis_pieces">Diagnostische waarschuwing (stuk)</string>
+
+    <string name="only_support_single_station">Ondersteun slechts één krachtcentrale</string>
+
+    <string name="open_light">Zaklamp</string>
+
+    <string name="open_station">Start de krachtcentrale</string>
+
+    <string name="open_str">Opstarten</string>
+
+    <string name="open_to_use">In staat stellen</string>
+
+    <string name="openstation">Start de krachtcentrale</string>
+
+    <string name="operate_data_failed">Gegevens bewerken mislukt!</string>
+
+    <string name="operate_data_succeed">Gegevens bewerken lukt!</string>
+
+    <string name="operation">Operatie</string>
+
+    <string name="operation_cancel">Operatie annuleren</string>
+
+    <string name="operation_failed">Operatie mislukt</string>
+
+    <string name="operation_ideal">Operatie suggestie</string>
+
+    <string name="operation_man">Bewerker: </string>
+
+    <string name="operation_succeeded">Operatie lukt</string>
+
+    <string name="operations_map">Bedienings- en onderhoudskaart</string>
+
+    <string name="opmitity_choice">Optimizer selectie</string>
+
+    <string name="optimity">Optimizer</string>
+
+    <string name="optimity_choice">(Er kunnen maximaal 5 optimizers worden geselecteerd)</string>
+
+    <string name="optimizer_code">Optimizer nummer</string>
+
+    <string name="optimizer_compered">Optimizer vergelijking</string>
+
+    <string name="optimizer_forbidden_energy">Optimizer uitschakelen</string>
+
+    <string name="optimizer_num">Optimizer nummer:</string>
+
+    <string name="organization_structure">Organisatiestructuur</string>
+
+    <string name="other">Anders</string>
+
+    <string name="other_app_claim_res">Maken van een fotomap mislukt, mogelijk nemen andere apps bronnen in beslag!</string>
+
+    <string name="other_device_login">Uw account is ingelogd op een ander apparaat</string>
+
+    <string name="other_information">Andere informatie</string>
+
+    <string name="other_station">Andere krachtcentrale</string>
+
+    <string name="out_time">Time-out voor uitvoering van de opdracht</string>
+
+    <string name="out_voltage">Uitgangsspanning:</string>
+
+    <string name="outo_login_out_time">Automatische inlogtijd verlopen, voer het wachtwoord opnieuw in</string>
+
+    <string name="output_electric">Uitgangsstroom:</string>
+
+    <string name="output_household">Uitgang</string>
+
+    <string name="output_mdoe_str">Uitvoermethode</string>
+
+    <string name="output_method_str">Uitvoermethode</string>
+
+    <string name="output_power">Uitgangsvermogen:</string>
+
+    <string name="output_power_opt">Uitgangsvermogen</string>
+
+    <string name="outputOverVol">Apparaat abnormaliteit: uitgangsoverspanning</string>
+
+    <string name="outputShorCircuit">Kortsluitingalarm: kortsluiting uitgang</string>
+
+    <string name="over">Boven </string>
+
+    <string name="overdue">Het wachtwoord is verlopen, wijzig het wachtwoord</string>
+
+    <string name="overTemperature">Overtemperatuur alarm: te hoge temperatuur</string>
+
+    <string name="ovgr_glgj_str">OVGR geassocieerde uitschakel</string>
+
+    <string name="p_max">Pmax(W)</string>
+
+    <string name="p_output">P-type uitvoer</string>
+
+    <string name="packaged_substation">Doostype omvormer</string>
+
+    <string name="page">page</string>
+
+    <string name="pageSize">pageSize</string>
+
+    <string name="parameter_property">Karakteristieke parameter</string>
+
+    <string name="parameter_range_1">Parameterbereik: [%1$s,%2$s]</string>
+
+    <string name="parameter_range_2">Parameterbereik: [%1$s,%2$s] geheel getal</string>
+
+    <string name="parameter_range_3">Parameterbereik: (-1,-0,8]U[0,8,1]</string>
+
+    <string name="parameter_range_4">Parameterbereik: (%1$s,%2$s]</string>
+
+    <string name="parameter_range_max_1">Parameterbereik: [%1$s,%2$s)</string>
+
+    <string name="parameter_range_max_2">Parameterbereik: [%1$s,%2$s) geheel getal </string>
+
+    <string name="parameter_range_maxmin_1">Parameterbereik: (%1$s,%2$s)</string>
+
+    <string name="parameter_range_maxmin_2">Parameterbereik: (%1$s,%2$s) geheel getal </string>
+
+    <string name="parameter_range_min_2">Parameterbereik: (%1$s,%2$s] geheel getal</string>
+
+    <string name="parameter_setting">Parameterinstellingen</string>
+
+    <string name="part">Rol</string>
+
+    <string name="passive_island">Passief eiland</string>
+
+    <string name="password">Wachtwoord</string>
+
+    <string name="password_modification">Wachtwoord wijzigen</string>
+
+    <string name="password_not_null">Het wachtwoord mag niet leeg zijn!</string>
+
+    <string name="password_reset">3. Wachtwoord herstellen</string>
+
+    <string name="password_reset_fail">Wachtwoord herstellen mislukt!</string>
+
+    <string name="password_reset_ok">Wachtwoord herstellen lukt!</string>
+
+    <string name="password_str">Wachtwoord</string>
+
+    <string name="password_twice_not_equ">De wachtwoorden die tweemaal zijn ingevoerd, zijn inconsistent!</string>
+
+    <string name="password2">Wachtwoord</string>
+
+    <string name="patrol">Inspectie</string>
+
+    <string name="patrol_complete">Volledige inspectie</string>
+
+    <string name="patrol_has_started">U bent begonnen met inspectie</string>
+
+    <string name="patrol_history">Inspectiegeschiedenis</string>
+
+    <string name="patrol_items">Inspectieproject</string>
+
+    <string name="patrol_name_disallow_empty">Inspectienaam mag niet leeg zijn</string>
+
+    <string name="patrol_report_create_failed">De inspectie is niet voltooid, en er wordt geen inspectierapport gegenereerd.</string>
+
+    <string name="patrol_result_confirm">Inspectie resultaat bevestiging</string>
+
+    <string name="patrol_start">Begin met inspectie</string>
+
+    <string name="patrolling_management">Inspectie beheer</string>
+
+    <string name="peak_ac_power">Piek AV vermogen (kW)</string>
+
+    <string name="peak_ac_power_no_unit">Piek AC-vermogen</string>
+
+    <string name="peak_dc_power">Piekvermogen (kW)</string>
+
+    <string name="peak_dc_power_no_unit">Piek DC-vermogen</string>
+
+    <string name="peak_power_temp_coefficient">Temperatuurcoëfficiënt van maximaal vermogen (Pmax) (%/° C)</string>
+
+    <string name="peizhi_capacity_setting">Alleen de capaciteit configureren</string>
+
+    <string name="peizhi_setting_str">Gedetailleerde configuratie</string>
+
+    <string name="people_name">volledige naam</string>
+
+    <string name="perc_polycrystal">Monokristal van het PERC-type</string>
+
+    <string name="percent">Percentage (%)</string>
+
+    <string name="percent_">Aandeel: </string>
+
+    <string name="performanceratio_report">Systeemefficiëntie\n(%)</string>
+
+    <string name="permission">Toestemming</string>
+
+    <string name="permission_setting">Beheer van operationele en onderhoudstoestemming</string>
+
+    <string name="perpower_ratio_report">Equivalente gebruiksuren\n(u)</string>
+
+    <string name="person">person</string>
+
+    <string name="personal_details">Persoonlijke gegevens</string>
+
+    <string name="pf_wgglbc_str">Reactieve vermogencompensatie (PF)</string>
+
+    <string name="phase_angle_shift_protection">Fase hoek afwijking beveiliging</string>
+
+    <string name="phase_voltage_ab">Lijn AB-spanning in het elektriciteitsnet(V)</string>
+
+    <string name="phase_voltage_bc">Lijn BC-spanning in het elektriciteitsnet (V)</string>
+
+    <string name="phase_voltage_ca">Lijn CA-spanning in het elektriciteitsnet (V)</string>
+
+    <string name="phone_error_or_password_error">Het telefoonnummer bestaat niet of het wachtwoord fout</string>
+
+    <string name="phone_illegal">Het ingevoerde nummer is illegaal</string>
+
+    <string name="phone_nots_empty">Contactnummer mag niet leeg zijn</string>
+
+    <string name="phone_number">Contact telefoonnummer</string>
+
+    <string name="phone_number_colon">Contact nummer:</string>
+
+    <string name="PhoneMsg">Telefoon toestemming,</string>
+
+    <string name="photographing">Maak een foto</string>
+
+    <string name="photovoltaic_area">Fotovoltaïsche zone</string>
+
+    <string name="pic_compress_failed">Beeldcompressie mislukt</string>
+
+    <string name="pickerview_cancel_tx">Annuleren</string>
+
+    <string name="pickerview_day">Dag</string>
+
+    <string name="pickerview_hours">Uur</string>
+
+    <string name="pickerview_minutes">Minuut</string>
+
+    <string name="pickerview_month">Maand</string>
+
+    <string name="pickerview_seconds">Seconde</string>
+
+    <string name="pickerview_submit">Bevestigen</string>
+
+    <string name="pickerview_year">Jaar</string>
+
+    <string name="picture">Foto </string>
+
+    <string name="picture_load_failed">Afbeeldingen kunnen niet worden geladen</string>
+
+    <string name="pictures_should_less_than_15">Niet meer dan 15 bijlagen</string>
+
+    <string name="piease_company_name_in">Voer de bedrijfsnaam in</string>
+
+    <string name="pieces">(stuk)</string>
+
+    <string name="pinnet_disconnected">Losgekoppeld</string>
+
+    <string name="pinnet_subdev_not_do_it_notice_str">Het  aangesloten apparaat van productgerelateerde gegevensverzameling ondersteunen deze functie niet</string>
+
+    <string name="plan_power">Geplande elektriciteitsopwekking\n(kWh)</string>
+
+    <string name="planning">Ongebouwde krachtcentrale</string>
+
+    <string name="plant_name_">Krachtcentrale naam:</string>
+
+    <string name="plant_pictures">Afbeelding van de krachtcentrale</string>
+
+    <string name="plant_selection">Selectie van krachtcentrales</string>
+
+    <string name="platform_for_IP_domain_configuration">Configuratie van platform-IP/domein</string>
+
+    <string name="plbhbf_str">Frequentie verandering snelheid bescherming</string>
+
+    <string name="plbhlbhd_str">Frequentie verandering snelheid bescherming punt</string>
+
+    <string name="plbhlbhsj_str">Frequentie verandering snelheid beschermingstijd</string>
+
+    <string name="plc">PLC</string>
+
+    <string name="plc_tx_str">PLC-communicatie</string>
+
+    <string name="please_choice_time_true">Selecteer de juiste tijd!</string>
+
+    <string name="please_configure_the_permissions_on_the_Web_page">Configureer de toestemming aan de kant van de webpagina.</string>
+
+    <string name="please_enter_recovery_time">Voer hersteltijd in</string>
+
+    <string name="please_fill_in_the_acceptance_opinion">Vul de opmerkingen over acceptatie in</string>
+
+    <string name="please_fill_in_the_processing_description">Vul alstublieft de verwerkingsbeschrijving in</string>
+
+    <string name="please_fill_in_the_processing_opinion">Vul de verwerkingscommentaar in</string>
+
+    <string name="please_input_a_password">Voer uw wachtwoord in</string>
+
+    <string name="please_input_addr_ip_str">Voer het toegangsadres in</string>
+
+    <string name="please_input_alarm_name">Voer de alarmnaam in</string>
+
+    <string name="please_input_capacity_of_device">Voer de totale DC-capaciteit van het apparaat in</string>
+
+    <string name="please_input_captcha">Voer verificatiecode in</string>
+
+    <string name="please_input_corret_email">Voer het juiste e-mailadres in!</string>
+
+    <string name="please_input_date">Stel de productiedatum in</string>
+
+    <string name="please_input_Dc_capacity_of_power_station">Voer de DC-capaciteit van de krachtcentrale in</string>
+
+    <string name="please_input_dev_esn">Voer het SN-nummer van het apparaat in</string>
+
+    <string name="please_input_dev_name">Voer een apparaatnaam in</string>
+
+    <string name="please_input_email">Voer uw e-mail in</string>
+
+    <string name="please_input_email_yz_code">Voer de e-mailverificatiecode in</string>
+
+    <string name="please_input_factory_name">Voer de fabrikantnaam in</string>
+
+    <string name="please_input_moubus_addr">Vul het Moubus-adres in</string>
+
+    <string name="please_input_name">Voer een naam in</string>
+
+    <string name="please_input_name_">Vul uw naam in!</string>
+
+    <string name="please_input_new_password">Voer een nieuw wachtwoord in</string>
+
+    <string name="please_input_new_password_again">Voer uw nieuwe wachtwoord opnieuw in</string>
+
+    <string name="please_input_ok_ip">Voer het juiste IP-formaat in</string>
+
+    <string name="please_input_phone_">Vul een telefoonnummer in!</string>
+
+    <string name="please_input_price_str">Vul de elektriciteitsprijs in!</string>
+
+    <string name="please_input_pv_module">Voer het modelnummer van het onderdeel in</string>
+
+    <string name="please_input_pwd">Voer uw wachtwoord in</string>
+
+    <string name="please_input_pwd_">Voer het wachtwoord in!</string>
+
+    <string name="please_irradiation_strength">Voer de bestralingsintensiteit van het onderdeelvlak in.</string>
+
+    <string name="please_irradiation_strength_back">Voer oppervlaktetemperatuur van de achterkant van het onderdeel in.</string>
+
+    <string name="please_later">Probeer het later opnieuw ...</string>
+
+    <string name="please_optimity_choice">Selecteer een optimizer!</string>
+
+    <string name="please_optimity_choice_no">Selecteer optimizers (maximaal 5)</string>
+
+    <string name="please_protection_clause">Lees en ga akkoord met de Gebruiksvoorwaarden en het Privacybeschermingsbeleid!</string>
+
+    <string name="please_select">Selecteer alstublieft</string>
+
+    <string name="please_select_device">Selecteer een apparaat</string>
+
+    <string name="please_select_gridcode">Selecteer eerst de elektriciteitsnet standaardcode.</string>
+
+    <string name="please_select_household_inv_str">Selecteer een huishoudelijke omvormer</string>
+
+    <string name="please_select_receipient">Selecteer de ontvanger</string>
+
+    <string name="please_select_res_">Selecteer een bron!</string>
+
+    <string name="please_select_role">Selecteer een rol</string>
+
+    <string name="please_select_role_">Selecteer een rol!</string>
+
+    <string name="please_select_takeover">Selecteer een overdracht personeel!</string>
+
+    <string name="please_select_the_code">Selecteer de standaardcode van de elektriciteitsnet</string>
+
+    <string name="please_select_the_symbol_code">Selecteer de identificatiecode van de elektriciteitsnet</string>
+
+    <string name="please_select_time_str">Selecteer tijd</string>
+
+    <string name="please_selecte_dev_eq_notice_str_">Er zijn verschillende type apparaten voor het apparaat dat u hebt geselecteerd. Selecteer hetzelfde type apparaat opnieuw.</string>
+
+    <string name="please_set_the_total_dc_capacity_of_the_equipment">Stel de totale DC-capaciteit van het apparaat in (KW):</string>
+
+    <string name="please_signal_choice">Selecteer het signaalpunt!</string>
+
+    <string name="please_signal_choice_no">Selecteer signaalpunten (maximaal 5)</string>
+
+    <string name="please_station_choice">Selecteer de krachtcentrale</string>
+
+    <string name="please_unit_choice">Selecteer een eenheid</string>
+
+    <string name="please_wait">Probeer het later opnieuw</string>
+
+    <string name="please_wait_moment">De bron is niet verkregen, probeer het later opnieuw!</string>
+
+    <string name="pn_data_logger">Productgerelateerde gegevensverzameling</string>
+
+    <string name="pnl_system_net_is_normal">Bevestig dat de netwerkverbinding van het gegevensverzamelings- en beheersysteem normaal is.</string>
+
+    <string name="pnloger_brush">Scannercode voor het gegevensverzameling</string>
+
+    <string name="pnloger_collecter">Gegevensverzamelaar</string>
+
+    <string name="pnloger_collecter_imformation">Apparaatinformatie verzamelen(%1$d)</string>
+
+    <string name="pnloger_current_design">Valuta-instellingen</string>
+
+    <string name="pnloger_equipment_name">Gegevensverzamelingsnaam</string>
+
+    <string name="pnloger_equipment_name_difinite">Voer een naam voor de gegevensverzameling in</string>
+
+    <string name="pnloger_equipment_site">Gegevensverzamelingsadres</string>
+
+    <string name="pnloger_equipment_site_difinite">Specifiek adres van gegevensverzameling</string>
+
+    <string name="pnloger_esn">SN-nummer</string>
+
+    <string name="pnloger_et_site">Positioneringsfout</string>
+
+    <string name="pnloger_powertation_introduce">Introductie van de krachtcentrale</string>
+
+    <string name="pnloger_scan_esn">Scan het SN-nummer van de gegevensverzameling</string>
+
+    <string name="pnloger_shear">Bevestigen</string>
+
+    <string name="pnt_connected_station">De gegevensverzameling zijn verbonden met de krachtcentrale</string>
+
+    <string name="pnt_not_exit">De gegevensverzameling is nog niet verbonden met het beheersysteem</string>
+
+    <string name="pnt_not_exits">De gegevensverzameling is niet verbonden met het beheersysteem en kan niet worden geconfigureerd.</string>
+
+    <string name="pnuc_a_vol">Fase A-spanning (AC-zijde)</string>
+
+    <string name="pnuc_active_power_forward">Actieve kracht (voorwaartse actieve kracht)</string>
+
+    <string name="pnuc_active_power_pa">Actief vermogen Pa</string>
+
+    <string name="pnuc_active_power_pb">Actief vermogen Pb</string>
+
+    <string name="pnuc_active_power_pc">Actief vermogen Pc</string>
+
+    <string name="pnuc_b_vol">Fase B-spanning (AC-zijde)</string>
+
+    <string name="pnuc_c_vol">Fase C-spanning (AC-zijde)</string>
+
+    <string name="pnuc_dev_address">Apparaat adres:</string>
+
+    <string name="pnuc_dev_change_history">Verander geschiedenis:</string>
+
+    <string name="pnuc_forward_active_power">Positieve actieve kracht</string>
+
+    <string name="pnuc_forward_reactive_">Actieve kracht(vooruit actieve kracht)</string>
+
+    <string name="pnuc_forward_reactive_power">Voorwaartse reactieve kracht</string>
+
+    <string name="pnuc_grid_a_ele_ia">Fase A-stroom in het elektriciteitsnet (IA)</string>
+
+    <string name="pnuc_grid_b_ele_ib">Fase B-stroom in het elektriciteitsnet (IB)</string>
+
+    <string name="pnuc_grid_c_ele_ic">Fase C-stroom in het elektriciteitsnet (IC)</string>
+
+    <string name="pnuc_ip_address">Ip adres:</string>
+
+    <string name="pnuc_lat">Breedtegraad:</string>
+
+    <string name="pnuc_lng">Lengtegraad:</string>
+
+    <string name="pnuc_manufacturer_name">Fabricantaam:</string>
+
+    <string name="pnuc_reactive_power_qa">Reactief vermogen Qa</string>
+
+    <string name="pnuc_reactive_power_qb">Reactief vermogen Qb</string>
+
+    <string name="pnuc_reactive_power_qc">Reactief vermogen Qc</string>
+
+    <string name="pnuc_reverse_acive_">Achteruit actieve kracht(kWh)</string>
+
+    <string name="pnuc_reverse_active_power">Achterwaartse actieve krachtbron</string>
+
+    <string name="pnuc_reverse_reactive_power">Voorwaartse reactieve krachtbron</string>
+
+    <string name="pnuc_total_apparent_power">Totaal schijnbaar vermogen</string>
+
+    <string name="polycrystal">Polykristal</string>
+
+    <string name="polycrystal_four_grid_60">Polykristal vier-poorts 60 stuks</string>
+
+    <string name="polycrystal_four_grid_72">Polykristal vier-poorts 72 stuks</string>
+
+    <string name="poor_households">Armoedebestrijding huishouden</string>
+
+    <string name="port">Poort</string>
+
+    <string name="port_str">Poortnummer</string>
+
+    <string name="positive_active_power">(positieve actieve kracht)</string>
+
+    <string name="pound_name">£</string>
+
+    <string name="poverty">Voor armoedebestrijding</string>
+
+    <string name="poverty_alleviation">Voltooiingsstatus van armoedebestrijding</string>
+
+    <string name="poverty_alleviation_town">Armoedebestrijding kleinstad</string>
+
+    <string name="poverty_alleviation_village">Armoedebestrijding dorp</string>
+
+    <string name="poverty_reduction_achievement">Tot %1$s zijn %2$d armoedebestrijding huishoudens voltooid</string>
+
+    <string name="poverty_station">Armoedebestrijdingskrachtcentrale</string>
+
+    <string name="power">Elektriciteitsopwekking\n(kWh)</string>
+
+    <string name="power_">Vermogen (W)</string>
+
+    <string name="power__factor">Vermogensfactor:</string>
+
+    <string name="power_and_rank_tj">Elektriciteitopwekking en omzetstatistieken</string>
+
+    <string name="power_factor">Vermogensfactor</string>
+
+    <string name="power_factor_">Vermogensfactor:</string>
+
+    <string name="power_factor_unit">COS：</string>
+
+    <string name="power_flace">Vermogensfactor:</string>
+
+    <string name="power_grid_safe">Elektriciteitsnet</string>
+
+    <string name="power_grid_">Elektriciteitsnet</string>
+
+    <string name="power_input">DC-ingangsvermogen:</string>
+
+    <string name="power_is_fixed_on_derating_2">Vaste waarde reductie actief vermogen (W)</string>
+
+    <string name="power_limit">Uitschakelen wanneer de stroom is tot 0%</string>
+
+    <string name="power_pic">Vermorgensdiagram </string>
+
+    <string name="power_plant_planning_and_ranking">Planning van de krachtcentrale</string>
+
+    <string name="power_plant_under_construction">Krachtcentrale in aanbouw</string>
+
+    <string name="power_price">Elektriciteitsprijs</string>
+
+    <string name="power_regulation">Vermogensregeling</string>
+
+    <string name="power_station_name">Naam van de krachtcentrale</string>
+
+    <string name="power_system">Optisch vermogen voorspellingssysteem</string>
+
+    <string name="power_unit_billionkwh">Honderd miljard kWh</string>
+
+    <string name="power_unit_kw">kW</string>
+
+    <string name="power_unit_kwp">kWp</string>
+
+    <string name="power_unit_mwp">MWp</string>
+
+    <string name="power_unit_gwp">GWp</string>
+
+    <string name="power_unit_kwh">kWh</string>
+
+    <string name="power_unit_mwh">MWh</string>
+
+    <string name="power_unit_gwh">GWh</string>
+
+    <string name="power_unit_wankwh">Tienduizend kWh</string>
+
+    <string name="power_unit_yuan">￥</string>
+
+    <string name="power_wunit">(W)</string>
+
+    <string name="power_yh_mode_str">Optimalisatiemodus voor elektriciteit kwaliteit</string>
+
+    <string name="powercuts_report">Vermogensverlies door vermogensbeperking\n(kWh)</string>
+
+    <string name="powerseandproduchouse_report">Elektriciteit zelfopwekking en zelfgebruik\n(kWh)</string>
+
+    <string name="poweruseandproducfactory_report">Fabriekselektriciteitsverbruik\n(kWh)</string>
+
+    <string name="pq">PQ-modus</string>
+
+    <string name="pq_mode">PQ-modus</string>
+
+    <string name="pq_mode_1">PQ-modus1</string>
+
+    <string name="pq_mode_2">PQ-modus2</string>
+
+    <string name="pre_house_user">Standaardrol voor huishoudelijke gebruiker</string>
+
+    <string name="pre_installer">Door installateur geregistreerde standaardrol</string>
+
+    <string name="preferred_esn_server">Voorkeur DNS-server</string>
+
+    <string name="present_device_num">Er zijn momenteel %1$d apparaten</string>
+
+    <string name="previous_step">Vorige</string>
+
+    <string name="primary_frequency_protection_point">Eerste-fase overfrequentie beschermingspunt (Hz)</string>
+
+    <string name="primary_frequency_protection_time">Eerste-fase overfrequentie beschermingstijd (ms)</string>
+
+    <string name="primary_overvoltage_protection_point">Eerste-fase overspanning beschermingspunt (V)</string>
+
+    <string name="primary_overvoltage_protection_time">Eerste-fase overspanning beschermingstijd (ms)</string>
+
+    <string name="process_description_colon">Verwerking beschrijving:</string>
+
+    <string name="processing">[Verwerking]</string>
+
+    <string name="processing_opinion">Opmerkingen verwerken:</string>
+
+    <string name="processing_result">Verwerkingsresultaat</string>
+
+    <string name="processing_result_colon">Verwerkingsresultaat:</string>
+
+    <string name="processing_result_selection">Selecteer het verwerkingsresultaat</string>
+
+    <string name="processing_time_colon">Voltooiingstijd:</string>
+
+    <string name="produc_dev">Fabriek elektriciteit productiegebied elektriciteitmeter</string>
+
+    <string name="product_for_access">Toegang tot productgerelateerde gegevensverzameling</string>
+
+    <string name="production_deviation">Productieafwijking (%)</string>
+
+    <string name="production_deviation_no_unit">Productieafwijking</string>
+
+    <string name="production_reliability">Productiebetrouwbaarheid (%)</string>
+
+    <string name="production_reliability_no_unit">Productiebetrouwbaarheid</string>
+
+    <string name="profit">Inkomsten</string>
+
+    <string name="profit_with_unit">Inkomsten\n(￥)</string>
+
+    <string name="prompt">Prompt</string>
+
+    <string name="protected_email">Wachtwoordbeveiliging E-mail:</string>
+
+    <string name="protection_clause">Privacybeschermingsbeleid</string>
+
+    <string name="protection_event">Bescherming evenement</string>
+
+    <string name="protection_parameters">Bescherming parameter</string>
+
+    <string name="protection_shield">Onderspanningsbeveiligingsafscherming voor LVRT</string>
+
+    <string name="protocol">https://</string>
+
+    <string name="psw_check_ok">Het ingevoerde wachtwoord en bevestigingswachtwoord is niet consistent.</string>
+
+    <string name="pub_addr_in">Voer een openbaar adres van 2-254  sijfers in</string>
+
+    <string name="public_address">Openbaar adres</string>
+
+    <string name="pull_refresh">Trek naar beneden om te vernieuwen</string>
+
+    <string name="punc_battery_surface_temperature">Pv-temperatuur:</string>
+
+    <string name="punc_env_temp">Temperatuur:</string>
+
+    <string name="punc_grid_ab_vol">Lijn AB-spanning in het elektriciteitsnet</string>
+
+    <string name="punc_grid_bc_vol">Lijn BC-spanning in het elektriciteitsnet</string>
+
+    <string name="punc_grid_ca_vol">Lijn CA-spanning in het elektriciteitsnet</string>
+
+    <string name="punc_horizontal_irradiation">Horizontale bestraling:</string>
+
+    <string name="punc_irradiation_strength">Bestralingsintensiteit:</string>
+
+    <string name="punc_pre_irradiation_level">Horizontale bestralingsintensiteit:</string>
+
+    <string name="punc_total_irra_str">Totale bestraling:</string>
+
+    <string name="punc_wind_direction">Windrichting:</string>
+
+    <string name="punc_wind_speed">Windsnelheid:</string>
+
+    <string name="push_check_choice_tips">Opmerking: nadat u \&apos;Nee\&apos;\hebt geselecteerd, worden de duw-berichten te ontvangen tijdens deze inloggen.</string>
+
+    <string name="pv">PV-kromme</string>
+
+    <string name="pv_cfg_fail">String configureren mislukt</string>
+
+    <string name="pv_conect_mode_str">String verbindingsmethode</string>
+
+    <string name="pv_index">String</string>
+
+    <string name="pv_info">PV</string>
+
+    <string name="pv_power_str">Onderdeelmaximaal vermogen (Pmax)</string>
+
+    <string name="pv_setting_modifaall_notice">Wilt u de configuratie van de String 1 met één klik toepassen op andere Stringen?</string>
+
+    <string name="pv_size_input_range">Invoerbereik [1~%1$d]</string>
+
+    <string name="pv_size_input_range_msg">Het invoerbereik van het aantal Stringen is 1~%1$d</string>
+
+    <string name="pv_unit_str">Reeks </string>
+
+    <string name="pv_zn_jk">String intelligente controle</string>
+
+    <string name="pv1">pv1</string>
+
+    <string name="pv2">pv2</string>
+
+    <string name="pvmodule_alarm_sured">Bevestigd</string>
+
+    <string name="pvsize_one_not_all_modification">Kan niet worden ingesteld als er slechts één String is</string>
+
+    <string name="pwd_modify_success">Het wachtwoord wijzigen lukt, log opnieuw in!</string>
+
+    <string name="pwd_nots_empty">Wachtwoordinvoer kan niet leeg zijn</string>
+
+    <string name="pwd_validity">Geldigheidsperiode wachtwoord</string>
+
+    <string name="q_s_wgglbc_str">Reactieve vermogencompensatie (Q/S)</string>
+
+    <string name="qiye_info_title">Bedrijfsinformatie</string>
+
+    <string name="query_and_filter">Controleer filtratie</string>
+
+    <string name="query_target_dev">Controleer het doelapparaat</string>
+
+    <string name="query_task">Controleer taak</string>
+
+    <string name="query_time_interval">Vraag tijd</string>
+
+    <string name="quit">Ophouden</string>
+
+    <string name="quit_inspect">Geef inspectie op</string>
+
+    <string name="quit_pnt_open_station">Wilt u het begin van het verzamelen van gegevens afsluiten?</string>
+
+    <string name="quit_scan">Sluit u de scan af en gaat u terug naar de startpagina?</string>
+
+    <string name="radiation_report">Totale bestraling\n(kWh/m2)</string>
+
+    <string name="rank">Inkomsten\n(￥)</string>
+
+    <string name="ranking_of_power_stations_equivalent_hours">De ranglijst van de krachtcentrale van de dag top (equivalente gebruiksuren)</string>
+
+    <string name="rate_of_work">vermogen(kW)</string>
+
+    <string name="rate_of_work_dw">vermogen(kW)</string>
+
+    <string name="rated_capacity">Nominale vermogen:</string>
+
+    <string name="rcd_zq_str">RCD-verbetering</string>
+
+    <string name="re">Herstellen</string>
+
+    <string name="re_operation">Er is een inactief alarm in de geselecteerde gegevens, gelieve opnieuw te werken! !</string>
+
+    <string name="re_total_CO2_report">Vermindering van de CO2-uitstoot\n(t)</string>
+
+    <string name="re_total_coal_report">Standaard kolenbesparing\n(t)</string>
+
+    <string name="reactive_compensation_factor">LVRT reactieve compensatiefactor</string>
+
+    <string name="reactive_power">Reactieve vermogen:</string>
+
+    <string name="reactive_power_">Reactieve vermogen:</string>
+
+    <string name="reactive_power__">Reactief vermogen</string>
+
+    <string name="reactive_power_compensation_cf_v_str">Reactief vermogenscompensatie (cosψ-P) trekker spanning</string>
+
+    <string name="reactive_power_compensation_tc_v_str">Reactief vermogencompensatie (cosψ-P) uitgangsspanning</string>
+
+    <string name="reactive_power_unit">Q(kWar)：</string>
+
+    <string name="real_time">(Realtime:</string>
+
+    <string name="real_time_information">Realtime informatie</string>
+
+    <string name="real_time_load">Realtime Laadsnelheid:</string>
+
+    <string name="real_time_power_pieces">Realtime vermogen (kW)</string>
+
+    <string name="real_time_total_power_">Realtime totale vermogen:</string>
+
+    <string name="realtime_alarm">Realtime alarm</string>
+
+    <string name="rec">Records</string>
+
+    <string name="recevier">Ontvangers:</string>
+
+    <string name="reconfirm">Herbevestigen </string>
+
+    <string name="record_details">Record details</string>
+
+    <string name="recovery_time">Hersteltijd</string>
+
+    <string name="recovery_time_colon">Hersteltijd:</string>
+
+    <string name="reduce_deforestation">Equivalente bomen planten</string>
+
+    <string name="reduction_total_tree">Equivalente bomen planten\n(bomen)</string>
+
+    <string name="refresh">Geen gegevens, ververs het!</string>
+
+    <string name="regist_failed">Registratie mislukt!</string>
+
+    <string name="register_code">Registratie code</string>
+
+    <string name="register_success">Registratie lukt</string>
+
+    <string name="related_alarm">Bijbehorend alarm</string>
+
+    <string name="related_desc">Gerelateerde beschrijving</string>
+
+    <string name="related_description">Gerelateerde beschrijving</string>
+
+    <string name="release_load">Laat los om te laden</string>
+
+    <string name="remark">Opmerkingen:</string>
+
+    <string name="remark_defect">Opmerking</string>
+
+    <string name="renwu_detail_str">Taakdetails</string>
+
+    <string name="repair_suggest">Reparatievoorstel</string>
+
+    <string name="report_dev_name">Apparaatnaam</string>
+
+    <string name="report_form">Verslag</string>
+
+    <string name="report_number">Nummer rapportage</string>
+
+    <string name="report_phone_title">Nummer rapportage</string>
+
+    <string name="report_temperature">Gemiddelde temperatuur\n (° C)</string>
+
+    <string name="reported_failed">Informatie rapportage mislukt</string>
+
+    <string name="reported_success">Informatie rapportage voltooid</string>
+
+    <string name="reporters_to_be_associated">Gegevensverzamelingsnummer dat moet worden gekoppeld</string>
+
+    <string name="req_fail">Verzoek mislukt</string>
+
+    <string name="request_failed">Verzoek mislukt!</string>
+
+    <string name="request_out_time">Verzoek time-out</string>
+
+    <string name="request_success">Verzoek lukt!</string>
+
+    <string name="request_time_out">Verzoek time-out</string>
+
+    <string name="res">Bronnen</string>
+
+    <string name="resend">Opnieuw verzenden</string>
+
+    <string name="reset">Herstellen</string>
+
+    <string name="reset_device">Herstellen</string>
+
+    <string name="reset_filtering">Filtratie voorwaarden herstellen</string>
+
+    <string name="resetUser">Account is gereset, wijzig uw wachtwoord</string>
+
+    <string name="resource">Bronnen</string>
+
+    <string name="reStart_patrol">Hercontrole</string>
+
+    <string name="restoration_gradient">Overfrequentie reductie herstellingsgradiënt (%/min)</string>
+
+    <string name="restoration_suggestion">Details van reparatievoorstel</string>
+
+    <string name="restoration_suggestion_">Reparatiesuggesties:</string>
+
+    <string name="restore_default">Standaard herstellen</string>
+
+    <string name="restored">Gerestaureerd</string>
+
+    <string name="resubmit">Wijzigingen indienen</string>
+
+    <string name="return_confirmed">Bevestig retour</string>
+
+    <string name="return_home">Keer terug naar de startpagina</string>
+
+    <string name="reverse_active_cap">%1$s (achteruit)</string>
+
+    <string name="reverse_reactive_cap">Reactieve kracht(kVarh)</string>
+
+    <string name="reverted">Geretourneerd</string>
+
+    <string name="rise_suppression_reactive">Spanningsverhogingsonderdrukking actief vermogen reductiepunt (%)</string>
+
+    <string name="rise_suppression_reactive_power">Spanningsverhogingsonderdrukking reactief vermogen regulatiepunt (%)</string>
+
+    <string name="rmb_name">RMB</string>
+
+    <string name="role">Rol</string>
+
+    <string name="role_get_fail_">Rol ophalen mislukt!</string>
+
+    <string name="root_err_tips">Het apparaat heeft root-toestemming en er is een risico van privacylekkage wanneer u de app blijft gebruiken!</string>
+
+    <string name="router_password">Inlogwachtwoord voor draadloze router</string>
+
+    <string name="routing_inspection">Inspectielijst</string>
+
+    <string name="routing_network_name">Netwerknaam voor draadloze routering (SSID)</string>
+
+    <string name="rs485_address">RS485-adres</string>
+
+    <string name="rs485_baud_rate">RS485 baudrato</string>
+
+    <string name="rs485_check_mode">RS485-verificatiemethode</string>
+
+    <string name="rs485_port_mode">RS485-poortmodus</string>
+
+    <string name="rs485_protocol">RS485-protocol</string>
+
+    <string name="run">Operatie</string>
+
+    <string name="running_days">Lopende dagen:</string>
+
+    <string name="running_state">Operatie status:</string>
+
+    <string name="s_wgglbhte_str">Verandering gradiënt reactief vermogen (%/s)</string>
+
+    <string name="s_ygglbhtd_str">Verandering gradiënt actief vermogen (%/s)</string>
+
+    <string name="safe_run_start_time_str">Veilige werking\n starttijd</string>
+
+    <string name="safe_yz">② Beveiligingsverificatie</string>
+
+    <string name="san_jin_dc">Drie kristallen gegevensverzameling</string>
+
+    <string name="save">Opslaan</string>
+
+    <string name="save_failed">Opslaan mislukt</string>
+
+    <string name="save_report">Rapport opslaan</string>
+
+    <string name="save_standard_coal">Standaardkolen opslaan</string>
+
+    <string name="save_success">Opslaan lukt</string>
+
+    <string name="save_success_have_cap">Rapport opslaan: Er is een apparaat waarop de Stringcapaciteit niet is ingesteld. Stel het in.</string>
+
+    <string name="save_to_local">Of u wijzigingen in lokaal wilt opslaan</string>
+
+    <string name="scan">Bekijken</string>
+
+    <string name="scan_content_isempty">Gescande inhoud is leeg</string>
+
+    <string name="scan_detail">Gescande objectdetails</string>
+
+    <string name="scan_failed">Scannen mislukt</string>
+
+    <string name="scan_help_explain">Scan eenvoudig de streepjescode in de rode cirkel met uw mobiele telefoon en verkrijg automatisch het SN-nummer van het apparaat.</string>
+
+    <string name="scan_help_hint">Scan code met één klik om snel het SN-nummer te krijgen</string>
+
+    <string name="scan_mode">Scanmodus</string>
+
+    <string name="scan_nothing">Gescande inhoud is leeg</string>
+
+    <string name="scan_null_please_input">De gescande inhoud is leeg. Voer het SN-nummer handmatig in.</string>
+
+    <string name="scan_qrcode">QR-code</string>
+
+    <string name="scan_qrcode_hint">Lijn de QR-code op het apparaat uit</string>
+
+    <string name="scaning">Scannen ...</string>
+
+    <string name="scanning">Scannen </string>
+
+    <string name="scanning_barcode">Streepjescode </string>
+
+    <string name="scanning_barcode_hint">Lijn de streepjescode op het apparaat uit</string>
+
+    <string name="scanning_equipment_esn">Scan het SN-nummer van het apparaat</string>
+
+    <string name="search">Zoeken</string>
+
+    <string name="search_to_do_tasks">Voer de taaknaam in om te zoeken naar taken</string>
+
+    <string name="sec_ddzlwcsj_str">Onderhoudstijd geplande instructie (Sec)</string>
+
+    <string name="second_dev_cfg_title">Configuratie van het aangesloten apparaat</string>
+
+    <string name="second_dev_max_80">Ondersteunt tot %1$d aangesloten apparaten</string>
+
+    <string name="second_device_esn_data_logger_esn_repeat">De ESN van het aangesloten apparaat en ESN van gegevensverzameling worden herhaald</string>
+
+    <string name="second_device_list">Lijst met aangesloten apparaten</string>
+
+    <string name="second_device_num_not_null">Het aantal aangesloten apparaten mag niet leeg zijn</string>
+
+    <string name="second_range_is">Het aantal seconden is [0,60]</string>
+
+    <string name="second_time">Seconde</string>
+
+    <string name="select_a_device">Selecteer apparaaten</string>
+
+    <string name="select_all_device">Selecteer alle apparaten</string>
+
+    <string name="select_currency_setting">Selecteer een valuta-instelling</string>
+
+    <string name="select_data_logger_title">Selecteer gegevensverzameling</string>
+
+    <string name="select_device_type">Selecteer het apparaattype</string>
+
+    <string name="select_end_date">Selecteer de einddatum</string>
+
+    <string name="select_end_time">Selecteer de eindtijd</string>
+
+    <string name="select_from_album">Selecteer uit album</string>
+
+    <string name="select_grid_time">Selecteer de tijd netaansluit</string>
+
+    <string name="select_grid_type">Selecteer het type netaansluit</string>
+
+    <string name="select_image">Selecteer een afbeelding</string>
+
+    <string name="select_main_responsibility_man">Selecteer de hoofdverantwoordelijke</string>
+
+    <string name="select_one_item_notice">Moet ten minste één record kiezen</string>
+
+    <string name="select_operate_data">Geen gegevens geselecteerd, selecteer de bewerkingsgegevens!</string>
+
+    <string name="select_operation_man">Selecteer een bewerker</string>
+
+    <string name="select_port">Selecteer het poortnummer</string>
+
+    <string name="select_poverty_type">Selecteer een anti-zwakekrachtcentrale</string>
+
+    <string name="select_receipient">Selecteer ontvanger</string>
+
+    <string name="select_resources">Selecteer het brondomein</string>
+
+    <string name="select_second_dev_type">Selecteer het type van aangesloten apparaten</string>
+
+    <string name="select_start_date">Selecteer een startdatum</string>
+
+    <string name="select_start_time">Selecteer de starttijd</string>
+
+    <string name="select_station_after_selection">Partitie kan worden geselecteerd na het selecteren van een enkele krachtcentrale</string>
+
+    <string name="select_station_domain">Selecteer de krachtcentrale eigenaar</string>
+
+    <string name="select_station_status">Selecteer de status van de krachtcentrale</string>
+
+    <string name="select_station_title">Selecteer een krachtcentrale</string>
+
+    <string name="select_station_to_patrol">Selecteer de krachtcentrale die moet worden geïnspecteerd</string>
+
+    <string name="select_station_to_set_location_result">Locatieresultaten kunnen alleen worden ingesteld na het selecteren van een gebied van krachtcentrale</string>
+
+    <string name="select_string">String niet geselecteerd</string>
+
+    <string name="select_the_same_type">Selecteer hetzelfde type apparaat</string>
+
+    <string name="select_time">Selecteer tijd</string>
+
+    <string name="select_title">Selecteer</string>
+
+    <string name="selected">Gekozen </string>
+
+    <string name="selected_dev">Gekozen</string>
+
+    <string name="selfusepowerratio_report">Zelfopwekking voor zelfgebruik rato\n(%)</string>
+
+    <string name="send">Stuur</string>
+
+    <string name="send_code">Verzend verificatiecode</string>
+
+    <string name="serious">Ernstig</string>
+
+    <string name="set_date">Stel datum in</string>
+
+    <string name="set_ip_value">Stel het ip-adres in</string>
+
+    <string name="set_price_one_year_str">De instelling van de elektriciteitsprijs moet een volledig jaar zijn</string>
+
+    <string name="set_pv_info_title">Stel Stringinformatie in</string>
+
+    <string name="set_result_str">Stel het resultaat in:</string>
+
+    <string name="sets">(stuk)</string>
+
+    <string name="setting">Instelling</string>
+
+    <string name="setting_gruopstring_null_str">Het aantal ingestelde Stringen mag niet leeg zijn!</string>
+
+    <string name="setting_success">Instellen lukt</string>
+
+    <string name="setting_time">Selecteer tijd</string>
+
+    <string name="severity_alarm">Ernstig alarm</string>
+
+    <string name="sfzgybhd">Tien minuten overspanning beschermingspunt</string>
+
+    <string name="sfzgybhsj_str">Tien minuten overspanning beschermingstijd</string>
+
+    <string name="shortcut_name_colon">Naam van de snelkoppeling:</string>
+
+    <string name="should_haoya">Unzip error! U moet Haoya compressie gebruiken om ...</string>
+
+    <string name="should_open_station_again">Als het het aangesloten apparaat en het beheersysteem niet overeenkomen, opent u het krachtcentrale opnieuw.</string>
+
+    <string name="shouquan">Geef alsjeblieft toestemming!</string>
+
+    <string name="show_second_dev">Toon het aangesloten apparaat</string>
+
+    <string name="sigal_point_name">Signaalpuntnaam</string>
+
+    <string name="signal_five_interval">(Selecteer maximaal 5 signaalpunten)</string>
+
+    <string name="signal_list_image">Signaallijst deelfiguur</string>
+
+    <string name="signal_location">Signaalpunt</string>
+
+    <string name="signal_point_compered">Signaalpunt vergelijking</string>
+
+    <string name="signal_point_unit">Signaalpunt eenheid</string>
+
+    <string name="sim_card_num">SIM-kaartnummer:</string>
+
+    <string name="since_the_last_inspection">5 dagen sinds de laatste inspectie</string>
+
+    <string name="single_monocrystal">Monokristal dubbelglas</string>
+
+    <string name="single_xiang">Eenfase</string>
+
+    <string name="six">6</string>
+
+    <string name="sjgybhd">Derde-fase overspanning beschermingspunt</string>
+
+    <string name="sjgybhd_str">Vierde-fase overspanning beschermingspunt</string>
+
+    <string name="sjgybhsj">Vierde-fase overspanning beschermingstijd</string>
+
+    <string name="sjgybhsj_str">Derde-fase overspanning beschermingstijd</string>
+
+    <string name="sjqybhd_str">Derde-fase onderspanning beschermingspunt</string>
+
+    <string name="sjqybhsj_str">Derde-fase onderspanning beschermingstijd</string>
+
+    <string name="slaver_mode">Slaaf modus</string>
+
+    <string name="small_endian">Klein einde</string>
+
+    <string name="social_contribution">Sociale bijdrage</string>
+
+    <string name="soft_start_time">Zachte starttijd van opstarten na het falen van het elektriciteitsnet</string>
+
+    <string name="software_version">Softwareversienummer:</string>
+
+    <string name="special_character_notice">Mag geen speciale tekens bevatten, zoals \&lt;\ \&apos;\&gt; &amp; \ \&quot;, \\ / | {} null</string>
+
+    <string name="speedUnit">Windsnelheid(m/s)</string>
+
+    <string name="spend_time">(Het duurt:</string>
+
+    <string name="srv_internal_error">Server interne fout</string>
+
+    <string name="srv_ip_cfg">Server IP/domeinnaam configuratie</string>
+
+    <string name="ssjqybhd_str">Vierde-fase onderspanning beschermingspunt</string>
+
+    <string name="ssjqybhsj">Vierde-fase onderspanning beschermingstijd</string>
+
+    <string name="staion_has_patroled">De krachtcentrale is geïnspecteerd</string>
+
+    <string name="staion_location">Locatie van de krachtcentrale</string>
+
+    <string name="start_compared">Start vergelijking</string>
+
+    <string name="start_diagnosis">Start de diagnose</string>
+
+    <string name="start_navigation">Navigatie </string>
+
+    <string name="start_using">In staat stellen</string>
+
+    <string name="started_on">Starttijd</string>
+
+    <string name="startMsg">De huidige applicatie ontbreekt</string>
+
+    <string name="static_ip_address">Statisch IP-adres</string>
+
+    <string name="static_subnet_mask">Statisch IP-ondernetmasker</string>
+
+    <string name="station_addr">Adres van de krachtcentrale:</string>
+
+    <string name="station_address_str">Adres:</string>
+
+    <string name="station_alarm">Alarmcentrale</string>
+
+    <string name="station_belong_string">Krachtcentrale eigenaar (moet worden geselecteerd)</string>
+
+    <string name="station_changer_interval">Interval tussen onderstation van krachtcentrale</string>
+
+    <string name="station_check_notice">De naam van de krachtcentrale mag niet leeg zijn, niet langer dan 60 tekens (2 tekens voor elk Chinees teken). De volgende tekens &lt;\\\ \&apos;\&gt; &amp; \\\ \&quot;, \\\\ / | {} null worden niet ondersteund.</string>
+
+    <string name="station_choice_another_name">Selectie van krachtcentrales</string>
+
+    <string name="station_choice_notice">Selecteer een krachtcentrale</string>
+
+    <string name="station_code">Krachtcentrale nummer</string>
+
+    <string name="station_code_str">Krachtcentrale nummer:</string>
+
+    <string name="station_contrast">Vergelijking van krachtcentrales</string>
+
+    <string name="station_detail">Krachtcentrales details</string>
+
+    <string name="station_distribution">Distributie van krachtcentrales</string>
+
+    <string name="station_domain">Krachtcentrale eigenaar</string>
+
+    <string name="station_list">Lijst met krachtcentrales</string>
+
+    <string name="station_location">Adres krachtcentrale</string>
+
+    <string name="station_mamagement_str">Beheer van krachtcentrales</string>
+
+    <string name="station_name">Naam van de krachtcentrale</string>
+
+    <string name="station_name_">Krachtcentrale naam:</string>
+
+    <string name="station_name_colon">Krachtcentrale naam:</string>
+
+    <string name="station_name_exist">De krachtcentralenaam bestaat al</string>
+
+    <string name="station_name_not_null">Krachtcentralenaam mag niet leeg zijn!</string>
+
+    <string name="station_name_repeat_str">Dubbele krachtcentralenaam</string>
+
+    <string name="station_name_short">Krachtcentralenaam </string>
+
+    <string name="station_name_str">Naam van de krachtcentrale</string>
+
+    <string name="station_name_style">Op krachtcentralenaam</string>
+
+    <string name="station_not_exist">Krachtcentrale bestaat nu niet!</string>
+
+    <string name="station_num">Krachtcentrales</string>
+
+    <string name="station_power_equipment">Vermogen Apparaat van krachtcentrale</string>
+
+    <string name="station_source_title">Het alarm komt uit het productiebeheersysteem, geen bewerkingstoestemming!</string>
+
+    <string name="station_statues">Staat van krachtcentrale</string>
+
+    <string name="station_statues_mh">Krachtcentrale status:</string>
+
+    <string name="station_status">Staat van krachtcentrale</string>
+
+    <string name="station_timezone">Tijdzone van de krachtcentrale</string>
+
+    <string name="station_total">Totaal aantal krachtcentrales</string>
+
+    <string name="station_tree_style">Door een krachtcentrale boom</string>
+
+    <string name="statistical_time">Statistische tijd</string>
+
+    <string name="status">Status</string>
+
+    <string name="status_">Status</string>
+
+    <string name="status_all">Status (alle)</string>
+
+    <string name="stop_use">Uitgeschakeld</string>
+
+    <string name="StorageMsg">Opslagstoestemming</string>
+
+    <string name="stored_energy">Energie opslag</string>
+
+    <string name="str_inv_dispersion_ratio">Discrete snelheid van de String van de omvormer</string>
+
+    <string name="string">String:</string>
+
+    <string name="string_cap">String capaciteit (W)</string>
+
+    <string name="string_cap_kw">String capaciteit (kW):</string>
+
+    <string name="string_component_num">Aantal String onderdelen (blok /reeks)</string>
+
+    <string name="String_inverter">String omvormer</string>
+
+    <string name="string_inverter_num">(%1$d stuk)</string>
+
+    <string name="stutas">Status</string>
+
+    <string name="submission_failed_retry">Indienen mislukt, gelieve opnieuw in te dienen</string>
+
+    <string name="submit_confirmed">Bevestig om te indienen</string>
+
+    <string name="submit_ok">Indienen lukt</string>
+
+    <string name="submit_report_failed">Rapport indienen mislukt</string>
+
+    <string name="submit_report_succeed">Rapport indienen lukt</string>
+
+    <string name="submittal_failed">Indienen mislukt</string>
+
+    <string name="subordinate">Secundair</string>
+
+    <string name="substation_metar">Doostype omvormermeter</string>
+
+    <string name="success">Lukt</string>
+
+    <string name="success_">Lukt</string>
+
+    <string name="suggested_contact_person">Voorgestelde contactpersoon</string>
+
+    <string name="suggestive">Prompt</string>
+
+    <string name="sunshine_hours">Duur van zonneschijn\n(u)</string>
+
+    <string name="sup_2_to_3__only_reselect">Deze modus ondersteunt momenteel slechts 2 tot 3 krachtcentrales voor PK, selecteer opnieuw</string>
+
+    <string name="support_">Overeenkomen </string>
+
+    <string name="sure">Bevestigen</string>
+
+    <string name="sure_abort_remote_upgrade">Wilt u de upgrade door de afstandsbediening verlaten?</string>
+
+    <string name="sure_all_msg_read">Wilt u alle berichten markeren als gelezen?</string>
+
+    <string name="sure_cancel_">Weet je zeker dat je de scan moet annuleren?</string>
+
+    <string name="sure_cancle_regist">Weet je zeker dat je de registratie moet annuleren?</string>
+
+    <string name="sure_clear_all">Wilt u de relevante gegevens wissen?</string>
+
+    <string name="sure_close_account">Wil je uitloggen?</string>
+
+    <string name="sure_exit_str">Bevestigen om af te sluiten?</string>
+
+    <string name="sure_modify_communication_mode">Bevestigen om de communicatiemethode te wijzigen?</string>
+
+    <string name="sure_password_not_null">Bevestigingswachtwoord kan niet leeg zijn!</string>
+
+    <string name="sure_pnlogger_connect_station">Wilt u de gegevensverzameling verbinden met de krachtcentrale?</string>
+
+    <string name="sure_remote_upgrade">Is het geüpgraded door de afstandsbediening?</string>
+
+    <string name="sure_to_cancel_setting">Wil je de configuratie afsluiten?</string>
+
+    <string name="sure_to_save">Wil je opslaan?</string>
+
+    <string name="sure_upgrade_abort">De upgrade is door %1$s op %2$s verlaten</string>
+
+    <string name="sure_upgrade_fail">De upgrade is bevestigd door %1$s op %2$s, status: mislukt</string>
+
+    <string name="sure_upgrade_ing">De upgrade is bevestigd door %1$s op %2$s, status: upgraden</string>
+
+    <string name="sure_upgrade_success">De upgrade is bevestigd door %1$s op %2$s, status: lukt</string>
+
+    <string name="sure_username">① Bevestig uw account</string>
+
+    <string name="svc_svg_interval">SVC / SVG-interval</string>
+
+    <string name="switch_err">ERR</string>
+
+    <string name="switch_off">OFF</string>
+
+    <string name="switch_on">ON</string>
+
+    <string name="syfactoryuserd_report">Gecombineerde fabriekselektriciteit\n(kWh)</string>
+
+    <string name="synstatusepowerratio_report">Gecombineerde fabriekselektriciteitsverbruik rato\n(%)</string>
+
+    <string name="sys_remote_oper">Heeft een upgrade op afstand uitgevoerd door het systeem</string>
+
+    <string name="system_agrate_rgist">Systeem weigert de installateurgebruiker te registreren</string>
+
+    <string name="system_error">Systeem abnormaal</string>
+
+    <string name="tar_dev_pin_dc">Het  aangesloten apparaat van productgerelateerde gegevensverzameling ondersteunen deze functie niet</string>
+
+    <string name="tar_need_fe">Het doelapparaat kan alleen een directe FE-omvormer zijn</string>
+
+    <string name="target_current_unequal">Het doelapparaat kan niet hetzelfde zijn als het huidige apparaat</string>
+
+    <string name="target_dev_not_string_inv">Het doelapparaat is geen een apparaat voor String omvormer of een apparaat voor huishoudelijke omvormers</string>
+
+    <string name="target_device">Doelapparaat</string>
+
+    <string name="target_device_be_string_inv">Het doelapparaat moet een String omvormer zijn</string>
+
+    <string name="target_version">Toepasselijk versie</string>
+
+    <string name="task_description">Taakomschrijving</string>
+
+    <string name="task_list">Takenlijst</string>
+
+    <string name="task_name">Voer de taaknaam in</string>
+
+    <string name="task_time">Taak tijd</string>
+
+    <string name="task_todo_colon_unfinish">Onafgemaakte taken:</string>
+
+    <string name="task_type">Taak type</string>
+
+    <string name="tel">Telefoon</string>
+
+    <string name="tel_">Telefoon:</string>
+
+    <string name="temperature">Temperatuur (° C)</string>
+
+    <string name="temperature_in_driers">Temperatuur in de machine:</string>
+
+    <string name="temperature_inside_the_box">Temperatuur in de doos:</string>
+
+    <string name="ten_minute_overvoltage_protection">Tien minuten overspanning beschermingspunt (V)</string>
+
+    <string name="ten_minute_overvoltage_protection_time">Tien minuten overspanning beschermingstijd (ms)</string>
+
+    <string name="terminated">Het is afgelopen</string>
+
+    <string name="the">Nr.</string>
+
+    <string name="the_current_power">Huidige kracht</string>
+
+    <string name="theory_Power_report">Theoretische elektriciteitopwekking\n(kWh)</string>
+
+    <string name="theory_power_report">Theoretische elektriciteitopwekking\n(kWh)</string>
+
+    <string name="this_account_without_permission">Dit account heeft geen %1$s toestemming,</string>
+
+    <string name="this_data_logger_not_reconnect_station">De gegevensverzameling is verbonden op de krachtcentrale en kan niet opnieuw worden geopend.</string>
+
+    <string name="thousand">Tienduizend</string>
+
+    <string name="thousand_kw_unit">Duizend kWh</string>
+
+    <string name="thousand_unit">Duizend </string>
+
+    <string name="three">3</string>
+
+    <string name="three_level_over_frequency_protection_point">Derde-fase overfrequentie beschermingpunt (Hz)</string>
+
+    <string name="three_level_over_frequency_protection_time">Derde-fase overfrequentie beschermingstijd (ms)</string>
+
+    <string name="three_level_under_frequency_protection_point">Derde-fase onderfrequentie beschermingpunt (Hz)</string>
+
+    <string name="three_level_undervoltage_protection">Derde-fase onderspanning beschermingspunt (V)</string>
+
+    <string name="three_overvoltage_protection_point">Derde-fase overspanning beschermingspunt (V)</string>
+
+    <string name="three_overvoltage_protection_time">Derde-fase overspanning beschermingstijd (ms)</string>
+
+    <string name="three_stage_under_frequency_protection_time">Derde-fase onderfrequentie beschermingstijd (ms)</string>
+
+    <string name="three_undervoltage_protection_time">Derde-fase onderspanning beschermingstijd (ms)</string>
+
+    <string name="thunder_count">Aantal blikseminslagen:</string>
+
+    <string name="time">1010-10-10 14:21</string>
+
+    <string name="time_interval_since_last_patrol">Het interval van de laatste inspectietijd</string>
+
+    <string name="time_of_use_electricity_price">Periodeelektriciteitsprijs </string>
+
+    <string name="time_range">Tijdsperiode</string>
+
+    <string name="time_select">Tijd selectie</string>
+
+    <string name="times">Keer</string>
+
+    <string name="timeset">Tijdinstelling</string>
+
+    <string name="tInsolation">Bestraling(MJ/m²)</string>
+
+    <string name="title">Titel</string>
+
+    <string name="title_activity_device_update_detail">DeviceUpdateDetailActivity</string>
+
+    <string name="title_activity_second_device">Second Device</string>
+
+    <string name="title_protection_clause">Privacybeschermingsbeleid</string>
+
+    <string name="title_use_clause">Gebruiksvoorwaarden</string>
+
+    <string name="to_be_assigned">Moet worden toegewezen</string>
+
+    <string name="to_be_determined">Wordt geaccepteerd</string>
+
+    <string name="to_configure">Configureren</string>
+
+    <string name="to_do_task">Taak te doen</string>
+
+    <string name="to_ground_voltage">Aardspanning:</string>
+
+    <string name="to_save">Opslaan</string>
+
+<string name="to_set_price_success">* Opmerking:\n
+                                            1. Ondersteuning voor het instellen van meerdere datumperiode, de som van meerdere datumbereiken moet het volledige jaar zijn en verschillende datumbereiken kunnen niet worden overschreden of ontbreken;\n
+                                            2. Elk datumperiode ondersteunt het instellen van meerdere tijdsperioden. De periodeelektriciteitsprijs binnen één dag moet 24 uur zijn en verschillende tijdsperioden kunnen niet worden overschreden of ontbreken; \n
+                                            3. De waarde van de elektriciteitsprijs is minder dan o;</string>
+
+    <string name="today_generating_capacity">Dagelijkse elektriciteitsopwekking:</string>
+
+    <string name="todo">Om te doen</string>
+
+    <string name="todo_task_list">Lijst met taken om te doen</string>
+
+    <string name="todo_ver">Opgewaardeerde versie:</string>
+
+    <string name="tongxin_zd_min_str">Communicatie onderbreking tijd (min)</string>
+
+    <string name="topdomain">Gehost domein</string>
+
+    <string name="toreset">Herstellen</string>
+
+    <string name="total_">Totaal</string>
+
+    <string name="total_apparent_power">Totaal schijnbaar vermogen(kVA)</string>
+
+    <string name="total_electricity">Cumulatieve elektriciteitopwekking:</string>
+
+    <string name="total_generating_capacity_">Totale elektriciteitsopwekking:</string>
+
+    <string name="total_generating_electricity">Cumulatieve elektriciteitopwekking</string>
+
+    <string name="total_generating_electricity_">Cumulatieve elektriciteitopwekking\n(kWh)</string>
+
+    <string name="total_plan_cap">Totale planningscapaciteit</string>
+
+    <string name="total_power_input">Totale ingangsvermogen:</string>
+
+    <string name="transform_to_confirmed">Alleen het alarm in de actieve status kan worden geconverteerd naar de bevestigingsstatus!</string>
+
+    <string name="transform_to_defect">Alleen de alarmen in actieve of bevestigde toestand kan worden geconverteerd naar defect te verwijderen!</string>
+
+    <string name="transform_to_defect_">Draai om defect te verwijderen</string>
+
+    <string name="transform_to_defect_only">Alleen de alarmen in actieve of bevestigde toestand kan worden geconverteerd naar defecten!</string>
+
+    <string name="transparent_doule_galss_moudle">Transparant dubbel glasonderdeel</string>
+
+    <string name="trigger_threshold">LVRT-activeringsdrempel (V)</string>
+
+    <string name="trouble_desc">Foutbeschrijving:</string>
+
+    <string name="trouble_list">Foutlijst</string>
+
+    <string name="trouble_station">Defecte krachtcentrale</string>
+
+    <string name="trytimes">Keer</string>
+
+    <string name="tv_active_cap">%1$s(vooruit)</string>
+
+    <string name="tv_centrlized_inverter_num">(%1$d stuk)</string>
+
+    <string name="tv_chongqi_op">Start de operatie opnieuw</string>
+
+    <string name="tv_combiner_box_num">(%1$d stuk)</string>
+
+    <string name="tv_container_num">(%1$d stuk)</string>
+
+    <string name="tv_envi_jinacyi_num">(%1$d stuk)</string>
+
+    <string name="tv_installer_agree">Ik heb gelezen en ingestemd</string>
+
+    <string name="tv_irradiation_strength_back">Oppervlaktetemperatuur van de achterkant van het onderdeel(℃)</string>
+
+    <string name="tv_location_schedule">Positioneringsvoortgang: %1$s</string>
+
+    <string name="tv_meter_num">(%1$d stuk)</string>
+
+    <string name="tv_network_element">Lagere netwerkelementadres</string>
+
+    <string name="tv_protection_clause">Privacybeschermingsbeleid</string>
+
+    <string name="tv_use_clause">Gebruiksvoorwaarden</string>
+
+    <string name="two">2</string>
+
+    <string name="two_level_over_frequency_protection_point">Tweede-fase overfrequentie beschermingpunt (Hz)</string>
+
+    <string name="two_level_over_frequency_protection_time">Tweede-fase overfrequentie beschermingstijd (ms)</string>
+
+    <string name="two_level_under_frequency_protection_point">Tweede-fase onderfrequentie beschermingpunt (Hz)</string>
+
+    <string name="two_level_undervoltage_protection">Tweede-fase onderspanning beschermingspunt (V)</string>
+
+    <string name="two_overvoltage_protection_time">Tweede-fase overspanning beschermingstijd (ms)</string>
+
+    <string name="two_stage_under_frequency_protection_time">Tweede-fase onderfrequentie beschermingstijd (ms)</string>
+
+    <string name="two_undervoltage_protection_time">Tweede-fase onderspanning beschermingstijd (ms)</string>
+
+    <string name="txdlzdgj_str">Automatische uitschakeling na communicatie verbreken</string>
+
+    <string name="txhfzdkj_str">Automatisch opstarten nadat de communicatie is hervat</string>
+
+    <string name="txzdsj_str">Communicatie onderbreking tijd </string>
+
+    <string name="type">Type</string>
+
+    <string name="unbind_failed_notice_str">Ontbinden mislukt</string>
+
+    <string name="unbind_notice_str">Ontbinden lukt</string>
+
+    <string name="unbinddev_notice_str">Door het apparaat los te koppelen, wordt ook het aangesloten apparaat losgemaakt. Weet je zeker dat je wilt ontbinden?</string>
+
+    <string name="undistributed">Niet-toegewezen</string>
+
+    <string name="unfold_operation_note">Bewerkingsrecord uitbreiden</string>
+
+    <string name="unit_day">Dagen</string>
+
+    <string name="unit_ge">Stuk</string>
+
+    <string name="unit_h">u</string>
+
+    <string name="unit_hu">Huishoudens</string>
+
+    <string name="unit_mv_power">Enkele MW vermogen (kW)</string>
+
+    <string name="unit_tiao">Stuk</string>
+
+    <string name="unit_zuo">Stuk</string>
+
+    <string name="unknow_error">Onbekende fout</string>
+
+    <string name="unknown">Onbekend</string>
+
+    <string name="unknown_device_type">Onbekend apparaattype</string>
+
+    <string name="unLine">Offline </string>
+
+    <string name="unopened">Niet open</string>
+
+    <string name="up_operation_note">Bewerkingsrecord samenvoegen</string>
+
+    <string name="update">Wijzigen</string>
+
+    <string name="update_app">Detecteer automatisch updates</string>
+
+    <string name="update_result">Upgrade resultaat</string>
+
+    <string name="update_second_device">Werk het aangesloten apparaat bij</string>
+
+    <string name="update_status_code1">Fout</string>
+
+    <string name="update_status_code2">Netwerkverbindingsfout</string>
+
+    <string name="update_status_code3">Geen upgrade-informatie</string>
+
+    <string name="update_status_code4">Annuleer de installatie</string>
+
+    <string name="update_status_code5">Installatie mislukt</string>
+
+    <string name="update_status_code6">Zoeken naar updategegevens mislukt</string>
+
+    <string name="update_status_code8">Applicatie market is uitgeschakeld</string>
+
+    <string name="update_version_colon">Opgewaardeerde versie:</string>
+
+    <string name="updating">Bijwerken ...</string>
+
+    <string name="updating_second_device">Werk het aangesloten apparaat bij ...</string>
+
+    <string name="upervisory_number_repea">Planningsnummer gedupliceerd</string>
+
+    <string name="upgrade_fail">Upgrade mislukt</string>
+
+    <string name="upgrade_success">Upgrade lukt</string>
+
+    <string name="upgrading">Upgraden</string>
+
+    <string name="upload">Upload</string>
+
+    <string name="upload_location_detail">Om de toewijzing van mobiele bediening en onderhoudstaken te vergemakkelijken, of u bereid bent om locatie-informatie te melden?</string>
+
+    <string name="upload_location_setting_detail">Alle instellingen worden van kracht nadat de app opnieuw is opgestart</string>
+
+    <string name="upload_location_setting_title">Instellingen over bediening en onderhoud rapportage locatietoestemmingen</string>
+
+    <string name="upload_location_title">Wilt u het beheer- en onderhoudslocatie rapportagesysteem openen?</string>
+
+    <string name="upload_start_wait">Begin met het uploaden van bijlagen, een ogenblik geduld ...</string>
+
+    <string name="upper_limit_of_reconnection">Elektriciteitsnet heraansluiting frequentie bovengrens (Hz)</string>
+
+    <string name="usages_allocation_and_wait_eliminate_defect">[Toegewezen/te verwijderen]</string>
+
+    <string name="usages_back">[Teruggekeerd]</string>
+
+    <string name="usages_back_and_wait_allocation">[Teruggekeerd/te toegewezen]</string>
+
+    <string name="usages_back_and_wait_eliminate_defect">[Teruggekeerd/te verwijderen]</string>
+
+    <string name="usages_check_qualified">[Gekwalificeerd]</string>
+
+    <string name="usages_eliminate_defect_and_wait_check">[Verwijderen/in afwachting van goedkeuring]</string>
+
+    <string name="use_item">Gebruiksvoorwaarden</string>
+
+    <string name="use_moren_price_str">Of de standaardprijs wordt gebruikt</string>
+
+    <string name="use_power_consumption">Elektriciteitsverbruik (kWh)</string>
+
+    <string name="use_power_consumption_no">Elektriciteitsverbruik</string>
+
+    <string name="use_power_hu">Elektriciteitsverbruik \n (kWh)</string>
+
+    <string name="user">gebruiker</string>
+
+    <string name="user_detail_title">Gebruikersgegevens</string>
+
+    <string name="user_is_null">Verificatie van de gebruikersnaam mislukt, controleer gebruikersnaam of IP-adres</string>
+
+    <string name="user_name">Gebruikersnaam</string>
+
+    <string name="user_name_str">Gebruikersnaam</string>
+
+    <string name="user_not_bind_email">De gebruiker heeft het e-mailadres niet gebonden</string>
+
+    <string name="user_not_email">De gebruiker heeft het e-mailadres niet gebonden!</string>
+
+    <string name="user_not_email_notice">De gebruiker heeft het e-mailadres niet gebonden!</string>
+
+    <string name="user_operation">Verificatie van gebruikersactie</string>
+
+    <string name="username">Gebruikersnaam</string>
+
+    <string name="username_">Gebruikersnaam</string>
+
+    <string name="username_and_email_used">Deze gebruikersnaam en e-mailadres zijn gebruikt, vervang deze</string>
+
+    <string name="username_can_modify_once">Opmerking: de gebruikersnaam kan slechts eenmaal worden gewijzigd</string>
+
+    <string name="username_no_empty">Gebruikersnaam mag niet leeg zijn</string>
+
+    <string name="username_not_null">Gebruikersnaam kan niet leeg zijn!</string>
+
+    <string name="username_used">Deze gebruikersnaam is al gebruikt. Vervang deze</string>
+
+    <string name="utc_time_setting">Tijdinstelling (UTC)</string>
+
+    <string name="validate_device">Controleer het apparaat</string>
+
+    <string name="VarUnit">Reactief vermogen (Var)</string>
+
+    <string name="verify_password_faild">Wachtwoordverificatie mislukt!</string>
+
+    <string name="version_safe">Model nummer</string>
+
+    <string name="version_code_all">Versienummer (alle)</string>
+
+    <string name="version_desc">Versiebeschrijving</string>
+
+    <string name="version_name">Versie upgrade</string>
+
+    <string name="version_name_another_name">Versienummer:</string>
+
+    <string name="version_type">Apparaat type</string>
+
+    <string name="version_type_all">Apparaattype (alle)</string>
+
+    <string name="view_device_information">(klik om apparaatinformatie te bekijken)</string>
+
+    <string name="village_location">Het gelegen dorp</string>
+
+    <string name="vm">Vm(V)</string>
+
+    <string name="vm_voc">Vm/Voc</string>
+
+    <string name="voc">Voc(A)</string>
+
+    <string name="voltage">Spanning (V)</string>
+
+    <string name="voltage_">Spanning (V)</string>
+
+    <string name="voltage_level">Spanning niveau</string>
+
+    <string name="voltage_rise_suppression">Spanningsverhogingsonderdrukking</string>
+
+    <string name="vtwo_overvoltage_protection_point">Secundair overspanningsbeveiligingspunt (V)</string>
+
+    <string name="w_1">West 1e tijdzone</string>
+
+    <string name="w_10">West 10e tijdzone</string>
+
+    <string name="w_11">West 11e tijdzone</string>
+
+    <string name="w_12">West 12e tijdzone</string>
+
+    <string name="w_2">West 2e tijdzone</string>
+
+    <string name="w_3">West 3e tijdzone</string>
+
+    <string name="w_4">West 4e tijdzone</string>
+
+    <string name="w_5">West 5e tijdzone</string>
+
+    <string name="w_6">West 6e tijdzone</string>
+
+    <string name="w_7">West 7e tijdzone</string>
+
+    <string name="w_8">West 8e tijdzone</string>
+
+    <string name="w_9">West 9e tijdzone</string>
+
+    <string name="wait_allocation">[Te toegewezen]</string>
+
+    <string name="wait_dispose">Te verwerken</string>
+
+    <string name="wait_for_images_compressed">Beeld gecomprimeerd, probeer het later opnieuw ...</string>
+
+    <string name="wait_for_reply">Om te antwoorden</string>
+
+    <string name="wait_start">Bijstaan </string>
+
+    <string name="weather">Weer </string>
+
+    <string name="weather_text">Weer</string>
+
+    <string name="webview_cer_error_tips">Gedetecteerd dat het WebView-certificaat onveilig is. Ga je dit risico negeren?</string>
+
+    <string name="week">Week </string>
+
+    <string name="weizhi_notice_str">Onbekende oorzaak</string>
+
+    <string name="weizi_localtion">Onbekende locatie</string>
+
+    <string name="wgbctcdy">Reactief vermogencompensatie (cosψ-P) uitgangsspanning</string>
+
+    <string name="wgbczfdy_str">Reactief vermogenscompensatie (cosψ-P) trekker spanning</string>
+
+    <string name="wgglbc_qs_str">Reactieve vermogencompensatie (Q/S)</string>
+
+    <string name="wgglbhtd_str">Verandering gradiënt reactief vermogen</string>
+
+    <string name="white_doule_glass_moudle">Wit dubbel glas onderdelen</string>
+
+    <string name="wire_system_3_3">Driefasig driedraadssysteem</string>
+
+    <string name="wire_system_3_4">Driefasig vierdraadssysteem</string>
+
+    <string name="wired">Vast</string>
+
+    <string name="wireless">Draadloze</string>
+
+    <string name="wireless_routing_power_rate">Draadloze communicatiekracht:</string>
+
+    <string name="work_flow">Inspectiegegevens</string>
+
+    <string name="work_mode_safe">Werkmodus:</string>
+
+    <string name="worker_status">Personeelsstatus</string>
+
+    <string name="wugglbc_pf_str">Reactieve vermogencompensatie (PF)</string>
+
+    <string name="WUnit">Vermogen (W)</string>
+
+    <string name="xgl_0_gl_str">Uitschakelen wanneer de stroom is tot 0%</string>
+
+    <string name="xgl_gj_str">Uitschakelen wanneer de stroom is tot 0%</string>
+
+    <string name="xiagua_dev_str">Bijgevoegde apparaat</string>
+
+    <string name="xingwei_protect_point_str">Fasebeschermingspunt (°)</string>
+
+    <string name="xjpybh">Fase hoek afwijking beveiliging</string>
+
+    <string name="xwbhd_str">Fasebeschermingspunt</string>
+
+    <string name="ycgldd_str">Afgelegen vermogensplanning</string>
+
+    <string name="ycsj_str">Uitgestelde upgrade</string>
+
+    <string name="year">Jaar</string>
+
+    <string name="year_time">Jaar</string>
+
+    <string name="year_xy">Jaar:</string>
+
+    <string name="yearly_attenuation_rate">Afvalpercentage van onderdelen jaar na jaar (%/j)</string>
+
+    <string name="yearly_capacity">In het lopende jaar (kWh)</string>
+
+    <string name="yejian_xx_str">Slaap \&apos;s nachts</string>
+
+    <string name="yen_name">JPY</string>
+
+    <string name="yes">Ja</string>
+
+    <string name="yes_no_share">Geen krachtcentrale geselecteerd. Weet je zeker dat je terugkeert?</string>
+
+    <string name="yet_dispose">Verwerkt</string>
+
+    <string name="yezhu_manager">Eigenaarbeheer</string>
+
+    <string name="ygglbfbje_str">Percentage reductie actief vermogen</string>
+
+    <string name="ygglbhtd_str">Verandering gradiënt actief vermogen</string>
+
+    <string name="ygglgdzje_str">Vaste waarde reductie actief vermogen </string>
+
+    <string name="ygglmax_str">Maximaal actief vermogen</string>
+
+    <string name="yhq_code">Optimizer nummer</string>
+
+    <string name="yhq_location_str">Optimizer positioneren</string>
+
+    <string name="yhq_name">Optimizer naam:</string>
+
+    <string name="yhq_name_">Optimizer naam:</string>
+
+    <string name="yhq_shineng_str">Optimizer in staat stellen</string>
+
+    <string name="yield">Elektriciteitopwekking (kWh)</string>
+
+    <string name="yield_today">Elektriciteitopwekking vandaag</string>
+
+    <string name="yj_wg_str">Reactieve nachtstroom</string>
+
+    <string name="yjcybhd_str">Eerste-fase onderspanning beschermingspunt</string>
+
+    <string name="yjgpbhd_str">Eerste-fase overfrequentie beschermingspunt</string>
+
+    <string name="yjgpbhsj_str">Eerste-fase overfrequentie beschermingstijd</string>
+
+    <string name="yjgybhd_str">Eerste-fase overspanning beschermingspunt</string>
+
+    <string name="yjgybhsj_str">Eerste-fase overspanning beschermingstijd</string>
+
+    <string name="yjqpbhd_str">Eerste-fase onderfrequentie beschermingspunt</string>
+
+    <string name="yjqpbhsj">Eerste-fase onderfrequentie beschermingstijd</string>
+
+    <string name="yjqybhsj_str">Eerste-fase onderspanning beschermingstijd</string>
+
+    <string name="yjwg_str">Reactieve nachtstroom</string>
+
+    <string name="yjxm_str">Nachtslaap</string>
+
+    <string name="yuan">(￥)</string>
+
+    <string name="yz_code">Verificatie code:</string>
+
+    <string name="yz_code_error">Verificatiecode is verlopen of fout!</string>
+
+    <string name="yz_code_not_null">Verificatiecode kan niet leeg zijn!</string>
+
+    <string name="yz_user_safe_notice">Vul de verificatie in voor de beveiliging van uw account</string>
+
+    <string name="zc_detail_setting_str">Configuratie van de String details</string>
+
+    <string name="zc_invrter_str">String omvormer</string>
+
+    <string name="zcjcckbdcxs">String detectie referentie asymmetrie coëfficiënt</string>
+
+    <string name="zcjcckbdcxs_str">String detectie referentie asymmetrie coëfficiënt</string>
+
+    <string name="zcjcqdglbfb_str">Stringdetectie startvermogenpercentage (%)</string>
+
+    <string name="zcljfs_str">String verbindingsmethode</string>
+
+    <string name="zcznjk_str">String intelligente controle</string>
+
+    <string name="zdy_str">Gewoonte</string>
+
+    <string name="zero_power_grid">Netaansluit op geen vermogen</string>
+
+    <string name="zfzyl_str">Zelfopwekking en zelfgebruik rato (%)</string>
+
+    <string name="zhuangji_sn">Geïnstalleerde SN:</string>
+
+    <string name="zhuwangtu_str">Netwerkdiagram</string>
+
+    <string name="zuchuan">String</string>
+
+    <string name="zuchuan_1">String 1</string>
+
+    <string name="zuchuan_10">String 10</string>
+
+    <string name="zuchuan_11">String 11</string>
+
+    <string name="zuchuan_12">String 12</string>
+
+    <string name="zuchuan_13">String 13</string>
+
+    <string name="zuchuan_14">String 14</string>
+
+    <string name="zuchuan_15">String 15</string>
+
+    <string name="zuchuan_16">String 16</string>
+
+    <string name="zuchuan_17">String 17</string>
+
+    <string name="zuchuan_18">String 18</string>
+
+    <string name="zuchuan_19">String 19</string>
+
+    <string name="zuchuan_2">String 2</string>
+
+    <string name="zuchuan_20">String 20</string>
+
+    <string name="zuchuan_3">String 3</string>
+
+    <string name="zuchuan_4">String 4</string>
+
+    <string name="zuchuan_5">String 5</string>
+
+    <string name="zuchuan_6">String 6</string>
+
+    <string name="zuchuan_7">String 7</string>
+
+    <string name="zuchuan_8">String 8</string>
+
+    <string name="zuchuan_9">String 9</string>
+
+    <string name="zuchuan_inverter">String omvormer</string>
+
+    <string name="multi_station_home_page_spotlight_hint">Klik op de nieuwe knop om snel &lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/br&gt;een nieuw krachtcentrale te bouwen&lt;/font&gt;en&lt;font color=&quot;#ffffff&quot;&gt;Nieuw eigenaar&lt;/font&gt;oh</string>
+
+    <string name="spotlight_btn_i_know">Ik weet het</string>
+
+    <string name="comeback_assign_task">Het huidige knooppunt kan geen teruggaande bewerkingen uitvoeren omdat de gebruiker van het vorige knooppunt is verwijderd.</string>
+
+    <string name="message_center">Berichtencentrum</string>
+
+    <string name="tool_box">Gereedschapskist</string>
+
+    <string name="system_message">Systeembericht</string>
+
+    <string name="dev_update_message">Apparaat upgrade kennisgeving</string>
+
+    <string name="pinnet_dev_access">Toegang met één druk van productgegevensverzameling</string>
+
+    <string name="huawei_dev_set">Bijna-einde instellingen van Huawei gebruikersomvormers</string>
+
+    <string name="xiagua_dev_name_same">De naam van het aangesloten apparaat is gedupliceerd</string>
+
+    <string name="zero_to_50_kwp">0-50kWp</string>
+
+    <string name="fifth_to_150_kwp">50-150kWp</string>
+
+    <string name="hundred_fifth_to_300_kwp">150-300kWp</string>
+
+    <string name="three_hundred_kwp">300kWp of meer</string>
+
+    <string name="zero_to_50_kw">0-50kW</string>
+
+    <string name="fifth_to_150_kw">50-150kW</string>
+
+    <string name="hundred_fifth_to_300_kw">150-300kW</string>
+
+    <string name="three_hundred">300kW of meer</string>
+
+    <string name="phone_registration">Registreer met telefoonnummer</string>
+
+    <string name="email_registration">Registreer met e-mail</string>
+
+    <string name="please_input_phone_number">Voer het telefoonnummer in</string>
+
+    <string name="please_input_code">Voer de verificatiecode in</string>
+
+    <string name="get_code">Krijg verificatiecode</string>
+
+    <string name="password_len_8_to_16">*Het wachtwoord is 8-16 cijfers lang en mag geen pure cijfers of pure letters zijn.</string>
+
+    <string name="installer_registration_success">Gefeliciteerd met je succesvolle registratie</string>
+
+    <string name="welcome_my_friends">Welkom, nieuw vriend!</string>
+
+    <string name="input_device_model_or_manufacturer_name">Voer het apparaatmodel of de naam van de fabrikant in</string>
+
+    <string name="manual_input">Voer handmatig in</string>
+
+    <string name="confirm_blank">Bevestig</string>
+
+    <string name="input_device_SN">Voer apparaat SN in</string>
+
+    <string name="confirm_correct_SN">Bevestig dat u het juiste SN-nummer van het apparaat hebt ingevoerd</string>
+
+    <string name="new_owners_account">Nieuw eigenaar</string>
+
+    <string name="new_equipment_select_equipment">Bind een apparaat</string>
+
+    <string name="new_equipment">Nieuw apparaat</string>
+
+    <string name="get_equipment_success">Apparaat aanschaffen lukt</string>
+
+    <string name="get_equipment_failed">Apparaat aanschaffen mislukt</string>
+
+    <string name="get_equipment_bind">Het aangeschafte apparaat is al gebonden</string>
+
+    <string name="continue_to_add">Doorgaan met toevoegen</string>
+
+    <string name="back_to_home">Keer terug naar thuis</string>
+
+    <string name="share">Deel</string>
+
+    <string name="please_enter_station_address">Voer het krachtcentraleadres in of selecteer het</string>
+
+    <string name="enter_station_address_hint">Nieuw krachtcentraleadres</string>
+
+    <string name="password_recovery">Ga terug wachtwoord</string>
+
+    <string name="username_colon">Gebruikersnaam:</string>
+
+    <string name="phone_recovery">Ga terug per je telefoon</string>
+
+    <string name="email_recovery">Ga terug per e-mail</string>
+
+    <string name="corrent_password">Voer een wachtwoord in van 8-16 cijfers lang, wat niet pure cijfers of pure letters kan zijn</string>
+
+    <string name="enter_email_or_phone">Voer het telefoonnummer/e-mailadres in</string>
+
+    <string name="enter_correct_email_or_phone">Voer het juiste telefoonnummer/e-mailadres in</string>
+
+    <string name="email_or_phone">Telefoonnummer/e-mail</string>
+
+    <string name="new_password">Nieuw wachtwoord</string>
+
+    <string name="login_the_phone_number_to_repeat">Login telefoonnummer is gedupliceerd, log in met gebruikersnaam</string>
+
+    <string name="optimizer_jinneng">Optimizer uitschakelen</string>
+
+    <string name="faile_code_10007">Inconsistente gebruiker of geen verificatiecode</string>
+
+    <string name="faile_code_10061">Overcapaciteit van gebruiker</string>
+
+    <string name="faile_code_10005">Verificatiecode fout</string>
+
+    <string name="faile_code_10008">Verificatiecode is verlopen of verlopen</string>
+
+    <string name="faile_code_10060">Niet-ondersteund accounttype</string>
+
+    <string name="faile_code_10012">e-mail is al gebonden aan een andere gebruiker</string>
+
+    <string name="faile_code_10063">Ongeldig wachtwoord</string>
+
+    <string name="faile_code_10010">Bedrijfsnaam al gebruikt</string>
+
+    <string name="faile_code_10040">Verzend geen verificatiecodes regelmatig</string>
+
+    <string name="faile_code_10062">Het aantal acquisities van verificatiecodes heeft de limiet van vandaag overschreden</string>
+
+    <string name="faile_code_10006">Gebruiker bestaat niet</string>
+
+    <string name="faile_code_10065">Verzenden mislukt</string>
+
+    <string name="faile_code_load_1">Dubbel telefoonnummer (kan het wachtwoord op deze manier niet ophalen)</string>
+
+    <string name="faile_code_load_2">Dubbel e-mail (kan het wachtwoord op deze manier niet ophalen)</string>
+
+    <string name="verification_code_send">Verificatiecode verzonden</string>
+
+    <string name="get_verification_faile">Kan verificatiecode niet ophalen</string>
+
+    <string name="communication_module">Communicatiemodule</string>
+
+    <string name="distributed_plonger_id">Gedistribueerde gegevensverzameling</string>
+
+    <string name="create_station_location_no_fill_in_toast">Als de breedte- en lengtegraad niet zijn ingevoerd, kan de weersinformatie van de krachtcentrale niet worden verkregen. Ga je verder met de volgende stap?</string>
+
+    <string name="phone_used">Dit telefoonnummer is al in gebruik. Verander het</string>
+
+    <string name="sure_to_updata_dev">Weet je zeker dat je het bijgevoegde apparaat wilt bijwerken?</string>
+
+    <string name="product_for_arrangement">Configuratie van productgegevensverzameling</string>
+
+    <string name="please_input_a_password_user">Voer het gebruikerswachtwoord voor inloggen in</string>
+
+    <string name="not_to_delete_pic">Geüploade afbeeldingen bieden geen ondersteuning voor verwijdering!</string>
+
+    <string name="main_high_side">Hogedrukzijde van de hoofdtransformator</string>
+
+    <string name="station_management">Beheer van krachtcentrales</string>
+
+    <string name="password_reset_">Wachtwoord herstellen</string>
+
+    <string name="this_sn_faild">De QR-code of streepjescode is abnormaal, gelieve te bevestigen!</string>
+
+    <string name="update_bind_devs_success_but_exist_devs_not_set_capacity">Opslaan lukt: Er is %1$s apparaat(en) waarop de groepstekenreekscapaciteit niet is ingesteld. Stel de totale DC-capaciteit van het apparaat in (KW)：</string>
+
+    <string name="username_len_max_32">De maximale invoerlengte voor de gebruikersnaam is 32 cijfers</string>
+
+    <string name="contact_len_max_32">De maximale invoerlengte voor het contact is 32 cijfers</string>
+
+    <string name="pwd_len_max_32">De maximale invoerlengte voor het wachtwoord is 32 cijfers</string>
+
+    <string name="tel_len_max_25">De maximale invoerlengte voor het telefoonnummer is 25 cijgers</string>
+
+    <string name="error_pwd_in_short_times">U hebt uw wachtwoord in korte tijd meerdere keren ingevoerd. Log opnieuw in</string>
+
+    <string name="get_pnt_secend_name">Verkrijg gegevensverzameling en het aangesloten apparaatnaam</string>
+
+    <string name="please_input_your_name_or_email">Voer uw gebruikersnaam / mailbox in</string>
+
+    <string name="name_or_email_not_null">Gebruikersnaam/mailbox mag niet leeg zijn!</string>
+
+    <string name="get_equipment_success_msg">Apparatuur %1$s is niet toegevoegd aan de krachtcentrale</string>
+
+    <string name="get_equipment_failed_msg">Apparaat %1$s kan niet worden opgehaald</string>
+
+    <string name="get_equipment_bind_msg">Apparaat %1$s is al gebonden</string>
+
+    <string name="full_screen">Volledige scherm</string>
+
+    <string name="check_display_device">Selecteer apparaaten</string>
+
+    <string name="quit_full_screen">Sluit het volledige scherm</string>
+
+    <string name="stored_energy_charge">Energieopslag (oplading)</string>
+
+    <string name="stored_energy_discharge">Energieopslag (ontlading)</string>
+
+    <string name="ammeter_positive">Elektrische meter (vooruit)</string>
+
+    <string name="ammeter_negative">Elektrische meter (achteruit)</string>
+
+    <string name="google_map">Google Maps</string>
+
+    <string name="a_map">Gaode Maps</string>
+
+    <string name="select_station_domain_">Selecteer het eigenaarschap van de krachtcentrale</string>
+
+    <string name="click_select_station_domain_">Klik om het eigenaarschap van de krachtcentrale te selecteren</string>
+
+    <string name="energy_manage">Energiebeheer</string>
+
+    <string name="slef_use">Zelfopwekking en zelfgebruik:</string>
+
+    <string name="ongrid_power_">Netgekoppelde elektriciteit:</string>
+
+    <string name="buy_power_">Koop elektriciteit:</string>
+
+    <string name="internet_power">Netgekoppelde elektriciteit</string>
+
+    <string name="buy_power">Koop elektriciteit</string>
+
+    <string name="power_generation_">Elektriciteitopwekking:</string>
+
+    <string name="use_power_">Elektriciteitsverbruik:</string>
+
+    <string name="custom_report_one">Selecteer minimaal één</string>
+
+    <string name="day_save_power">Dagelijkse elektriciteitskosten besparen</string>
+
+    <string name="daily_use_power">Dagelijkse elektriciteitsverbruik</string>
+
+    <string name="total_income">Cumulatief inkomsten</string>
+
+    <string name="daily_power">Dagelijkse elektriciteitopwekking</string>
+
+    <string name="total_power">Totale elektriciteitopwekking</string>
+
+    <string name="me_have_bottom_line">Heeft de bodem bereikt</string>
+
+    <string name="station_view">Krachtcentrale weergave</string>
+
+    <string name="common_problem">Veelgestelde vragen</string>
+
+    <string name="add_station_failure_License">Het aantal apparaten overschrijdt de bovenlimiet van het License-beheer</string>
+
+    <string name="real_time_">Realtime:</string>
+
+    <string name="more">Meer</string>
+
+    <string name="retract">Samenvouwen</string>
+
+    <string name="tomorrow">Morgen</string>
+
+    <string name="the_day_after_tomorrow">Overmorgen</string>
+
+    <string name="running_days_">Lopende dagen</string>
+
+    <string name="pnloger_powertation_introduce_">Introductie van de krachtcentrale</string>
+
+    <string name="version_">Model:</string>
+
+    <string name="safety_connection_bar_id">Veilige afsluitdoos</string>
+
+    <string name="custom_report_check_three">Selecteer maximaal drie</string>
+
+    <string name="choice_index">Selecteer de indicator</string>
+
+    <string name="the_current_power_unit">Huidige kracht(kW)</string>
+
+    <string name="day_income_unit">Dagelijkse inkomsten(€)</string>
+
+    <string name="total_generating_electricity_unit">Cumulatieve elektriciteitopwekking(kWh)</string>
+
+    <string name="install_and_operate_video">Installeer en bedien een video</string>
+
+    <string name="go_to_youtube">Ga naar YouTube om te bekijken</string>
+
+    <string name="go_to_linkedin">Ga naar Linkedin om te bekijken</string>
+
+    <string name="time_xy">Tijd：</string>
+
+    <string name="local_debugging_tools">Lokale Hulpmiddelen</string>
+
+    <string name="today_new_add">Vandaag toegevoegd</string>
+
+    <string name="MW">MW</string>
+
+    <string name="current_day_power_hours">Equivalent elektriciteitopwekkingsuur(uren) van de dag:</string>
+
+    <string name="station_rand">Classificatie van de krachtcentrale van de dag</string>
+
+    <string name="help_msg">Gerangschikt door equivalente elektriciteitopwekkingsuur(uren) (u) van de krachtcentrale</string>
+
+    <string name="reduction">Emissiereductie</string>
+
+    <string name="CO">CO2</string>
+
+    <string name="cannot_get_the_address">Kan adres niet krijgen，</string>
+
+    <string name="try_to_get_latitude_and_longitude">Probeer lengtegraad en breedtegraad te krijgen</string>
+
+    <string name="please_input">Voer alstublieft in</string>
+
+    <string name="near_colon">Nabij：</string>
+
+    <string name="location_no_fill">Lengtegraad- en breedtegraadinformatie niet ingevuld</string>
+
+    <string name="pre_guest">Guest standaardrol</string>
+
+    <string name="not_toget_nol">Kon het adres niet vinden, probeer de lengtegraad en breedtegraad te krijgen</string>
+
+    <string name="near_colon_">Nabij</string>
+
+    <string name="please_input_pwd_again">Voer uw wachtwoord opnieuw in</string>
+
+    <string name="register_">Registratie</string>
+
+    <string name="product_for_access_">Toegang tot gegevensverzameling</string>
+
+    <string name="slef_use_power">Elektriciteit zelfopwekking en zelfgebruik</string>
+
+    <string name="own_emand_">Elektriciteit zelfgebruik:</string>
+
+    <string name="self_product_power_">Elektriciteit zelfopwekking:</string>
+
+    <string name="current_yield_pieces_new">Dagelijkse elektriciteitopwekking(kWh)</string>
+
+    <string name="save_failed_to_license">Opslagen mislukt: het apparaat heeft de bovenlimiet van het License-beheer overschreden.</string>
+
+    <string name="sim_card_num_dev">SIM-kaartnummer</string>
+
+    <string name="software_version_dev">Softwareversienummer</string>
+
+    <string name="output_electric_dev">Uitgangsstroom</string>
+
+    <string name="out_voltage_dev">Uitgangsspanning</string>
+
+    <string name="message_center_my">Bericht</string>
+
+    <string name="station_management_my">PV Beheer</string>
+
+    <string name="yezhu_manager_my">Gebruikersbeheer</string>
+
+    <string name="statistics">Statistiek</string>
+
+    <string name="pwd_error_msg">Moet ten minste twee combinaties van hoofdletters, kleine letters, cijfers, speciale tekens bevatten en speciale tekens toestaan om in te voeren</string>
+
+    <string name="setting_my">Instellingen</string>
+
+    <string name="battery_capacity">Batterij capaciteit(SOC)：</string>
+
+    <string name="device_filter">Equipo de detección</string>
+
+    <string name="there_is_no_modification_please_confirm">Geen wijzigingen, bevestig alstublieft</string>
+
+    <string name="physical_view">Fysieke weergave</string>
+
+    <string name="logic_view">Logische weergave</string>
+
+    <string name="dipangle">inclinatie</string>
+
+    <string name="directionAngle">azimuth</string>
+
+    <string name="are_you_sure_to_clear_the_alarm">Bepaal het duidelijke alarm?</string>
+
+    <string name="input_longitude_and_latitude_hints">*Breedtegraad en lengtegraad ondersteunen de volgende invoerformaten:\n
+                                                        52°04\&apos;46\&quot;,119°26\&apos;36\&quot; of 52.079506,119.443359\n
+                                                        Als de zuiderbreedte van het zuid westen,voeg vóór de waarde toe-(bijvoorbeeld:-23.035677,-113.755668)\n
+                                                        Schakel het invoerformaat,klik op de schakelknop rechts.</string>
+    <string name="line_max_power">最大充电功率：</string>
+    <string name="line_max_dispower">最大放电功率：</string>
+    <string name="change_dischange">充放电功率：</string>
+    <string name="change_power">充电电量：</string>
+    <string name="dischange_power">放电电量：</string>
+    <string name="tv_opt_num">Optimizer x </string>
+    <string name="error_password_toast">Voer een wachtwoord van 6-32 cijfers in en moet ten minste twee combinaties bevatten van hoofdletters, kleine letters, cijfers en speciale tekens. De speciale tekens die mogen worden ingevoerd, zijn&#160;</string>
+    <string name="station_has_no_such_equipment">De krachtcentrale heeft deze apparatuur niet</string>
+    <string name="dev_laction">Groepsinformatie:</string>
+</resources>

@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5">
+
+
+            <RelativeLayout
+                android:id="@+id/ll_container_tra_header"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_box_transformer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_box_transformer_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/box_transformer_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_box_transformer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_box_transformer_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/packaged_substation"
+                        android:textColor="#333333"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_box_transformer_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_box_transformer"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/tv_container_num"
+                        android:textColor="#999999"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rl_box_transformer"
+                    android:background="#009DDF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_metar_header"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_guankou_meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_guankou_meter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/guankou_meter" />
+
+                    <TextView
+                        android:id="@+id/tv_guankou_meter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_guankou_meter"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/ammeter"
+                        android:textColor="#333333"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_guankou_meter_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_guankou_meter"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/tv_meter_num"
+                        android:textColor="#999999"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/rl_guankou_meter"
+                    android:layout_centerVertical="true"
+                    android:background="#009DDF"
+                   />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_envi_jianceyi_header"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_envi_jianceyi_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_envi_jianceyi_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/envi_jianceyi" />
+
+                    <TextView
+                        android:id="@+id/tv_envi_jianceyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_envi_jianceyi_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/en_detector"
+                        android:textColor="#333333"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_envi_jianceyi_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_envi_jianceyi"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/tv_envi_jinacyi_num"
+                        android:textColor="#999999"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_centerVertical="true"
+                    android:background="#009DDF"
+                    android:layout_toRightOf="@+id/rl_envi_jianceyi_icon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_combiner_box_header"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_dc_bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/dc_bus_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_dc_bus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_cascade_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/dc_bus"
+                        android:textColor="#333333"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dc_bus_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_dc_bus"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/tv_combiner_box_num"
+                        android:textColor="#999999"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rl_dc_bus"
+                    android:background="#009DDF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_centralized_inverter_header"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_dc_bus_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_dc_bus_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/center_inv_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_center_inv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_dc_bus_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/center_inv"
+                        android:textColor="#333333"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/center_invTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_center_inv"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/tv_centrlized_inverter_num"
+                        android:textColor="#999999"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rl_dc_bus_icon"
+                    android:background="#009DDF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_string_inverter_header"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_cascade_icon_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_cascade_icon_string"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/cascade_inv_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_zuchuan_inverter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_cascade_icon_string"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/zuchuan_inverter"
+                        android:textColor="#333333"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_zuchuan_inverter_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_zuchuan_inverter"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/string_inverter_num"
+                        android:textColor="#999999"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rl_cascade_icon_string"
+                    android:background="#009DDF" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_longline_pinnet"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_line_pinnet"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#009DDF" />
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="55dp"
+                android:background="#009DDF"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_pinnenger_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_pinnet_pnlogger_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/pinnet_pnlogger" />
+
+                <TextView
+                    android:id="@+id/tv_pinnet_pnlogger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_pinnet_pnlogger_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/view_device_information"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_pinnet_pnlogger_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_pinnet_pnlogger"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/pnloger_collecter"
+                    android:textColor="#333333"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_chongqi"
+                android:layout_width="40dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/chongqi"
+                android:layout_below="@+id/rl_pinnenger_right"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="@string/reset_device"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/view_collect_devices"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#009DDF"
+                android:layout_below="@+id/tv_chongqi"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_collect_devices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_collect_devices"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_collect_devices_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/collect_devices" />
+
+                <TextView
+                    android:id="@+id/tv_collect_devices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_collect_devices_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/management_sys"
+                    android:textColor="#333333"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pinnet_jurisdiction"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/sim_card_num"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sim_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/wireless_routing_power_rate"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/wireless_routing_power_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_pnloger_collecter_imformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_expand_less_black_36dp" />
+
+            <TextView
+                android:id="@+id/tv_pnloger_collecter_imformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/pnloger_collecter_imformation"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"></View>
+
+        <LinearLayout
+            android:id="@+id/ll_collect_dev_info"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/spinner_dev_drepy_pin">
+
+
+                <Spinner
+                    android:id="@+id/spinner_dev_drepy_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F7F7F7"
+                    android:layout_margin="3dp"
+                    android:paddingRight="15dp"/>
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/drop_down_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/spinner_dev_drepy_pin">
+
+                <Spinner
+                    android:id="@+id/spinner_dev_sion_code_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:background="#F7F7F7"
+                    android:paddingRight="15dp"/>
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/drop_down_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/spinner_dev_drepy_pin">
+
+                <Spinner
+                    android:id="@+id/spinner_dev_station_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:background="#F7F7F7"
+                    android:paddingRight="15dp"/>
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/drop_down_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

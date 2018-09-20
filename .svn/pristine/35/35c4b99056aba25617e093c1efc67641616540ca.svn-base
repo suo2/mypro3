@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFB240"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <Button
+            android:id="@+id/btnBindNewDevice"
+            android:layout_width="wrap_content"
+            android:maxWidth="200dp"
+            android:layout_height="40dp"
+            android:background="#FFB240"
+            android:text="@string/bind_new_join_device"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/icon_bind_new_device"
+            android:drawablePadding="5dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#FFB240"
+            android:text="@string/new_device"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/icon_add_new_device"
+            android:drawablePadding="5dp"/>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="* 左滑已有设备列表删除设备"-->
+        <!--android:textSize="8sp"-->
+        <!--android:textColor="#FD3D3D"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingTop="3dp"-->
+        <!--android:paddingBottom="3dp"/>-->
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

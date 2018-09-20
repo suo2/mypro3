@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/pnt_devices_params_item_tv_small_tile_style"
+            android:text="@string/device" />
+
+        <RelativeLayout
+            android:id="@+id/layout_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/_name_" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_device_name"
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/et_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_arrow_device_name"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_device_esn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/esn_safe" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_device_esn"
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/et_device_esn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_arrow_device_esn"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_device_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/version_safe" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_device_model"
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/et_device_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_arrow_device_model"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_device_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/type" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_device_type"
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/et_device_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_arrow_device_type"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_device_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/ip" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/et_logger_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_arrow"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_device_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/public_address" />
+
+            <ImageView
+                android:id="@+id/iv_arrow2"
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/et_logger_common_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_arrow2"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/report_number" />
+
+            <ImageView
+                android:id="@+id/iv_arrow3"
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_arrow3"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <TextView style="@style/pnt_devices_params_item_tv_small_tile_style" />
+
+        <RelativeLayout
+            android:id="@+id/layout_endian_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/baud_rate_" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_household_go" />
+        </RelativeLayout>
+
+        <TextView style="@style/pnt_devices_params_item_tv_small_tile_style" />
+
+        <LinearLayout
+            android:id="@+id/llyt_communication_mode"
+            style="@style/pnt_devices_params_item_llyt_style"
+            android:minHeight="48dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/communication_mode_" />
+
+            <TextView
+                android:id="@+id/tv_communication_mode"
+                style="@style/pnt_devices_params_item_tv_value_style" />
+
+            <ImageView style="@style/pnt_devices_params_item_iv_right_arrows_style" />
+        </LinearLayout>
+
+        <TextView style="@style/pnt_devices_params_item_tv_small_tile_style" />
+
+        <LinearLayout
+            android:id="@+id/llyt_version"
+            style="@style/pnt_devices_params_item_llyt_style">
+
+            <TextView
+
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/current_version" />
+
+            <TextView
+                android:id="@+id/et_version"
+                style="@style/pnt_devices_params_item_tv_value_style" />
+
+            <ImageView
+                style="@style/pnt_devices_params_item_iv_right_arrows_style"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="18dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/commom_text_default"
+            android:textSize="12sp" />
+        <!--android:text="@string/choose_version_number"-->
+
+        <LinearLayout
+            android:id="@+id/llyt_srv_ip_cfg"
+            style="@style/pnt_devices_params_item_llyt_style"
+            android:minHeight="48dp">
+
+            <TextView
+                style="@style/pnt_devices_params_item_tv_name_style"
+                android:text="@string/platform_for_IP_domain_configuration" />
+
+            <TextView
+                android:id="@+id/tv_srv_ip_cfg"
+                style="@style/pnt_devices_params_item_tv_value_style" />
+
+            <ImageView style="@style/pnt_devices_params_item_iv_right_arrows_style" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

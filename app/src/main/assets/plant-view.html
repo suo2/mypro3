@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/twaver.js"></script>
+    <script src="js/twaverResources.js"></script>
+    <script src="js/twaverUtil.js"></script>
+    <script type="text/javascript">
+			String.prototype.endWith = function(s) {
+				if (s == null || s == "" || this.length == 0 || s.length > this.length)
+					return false;
+				if (this.substring(this.length - s.length) == s)
+					return true;
+				else
+					return false;
+			}
+			var configuration = {
+				setDevState: function (dataMapStr){
+					var dataMap = dataMapStr;
+					var conArr = network.getElementBox().getDatas().toArray();//得到所有数据
+					var node;
+					$.each(dataMap, function (i, v) {
+						node = conArr.filter(function (p) {
+							return (p.getClient("esnCode") == i || p.getClient("sequence") == i);
+						});
+						var power = "";
+						var unit="";
+						if(!node[0]){
+							return;
+						}
+						if(node[0].getClient("nodetype") == "inverter"){//逆变器 只有掉线0 和在线功率展示
+							if(v.connectStatus == "DISCONNECTED"){
+								node[0].setClient("inverterColor", "#999999");
+								if(v.cap == "-1"){
+									power = " - -";
+								}else {
+									power = "0";
+								}
+							}else {//在线
+								node[0].setClient("inverterColor", "#3DB375");
+								if(v.cap == "-1"){
+									power = "- -";
+								}else {
+									power = v.cap;
+								}
+
+							}
+							unit = "kWh";
+							node[0].setClient("inverterPowerText", power);
+							node[0].setClient("inverterUnitText", unit);
+							node[0].setClient("inverterText", "");
+							node[0]._bindData = true;
+						}else {//组件
+							if(v.connectStatus =="DISCONNECTED"){//掉线，配置了归一化展示 0, 未配置展示 --
+								node[0].setClient("assemblyBgColor","#838383");
+								node[0].setClient("assemblyOptColor","#999999");
+								node[0].setClient("assemblyColor","#999999");
+								if(v.cap == "-1"){
+									power == "- - ";
+								}else {
+									power = "0";
+								}
+							}else{//在线
+								if(v.runningState ==0){//故障
+									node[0].setClient("assemblyBgColor","#b32f2f");
+									node[0].setClient("assemblyOptColor","#cc3333");
+									node[0].setClient("assemblyColor","#cc3333");
+									if(v.cap == "-1"){
+										power = "- -";
+									}else {
+										power = v.cap;
+									}
+								}else {
+									node[0].setClient("assemblyBgColor","#225EAA");
+									node[0].setClient("assemblyOptColor","#2C74D0");
+									node[0].setClient("assemblyColor","#2C74D0");
+									if(v.cap == "-1"){
+										power = "- -";
+									}else {
+										power = v.cap;
+									}
+								}
+							}
+							unit = "kWh";
+							node[0]._bindData = true;
+							node[0].setClient("assemblyText2", power);
+							node[0].setClient("assemblyUnitText", unit);
+						}
+					});
+					//如果有的设备没有传数据，则显示 "- -" 单位
+					$.each(conArr, function (i, v) {
+						if(v._bindData !== true){
+							if(v.getClient("nodetype") == "inverter"){
+								v.setClient("inverterPowerText", "- -");
+								v.setClient("inverterUnitText", "kWh");
+								v.setClient("inverterText", "");
+							}else {
+								v.setClient("assemblyText2", "- -");
+								v.setClient("assemblyUnitText", "kWh");
+							}
+						}
+					});
+					android.callDismissLoading();
+				},
+				getdevEsns: function () {
+					var param = {
+						"devEsns":""
+					};
+					var nodeArray = network.getElementBox().getDatas() && network.getElementBox().getDatas().toArray();
+					nodeArray.forEach(function (i ,v) {
+						if(i instanceof twaver.Node && (i.getClient("nodetype") == "inverter" || i.getClient("nodetype") == "assembly")){
+							param.devEsns +=(i.getClient("esnCode")||i.getClient("sequence")) + ','
+						}
+					});
+					android.callDevEsns(param.devEsns);
+				},
+				viewSwitch: function (){
+					var map = configuration.getAllNode(box);
+					var inverters = map['inverters'];
+					var x = 100;
+					var y = 0;
+					// 视图的宽度，高度
+					var width = network._rootCanvas.width-100;
+					var height = network._rootCanvas.height;
+					var invX = 0;
+					inverters.map(function (e){
+						// 设置逆变器位置
+						var assemblys = map[e.getId()];
+						var oldx = x;
+						var oldy = y;
+						if(assemblys.length > 0) {
+							var assemblyHeight = 0;
+							if((assemblys.length * 79 + e.getWidth()+50) > width) {
+								assemblyHeight = (assemblys.length * 79 + e.getWidth()+50) / width;
+							}
+							// 组件多余2排逆变器位置显示在中间
+							if(assemblyHeight > 1) {
+								if(assemblyHeight.toString().indexOf('.') > 0) {
+									assemblyHeight = parseInt(assemblyHeight) + 1;
+								}
+								e.setLocation({x: x, y: (y + assemblyHeight * 116 / 2 - 40)});
+								y = y + assemblyHeight * 116 + 30;
+							} else {
+								e.setLocation({x: x, y: y});
+								y = y + e.getHeight() + 30;
+							}
+						} else {
+							e.setLocation({x: x, y: y});
+							y = y + e.getHeight() + 30;
+						}
+						configuration.setAssemblys(oldx+e.getWidth()+50, oldy, assemblys, width, e);
+						invX = oldx+e.getWidth()+50;
+					});
+					// 未挂接逆变器的组件
+					configuration.setAssemblys(invX, y, map['assembly'], width);
+					// 加载完成调整视图
+					configuration.adjustmentView();
+				},
+				setAssemblys: function (x, y, assemblys, width, parentNode){
+					var oldx = x;
+					assemblys.map(function (e){
+						e.setLocation({x: x, y: y});
+						if(x + e.getWidth() + 10 > width) {
+							x = oldx;
+							y = y + e.getHeight() + 20;
+						} else {
+							x = x + e.getWidth() + 10;
+						}
+						if(parentNode) {
+							var link = new twaver.Link(parentNode, e);
+							link.setStyle('link.type', 'orthogonal.vertical');
+							link.setStyle('link.color', '#666');
+							link.setStyle('link.corner', 'none');
+							network.getElementBox().add(link);
+						}
+					});
+            	},
+            	getNetworkZoom: function (){
+					var xList = new Array();
+					var yList = new Array();
+					network.getElementBox().getDatas().forEach(function (e){
+						if(e instanceof twaver.Node) {
+							var location = e.getLocation();
+							xList.push(location.x);
+							yList.push(location.y);
+						}
+					});
+					var width = Math.max.apply(null, xList)-Math.min.apply(null, xList);
+					var height = Math.max.apply(null, yList)-Math.min.apply(null, yList);
+
+					var scaleX;
+					var scaleY;
+
+					scaleX=android.getWebViewWidth()/(width*1.2);
+					scaleY=android.getWebViewHeight()/(height*1.2);
+
+					if(scaleX > scaleY){
+				        if(scaleY >= 1){
+				            return 1;
+				        } else {
+				            return scaleY;
+				        }
+					} else {
+					    if(scaleX >= 1){
+				            return 1;
+				        } else {
+				            return scaleX;
+				        }
+					}
+				},
+            	adjustmentView: function (){
+					var setZoomView = function (e){
+						if(e.kind == 'validateEnd') {
+							network.removeViewListener(setZoomView);
+							//network.moveElementsToCenter();
+							//network.panToCenter();
+							//network.zoomReset();
+							network.zoomOverview();
+							network.setZoom(configuration.getNetworkZoom());
+						}
+					}
+					network.addViewListener(setZoomView);
+            	},
+            	getAllNode: function (box){
+					var inverMap = {};
+					var nodes = box.getDatas().toArray();
+					if(nodes && nodes.length > 0) {
+						var assemblys = new Array();
+						var allAssemblyMap = new Map();
+						var inverters = new Array();
+						nodes.map(function (e){
+							var nodeType = e.getClient('nodetype');
+							// 筛选出逆变器
+							if('inverter' == nodeType) {
+								// 逆变器挂载的所有组件
+								var nodes = e.getChildren().toArray();
+								inverMap[e.getId()] = nodes;
+								assemblys.push(nodes);
+								inverters.push(e);
+							} else {
+								allAssemblyMap.set(e.getId(), e);
+							}
+						});
+						configuration.removeBindAssembly(allAssemblyMap, assemblys);
+						var assembly=new Array();
+						allAssemblyMap.forEach(function (value, key, map) {
+							assembly.push(value);
+						 })
+						inverMap['assembly'] = assembly;
+						inverMap['inverters'] = inverters;
+					}
+					return inverMap;
+            	},
+            	removeBindAssembly: function (allAssemblyMap, assemblys){
+					assemblys.map(function (e){
+						if(e instanceof Array) {
+							configuration.removeBindAssembly(allAssemblyMap, e);
+						} else {
+							// 删除有父设备的组件
+							allAssemblyMap.delete(e.getId())
+						}
+					});
+            	}
+        	};
+
+    </script>
+<body>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.maintaince.main.StationFilterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/station_choice_another_name"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/key_words"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/patrol_search_back"
+                    android:drawableRight="@drawable/spinner_down_arrow"
+                    android:hint="@string/please_station_choice"
+                    android:padding="8dp"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/dev_name"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/device_name_keys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:maxLength="200"
+                    android:background="@drawable/patrol_search_back"
+                    android:hint="@string/please_input_dev_name"
+                    android:padding="8dp"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/version_type"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/patrol_search_back">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_devtype"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/fuscousbordershape"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_level"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/patrol_search_back">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_alarmlevel"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/fuscousbordershape"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_state_"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/patrol_search_back">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_alarmstatus"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/fuscousbordershape"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_name"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/alarm_name_keys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:maxLength="100"
+                    android:background="@drawable/patrol_search_back"
+                    android:hint="@string/input_alarm_name"
+                    android:padding="8dp"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_happened_time"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_date1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/riqi_zidingyi"
+                        android:padding="10dp"
+                        android:text="@string/select_start_time"
+                        android:textSize="11sp"
+                        android:textColor="@color/danzhan_color"/>
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="1dp"
+                        android:background="@color/black" />
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_date2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/riqi_zidingyi"
+                        android:padding="10dp"
+                        android:text="@string/select_end_time"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reset"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/save"
+                    android:textColor="#007aff"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/sure"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/determine"
+                    android:textColor="#007aff"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

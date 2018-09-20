@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/amap_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/gMapView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/cbSwitchMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_switch_map"
+            android:checked="false"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="@string/google_map"
+            android:textColor="#de4a37"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:paddingTop="52dp"
+            android:layout_marginTop="30dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_patrol_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lv_task_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></ListView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888" />
+
+        <LinearLayout
+            android:id="@+id/ll_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/defect_return"
+                android:textColor="#f18549"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/bt_handover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/hand_over"
+                android:textColor="#f18549"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bt_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/defect_ticket_submit"
+                android:textColor="#1667ae"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/viewNoPermission"
+        layout="@layout/view_no_permission"
+        android:visibility="gone"/>
+</RelativeLayout>

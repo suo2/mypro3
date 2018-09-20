@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:layout_marginRight="@dimen/size_15dp"
+        android:background="@drawable/installer_registration_et_bg">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/password_icon"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvPwdOneHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/please_input_new_password"
+                android:textColor="@color/text_three"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/new_password_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:textColorHint="@color/text_three"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:maxLength="64"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/new_password_one_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/password_close"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:layout_marginRight="@dimen/size_15dp"
+        android:background="@drawable/installer_registration_et_bg">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/password_icon"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvPwdTwoHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/please_input_new_password_again"
+                android:textColor="@color/text_three"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/new_password_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:textColorHint="@color/text_three"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:maxLength="64"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/new_password_two_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/password_close"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/text_for"
+        android:visibility="gone"
+        android:text="@string/password_len_8_to_16"/>
+
+
+
+    <TextView
+        android:id="@+id/ensure_tx"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:layout_marginRight="@dimen/size_15dp"
+        android:layout_marginTop="100dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/registration_button_bg"
+        android:gravity="center"
+        android:text="@string/make_sure"/>
+
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_round"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_handler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="操作人"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:drawableLeft="@drawable/icon_operator_head"
+            android:drawablePadding="5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_handle_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:gravity="right"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/circulation_opinions"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_handle_describe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/recevier"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_recevier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="名字"
+            android:gravity="right"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/flow_state"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_proc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="状态"
+            android:gravity="right"
+            android:textSize="13sp"
+            android:textColor="@color/orange"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNotDispose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/not_dispose"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvNotDisposeNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llYetDispose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yet_dispose"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvYetDisposeNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbOperatorNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/unfold_operation_note"
+        android:button="@null"
+        android:checked="false"
+        android:textSize="13sp"
+        android:textColor="@color/orange"
+        android:drawableRight="@drawable/selector_operator_note"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/llOperatorNoteContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+</LinearLayout>

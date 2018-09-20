@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_white">
+
+        <TextView
+            android:text="@string/pnloger_powertation_introduce"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:textColor="@color/title_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:drawableLeft="@drawable/icon_map_tip_close"
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:text="宿州市泗县瓦坊镇梁场村新庄电站位于梁场村五社三号地块。电站容量865kW,4个逆变器，28块光伏组件，采用固定支架的方式。宿州市泗县瓦坊镇梁场村新庄电站位于梁场村五社三号地块。电站容量865kW,4个逆变器，28块光伏组件，采用固定支架的方式。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+</LinearLayout>

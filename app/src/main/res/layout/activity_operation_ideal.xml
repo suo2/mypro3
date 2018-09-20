@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/operation_ideal"
+        android:textColor="@color/danzhan_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/iv_diagnosis_requirement"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/iv_diagnosis_requirement1"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/iv_diagnosis_requirement2"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/iv_diagnosis_requirement3"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/iv_diagnosis_ideals"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/iv_diagnosis_ideal1"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/iv_diagnosis_ideal2"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/iv_diagnosis_ideal3"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/operation_ideal_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:background="@drawable/button_my"
+        android:text="@string/sure"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

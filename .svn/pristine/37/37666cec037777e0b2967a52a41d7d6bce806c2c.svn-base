@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_imformation_view_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_change_psw"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/icon_change_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/account_safe" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/icon_change_psw"
+                android:text="@string/account_safe"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_info_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="55dp"
+            android:background="@color/my_imformation_view_color" />
+
+        <RelativeLayout
+            android:id="@+id/rlInstallVideo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/imgInstallVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_help_safe" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgInstallVideo"
+                android:text="@string/help"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_info_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="55dp"
+            android:background="@color/my_imformation_view_color" />
+
+        <RelativeLayout
+            android:id="@+id/rl_about_app"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/icon_about_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_about_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/icon_about_app"
+                android:text="@string/about"
+                android:textColor="@color/danzhan_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_info_more" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_out_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/cancel_account"
+        android:textColor="@color/sure_report"
+        android:textSize="15sp" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pv1" type="id"></item>
+    <item name="pv2" type="id"></item>
+    <item name="pv3" type="id"></item>
+    <item name="pv4" type="id"></item>
+    <item name="pv5" type="id"></item>
+    <item name="pv6" type="id"></item>
+    <item name="pv7" type="id"></item>
+    <item name="pv8" type="id"></item>
+    <item name="pv9" type="id"></item>
+    <item name="pv10" type="id"></item>
+    <item name="pv11" type="id"></item>
+    <item name="pv12" type="id"></item>
+    <item name="pv13" type="id"></item>
+    <item name="pv14" type="id"></item>
+    <item name="pv15" type="id"></item>
+    <item name="pv16" type="id"></item>
+    <item name="pv17" type="id"></item>
+    <item name="pv18" type="id"></item>
+    <item name="pv19" type="id"></item>
+    <item name="pv20" type="id"></item>
+    <item name="tag_parent_view" type="id" />
+    <item name="tag_child_view" type="id" />
+
+    <item name="tag_device_type_content" type="id" />
+    <item name="tag_device_type_length" type="id" />
+
+</resources>

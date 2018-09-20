@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <com.huawei.solarsafe.utils.customview.CustomScrollView
+        android:id="@+id/custom_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_button_start_cancel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/mission_name"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_tesk_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:maxLength="100"
+                    android:background="@drawable/spinner_dev_drepy_pin"
+                    android:hint="@string/enter_tesk_name"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/select_a_device"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/num_dev_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/num_dev_iv"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/num_dev_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/num_dev_iv"
+                        android:text="0"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/num_dev_data"
+                        android:text="@string/selected_dev"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_ivcurve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/component_cleaning"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_clean"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/not_clean"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/radiogroup_back"
+                        android:drawablePadding="10dp"
+                        android:text="@string/not_clean"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/have_clean"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiogroup_back"
+                        android:drawablePadding="10dp"
+                        android:text="@string/have_clean"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/scan_mode"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp"
+                    android:layout_marginTop="15dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_scan_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    >
+                    <RadioButton
+                        android:id="@+id/fast_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/radiogroup_back"
+                        android:drawablePadding="10dp"
+                        android:text="@string/fast_scan"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp"
+                        android:layout_marginTop="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/accurate_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiogroup_back"
+                        android:drawablePadding="10dp"
+                        android:text="@string/accurate_scan"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp"
+                        android:layout_marginTop="20dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/en_param"
+                    android:textColor="@color/danzhan_color"
+                    android:textSize="12sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioGroup
+                        android:id="@+id/rg_auto_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+                        <RadioButton
+                            android:id="@+id/auto_mode"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/radiogroup_back"
+                            android:drawablePadding="10dp"
+                            android:text="@string/auto_"
+                            android:textColor="@color/danzhan_color"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/manual_mode"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/radiogroup_back"
+                            android:drawablePadding="10dp"
+                            android:text="@string/en_param"
+                            android:textColor="@color/danzhan_color"
+                            android:textSize="12sp" />
+                    </RadioGroup>
+                    <LinearLayout
+                        android:id="@+id/ll_irradiation_strength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+                        <EditText
+                            android:id="@+id/tv_irradiation_strength"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:maxLength="50"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/spinner_dev_drepy_pin"
+                            android:textColor="@color/danzhan_color"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/danzhan_color"
+                            android:text="@string/iv_irradiation_strength"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_irradiation_strength_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+                        <EditText
+                            android:id="@+id/tv_irradiation_strength_back"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:maxLength="50"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/spinner_dev_drepy_pin"
+                            android:textColor="@color/danzhan_color"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/danzhan_color"
+                            android:text="@string/tv_irradiation_strength_back"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.solarsafe.utils.customview.CustomScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_button_start_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F1F1F1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_cancel_diagosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anqx"
+            android:paddingBottom="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/cancel"
+            android:textColor="@color/mejar_cocor"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button_start_diagosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ankszd"
+            android:paddingBottom="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/start_diagnosis"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

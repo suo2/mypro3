@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/real_time_information_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/device_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/danzhan_color"
+                android:text=""/>
+
+
+            <LinearLayout
+                android:id="@+id/electric_circuit_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_10dp"
+                android:background="#eeeeee"/>
+            <com.huawei.solarsafe.view.devicemanagement.RealTimeAnalogueScaleListView
+                android:id="@+id/real_time_analogue_scale_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.huawei.solarsafe.view.devicemanagement.RealTimeAnalogueScaleListView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_10dp"
+                android:background="#eeeeee"/>
+            <com.huawei.solarsafe.view.devicemanagement.RealTimeSignalListView
+                android:id="@+id/real_time_signal_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.huawei.solarsafe.view.devicemanagement.RealTimeSignalListView>
+
+
+        </LinearLayout>
+
+
+        
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back_to_top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_to_the_top"
+        android:alpha="0.7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+
+
+
+</RelativeLayout>

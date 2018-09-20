@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:textSize="16sp"
+        android:id="@+id/titleOfMy"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/decoration"
+        android:layout_alignStart="@+id/decoration" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/iv_arrow"
+        android:layout_gravity="right"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_arrow"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/divider"
+
+        android:background="@color/gray"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/titleOfMy"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="visible"
+        android:id="@+id/decoration"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:gravity="right"
+        android:textColor="@color/gray"
+        android:text="content"
+        android:id="@+id/content"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/titleOfMy"
+        android:layout_toLeftOf="@id/iv_arrow"
+        android:layout_marginEnd="20dp" />
+</RelativeLayout>

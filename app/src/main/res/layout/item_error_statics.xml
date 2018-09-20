@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3999"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/error_code"
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/view_item_first"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_item_error_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="11111"
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bt_item_sugg"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="#fff"
+                android:background="@drawable/shape_ankszd"
+                android:textSize="11sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/error_deal_sugge"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/error_num"
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_item_error_num"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/percent_"
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_item_percent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFaultDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/error_desc"
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_item_error_desc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account_safe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.personal.AccountSafeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/account_safe_background">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/title_bar"
+            android:layout_centerInParent="true"
+            android:src="@drawable/safe_shield" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/line"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/modify_password"
+                android:textColor="@color/scan_help_explain_text"
+                android:textSize="15sp" />
+
+            <ImageView style="@style/myinfo_iv_comeback" />
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recent_login_record"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <View
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/login_record"
+                android:textColor="@color/scan_help_explain_text"
+                android:textSize="15sp" />
+
+            <ImageView style="@style/myinfo_iv_comeback" />
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/monitor_permision_setting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <View
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/permission_setting"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/permission_setting"
+                    android:textColor="@color/scan_help_explain_text"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv_permission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:textColor="@color/orange"/>
+                <ImageView
+                    android:id="@+id/permission_setting_img"
+                    style="@style/myinfo_iv_comeback" />
+            </LinearLayout>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

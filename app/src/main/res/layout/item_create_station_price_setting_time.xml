@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--时间段-->
+    <LinearLayout
+        android:id="@+id/llyt_time"
+        style="@style/new_station_item_llyt">
+
+        <TextView
+            style="@style/new_station_item_tv_name"
+            android:text="@string/time_range" />
+
+        <LinearLayout style="@style/new_station_item_rlyt_content">
+
+            <Spinner
+                android:id="@+id/sp_start_time"
+                style="@style/new_station_item_contain_sp_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/select_time"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/sp_end_time"
+                style="@style/new_station_item_contain_sp_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/select_time" />
+
+            <ImageView
+                android:id="@+id/iv_time_sub"
+                style="@style/new_station_item_contain_iv_drop"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/new_station_subtract" />
+
+            <ImageView
+                android:id="@+id/iv_time_add"
+                style="@style/new_station_item_contain_iv_drop"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/new_station_add" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--电价-->
+    <LinearLayout style="@style/new_station_item_llyt">
+
+        <TextView
+            android:id="@+id/tv_price_unit"
+            style="@style/new_station_item_tv_name"
+            android:text="@string/power_price" />
+
+        <RelativeLayout style="@style/new_station_item_rlyt_content">
+
+            <TextView
+                style="@style/new_station_item_contain_tv_unit"
+                android:text="@string/yuan"
+                android:visibility="gone" />
+
+            <EditText
+                android:hint="@string/please_input_price_str"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_price"
+                android:maxLength="10"
+                style="@style/new_station_item_contain_et_content"
+                android:digits="0123456789."
+                android:inputType="text"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/create_station_div" />
+
+</LinearLayout>

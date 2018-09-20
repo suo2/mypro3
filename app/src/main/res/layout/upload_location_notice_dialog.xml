@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/upload_location_title"
+            />
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_location_detail"
+            android:textColor="@color/red"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            />
+        <CheckBox
+            android:id="@+id/cer_dialog_cb"
+            style="@style/CheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:textColor="@color/orange"
+            android:textSize="15sp"
+            android:text="@string/no_tips"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_close"
+                android:background="@drawable/anqx"
+                android:text="@string/no"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/orange"
+                android:paddingBottom="4dp"
+                android:layout_weight="1"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="20dp"
+                android:layout_height="@dimen/size_1dp"/>
+            <Button
+                android:id="@+id/btn_notice"
+                android:background="@drawable/ankszd"
+                android:text="@string/yes"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="4dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

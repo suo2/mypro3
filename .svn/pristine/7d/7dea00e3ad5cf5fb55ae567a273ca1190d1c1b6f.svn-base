@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quickSideBarLetters">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="fragment_report_indicators">
+        <item>All</item>
+        <item>DC Capacity</item>
+        <item>Total Radiation</item>
+        <item>Total irradiation of plan</item>
+        <item>Length of sunlighting</item>
+        <item>Average temperature</item>
+        <item>Theoretical Power Generation</item>
+        <item>Energy Yield</item>
+        <item>Lifetime Energy</item>
+        <item>Planed power generation capacity</item>
+        <item>On-grid energy</item>
+        <item>Equivalent Utilizing Hours</item>
+        <item>Grid feedback power volume</item>
+        <item>Power loss in power rationing</item>
+        <item>Energy consumption</item>
+        <item>Self consumption</item>
+        <item>Self-sufficient Ratio</item>
+        <item>Plant power consumption volume</item>
+        <item>Comprehensive plant power consumption</item>
+        <item>Comprehensive plant power consumption rate</item>
+        <item>Peak power</item>
+        <item>System efficiency</item>
+        <item>Emission reduction of carbon dioxide</item>
+        <item>Quantity of saved standard coal</item>
+        <item>Equivalent quantity of tree planting</item>
+        <item>Income</item>
+        <item>Plan completion rate</item>
+    </string-array>
+</resources>
+

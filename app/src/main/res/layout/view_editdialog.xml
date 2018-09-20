@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mingming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/name_for_condition"
+        android:textColor="#9e9c9c"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_marginTop="36dp"
+        android:id="@+id/filter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/filter_item_back"
+        android:gravity="left"
+        android:maxLength="100"
+        android:hint="@string/name_for_condition_other_way"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="40dp"
+        android:textColor="@color/danzhan_color"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/alertdialog_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_left_selector"
+            android:gravity="center"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="0.1dp"
+            android:layout_height="43dp"
+            android:background="@color/alertdialog_line" />
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_right_selector"
+            android:gravity="center"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

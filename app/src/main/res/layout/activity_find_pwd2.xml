@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.login.FindPwdActivity1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/common_white"
+        android:padding="8dp"
+        android:text="@string/yz_user_safe_notice"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/common_white"
+        android:text="@string/protected_email"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mail_keys"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_single_item_four_corner"
+        android:padding="8dp"
+        android:text="@string/user_not_email_notice"
+        android:textColor="@color/common_white"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/common_white"
+        android:text="@string/yz_code"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/yz_keys"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="6"
+            android:maxLength="10"
+            android:background="@drawable/shape_single_item_four_corner"
+            android:hint="@string/please_input_email_yz_code"
+            android:padding="8dp"
+            android:textColor="@color/common_white"
+            android:textColorHint="@color/common_white"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_yz"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_weight="4"
+            android:background="@drawable/btn_pressed_selector"
+            android:text="@string/send_code"
+            android:textColor="@color/green"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_pressed_selector_pwdback"
+        android:text="@string/next_step"
+        android:textColor="@color/green"
+        android:textSize="11sp" />
+</LinearLayout>

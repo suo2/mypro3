@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9333">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="12sp"
+                android:text="@string/failed_reason" />
+
+            <TextView
+                android:id="@+id/tv_failed_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="12sp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="12sp"
+                android:text="@string/error_deal_sugg" />
+
+            <TextView
+                android:id="@+id/tv_deal_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="12sp"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_deal_sure"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:text="@string/sure"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="20dp"
+            android:textSize="12sp"
+            android:background="@drawable/ankszd"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</RelativeLayout>

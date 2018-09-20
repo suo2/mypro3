@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_manufacturers" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_cs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:hint="@string/please_input_factory_name"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_type" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_xh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:hint="@string/please_input_pv_module"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/pv_power_str" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_gl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/input_fw_gl"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_types" />
+
+            <RelativeLayout
+                android:id="@+id/rl_xl_zdy"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/cb_check_all"
+                android:background="@drawable/edtv_no_ed_bg">
+
+                <Spinner
+                    android:id="@+id/spinner_search_option_zjtype"
+                    android:layout_width="140dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"></Spinner>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/xiala_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_xl_no_zdy"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg"
+                android:visibility="gone">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_lx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_temp_vol_coefficient" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_dywdxs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789.-"
+                    android:hint="@string/input_fw_1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_cur_tem_coefficient" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_dlwdxs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/input_fw_0_0_2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/peak_power_temp_coefficient" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_fzglwdxs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789.-"
+                    android:hint="@string/input_fw_1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_max_power_point_vol" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_zdglddy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789.-"
+                    android:hint="@string/input_fw_1000_1000"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_max_power_cur" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_zdgldl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789.-"
+                    android:hint="@string/input_fw_1000_1000"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/annual_decay_rate" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_snsjl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/input_fw_0_100"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/yearly_attenuation_rate" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_znsjl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/input_fw_0_100"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/num_of_components_bat_slices" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_dcpsm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789"
+                    android:hint="@string/input_fw_0_200"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_open_circuit_vol" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_kldy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/intput_fw_0_80"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/component_short_circuit_current" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_dldl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/input_fw_0_20"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_dev_info_pvlist"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/nominal_component_conversion_efficiency" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_bczjzhxl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/input_fw_0_100"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_dev_info_pvlist_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                style="@style/dev_info_title"
+                android:text="@string/fill_factor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_ed_bg">
+
+                <com.huawei.solarsafe.view.login.MyEditText
+                    android:id="@+id/ed_zj_tcyz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_ed_bg"
+                    android:digits="0123456789."
+                    android:hint="@string/input_fw_0_1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

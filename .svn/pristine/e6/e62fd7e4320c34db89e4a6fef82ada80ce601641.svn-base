@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag1" type="id" />
+    <item name="lat" type="id" />
+    <item name="lng" type="id" />
+    <item name="import_table_success" type="id" />
+</resources>

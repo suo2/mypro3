@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_task_search_bg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/power_generation_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/power_generation_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector_bg"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:text=""/>
+
+            <com.huawei.solarsafe.view.homepage.station.LabelItemView
+                android:id="@+id/power_generation_view"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.huawei.solarsafe.view.homepage.station.LabelItemView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/internet_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/internet_power_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector_bg"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:text="" />
+
+            <com.huawei.solarsafe.view.homepage.station.LabelItemView
+                android:id="@+id/internet_power_view"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.huawei.solarsafe.view.homepage.station.LabelItemView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buy_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/buy_power_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector_bg"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:text="" />
+
+            <com.huawei.solarsafe.view.homepage.station.LabelItemView
+                android:id="@+id/buy_power_view"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.huawei.solarsafe.view.homepage.station.LabelItemView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/charge_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/charge_power_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector_bg"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:text="" />
+
+            <com.huawei.solarsafe.view.homepage.station.LabelItemView
+                android:id="@+id/charge_power_view"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.huawei.solarsafe.view.homepage.station.LabelItemView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/discharge_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/discharge_power_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector_bg"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:text=""/>
+
+            <com.huawei.solarsafe.view.homepage.station.LabelItemView
+                android:id="@+id/discharge_power_view"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.huawei.solarsafe.view.homepage.station.LabelItemView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/btn_close"
+                android:background="@drawable/shape_btn_negative_bg"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:minWidth="60dp"
+                android:textSize="15sp"
+                android:textColor="@color/orange" />
+            <TextView
+                android:id="@+id/btn_notice"
+                android:background="@drawable/shape_btn_positive_bg"
+                android:text="@string/make_sure"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:minWidth="60dp"
+                android:textSize="15sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

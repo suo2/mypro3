@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.stationmanagement.GroupStringConfigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_group_string_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/group_string_size_str"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <com.huawei.solarsafe.view.login.MyEditText
+            android:id="@+id/ed_group_string_size"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_ed_bg"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:maxLength="200"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_modification"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_pressed_selector_full_yellow"
+            android:text="@string/modification"
+            android:textColor="@color/common_white"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_all_modification"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_pressed_selector_full_yellow"
+            android:text="@string/modification_all_str"
+            android:textColor="@color/common_white"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F1F1F1" />
+
+    <ScrollView
+        android:id="@+id/expandable_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_pv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_ed_bg"
+            android:text="@string/cancel"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_selector_full_yellow"
+            android:text="@string/sure"
+            android:textColor="@color/common_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dip" >
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:id="@+id/domain_icon"
+        android:layout_centerVertical="true"
+        android:src="@drawable/domain_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/domain_icon"
+        android:button="@drawable/fang_check_selector"
+        android:id="@+id/id_treenode_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:text="N/A"
+        android:textSize="18dip"
+        android:textColor="@color/text_one"
+        android:visibility="visible"/>
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/id_treenode_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/domain_zk_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"
+        android:layout_below="@+id/id_treenode_checkbox"/>
+
+</RelativeLayout>

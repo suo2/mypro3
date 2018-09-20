@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) Pinnet Tech
+  ~ All Rights Reserved.
+  -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/dbv_custom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:zxing_framing_rect_height="150dp"
+            app:zxing_framing_rect_width="340dp"
+            app:zxing_scanner_layout="@layout/custom_barcode_scanner"
+            app:zxing_preview_scaling_strategy="fitXY"
+            app:zxing_use_texture_view="true"
+            android:layout_weight="1">
+        </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:layout_below="@+id/dbv_custom"
+            android:gravity="center"
+            android:layout_weight="0"
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/tv_manual_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manual_input"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/text_size_11sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:drawableTop="@drawable/icon_zxing_manual_input"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_switch_sacn_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scanning_barcode"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/text_size_11sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:drawableTop="@drawable/icon_zxing_scan_barcode"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/tv_switch_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/text_size_11sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/open_light"
+                android:drawableTop="@drawable/icon_zxing_open_light_new"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_zxing_close_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_zxing_close_scan"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_zxing_open_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_zxing_help"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_scan_hint_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_zxing_hint_bg"
+        android:text="@string/scanning_barcode_hint"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_scan_hint_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_zxing_hint_bg"
+        android:text="@string/scan_qrcode_hint"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+
+</RelativeLayout>

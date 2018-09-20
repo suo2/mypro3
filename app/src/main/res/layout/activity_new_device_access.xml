@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_device_access"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    tools:context="com.huawei.solarsafe.view.stationmanagement.NewDeviceAccessActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMessageAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_message_alert"
+                android:text="@string/new_device_access_message_alert"
+                android:textColor="#ff4d30"
+                android:textSize="13sp"
+                android:drawablePadding="4dp"
+                android:layout_margin="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"/>
+
+            <LinearLayout
+                android:id="@+id/llSelectAllDevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <CheckBox
+                    android:id="@+id/cbSelectAllDevice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:text="@string/select_all_device"
+                    android:textSize="16sp"
+                    android:textColor="#FF9933"
+                    android:paddingLeft="5dp"
+                    android:layout_margin="10dp"
+                    android:clickable="false"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FF9933"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/llBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnAddToNewPowerStation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/add_to_new_power_station"
+            android:textSize="15sp"
+            android:textColor="#FF9933"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnAddToExistingPowerStation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF9933"
+            android:text="@string/add_to_existing_power_station"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/cancel"
+            android:textSize="15sp"
+            android:textColor="#FF9933"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF9933"
+            android:text="@string/determine"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/llEmpty"
+        layout="@layout/empty_view"
+        android:visibility="visible"/>
+
+</LinearLayout>

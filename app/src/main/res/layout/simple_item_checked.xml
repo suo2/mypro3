@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="40dip">
+
+    <ImageView
+        android:id="@+id/domain_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:src="@drawable/domain_check" />
+
+    <CheckBox
+        android:id="@+id/id_treenode_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/domain_icon"
+        android:button="@drawable/fang_check_selector"
+        android:padding="8dp"
+        android:layout_weight="1000"
+        android:text="N/A"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/id_treenode_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/id_treenode_checkbox"
+        android:padding="10dp"
+        android:src="@drawable/domain_zk_icon" />
+
+</LinearLayout>

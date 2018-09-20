@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huawei.solarsafe.view.pnlogger.GMapPlacePickerActivity">
+
+    <fragment
+        android:id="@+id/gmap"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvSwitchMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ico_g_map"
+        android:gravity="center_horizontal"
+        android:text="@string/a_map"
+        android:textColor="#0093fd"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:paddingTop="52dp"
+        android:layout_marginTop="30dp"/>
+
+</FrameLayout>

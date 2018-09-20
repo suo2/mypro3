@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_10dp"
+    android:orientation="vertical">
+
+    <!-- 35/10KV母线间隔电路图 -->
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/booster_wide_line"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/kv_35"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="@dimen/booster_narrow_line"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/kv_35"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hand_car_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/two_hand_car_divide"/>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="@dimen/booster_narrow_line"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@color/kv_35"/>
+
+        <TextView
+            android:id="@+id/tx_15900"
+            style="@style/tx_booster_details"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/line3"
+            android:layout_marginRight="5dp"
+            android:text="15900"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="@dimen/booster_narrow_line"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/kv_35"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pt4_g3d_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pt4_gd35kv"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="30dp"
+            android:src="@drawable/horizontal_ground"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

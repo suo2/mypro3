@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.stationmanagement.StationManagementListActivity">
+
+    <Button
+        android:id="@+id/btn_select_domain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/size_15dp"
+        android:background="@drawable/btn_pressed_selector_full_blue"
+        android:text="@string/organization_structure"
+        android:textColor="@color/common_white"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/login_ed_bg"
+            android:orientation="horizontal">
+
+            <com.huawei.solarsafe.view.login.MyEditText
+                android:id="@+id/myed_station_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/input_station_name"
+                android:textColorHint="#dddddd"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="43dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp">
+
+                <ImageView
+                    android:id="@+id/iv_search_station_name"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/search_icon_stationmanagement" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/station_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:divider="@null"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

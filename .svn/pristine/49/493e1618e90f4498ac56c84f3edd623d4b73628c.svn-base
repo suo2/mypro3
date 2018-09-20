@@ -1,0 +1,1331 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    tools:context="com.huawei.solarsafe.view.devicemanagement.ProtectionParametersFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_insulation_resistance"
+                style="@style/rl_protection_parameters"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name1"
+                    style="@style/tv_title_protection"
+                    android:text="@string/insulation_resistance" />
+
+                <EditText
+                    android:id="@+id/ed_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name1"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_grid_v_bph_protect_point_str"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name1_1"
+                    style="@style/tv_title_protection"
+                    android:text="@string/grid_v_bph_protect_point_str" />
+
+                <EditText
+                    android:id="@+id/ed_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name1_1"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_xingwei_protect_point_str"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name1_2"
+                    style="@style/tv_title_protection"
+                    android:text="@string/xingwei_protect_point_str" />
+
+                <EditText
+                    android:id="@+id/ed_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name1_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_shift_protection"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name_xjpyh"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/phase_angle_shift_protection"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name_xjpyh"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_single_item_left_corner_fill">
+
+                    <com.huawei.solarsafe.utils.MySpinner
+                        android:id="@+id/spinner_search_option_xjpybh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#eeeeee"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"></com.huawei.solarsafe.utils.MySpinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/spinner_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/ten_minute_overvoltage_protection"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/ten_minute_overvoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/primary_overvoltage_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/primary_overvoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name5"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_5"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/first_order_undervoltage_protection"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name6"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_6"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name7"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/first_order_undervoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name7"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_7"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name8"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ed_8"
+                    android:paddingLeft="15dp"
+                    android:text="@string/primary_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name8"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_8"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name9"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/primary_frequency_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name9"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_9"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name10"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/first_order_under_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name10"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_10"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name11"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/first_order_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name11"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_3_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name4_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/vtwo_overvoltage_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name4_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_4_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name5_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/two_overvoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name5_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_5_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name6_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/two_level_undervoltage_protection"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name6_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_6_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name7_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/two_undervoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_7_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name7_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_7_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name8_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/two_level_over_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_8_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name8_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_8_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name9_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/two_level_over_frequency_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_9_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_name9_2"
+                    android:layout_toRightOf="@+id/tv_name9_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_9_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name10_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/two_level_under_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_10_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name10_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_10_2"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name11_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/two_stage_under_frequency_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_11_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name11_2"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_3_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name4_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_overvoltage_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name4_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_4_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name5_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_overvoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_5_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name5_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_5_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name6_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_level_undervoltage_protection"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_6_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name6_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_6_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name7_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_undervoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_7_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name7_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_7_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name8_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_level_over_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_8_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name8_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_8_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name9_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_level_over_frequency_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_9_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name9_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_9_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name10_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_level_under_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_10_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name10_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_10_3"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name11_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/three_stage_under_frequency_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_11_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name11_3"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_3_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name4_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_overvoltage_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_4_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name4_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_4_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name5_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_overvoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_5_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name5_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_5_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name6_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_level_undervoltage_protection"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_6_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name6_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_6_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name7_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_undervoltage_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_7_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name7_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_7_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name8_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_level_over_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_8_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name8_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_8_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name9_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_level_over_frequency_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_9_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name9_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_9_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name10_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_level_under_frequency_protection_point"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_10_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name10_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:digits="0123456789."
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_10_4"
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name11_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/four_stage_under_frequency_protection_time"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ed_11_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/tv_name11_4"
+                    android:background="@drawable/shape_single_item_four_corner_empty"
+                    android:hint=""
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

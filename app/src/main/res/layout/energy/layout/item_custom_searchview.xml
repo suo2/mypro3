@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/energy_table_search"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="搜索商品或供需信息"
+        android:imeOptions="actionSearch"
+        android:textSize="14sp"
+         />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/delete_all"
+        android:visibility="gone" />
+</LinearLayout>

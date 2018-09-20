@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_iverror_statistical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.maintaince.ivcurve.IVErrorStatisticalActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart_error"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp">
+
+        </com.github.mikephil.charting.charts.PieChart>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!--右边图例容器1-->
+            <LinearLayout
+                android:id="@+id/ll_color_oneline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"/>
+            <!--右边图例容器2-->
+            <LinearLayout
+                android:id="@+id/ll_color_twoline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

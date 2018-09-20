@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"/>
+    <TextView
+        android:id="@+id/tvCurrencyDevName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="123123"
+        android:drawableLeft="@drawable/icon_common_device"
+        android:drawablePadding="5dp"
+        android:textColor="#333333"
+        android:textSize="13sp"/>
+
+</LinearLayout>

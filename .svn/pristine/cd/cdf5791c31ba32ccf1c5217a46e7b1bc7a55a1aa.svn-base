@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_install_and_operate_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="#f8f8f8"
+    tools:context="com.huawei.solarsafe.view.personal.InstallAndOperateVideoActivity">
+
+    <TextView
+        android:id="@+id/tvYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_youtube"
+        android:text="@string/go_to_youtube"
+        android:textColor="#d54029"
+        android:textSize="15sp"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/tvLinkedin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_linkedin"
+        android:text="@string/go_to_linkedin"
+        android:textColor="#000098"
+        android:textSize="15sp"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="50dp"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

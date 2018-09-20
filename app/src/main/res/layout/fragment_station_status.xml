@@ -1,0 +1,266 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical"
+    tools:context="com.huawei.solarsafe.view.maintaince.main.StationStatusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:focusableInTouchMode="true" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/common_white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableLeft="@drawable/ic_arrow_back_black_36dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="19sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:text="电站状态"
+                android:textColor="@color/title_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cancle_pk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_show_str" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/common_light_gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/station_statues_mh"
+                        android:textColor="@color/danzhan_color"
+                        android:textSize="12sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_dev_drepy_pin">
+
+                        <Spinner
+                            android:id="@+id/spinner_station_sta"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#F7F7F7"
+                            android:gravity="center"></Spinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/drop_down_more" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_station_name"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/device_management_edittext_border_color"
+                    android:gravity="center"
+                    android:hint="@string/station_name"
+                    android:maxLength="30"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/rectangle_yellow_round"
+                    android:gravity="center"
+                    android:text="@string/look_up"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_search_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/rectangle_yellow_round"
+                    android:gravity="center"
+                    android:text="@string/no_show_str"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></ListView>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/station_infos_swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/station_infos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zhipai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/goto_zhipai_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_selector"
+            android:text="@string/cancel"
+
+            android:textColor="#0181ff"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/goto_zhipai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_selector"
+            android:text="@string/station_contrast"
+            android:textColor="#0181ff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <toan.android.floatingactionmenu.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="visible"
+        app:fab_addButtonColorNormal="@color/coral"
+        app:fab_addButtonColorPressed="@color/darkorange"
+        app:fab_addButtonPlusIconColor="@color/black"
+        app:fab_addButtonSize="mini"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:fab_menuIcon="@drawable/caozuo">
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/coral"
+            app:fab_colorPressed="@color/darkorange"
+            app:fab_icon="@drawable/shaixuan"
+            app:fab_size="mini" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/coral"
+            app:fab_colorPressed="@color/darkorange"
+            app:fab_icon="@drawable/icon_pk"
+            app:fab_size="mini" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:fab_colorNormal="@color/coral"
+            app:fab_colorPressed="@color/darkorange"
+            app:fab_icon="@drawable/sousuo"
+            app:fab_size="mini" />
+    </toan.android.floatingactionmenu.FloatingActionsMenu>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/filtrate"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dev_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_ed_bg"
+            android:drawableRight="@drawable/spinner_down_arrow"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/choose_device_location"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="2dp"
+            android:background="@drawable/login_ed_bg"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:requiresFadingEdge="none"
+                android:spinnerMode="dropdown"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/spinner_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/spinner_down_arrow" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_dev_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="100"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_ed_bg"
+            android:hint="@string/device_name_optional"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#bfbfbf"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/cancel_defect"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/coral"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
